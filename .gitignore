@@ -1,3 +1,37 @@
+# Do no track coverage file
+.coverage
+
+# Do not track api keys
+scopus_key.txt
+ncbi_key.txt
+
+# Folders that need not be tracked
+build/
+src/ppi_pipeline.egg-info/
+dist/
+src/ppi_pipeline/__pycache__
+benchmarks/benchmark_2/benchmark_2_tarballs
+benchmarks/benchmark_3/benchmark_3_tarballs
+notebooks/refseq
+vignettes/pulling_papers/*
+vignettes/full_pipeline_example/*
+vignettes/omes_synonyms/*
+tests/__pycache__/
+biobert/
+
+# Other
+vignettes/scopus_api_key.txt
+vignettes/api_key_ncbi.txt
+vignettes/bert_model_path.txt
+notebooks/scratch.ipynb
+notebooks/scratch2.ipynb
+notebooks/bert_notebook.ipynb
+notebooks/string_search.ipynb
+notebooks/string_search_exp.ipynb
+notebooks/test_ome.ipynb
+test_script.py
+output.tsv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
