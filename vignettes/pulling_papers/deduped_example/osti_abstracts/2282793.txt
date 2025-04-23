@@ -1,0 +1,5 @@
+Light-inducible protein degradation in E. coli with the LOVdeg tag. 
+ Molecular tools for optogenetic control allow for spatial and temporal regulation of cell behavior. In particular, light-controlled protein degradation is a valuable mechanism of regulation because it can be highly modular, used in tandem with other control mechanisms, and maintain functionality throughout growth phases. Here, we engineered LOVdeg, a tag that can be appended to a protein of interest for inducible degradation in
+ Escherichia coli
+ using blue light. We demonstrate the modularity of LOVdeg by using it to tag a range of proteins, including the LacI repressor, CRISPRa activator, and the AcrB efflux pump. Additionally, we demonstrate the utility of pairing the LOVdeg tag with existing optogenetic tools to enhance performance by developing a combined EL222 and LOVdeg system. Finally, we use the LOVdeg tag in a metabolic engineering application to demonstrate post-translational control of metabolism. Together, our results highlight the modularity and functionality of the LOVdeg tag system and introduce a powerful new tool for bacterial optogenetics.
+ 

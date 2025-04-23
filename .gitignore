@@ -13,12 +13,7 @@ build/
 src/ppi_pipeline.egg-info/
 dist/
 src/ppi_pipeline/__pycache__
-benchmarks/benchmark_2/benchmark_2_tarballs
-benchmarks/benchmark_3/benchmark_3_tarballs
 notebooks/refseq
-vignettes/pulling_papers/*
-vignettes/full_pipeline_example/*
-vignettes/omes_synonyms/*
 tests/__pycache__/
 biobert/
 

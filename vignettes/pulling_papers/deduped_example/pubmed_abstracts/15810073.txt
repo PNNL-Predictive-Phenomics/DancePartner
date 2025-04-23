@@ -1,0 +1,25 @@
+Identification of the immunogenic domains in HBsAg preS1 region using overlapping preS1 fragment fusion proteins. Aim:
+        
+      
+      The incorporation of hepatitis B virus (HBV) preS1 region into epitope-based vaccines against HBV has been accepted widely, but the incorporate site and size of preS1 sequence is controversial. Therefore our purpose was to further investigate its immunogenic domains for the epitope-based hepatitis B vaccine design.
+    
+
+
+          Methods:
+        
+      
+      Eight GST fusion proteins containing overlapping preS1 fragments in preS1 (21-119) region were expressed in E.coli. Using these purified fusion proteins, the immunogenic domains in preS1 region were identified in detail in mice and humans by Western blot analysis and ELISA.
+    
+
+
+          Results:
+        
+      
+      The results in mice showed that the immu-nogenic domains mainly existed in preS1 (21-59) and preS1 (95-109). Similarly, these fragments had strong immunogenicity in humans; whereas the other parts except for preS1 (60-70) also had some immunogenicity. More importantly, a major immunogenic domain, preS1 (34-59), which has much stronger immunogenicity, was identified. Additionally, the antibodies against some preS1 fragments, especially preS1 (34-59), were speculated to be virus-neutralizing.
+    
+
+
+          Conclusion:
+        
+      
+      Eight GST fusion proteins containing overlapping preS1 fragments were prepared successfully. They were used for the study on the immunogenic dom-ains in preS1 (21-119) region. The preS1 (34-59) fragments were the major immunogenic domains in the preS1 region, and the antibodies against these fragments were speculated to be virus-neutralizing. Therefore, the incorporation of preS1 (34-59) fragments into epitope-based HBV vaccines may be efficient for enhancement of immune response. Additionally, the results also imply that there are more complex immune responses to preS1 region and more abundant immunogenic domains in humans.
