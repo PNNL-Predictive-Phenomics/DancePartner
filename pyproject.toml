@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DancePartner"
+version = "0.0.1"
+authors = [
+  { name="David Degnan", email="david.degnan@pnnl.gov" },
+  { name="Lisa Bramer", email="lisa.bramer@pnnl.gov" }
+]
+description = "Mining multi-omics relationship networks from literature and databases"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pandas",
+    "transformers",
+    "torch",
+    "numpy",
+    "scikit-learn",
+    "networkx",
+    "matplotlib",
+    "nltk",
+    "requests",
+    "bs4",
+    "pypdf",
+    "pywikipathways",
+    "urllib",
+    "metapub"
+]

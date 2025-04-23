@@ -21,6 +21,8 @@ To install this package, clone the repo and navigate to the directory it sits in
 ```
 >>> git clone https://github.com/pnnl-predictive-phenomics/DancePartner.git
 >>> cd {Directory it was installed to}
+>>> virtualenv --python="<path to python version 3.9>" DancePartner 
+>>> source <<path/to/activate>>
 >>> pip install DancePartner/
 ```
 
@@ -59,6 +61,10 @@ Download the `en_ner_bionlp13cg` model from [here](https://allenai.github.io/sci
 ## Additional Stop Words
 
 Add or modify the stop words list [here](./omes/stop_words_english.txt)
+
+## Note on the "omes" folder
+
+Several functions require support files found in the omes folder. It is required to run *DancePartner*.
 
 ## How to Extract Paper IDs
 
