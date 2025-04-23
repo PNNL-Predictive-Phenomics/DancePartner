@@ -56,6 +56,10 @@ Download the `en_ner_bionlp13cg` model from [here](https://allenai.github.io/sci
 
 % coverage
 
+## Additional Stop Words
+
+Add or modify the stop words list [here](./omes/stop_words_english.txt)
+
 ## How to Extract Paper IDs
 
 **PubMed:** PMIDs. Enter a query into the search bar of PubMed, click “Save”, select “All results”, and output the format as “PMID”. [Link to database](https://pubmed.ncbi.nlm.nih.gov/)
