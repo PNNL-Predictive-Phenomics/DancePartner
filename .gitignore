@@ -1,6 +1,9 @@
 # Do no track coverage file
 .coverage
 
+# MacOS specific files
+.DS_Store
+
 # Do not track api keys
 scopus_key.txt
 ncbi_key.txt

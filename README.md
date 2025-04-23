@@ -28,7 +28,7 @@ To install this package, clone the repo and navigate to the directory it sits in
 
 This package contains a `vignettes/` folder with various example vignettes that walk through using this package. We suggest starting there.
 
-* To learn how to run DancePartner from beginning to end, see [How to use DanceParter](./vignettes/how_to_use_DancePartner.ipynb)
+* To learn how to run DancePartner from beginning to end, see [How to use DancePartner](./vignettes/how_to_use_DancePartner.ipynb)
 
 * To learn how to pull papers from PubMed, Scopus, and OSTI, see [How to Pull Papers](./vignettes/how_to_pull_papers.ipynb)
 
@@ -38,7 +38,7 @@ This package contains a `vignettes/` folder with various example vignettes that 
 
 ## Pull the BERT Model
 
-Extract the BERT model from [here.](https://huggingface.co/david-degnan/BioBERT-RE/tree/main). Place in the top level directory of this repo in a folder called "biobert". Pull the `config.json`, the `pytorch_model.bin`, and the `training_args.bin` files.
+Extract the BERT model from [here](https://huggingface.co/david-degnan/BioBERT-RE/tree/main). Place in the top level directory of this repo in a folder called "biobert". Pull the `config.json`, the `pytorch_model.bin`, and the `training_args.bin` files.
 
 ## Scopus API Key
 
@@ -60,7 +60,7 @@ Download the `en_ner_bionlp13cg` model from [here](https://allenai.github.io/sci
 
 **PubMed:** PMIDs. Enter a query into the search bar of PubMed, click “Save”, select “All results”, and output the format as “PMID”. [Link to database](https://pubmed.ncbi.nlm.nih.gov/)
 
-**Scopus:** DOIs. Enter a query into the search bar, click “Export”, select the desired format, select all documents, and then export at least the DOI column.[Link to database](https://scopus.com)
+**Scopus:** DOIs. Enter a query into the search bar, click “Export”, select the desired format, select all documents, and then export at least the DOI column. [Link to database](https://scopus.com)
 
 **OSTI:** OSTI IDs. Enter a query and click “Save Results”, and the resulting file will contain the OSTI IDs. [Link to database](https://www.osti.gov/)
 
