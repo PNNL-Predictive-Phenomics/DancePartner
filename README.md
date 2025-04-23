@@ -1,12 +1,12 @@
 # Welcome to *DancePartner*! 
 
-<img style="float: left;" width="30%" src="./ref_images/DancePartner_Logo.png"/>
+<img style="float: left;" width="50%" src="./ref_images/DancePartner_Banner.png"/>
 
 *DancePartner* is a python package which creates multi-omics networks derived from literature and databases. In these networks, each node is a biomolecule and each edge indicates a relationship between biomolecules, which can be a metabolic relationship, a binding event, or any other interaction between two biomolecules. *DancePartner* takes literature and biological databases (KEGG, Wikipathways, etc.) as inputs and outputs biomolecule relationships (the "dance partners" of other biomolecules). These networks can be visualized and used as inputs into other biological tools and technologies. 
 
 This tool is designed with five steps with various options at each step. Users can select one or multiple options, and outputs can be combined. The steps are 1. Select Papers, 2. Identifiy Entities, 3. Extract Relationships, 4. Collapse Synonyms, and 5. Build Network. *DancePartner* has been designed to easily pull and use AI/ML models so that non-ML experts can easily pull and use these functions and methods. More details about each step are provided below. 
 
-<img src="./ref_images/DancePartner_schematic.png"/>
+
 
 ## Cite
 
