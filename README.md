@@ -6,7 +6,7 @@
 
 This tool is designed with five steps with various options at each step. Users can select one or multiple options, and outputs can be combined. The steps are 1. Select Papers, 2. Identifiy Entities, 3. Extract Relationships, 4. Collapse Synonyms, and 5. Build Network. *DancePartner* has been designed to easily pull and use AI/ML models so that non-ML experts can easily pull and use these functions and methods. More details about each step are provided below. 
 
-<img src="./ref_images/DancePartner_Schematic.png"/>
+<img src="./ref_images/DancePartner_schematic.png"/>
 
 ## Cite
 
