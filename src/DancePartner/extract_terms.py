@@ -8,13 +8,6 @@ def __get_all_files(directory):
     Walk through a direcotry and pull all txt files. Remove the summary file and gzipped files. 
     '''
 
-    try:
-        import spacy
-        import scispacy
-        import en_ner_bionlp13cg_md
-    except:
-        raise Exception("Please install spacy and scispacy, and pul the en_ner_bionlp13cg_md model.")
-
     # Make a list to hold all filepaths 
     file_paths = []
 
@@ -60,6 +53,14 @@ def extract_terms_scispacy(paper_directory,
 
     # Pull papers
     paper_list = __get_all_files(paper_directory)
+
+    try:
+        import spacy
+        import scispacy
+        import en_ner_bionlp13cg_md
+    except:
+        raise Exception("To use this function, install spacy and scispacy. You must also pull the en_ner_bionlp13cg_md model. See the README for more details.")
+
 
     # Load the model
     nlp_b13 = en_ner_bionlp13cg_md.load()

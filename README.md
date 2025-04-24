@@ -21,7 +21,7 @@ To install this package, clone the repo and navigate to the directory it sits in
 >>> git clone https://github.com/pnnl-predictive-phenomics/DancePartner.git
 >>> cd {Directory it was installed to}
 >>> virtualenv --python="<<path to python version 3.9>>" DancePartner 
->>> source <<path/to/activate>>
+>>> source <<path/to/activate/virtualenv>>
 >>> pip install DancePartner/
 ```
 
@@ -47,7 +47,16 @@ An API key is needed to pull papers from Scopus. Instructions to obtain one can 
 
 ## Optional ScispaCy Model
 
-Download the `en_ner_bionlp13cg` model from [here](https://allenai.github.io/scispacy/)
+Download the `en_ner_bionlp13cg_md` model from [here](https://allenai.github.io/scispacy/). SpispaCy can be difficult to set up, and has not been thoroughly tested on every common [operating system](https://github.com/allenai/scispacy). Here is a suggested installation set-up below. **Note that this model is *not required* to run *DancePartner***
+
+```
+>>> source <<path/to/activate/virtualenv>>
+>>> pip install spacy==3.7.5
+>>> CFLAGS="-mavx -DWARN(a)=(a)" pip install nmslib # You may need a specific install step here for nmslib, see the scispacy repo. This setup worked for us. 
+>>> pip install scispacy==0.5.5
+>>> cd <<wherever/en_ner_bionlp13cg_md downloaded>>
+>>> pip install .
+```
 
 ## Relationships 
 

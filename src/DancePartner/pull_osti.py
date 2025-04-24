@@ -77,23 +77,26 @@ def __pull_osti_abstracts(ids, output_directory, abstract_include_title=True):
     if os.path.exists(write_path) == False:
         os.mkdir(write_path)
     for id in ids:
-        paper_id = str(int(float(id)))
-        req = requests.get("https://www.osti.gov/api/v1/records/" + paper_id )
         try:
-            data = json.loads(req.content)[0]
-            abstract = BeautifulSoup(data['description'], features="lxml").find("p").get_text()
-            if abstract is None:
+            paper_id = str(int(float(id)))
+            req = requests.get("https://www.osti.gov/api/v1/records/" + paper_id)
+            try:
+                data = json.loads(req.content)[0]
+                abstract = BeautifulSoup(data['description'], features="lxml").find("p").get_text()
+                if abstract is None:
+                    continue
+                with open(os.path.join(write_path, paper_id + ".txt"), "w") as f:
+                    if abstract_include_title:
+                        f.write(BeautifulSoup(data['title'], features="lxml").get_text() + ". ")
+                    f.write(abstract)
+                found_ids.append(paper_id)
+            except AttributeError:
                 continue
-            with open(os.path.join(write_path, paper_id + ".txt"), "w") as f:
-                if abstract_include_title:
-                    f.write(BeautifulSoup(data['title']).get_text() + ". ")
-                f.write(abstract)
-            found_ids.append(paper_id)
-        except AttributeError:
-            continue
-        except IndexError:
-            continue
-        except KeyError:
+            except IndexError:
+                continue
+            except KeyError:
+                continue
+        except:
             continue
     return(found_ids)
 
