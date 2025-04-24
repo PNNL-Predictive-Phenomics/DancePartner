@@ -39,6 +39,8 @@ def list_synonyms(omes_folder, proteome_filename, min_length = 3):
         omes_folder (String): Path to the omes folder. Required. 
         proteome_filename (String): Name of the proteome file within the omes folder. Use the full file name. Required.
         min_length (Integer): Minimum number of characters in a term. Default is 3.  
+    Returns:
+        A list of synonyms to find in papers
     '''
 
     # Parse lipidome
@@ -75,6 +77,8 @@ def map_synonyms(term_list, omes_folder, proteome_filename, add_missing = False,
         proteome_filename (String): Name of the proteome file within the omes folder. Use the full file name. Required.
         add_missing (Optional, Logical): If True, add terms that weren't mapped to synonyms. Optional.
         output_directory (Optional, String): A path to a directory for where to write results to.
+    Returns:
+        A table with the synonym, its ID, and the type (gene product, lipid, metabolite)
     '''
 
     # Format terms

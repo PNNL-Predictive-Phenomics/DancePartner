@@ -23,7 +23,7 @@ def __pull_scopus_clean(ids, output_directory, scopus_api_key):
     for paper_id in ids:
         req = requests.get("https://api.elsevier.com/content/article/doi/" + str(paper_id) + "?apiKey=" + scopus_api_key)
         if req.status_code == 200:
-            soup = BeautifulSoup(req.content)
+            soup = BeautifulSoup(req.content, features="lxml")
             try:
                 # Remove non-paper text
                 for x in soup.find_all("ce:bibliography"):

@@ -11,6 +11,8 @@ def build_network_table(BERT_data, synonyms):
     Args:
         BERT_data (Pandas DataFrame): The output table from run_bert() as a pandas DataFrame.
         synonyms (Pandas DataFrame): The output table from map_synonyms() as a pandas DataFrame.
+    Returns:
+        A network table of synonms, IDs, types (gene product, metabolite, lipid), and the source (literature or database)
     '''
 
     ############################
@@ -59,6 +61,8 @@ def visualize_network(network_table,
         node_size (Integer): Size of the nodes. Default is 30. 
         edge_weight (Integer): Weight of the edges. Default is 4.
         with_labels (Logical): Whether labels should be included or not. Default is False. 
+    Returns:
+        A network object and the visualization of that object
     '''
 
     # Reset the index on the network table
@@ -144,6 +148,8 @@ def calculate_network_metrics(network, metric = "all"):
         network (networkx object): The output of visualize network
         metric (String): Either "number of components", "average component size", "degree centrality"
             "clustering coefficient", or "all". Default is "all". 
+    Returns:
+        Network summary metrics
     '''
 
     if metric == "number of components":

@@ -1,5 +1,6 @@
 UniProtID	Synonyms
 C0SP85	Protein YukE; YukE
+C0SP86	DNA translocase SftA; Septumassociated FtsKlike translocase of DNA; SftA
 C0SPC1	Cell cycle regulator CcrZ; 2.7.1.15; 2.7.1.229; Cell cycle regulator protein interacting with FtsZ; CcrZ
 O05394	Cystathionine gammalyase; ecNumbers  4.4.1.1; Gammacystathionase; Homocysteine gammalyase; ecNumbers  4.4.1.2; gammalyase
 O05512	Mannan endo1; 3.2.1.78; Betamannanase; Glucomannan utilization protein G; endo1
@@ -24,6 +25,7 @@ O31602	Global transcriptional regulator Spx; Redoxresponsive transcription facto
 O31611	GTP pyrophosphokinase YjbM; 2.7.6.5; pppGpp synthase YjbM; Small alarmone synthase 1; SAS 1; YjbM
 O31612	NAD kinase 1; 2.7.1.23; ATPdependent NAD kinase; PolyPdependent NAD kinase; shortNames  PPNK; 1
 O31616	Glycine oxidase; 1.4.3.19; oxidase
+O31618	Thiazole synthase; 2.8.1.10; synthase
 O31644	Transcriptional regulator ManR; Mannose operon transcriptional activator; includes    Putative phosphotransferase enzyme IIB component; ecNumbers  2.7.1.191; Putative PTS system EIIB component; Putative phosphotransferase enzyme IIA component; Putative PTS system EIIA component; ManR
 O31645	PTS system mannosespecific EIIBCA component; EIIBCAMan; shortNames  EIIMan; includes    Mannosespecific phosphotransferase enzyme IIB component; ecNumbers  2.7.1.191; PTS system mannosespecific EIIB component; Mannose permease IIC component; PTS system mannosespecific EIIC component; Mannosespecific phosphotransferase enzyme IIA component; PTS system mannosespecific EIIA component; component
 O31662	Methylthioribose1phosphate isomerase; M1Pi; MTR1P isomerase; 5.3.1.23; Smethyl5thioribose1phosphate isomerase; isomerase
@@ -44,7 +46,6 @@ O32142	5hydroxyisourate hydrolase; shortNames  HIU hydrolase; HIUHase; ecNumbers
 O32148	Sureidoglycineglyoxylate transaminase; UGXT; 2.6.1.112; Sureidoglycineglyoxylate aminotransferase; Purine catabolism protein PucG; transaminase
 O32163	Zincdependent sulfurtransferase SufU; ecNumbers  2...; Putative ironsulfur cluster assembly scaffold protein SufU; Sulfur acceptor protein SufU; SufU
 O32164	Cysteine desulfurase SufS; 2.8.1.7; SufS
-O32215	DNA helicase IV; ecNumbers  3.6.4.12; IV
 O32219	Cadmium; 7.2.2.12; 7.2.2.21; Cadmium
 O32220	Copperexporting Ptype ATPase; shortNames  Protein CopA; ecNumbers  7.2.2.8; Copperexporting Ptype ATPase A; Cuexporting ATPase; ATPase
 O32223	scylloinositol 2dehydrogenase NADP IolW; 1.1.1.371; NADPdependent scylloinositol dehydrogenase 1; NADPdependent SI dehydrogenase 1; IolW
@@ -65,10 +66,11 @@ O34513	tRNAMet cytidine acetate ligase; 6.3.4.; ligase
 O34521	PTS system Nacetylglucosaminespecific EIICB component; EIICBNag; includes    Nacetylglucosamine permease IIC component; PTS system Nacetylglucosaminespecific EIIC component; Nacetylglucosaminespecific phosphotransferase enzyme IIB component; 2.7.1.193; PTS system Nacetylglucosaminespecific EIIB component; component
 O34525	Putative signal peptide peptidase SppA; ecNumbers  3.4.21.; SppA
 O34527	HTHtype transcriptional regulator CymR; Cysteine metabolism repressor; CymR
+O34528	Replicationassociated recombination protein A; 3.6.4.; A
 O34530	Small ribosomal subunit biogenesis GTPase RsgA; 3.6.1.; Ribosomeassociated GTPase CpgA; RsgA
 O34539	NDPglycosyltransferase YjiC; 2.4.1.384; UDPglycosyltransferase YjiC; YjiC
 O34559	Unsaturated rhamnogalacturonyl hydrolase YteR; shortNames  URH; ecNumbers  3.2.1.172; YteR
-O34580	ATPdependent DNA helicase PcrA; 5.6.2.4; DNA 35 helicase PcrA; PcrA
+O34580	ATPdependent DNA helicase PcrA; 5.6.2.4; DNA 35 helicase PcrA; PcrA translocase; PcrA
 O34614	tRNA mnm5s2U34methyltransferase; 2.1.1.61; 5aminomethyl2thiouridine methyltransferase; MnmClike methyltransferase; bsMnmM; tRNA 5aminomethyl2thiouridylatemethyltransferase; mnm5s2U34methyltransferase
 O34676	Llysine 2; shortNames  LAM; ecNumbers  5.4.3.2; KAM; 2
 O34680	Type II methyltransferase M2.BsuMI; M2.BsuMI; ecNumbers  2.1.1.37; BsuMI modification methylase subunit YdiP; Cytosinespecific methyltransferase M2.BsuMI; M2.BsuMI
@@ -91,7 +93,7 @@ O34962	Bifunctional malicmalolactic enzyme; 1.1.1.40; 4.1.1.101; Malolactic enzy
 O35000	Glucosamine6phosphate deaminase 1; 3.5.99.6; GlcN6P deaminase 1; GNPDA 1; Glucosamine6phosphate isomerase 1; 1
 O35002	Carboxyterminal processing protease CtpB; shortNames  Cterminal processing protease; 3.4.21.102; CtpB
 O35013	Putative 8oxodGTP diphosphatase YtkD; shortNames  8oxodGTPase; ecNumbers  3.6.1.55; dGTP pyrophosphohydrolase; YtkD
-O54408	GTP pyrophosphokinase; ecNumbers  2.7.6.5; pppGpp synthase; ATPGTP 3pyrophosphotransferase; ppGpp synthase I; pyrophosphokinase
+O54408	GTP pyrophosphokinase; 2.7.6.5; pppGpp synthase; ATPGTP 3pyrophosphotransferase; ppGpp synthase I; pyrophosphokinase
 P00497	Amidophosphoribosyltransferase; ATase; 2.4.2.14; Glutamine phosphoribosylpyrophosphate amidotransferase; GPATase; Amidophosphoribosyltransferase
 P04189	Subtilisin E; 3.4.21.62; E
 P05043	Aspartylphosphate phosphatase Spo0E; ecNumbers  3.1.3.; Stage 0 sporulation protein E; Stage 0 sporulation regulatory protein Spo0E; Spo0E
@@ -176,15 +178,17 @@ P37469	Replicative DNA helicase DnaC; 5.6.2.3; DNA 53 helicase DnaC; DnaC
 P37475	Stage II sporulation protein E; ecNumbers  3.1.3.16; Stage II sporulation protein H; E
 P37476	ATPdependent zinc metalloprotease FtsH; 3.4.24.; Cell division protease FtsH; FtsH
 P37484	CyclicdiAMP phosphodiesterase GdpP; cdiAMP phosphodiesterase YybT; 3.1.4.59; CyclicdiAMP hydrolase GdpP; CyclicdiAMP phosphodiesterase YybT; GdpP
+P37522	Sporulation initiation inhibitor protein Soj; 3.6.4.; Suppressor of spo0J; Soj
 P37527	Pyridoxal 5phosphate synthase subunit PdxS; PLP synthase subunit PdxS; 4.3.3.6; Pdx1; Superoxideinducible protein 7; shortNames  SOI7; PdxS
 P37528	Pyridoxal 5phosphate synthase subunit PdxT; 4.3.3.6; Pdx2; Pyridoxal 5phosphate synthase glutaminase subunit; 3.5.1.2; PdxT
 P37529	Deoxyadenosinedeoxycytidine kinase; shortNames  dAKdCK; ecNumbers  2.7.1.74; 2.7.1.76; kinase
 P37530	Deoxyguanosine kinase; shortNames  DGUO kinase; dGK; ecNumbers  2.7.1.113; kinase
 P37534	AntisigmaG factor Gin; Protein CsfB; Gin
+P37542	Replication initiation control protein YabA; YabA
 P37547	Ribonuclease M5; 3.1.26.8; RNase M5; Ribosomal RNA terminal maturase M5; M5
 P37552	2iminobutanoate2iminopropanoate deaminase; 3.5.99.10; Enamineimine deaminase; deaminase
 P37557	RQC Psite tRNA stabilizing factor; RqcP; Hsp15; Ribosomeassociated protein quality control protein P; factor
-P37562	Probable serinethreonineprotein kinase YabT; ecNumbers  2.7.11.1; YabT
+P37562	Serinethreonineprotein kinase YabT; 2.7.11.1; YabT
 P37564	Type III pantothenate kinase; ecNumbers  2.7.1.33; PanKIII; Pantothenic acid kinase; kinase
 P37570	Proteinarginine kinase; 2.7.14.1; kinase
 P37573	DNA integrity scanning protein DisA; Cyclic diAMP synthase; cdiAMP synthase; DNA integrity scanning protein A; Diadenylate cyclase; shortNames  DAC; 2.7.7.85; DisA
@@ -275,6 +279,7 @@ P54616	Enoylacylcarrierprotein reductase NADH FabI; shortNames  ENR; ecNumbers  
 P54716	Maltose6phosphate glucosidase; ecNumbers  3.2.1.122; 6phosphoalphaDglucosidase; 6phosphorylOalphaDglucopyranosylphosphoglucohydrolase; glucosidase
 P54948	Penicillin V acylase; PVA; 3.5.1.11; BsuPVA; Penicillin V amidase; Penicillin amidohydrolase; acylase
 P54950	NacetylS2succinocysteine monooxygenase; 1.14.13.; S2succinocysteine metabolism operon protein K; monooxygenase
+P55180	UDPglucose 4epimerase; 5.1.3.2; UDPNacetylglucosamine 4epimerase; UDPGlcNAc 4epimerase; 5.1.3.7; 4epimerase
 P68577	SPbeta prophagederived bacteriocin sublancin168; sublancin168
 P70994	2hydroxymuconate tautomerase; ecNumbers  5.3.2.6; 4oxalocrotonate tautomerase; shortNames  4OT; tautomerase
 P70997	Penicillinbinding protein 2D; shortNames  PBP2D; PBP2d; includes    Penicillininsensitive transglycosylase; 2.4.99.28; Peptidoglycan TGase; Penicillinsensitive transpeptidase; 3.4.16.4; DDtranspeptidase; 2D
@@ -291,7 +296,7 @@ P94405	Phenolic acid decarboxylase; PAD; 4hydroxybenzoate decarboxylase; 4hydrox
 P94416	Competence and sporulation stimulating factor; CSF; Extracellular signaling peptide CSF; RapC inhibitor; factor
 P94424	FMN reductase NADPH; 1.5.1.39; NADPHdependent FMN reductase; NADPHdependent nitroflavin reductase; NADPHdependent nitroreductase; NADPHdependent oxidoreductase; NADPH
 P94443	Negative transcriptional regulator PadR; PadR
-P94461	Primosomal protein N; 3.6.4.; ATPdependent helicase PriA; N
+P94461	ATPdependent DNA helicase PriA; 5.6.2.4; DNA 35 helicase PriA; Replication restart primosome protein PriA; PriA
 P94522	Extracellular endoalpha1gt5Larabinanase 1; shortNames  ABN; ecNumbers  3.2.1.99; Endo1; 1
 P94526	Sugarphosphatase AraL; 3.1.3.23; Arabinose operon protein AraL; Phosphoserine phosphatase; 3.1.3.3; AraL
 P94527	Glycerol1phosphate dehydrogenase NADP; shortNames  G1P dehydrogenase; G1PDH; 1.1.1.261; Arabinose operon protein AraM; Enantiomeric glycerophosphate synthase; snglycerol1phosphate dehydrogenase; NADP
@@ -305,6 +310,7 @@ P96614	DEADbox ATPdependent RNA helicase CshA; 3.6.4.13; CshA
 P96622	Endoribonuclease EndoA; 3.1.27.; Toxin EndoA; mRNA interferase EndoA; mRNA interferase MazFbs; shortNames  MazFbs; EndoA
 P96645	Bifunctional muramidaseDLendopeptidase CwlT; 3.2.1.17; 3.4..; Bifunctional cell wall hydrolase CwlT; Cell wall lytic enzyme T; CwlT
 P96716	Tyrosineprotein kinase YwqD; ecNumbers  2.7.10.2; YwqD
+P96740	GammaDLglutamyl hydrolase; ecNumbers  3.4.19.; Polygammaglutamate depolymerase; shortNames  PGA depolymerase; hydrolase
 P97030	Epoxyqueuosine reductase; 1.17.99.6; Queuosine biosynthesis protein QueG; reductase
 Q00828	Response regulator aspartate phosphatase A; 3.1.3.; Glucose starvationinducible protein A; Proteinaspartate phosphatase RapA; Stage 0 sporulation protein L; A
 Q00829	Phosphatase RapA inhibitor; Phosphatase regulator A; inhibitor
@@ -331,7 +337,6 @@ Q7WY64	Membrane protein insertion and folding monitor; Sensor of SpoIIIJ activit
 Q9KWU4	Pyruvate carboxylase; 6.4.1.1; Pyruvic carboxylase; shortNames  PYC; carboxylase
 Q9KWZ1	Quinolinate synthase; 2.5.1.72; synthase
 C0H3X7	Phosphatidylglycerol lysyltransferase; ecNumbers  2.3.2.3; Lysylphosphatidylglycerol synthase; shortNames  LPG synthase; lysyltransferase
-C0SP86	DNA translocase SftA; Septumassociated FtsKlike translocase of DNA; SftA
 C0SP90	Putative cytochrome bd menaquinol oxidase subunit I; ecNumbers  1.10.3.; I
 C0SP93	Acetylcoenzyme A carboxylase carboxyl transferase subunit beta; ACCase subunit beta; AcetylCoA carboxylase carboxyltransferase subunit beta; 2.1.3.15; beta
 C0SPB6	Singlestranded DNAbinding protein B; SSB B; B
@@ -374,7 +379,6 @@ O31584	Adenine DNA glycosylase; 3.2.2.31; glycosylase
 O31606	ClpXP adapter protein SpxH; SpxH
 O31608	Bifunctional muramidaselytic transglycosylase CwlQ; 3.2.1.17; 4.2.2.n1; CwlQ
 O31614	Bis5nucleosyltetraphosphatase PrpE asymmetrical; ecNumbers  3.6.1.17; Ap4A hydrolase; Diadenosine 5; shortNames  Diadenosine tetraphosphatase; asymmetrical
-O31618	Thiazole synthase; 2.8.1.10; synthase
 O31620	Hydroxymethylpyrimidinephosphomethylpyrimidine kinase; 2.7.1.49; 2.7.4.7; Hydroxymethylpyrimidine kinase; shortNames  HMP kinase; Hydroxymethylpyrimidine phosphate kinase; shortNames  HMPP kinase; HMPphosphate kinase; HMPP kinase; kinase
 O31626	Putative ATPdependent DNA helicase YjcD; ecNumbers  5.6.2.4; DNA 35 helicase YjcD; YjcD
 O31631	Cystathionine gammasynthaseOacetylhomoserine thiollyase; shortNames  CGSOAH thiolyase; ecNumbers  2.5.1.; Oacetylhomoserine sulfhydrylase; shortNames  OAH sulfhydrylase; thiollyase
@@ -415,6 +419,7 @@ O32047	Protein translocase subunit SecDF; SecDF
 O32055	Holliday junction branch migration complex subunit RuvB; 3.6.4.; RuvB
 O32057	Putative serinethreonineprotein kinase YrzF; ecNumbers  2.7.11.1; YrzF
 O32080	Ktr system potassium uptake protein A; shortNames  Kuptake protein KtrA; A
+O32081	Ktr system potassium uptake protein B; shortNames  Kuptake protein KtrB; B
 O32083	Exoglucosaminidase LytG; ecNumbers  3.2.1.; Autolysin LytG; ExobetaNacetylglucosaminidase LytG; Peptidoglycan hydrolase LytG; LytG
 O32125	5nucleotidase YutF; 3.1.3.5; YutF
 O32137	Allantoinase; 3.5.2.5; Allantoinutilizing enzyme; Allantoinase
@@ -425,6 +430,7 @@ O32174	Glycine cleavage system H protein; Octanoyllipoyl carrier protein; protei
 O32181	HTHtype transcriptional repressor MdtR; Multidrug transporter regulator; MdtR
 O32213	Sulfite reductase NADPH hemoprotein betacomponent; shortNames  SiRHP; SiRHP; ecNumbers  1.8.1.2; betacomponent
 O32214	Sulfite reductase NADPH flavoprotein alphacomponent; shortNames  SiRFP; ecNumbers  1.8.1.2; alphacomponent
+O32215	DNA helicase IV; ecNumbers  3.6.4.12; IV
 O32217	Disulfide bond formation protein C; Disulfide oxidoreductase C; Thioldisulfide oxidoreductase C; C
 O32218	Disulfide bond formation protein D; Disulfide oxidoreductase D; Thioldisulfide oxidoreductase D; D
 O32222	Coppersensing transcriptional repressor CsoR; Coppersensitive operon repressor; CsoR
@@ -434,7 +440,6 @@ O32271	UDPglucose 6dehydrogenase TuaD; shortNames  UDPGlc dehydrogenase; UDPGlcD
 O34310	Pectate lyase C; ecNumbers  4.2.2.2; Pectin lyase; ecNumbers  4.2.2.10; C
 O34330	Toxin YobL; DNase YobL; YobL
 O34340	3oxoacylacylcarrierprotein synthase 2; 2.3.1.179; 3oxoacylacylcarrierprotein synthase II; BetaketoacylACP synthase II; shortNames  KAS II; 2
-O34349	Phosphatidylglycerophosphatase B; 3.1.3.27; B
 O34351	CycloLleucylLleucyl synthase; ecNumbers  2.3.2.22; Cyclodileucine synthase; Cyclodipeptide synthase; shortNames  CDPS; synthase
 O34358	Serine protease Dolike HtrA; ecNumbers  3.4.21.107; HtrAlike serine protease; HtrA
 O34385	Manganesebinding lipoprotein MntA; MntA
@@ -476,6 +481,7 @@ O34946	Highaffinity zinc uptake system ATPbinding protein ZnuC; ecNumbers  7.2.2
 O34966	Highaffinity zinc uptake system protein ZnuA; ZnuA
 O34974	NacetylSalkylcysteine sulfoxide monooxygenase; 1.14.14.; NacetylSalkylcysteine sulfoxide lyase; monooxygenase
 O34992	Glycine betainecarnitinecholine transport ATPbinding protein OpuCA; OpuCA
+O35010	GammaDglutamylLlysine dipeptidylpeptidase; 3.4.14.13; Cell wall endopeptidase YkfC; dipeptidylpeptidase
 O35011	DNAdirected RNA polymerase subunit omega; shortNames  RNAP omega subunit; 2.7.7.6; RNA polymerase omega 2 subunit; Transcriptase subunit omega; omega
 O35016	Low molecular weight proteintyrosinephosphatase YfkJ; shortNames  LMPTP; ecNumbers  3.1.3.48; YfkJ
 O35022	FMNdependent NADHquinone oxidoreductase 1; 1.6.5.; Azodye reductase 1; FMNdependent NADHazo compound oxidoreductase 1; FMNdependent NADHazoreductase 1; 1.7.1.17; 1
@@ -484,6 +490,7 @@ P00691	Alphaamylase; 3.2.1.1; Alphaamylase
 P02394	Large ribosomal subunit protein bL12; 50S ribosomal protein L7L12; BL9; Vegetative protein 341; shortNames  VEG341; bL12
 P04957	Betaglucanase; ecNumbers  3.2.1.73; Endobeta1; Lichenase; Betaglucanase
 P05645	3isopropylmalate dehydrogenase; ecNumbers  1.1.1.85; 3IPMDH; BetaIPM dehydrogenase; shortNames  IMDH; dehydrogenase
+P05649	Beta sliding clamp; shortNames  Beta clamp; Sliding clamp; Betaclamp processivity factor; DNA polymerase III beta sliding clamp subunit; DNA polymerase III subunit beta; clamp
 P05651	DNA replication and repair protein RecF; RecF
 P06222	RNA polymerase sigmaE factor; P31; Sigma29; Stage II sporulation protein GB; factor
 P06533	HTHtype transcriptional regulator SinR; SinR
@@ -493,13 +500,13 @@ P07373	Stage V sporulation protein E; E
 P07908	Replicative helicase loader DnaB; Replication initiation and membrane attachment protein; DnaB
 P08065	Succinate dehydrogenase flavoprotein subunit; 1.3.5.1; subunit
 P08066	Succinate dehydrogenase ironsulfur subunit; ecNumbers  1.3.5.1; subunit
+P08838	Phosphoenolpyruvateprotein phosphotransferase; 2.7.3.9; Phosphotransferase system; phosphotransferase
 P08874	Transition state regulatory protein AbrB; AbrB
 P09122	DNA polymerase III subunit tau; ecNumbers  2.7.7.7; tau
 P0CI73	Glutaminefructose6phosphate aminotransferase isomerizing; 2.6.1.16; Dfructose6phosphate amidotransferase; GFAT; Glucosamine6phosphate synthase; Hexosephosphate aminotransferase; LglutamineDfructose6phosphate amidotransferase; isomerizing
 P0CI75	Bifunctional ligaserepressor BirA; BiotinacetylCoAcarboxylase ligase; 6.3.4.15; Biotinprotein ligase; BiotinacetylCoA carboxylase synthetase; BirA
 P0CI78	Large ribosomal subunit protein uL24; 12 kDa DNAbinding protein; 50S ribosomal protein L24; BL23; HPB12; uL24
 P0CI79	Thymidylate synthase 1; TS 1; TSase 1; 2.1.1.45; Thymidylate synthase A; TS A; TSase A; 1
-P10475	Endoglucanase; ecNumbers  3.2.1.4; Carboxymethylcellulase; shortNames  CMCase; Cellulase; Endo1; Endoglucanase
 P10726	RNA polymerase sigmaD factor; Sigma28; factor
 P10727	Antisigma F factor antagonist; Stage II sporulation protein AA; antagonist
 P11044	Thymidylate synthase 2; TS 2; TSase 2; 2.1.1.45; Thymidylate synthase A; TS A; TSase A; 2
@@ -560,6 +567,7 @@ P25971	Orotidine 5phosphate decarboxylase; ecNumbers  4.1.1.23; OMP decarboxylas
 P25993	Carbamoyl phosphate synthase pyrimidinespecific small chain; 6.3.5.5; Carbamoyl phosphate synthetase glutamine chain 2; chain
 P25994	Carbamoyl phosphate synthase pyrimidinespecific large chain; 6.3.4.16; 6.3.5.5; Carbamoyl phosphate synthetase ammonia chain; chain
 P26379	PTS system fructosespecific EIIA component; EIIAFru; Fructosespecific phosphotransferase enzyme IIA component; levPTS; p16; component
+P26497	Stage 0 sporulation protein J; J
 P26900	Lasparaginase 1; shortNames  LASNase 1; ecNumbers  3.5.1.1; Lasparagine amidohydrolase 1; 1
 P26902	Daminopeptidase; ecNumbers  3.4.11.; Daminopeptidase
 P26936	Stage IV sporulation protein FA; FA
@@ -574,7 +582,7 @@ P30300	Glycerol uptake operon antiterminator regulatory protein; protein
 P31103	Nucleoside diphosphate kinase; NDK; NDP kinase; 2.7.4.6; Nucleoside2P kinase; kinase
 P31114	Heptaprenyl diphosphate synthase component 2; shortNames  HepPP synthase subunit 2; ecNumbers  2.5.1.30; Spore germination protein C3; 2
 P32081	Cold shock protein CspB; Major cold shock protein; CspB
-P33166	Elongation factor Tu; EFTu; P40; Tu
+P33166	Elongation factor Tu; EFTu; 3.6.5.3; P40; Tu
 P33690	Tryptophan prenyltransferase ComQ; 2.5.1.; Competence regulatory protein ComQ; ComQ
 P34956	Quinol oxidase subunit 1; ecNumbers  1.10.3.; Oxidase aa3600 subunit 1; Quinol oxidase aa3600; Quinol oxidase polypeptide I; 1
 P34957	Quinol oxidase subunit 2; ecNumbers  1.10.3.; Oxidase aa3600 subunit 2; Quinol oxidase aa3600; Quinol oxidase polypeptide II; 2
@@ -592,9 +600,7 @@ P37472	Hypoxanthineguanine phosphoribosyltransferase; shortNames  HGPRT; HGPRTas
 P37478	Transcriptional regulatory protein WalR; WalR
 P37487	Manganesedependent inorganic pyrophosphatase; ecNumbers  3.6.1.1; Pyrophosphate phosphohydrolase; shortNames  PPase; pyrophosphatase
 P37506	Streptothricin acetyltransferase A; 2.3..; A
-P37522	Sporulation initiation inhibitor protein Soj; ecNumbers  3.6..; Soj
 P37531	Cortical fragmentlytic enzyme; CFLE; 3.2.1.; Spore germination protein; Spore peptidoglycan Nacetylglucosaminidase; enzyme
-P37542	Initiationcontrol protein YabA; YabA
 P37551	Purine biosynthesis transcriptional repressor PurR; Pur operon repressor; Purine repressor; PurR
 P37554	Stage V sporulation protein T; T
 P37568	Transcriptional regulator CtsR; Class three stress gene repressor; CtsR
@@ -626,7 +632,6 @@ P39593	Hydroxyethylthiazole kinase; 2.7.1.50; 4methyl5betahydroxyethylthiazole k
 P39595	Iron permease EfeU; Fe3 ion permease EfeU; Ferric iron permease EfeU; Ferric iron uptake protein; EfeU
 P39596	Iron uptake system component EfeM; EfeM
 P39604	Peptidoglycan glycosyltransferase RodA; PGT; 2.4.99.28; Cell elongation protein RodA; Cell wall polymerase; Peptidoglycan polymerase; PG polymerase; Rod shapedetermining protein; RodA
-P39605	FMN reductase NADPH; 1.5.1.38; NADPHdependent FMN reductase; NADPHdependent nitroflavin reductase; NADPHdependent nitroreductase; NADPHdependent oxidoreductase; NADPH
 P39610	Pyridoxine kinase; ecNumbers  2.7.1.35; PNPLPM kinase; Pyridoxal kinase; Pyridoxamine kinase; Vitamin B6 kinase; kinase
 P39620	Spore coat protein GerQ; GerQ
 P39640	Dihydroanticapsin 7dehydrogenase; 1.1.1.385; Bacilysin biosynthesis oxidoreductase BacC; 7dehydrogenase
@@ -651,6 +656,8 @@ P40949	TasA anchoringassembly protein; Biofilm assembly accessory protein TapA; 
 P42068	Formimidoylglutamase; 3.5.3.8; Formiminoglutamase; Formiminoglutamate hydrolase; NformiminoLglutamate formiminohydrolase; Formimidoylglutamase
 P42084	Imidazolonepropionase; 3.5.2.7; Imidazolone5propionate hydrolase; Imidazolonepropionase
 P42085	Xanthine phosphoribosyltransferase; shortNames  XPRTase; ecNumbers  2.4.2.22; phosphoribosyltransferase
+P42089	Spore crust protein CgeA; CgeA
+P42095	DNA repair protein RecO; Recombination protein O; RecO
 P42106	Quercetin 2; shortNames  Quercetinase; ecNumbers  1.13.11.24; Flavonol 2; 2
 P42234	Catalase2; ecNumbers  1.11.1.6; Catalase2
 P42252	Secindependent protein translocase protein TatCd; TatCd
@@ -665,6 +672,7 @@ P42958	Probable tartrate dehydrogenasedecarboxylase; shortNames  TDH; 1.1.1.93; 
 P42962	5amino65phosphoDribitylaminouracil phosphatase YcsE; 3.1.3.104; YcsE
 P42974	NADH dehydrogenase; ecNumbers  7.1.1.2; Alkyl hydroperoxide reductase; dehydrogenase
 P42977	CCAadding enzyme; 2.7.7.72; CCA tRNA nucleotidyltransferase; tRNA CCApyrophosphorylase; tRNA adenylylcytidylyl transferase; tRNA nucleotidyltransferase; tRNANT; enzyme
+P45707	Sporulation inhibitor of replication protein SirA; SirA
 P45858	Citrate2methylcitrate synthase; 2.3.3.; 2.3.3.16; 2methylcitrate synthase; 2MCS; MCS; Citrate synthase; synthase
 P46321	Probable licABCH operon regulator; includes    Putative phosphotransferase enzyme IIB component; ecNumbers  2.7.1.; Putative PTS system EIIB component; Putative phosphotransferase enzyme IIA component; Putative PTS system EIIA component; regulator
 P46336	Aldoketo reductase IolS; 1.1.1.; AKR11A; Vegetative protein 147; VEG147; IolS
@@ -680,7 +688,6 @@ P50736	Bacilliredoxin reductase Bdr; 1.8.1.; Bacillithioldisulfide reductase; BS
 P50738	Protease PrsW; ecNumbers  3.4..; Protease responsible for activating sigmaW; Site1 protease PrsW; shortNames  S1P protease PrsW; PrsW
 P50740	Isopentenyldiphosphate deltaisomerase; IPP isomerase; 5.3.3.2; Isopentenyl diphosphatedimethylallyl diphosphate isomerase; Isopentenyl pyrophosphate isomerase; Type 2 isopentenyl diphosphate isomerase; IDI2; deltaisomerase
 P50743	GTPase Der; GTPbinding protein EngA; Der
-P50831	Probable ATPdependent helicase YpvA; 5.6.2.3; YpvA
 P50848	Carboxypeptidase 1; 3.4.17.19; BsuCP; 1
 P50863	Ironsulfur cluster carrier protein; protein
 P50866	ATPdependent Clp protease ATPbinding subunit ClpX; ClpX
@@ -695,14 +702,15 @@ P54495	Glucokinase; 2.7.1.2; Glucose kinase; Glucokinase
 P54504	RsbT coantagonist protein RsbRD; Stressosome protein RsbRD; RsbRD
 P54533	Dihydrolipoyl dehydrogenase; ecNumbers  1.8.1.4; Dihydrolipoamide dehydrogenase; E3 component of branchedchain alphaketo acid dehydrogenase complex; LPDVal; dehydrogenase
 P54544	Membrane protein insertase MisCB; Foldase YidC 1; Membrane integrase YidC 1; Membrane protein YidC 1; MisCB
+P54545	DNA polymerase IV 1; shortNames  Pol IV 1; ecNumbers  2.7.7.7; Errorprone translesion DNA polymerase PolY1; 1
 P54548	Ribonuclease Z; RNase Z; 3.1.26.11; tRNA 3 endonuclease; tRNase Z; Z
+P54560	DNA polymerase IV 2; shortNames  Pol IV 2; ecNumbers  2.7.7.7; Errorprone translesion DNA polymerase PolY2; 2
 P54572	NADdependent malic enzyme 1; shortNames  NADME 1; 1.1.1.38; Malate dehydrogenase MleA; 1
 P54574	Ferric uptake regulation protein; shortNames  Ferric uptake regulator; protein
 P54576	Methylaccepting chemotaxis protein McpC; McpC
 P54603	Sortase D; 3.4.22.; D
 P54715	PTS system maltosespecific EIICB component; Maltose permease IIC component; PTS system maltosespecific EIIC component; Maltosespecific phosphotransferase enzyme IIB component; 2.7.1.208; PTS system maltosespecific EIIB component; component
 P54955	Nacetylcysteine deacetylase; 3.5.1.; S2succinocysteine metabolism operon protein P; deacetylase
-P55180	UDPglucose 4epimerase; 5.1.3.2; UDPNacetylglucosamine 4epimerase; UDPGlcNAc 4epimerase; 5.1.3.7; 4epimerase
 P60495	5oxoprolinase subunit B; 5OPase subunit B; 3.5.2.9; 5oxoprolinase ATPhydrolyzing subunit B; Antikinase KipI; Kinase A inhibitor; Sporulation inhibitor KipI; B
 P68579	SPbeta prophagederived sublancin168processing and transport ATPbinding protein SunT; ecNumbers  3.4.22.; 7...; SunT
 P70962	Response regulator aspartate phosphatase B; 3.1.3.; Proteinaspartate phosphatase RapB; Stage 0 sporulation protein P; B
@@ -712,6 +720,7 @@ P71011	Antilisterial bacteriocin subtilosin biosynthesis protein AlbA; 1.21.98.;
 P71014	Biofilmsurface layer protein A; ORF1; A
 P71017	Choline dehydrogenase; 1.1.1.; Alcohol dehydrogenase; dehydrogenase
 P71018	Phosphate acyltransferase; 2.3.1.274; AcylACP phosphotransacylase; Acylacylcarrierproteinphosphate acyltransferase; PhosphateacylACP acyltransferase; acyltransferase
+P71039	HTHtype transcriptional activator mta; Multidrug transporter activation protein; mta
 P71040	Major cardiolipin synthase ClsA; CL synthase 2; 2.7.8.; ClsA
 P71063	UDPNacetylbacillosamine Nacetyltransferase; 2.3.1.203; Nacetyltransferase
 P80698	Trigger factor; shortNames  TF; ecNumbers  5.2.1.8; PPIase; Vegetative protein 2; shortNames  VEG2; factor
@@ -733,8 +742,9 @@ P94415	Regulatory protein RapC; Rap protein C; RapC
 P94417	Aspartokinase 3; ecNumbers  2.7.2.4; Aspartate kinase 3; Aspartokinase III; 3
 P94421	Petrobactinbinding protein YclQ; YclQ
 P94428	Succinatesemialdehyde dehydrogenase NADP; shortNames  SSDH; ecNumbers  1.2.1.79; NADP
+P94431	Copperbinding protein CutI; CutI
 P94438	Sensor histidine kinase LnrJ; 2.7.13.3; LnrJ
-P94492	Endonuclease YncB; ecNumbers  3.1..; YncB
+P94492	Endonuclease YncB; 3.1..; YncB
 P94498	Adenosine 5phosphosulfate reductase 1; APS reductase 1; 1.8.4.10; 5adenylylsulfate reductase 1; Thioredoxindependent 5adenylylsulfate reductase 1; 1
 P94512	Phosphoserine phosphatase; shortNames  PSP; 3.1.3.3; phosphatase
 P94541	Ribonuclease HIII; shortNames  RNase HIII; ecNumbers  3.1.26.4; HIII
@@ -745,10 +755,10 @@ P96574	Transcriptional regulator MtlR; Mannitol operon transcriptional activator
 P96590	Putative 8oxodGTP diphosphatase; shortNames  8oxodGTPase; ecNumbers  3.6.1.55; Mutator protein MutT; dGTP pyrophosphohydrolase; diphosphatase
 P96618	Holoacylcarrierprotein synthase; HoloACP synthase; 2.7.8.7; 4phosphopantetheinyl transferase AcpS; synthase
 P96621	Antitoxin EndoAI; Antitoxin MazEbs; shortNames  MazEbs; EndoA inhibitor; EndoAI
+P96710	Arabinoseproton symporter; Arabinose transporter; symporter
 P96717	Tyrosineprotein phosphatase YwqE; ecNumbers  3.1.3.48; YwqE
 P96718	UDPglucose 6dehydrogenase YwqF; shortNames  UDPGlc dehydrogenase; UDPGlcDH; UDPGDH; ecNumbers  1.1.1.22; YwqF
 P96736	PGA synthase CapB; ecNumbers  6.3.2.; Gammapolyglutamic acid synthase; CapB
-P96740	GammaDLglutamyl hydrolase; ecNumbers  3.4.19.; Polygammaglutamate depolymerase; shortNames  PGA depolymerase; hydrolase
 Q01465	Cell shapedetermining protein MreB; Actinlike MreB protein; Rod shapedetermining protein MreB; MreB
 Q01625	Membrane protein insertase MisCA; Foldase YidC 2; Membrane integrase YidC 2; Membrane protein YidC 2; Stage III sporulation protein J; shortNames  SpoIIIJ; MisCA
 Q02113	Amidase enhancer; Cell wallassociated polypeptide CWBP76; shortNames  CWBP76; Modifier protein of major autolysin; enhancer
@@ -777,6 +787,7 @@ Q45064	Glycerol3phosphate acyltransferase; AcylPO4 G3P acyltransferase; Acylphos
 Q45066	DNA topoisomerase 4 subunit A; 5.6.2.2; Topoisomerase IV subunit A; A
 Q45070	Glucuronoxylanase XynC; ecNumbers  3.2.1.136; Endoxylanase XynC; Glucuronoxylan xylanohydrolase; XynC
 Q45460	Choline transport ATPbinding protein OpuBA; OpuBA
+Q45462	Cholinebinding protein; protein
 Q45499	Inositol1monophosphatase; shortNames  I1Pase; IMPase; Inositol1phosphatase; 3.1.3.25; 3.1.3.5; Inositol1monophosphatase
 Q45582	Nacetylmuramic acid 6phosphate etherase; MurNAc6P etherase; 4.2.1.126; Nacetylmuramic acid 6phosphate hydrolase; Nacetylmuramic acid 6phosphate lyase; etherase
 Q45585	ECF RNA polymerase sigma factor SigW; shortNames  ECF sigma factor SigW; Alternative RNA polymerase sigma factor SigW; RNA polymerase sigmaW factor; shortNames  SigmaW factor; SigW
@@ -792,6 +803,7 @@ Q796V8	Oxygenindependent coproporphyrinogenIII oxidaselike protein HemZ; ecNumbe
 Q7WY62	Sporulation inhibitor sda; Histidine kinase KinA inhibitor; sda
 Q7WY77	5oxoprolinase subunit C; 5OPase subunit C; 3.5.2.9; 5oxoprolinase ATPhydrolyzing subunit C; KipI antagonist; Protein KipA; C
 Q7WY78	Polyisoprenylteichoic acidpeptidoglycan teichoic acid transferase TagT; 2.7.8.; TagT
+Q99027	Sensor histidine kinase ComP; ecNumbers  2.7.13.3; ComP
 Q9K2S2	NaH antiporter subunit A; Mrp complex subunit A; Multiple resistance and pH homeostasis protein A; A
 Q9R9I1	Serine protease Dolike HtrB; ecNumbers  3.4.21.107; HtrAlike serine protease; HtrB
 A0A2K4Z9G8	Cortex morphogenetic protein A; A
@@ -802,10 +814,11 @@ C0H3X4	Immunity protein YezG; YezG
 C0H3Y2	Small spore coat assembly protein A; A
 C0H419	Biotinlipoyl attachment protein; shortNames  BLAP; protein
 C0SP78	Manganese efflux system protein MneP; MneP
+C0SP79	Probable sporulation protein YtaF; YtaF
 C0SP89	Putative methylaccepting chemotaxis protein YoaH; YoaH
 C0SP91	Exodeoxyribonuclease YycJ; 3.1.11.; YycJ
 C0SP94	Putative ABC transporter substratebinding lipoprotein YhfQ; YhfQ
-C0SP95	Copper transport protein YcnJ; YcnJ
+C0SP95	Copper transport protein CutJ; CutJ
 C0SP99	Putative L; ecNumbers  2...; L
 C0SPA0	Pullulanase; ecNumbers  3.2.1.41; Alphadextrin endo1; Pullulan 6glucanohydrolase; Pullulanase
 C0SPA5	Probable formaldehyde dehydrogenase AdhA; ecNumbers  1.1.1.; AdhA
@@ -859,6 +872,7 @@ O06714	Nuclease SbcCD subunit C; C
 O06735	Probable adenylylsulfate kinase; ecNumbers  2.7.1.25; APS kinase; ATP adenosine5phosphosulfate 3phosphotransferase; Adenosine5phosphosulfate kinase; kinase
 O06741	Putative isomerase YitF; ecNumbers  5...; YitF
 O06965	Putative lipoprotein YvcA; YvcA
+O06973	Nucleotidebinding protein YvcJ; YvcJ
 O06974	Gluconeogenesis factor; factor
 O06975	Probable cell division protein WhiA; WhiA
 O06976	HPrlike protein Crh; Catabolite repression HPr; Crh
@@ -879,7 +893,8 @@ O07084	Cadmium; Cadmium
 O07085	Uncharacterized oxidoreductase CzcO; ecNumbers  1...; CzcO
 O07509	Glutamate 5kinase 2; 2.7.2.11; Gammaglutamyl kinase 2; GK 2; 2
 O07515	Probable tryptophan transport protein; protein
-O07521	35 exoribonuclease YhaM; ecNumbers  3.1..; YhaM
+O07521	35 exoribonuclease YhaM; 3.1..; YhaM
+O07527	Sensor histidine kinase YhcY; ecNumbers  2.7.13.3; YhcY
 O07535	KH antiporter subunit KhtT; KhtT
 O07545	Endospore coatassociated protein YheD; YheD
 O07553	NaH antiporter NhaC; Sodiumhydrogen antiporter; Sodiumproton antiporter; NhaC
@@ -939,6 +954,7 @@ O31607	Group 2 truncated hemoglobin YjbI; shortNames  Truncated Hb; trHbO; Hemog
 O31615	Putative NaH antiporter YjbQ; YjbQ
 O31617	Sulfur carrier protein ThiS; Thiamine biosynthesis protein ThiS; ThiS
 O31619	Sulfur carrier protein ThiS adenylyltransferase; ecNumbers  2.7.7.73; adenylyltransferase
+O31625	Sporulationspecific transcription factor SpoVIF; Stage VI sporulation protein F; SpoVIF
 O31646	Mannose6phosphate isomerase ManA; ecNumbers  5.3.1.8; Phosphohexomutase; Phosphomannose isomerase; shortNames  PMI; ManA
 O31658	Ktr system potassium uptake protein D; shortNames  Kuptake protein KtrD; D
 O31661	Sporulation kinase E; ecNumbers  2.7.13.3; Sensor histidine kinase E; E
@@ -992,7 +1008,6 @@ O32054	SadenosylmethioninetRNA ribosyltransferaseisomerase; 2.4.99.17; Queuosine
 O32062	SpoIVDassociated factor A; Morphogenetic protein SafA; A
 O32074	Thiamine transporter ThiT; Thiamine ECF transporter S component ThiT; ThiT
 O32077	Membrane protein NfeD2; NfeD2
-O32081	Ktr system potassium uptake protein B; shortNames  Kuptake protein KtrB; B
 O32085	Cysteine dioxygenase; shortNames  CDO; ecNumbers  1.13.11.20; dioxygenase
 O32090	Nicotinate phosphoribosyltransferase; shortNames  NAPRTase; 6.3.4.21; phosphoribosyltransferase
 O32101	ESX secretion system protein YueB; Bacteriophage SPP1 adsorption protein YueB; Bacteriophage SPP1 receptor protein YueB; YueB
@@ -1046,6 +1061,7 @@ O34338	Manganese transport system ATPbinding protein MntB; MntB
 O34346	Mannonate dehydratase; ecNumbers  4.2.1.8; Dmannonate hydrolyase; dehydratase
 O34347	Argininosuccinate synthase; 6.3.4.5; Citrullineaspartate ligase; synthase
 O34348	Fe3citratebinding protein YfmC; Ferriccitratebinding protein; YfmC
+O34349	Phosphatidylglycerophosphatase B; 3.1.3.27; B
 O34350	Salkylcysteine Nacetyltransferase; 2.3.1.80; Nacetyltransferase
 O34354	Altronate oxidoreductase; 1.1.1.58; Tagaturonate dehydrogenase; Tagaturonate reductase; oxidoreductase
 O34360	Peptidoglycan LalanylDglutamate endopeptidase CwlK; ecNumbers  3.4..; CwlK
@@ -1067,6 +1083,7 @@ O34526	AlaninetRNA ligase; 6.1.1.7; AlanyltRNA synthetase; AlaRS; ligase
 O34534	Transcriptional regulatory protein CitT; CitT
 O34543	Putative ringcleaving dioxygenase MhqE; ecNumbers  1.13.11.; MhqE
 O34544	Biotin carboxylase 2; 6.3.4.14; Acetylcoenzyme A carboxylase biotin carboxylase subunit A 2; 2
+O34549	Sporulationspecific transcriptional regulator GerR; GerR
 O34557	Ribulosephosphate 3epimerase; 5.1.3.1; 3epimerase
 O34564	Putative peroxiredoxin YkuU; ecNumbers  1.11.1.; YkuU
 O34565	Imidazole glycerol phosphate synthase subunit HisH; ecNumbers  4.3.2.10; IGP synthase glutaminase subunit; ecNumbers  3.5.1.2; IGP synthase subunit HisH; ImGP synthase subunit HisH; shortNames  IGPS subunit HisH; HisH
@@ -1147,6 +1164,7 @@ O34930	Regulatory protein RapK; RapK
 O34931	Lcystine transport system permease protein TcyM; TcyM
 O34932	DephosphoCoA kinase; 2.7.1.24; Dephosphocoenzyme A kinase; kinase
 O34934	NAD kinase 2; 2.7.1.23; ATPdependent NAD kinase 2; 2
+O34944	Putative dipeptidase YtjP; ecNumbers  3.4.13.; YtjP
 O34948	Uncharacterized oxidoreductase YkwC; ecNumbers  1.1..; YkwC
 O34951	Sensory transduction protein BceR; BceR
 O34967	Large ribosomal subunit protein bL31B; 50S ribosomal protein L31 type B; bL31B
@@ -1159,7 +1177,6 @@ O34990	Formyltetrahydrofolate deformylase; 3.5.1.10; FormylFH4 hydrolase; deform
 O34994	Transcriptional repressor CcpN; Catabolite control protein N; Control catabolite protein of gluconeogenesis; CcpN
 O34996	DNA polymerase I; shortNames  POL I; ecNumbers  2.7.7.7; I
 O35005	ABC transporter permease YtrF; YtrF
-O35010	GammaDglutamylLlysine dipeptidylpeptidase; 3.4.14.13; Cell wall endopeptidase YkfC; dipeptidylpeptidase
 O35020	tRNAspecific 2thiouridylase MnmA; 2.8.1.13; MnmA
 O35025	Type II restriction enzyme BsuMI component YdiR; shortNames  R.BsuM; R.BsuMI; 3.1.21.4; Endonuclease BsuMI component YdiR; Type2 restriction enzyme BsuMI component YdiR; YdiR
 O35031	Acylphosphatase; ecNumbers  3.6.1.7; Acylphosphate phosphohydrolase; Acylphosphatase
@@ -1172,7 +1189,6 @@ P04833	Small; shortNames  SASP; Small
 P04990	Threonine synthase; shortNames  TS; ecNumbers  4.2.3.1; synthase
 P05096	DNA primase; 2.7.7.101; primase
 P05306	PTS system sucrosespecific EIIBC component; EIIBCScr; shortNames  EIIScr; includes    Sucrosespecific phosphotransferase enzyme IIB component; 2.7.1.211; PTS system sucrosespecific EIIB component; Sucrose permease IIC component; PTS system sucrosespecific EIIC component; component
-P05649	Beta sliding clamp; shortNames  Beta clamp; Sliding clamp; Betaclamp processivity factor; DNA polymerase III beta sliding clamp subunit; DNA polymerase III subunit beta; clamp
 P05650	Probable ribosome maturation protein RlbA; RlbA
 P05652	DNA gyrase subunit B; 5.6.2.2; B
 P05653	DNA gyrase subunit A; 5.6.2.2; A
@@ -1186,11 +1202,11 @@ P07601	Tryptophan synthase alpha chain; 4.2.1.20; chain
 P07784	Small; shortNames  SASP; Small
 P07819	Sucrose6phosphate hydrolase; shortNames  Sucrase; ecNumbers  3.2.1.26; Invertase; hydrolase
 P08064	Succinate dehydrogenase cytochrome b558 subunit; shortNames  Cytochrome b558; subunit
-P08838	Phosphoenolpyruvateprotein phosphotransferase; 2.7.3.9; Phosphotransferase system; phosphotransferase
 P0C8M5	Transcriptional regulator SlrA; SlrA
 P0CI74	Cell cycle protein GpsB; Guiding PBP1shuttling protein; GpsB
 P0CI77	Pyrroline5carboxylate reductase 1; P5C reductase 1; P5CR 1; 1.5.1.2; PCA reductase 1; 1
 P0CI80	Xylose isomerase; ecNumbers  5.3.1.5; isomerase
+P10475	Endoglucanase; ecNumbers  3.2.1.4; Carboxymethylcellulase; shortNames  CMCase; Cellulase; Endo1; Endoglucanase
 P10725	Alanine racemase 1; 5.1.1.1; 1
 P10944	Histidine ammonialyase; shortNames  Histidase; ecNumbers  4.3.1.3; ammonialyase
 P11018	Major intracellular serine protease; ecNumbers  3.4.21.; ISP1; protease
@@ -1289,9 +1305,7 @@ P25958	Competence protein ComGF; ComG operon protein 6; Minor pilin ComGF; ComGF
 P25972	Orotate phosphoribosyltransferase; OPRT; OPRTase; 2.4.2.10; phosphoribosyltransferase
 P25995	Dihydroorotase; DHOase; 3.5.2.3; Dihydroorotase
 P26212	SacPA operon antiterminator; antiterminator
-P26497	Stage 0 sporulation protein J; J
 P26899	Aspartate ammonialyase; Aspartase; 4.3.1.1; ammonialyase
-P26903	Dipeptide transport system permease protein DppB; DppB
 P26904	Dipeptide transport system permease protein DppC; DppC
 P26905	Dipeptide transport ATPbinding protein DppD; 7.4.2.9; DppD
 P26906	Dipeptidebinding protein DppE; DppE
@@ -1392,6 +1406,7 @@ P38422	DalanylDalanine carboxypeptidase DacF; shortNames  DDcarboxypeptidase; DD
 P38490	Sporulation protein YpeB; PSPA12; YpeB
 P38493	Cytidylate kinase; shortNames  CK; ecNumbers  2.7.4.25; Cytidine monophosphate kinase; shortNames  CMP kinase; kinase
 P38494	Small ribosomal subunit protein bS1 homolog; 30S ribosomal protein S1 homolog; homolog
+P39064	Uncharacterized protein YtxE; YtxE
 P39071	ecNumbers  1.3.1.28; Cold shock protein CSI14; 1.3.1.28
 P39074	Putative lipid kinase BmrU; ecNumbers  2.7.1.; BmrU
 P39075	Multidrugefflux transporter 1 regulator; regulator
@@ -1416,6 +1431,7 @@ P39579	Dalanyl carrier protein; DCP; Dalaninepolyphosphoribitol ligase subunit 2
 P39581	DalanineDalanyl carrier protein ligase; DCL; 6.2.1.54; Dalaninepolyphosphoribitol ligase subunit 1; Dalanineactivating enzyme; DAE; ligase
 P39582	DHNAoctaprenyltransferase; 2.5.1.74; DHNAoctaprenyltransferase
 P39603	Spore morphogenesis and germination protein YwcE; YwcE
+P39605	FMN reductase NADPH; 1.5.1.38; NADPHdependent FMN reductase; NADPHdependent nitroflavin reductase; NADPHdependent nitroreductase; NADPHdependent oxidoreductase; NADPH
 P39615	UracilDNA glycosylase; shortNames  UDG; ecNumbers  3.2.2.27; glycosylase
 P39621	Spore coat polysaccharide biosynthesis protein SpsA; SpsA
 P39629	Glucose1phosphate thymidylyltransferase; 2.7.7.24; Spore coat polysaccharide biosynthesis protein SpsI; dTDPglucose pyrophosphorylase; dTDPglucose synthase; thymidylyltransferase
@@ -1480,7 +1496,6 @@ P42060	Large ribosomal subunit protein uL22; 50S ribosomal protein L22; uL22
 P42061	Oligopeptidebinding protein AppA; AppA
 P42064	Oligopeptide transport ATPbinding protein AppD; AppD
 P42065	Oligopeptide transport ATPbinding protein AppF; AppF
-P42095	DNA repair protein RecO; Recombination protein O; RecO
 P42111	Uncharacterized protein YxaL; YxaL
 P42113	Asparagine synthetase glutaminehydrolyzing 2; ecNumbers  6.3.5.4; 2
 P42175	Nitrate reductase alpha chain; ecNumbers  1.7.5.1; chain
@@ -1533,8 +1548,10 @@ P45865	Minor cardiolipin synthase ClsB; ClsB
 P45867	AcylCoA dehydrogenase; ecNumbers  1.3.99.; dehydrogenase
 P45870	Chromosomeanchoring protein RacA; RacA
 P45873	Release factor glutamine methyltransferase; RF MTase; 2.1.1.297; N5glutamine methyltransferase PrmC; ProteinglutamineN5 MTase PrmC; Proteinglutamine Nmethyltransferase PrmC; methyltransferase
+P45905	Small protein YqaH; YqaH
 P45942	Toxin YqcG; DNase YqcG; YqcG
 P45943	Response regulator aspartate phosphatase E; 3.1.3.; E
+P45945	Probable trivalent organoarsenical cleaving enzyme; 1.13.11.; CAs lyase; Methylarsonous acid demethylase; MAsIII demethylase; enzyme
 P45946	Arsenite resistance protein ArsB; ArsB
 P46208	Chaperone protein HtpG; Heat shock protein HtpG; High temperature protein G; HtpG
 P46317	Lichenan permease IIC component; EIICLic; PTS system lichenanspecific EIIC component; component
@@ -1573,6 +1590,7 @@ P49938	Iron3hydroxamate import ATPbinding protein FhuC; ecNumbers  7.2.2.16; Fer
 P50621	Ribonucleosidediphosphate reductase subunit beta; ecNumbers  1.17.4.1; Ribonucleotide reductase small subunit; beta
 P50727	Ferredoxin; Ferredoxin
 P50739	Spore cortexlytic enzyme; shortNames  SCLE; enzyme
+P50831	Probable ATPdependent helicase YpvA; 5.6.2.3; YpvA
 P50842	2dehydro3deoxyDgluconate 5dehydrogenase; ecNumbers  1.1.1.127; 2keto3deoxygluconate 5dehydrogenase; 2keto3deoxygluconate oxidoreductase; shortNames  KDG oxidoreductase; 5dehydrogenase
 P50843	4deoxyLthreo5hexosuloseuronate ketolisomerase; ecNumbers  5.3.1.17; 5keto4deoxyuronate isomerase; DKI isomerase; ketolisomerase
 P50844	HTHtype transcriptional regulator KdgR; Kdg operon repressor; KdgR
@@ -1592,6 +1610,7 @@ P53558	ATPdependent dethiobiotin synthetase BioD; 6.3.3.3; DTB synthetase; DTBS;
 P53559	6carboxyhexanoateCoA ligase; ecNumbers  6.2.1.14; PimeloylCoA synthase; ligase
 P53561	Polygalacturonanrhamnogalacturonan transport system permease protein YtcP; YtcP
 P54154	Peptide methionine sulfoxide reductase MsrA; shortNames  ProteinmethionineSoxide reductase; ecNumbers  1.8.4.11; Peptidemethionine SSoxide reductase; shortNames  Peptide MetO reductase; MsrA
+P54156	Putative sigma Ldependent transcriptional regulator YplP; YplP
 P54162	14.7 kDa ribonuclease Hlike protein; protein
 P54167	Homoserine Oacetyltransferase; HAT; 2.3.1.31; Homoserine transacetylase; HTA; Oacetyltransferase
 P54304	Heme chaperone HemW; HemW
@@ -1632,11 +1651,9 @@ P54535	Argininebinding extracellular protein ArtP; ArtP
 P54536	Arginine transport system permease protein ArtQ; ArtQ
 P54537	Arginine transport ATPbinding protein ArtM; ArtM
 P54541	Putative propionylCoA carboxylase beta chain; shortNames  PCCase; ecNumbers  6.4.1.3; PropanoylCoAcarbon dioxide ligase; chain
-P54545	DNA polymerase IV 1; shortNames  Pol IV 1; ecNumbers  2.7.7.7; 1
 P54547	Glucose6phosphate 1dehydrogenase; G6PD; 1.1.1.49; Vegetative protein 11; shortNames  VEG11; 1dehydrogenase
 P54552	Pyrroline5carboxylate reductase 2; P5C reductase 2; P5CR 2; 1.5.1.2; PCA reductase 2; 2
 P54556	Pantothenate kinase; ecNumbers  2.7.1.33; Pantothenic acid kinase; kinase
-P54560	DNA polymerase IV 2; shortNames  Pol IV 2; ecNumbers  2.7.7.7; 2
 P54570	ADPribose pyrophosphatase; ecNumbers  3.6.1.13; ADPribose diphosphatase; ADPribose phosphohydrolase; shortNames  ASPPase; Adenosine diphosphoribose pyrophosphatase; shortNames  ADPRPPase; pyrophosphatase
 P54575	Bifunctional riboflavin kinaseFMN adenylyltransferase; Riboflavin biosynthesis protein RibF; Riboflavin kinase; 2.7.1.26; Flavokinase; FMN adenylyltransferase; 2.7.7.2; FAD pyrophosphorylase; FAD synthase; adenylyltransferase
 P54596	Lcystine uptake protein TcyP; Symporter YhcL; Transporter of cystine TcyP; TcyP
@@ -1678,7 +1695,6 @@ P71012	PTS system fructosespecific EIIABC component; EIIABCFru; PTS system fruct
 P71013	Signal peptidase I T; shortNames  SPase I; ecNumbers  3.4.21.89; Leader peptidase I; T
 P71015	HTHtype transcriptional repressor GbsR; Glycine betaine synthesis regulator; GbsR
 P71031	Small; shortNames  SASP O; Small
-P71039	HTHtype transcriptional activator mta; Multidrug transporter activation protein; mta
 P71044	Stage II sporulation protein Q; Q
 P71049	HTHtype transcriptional regulator SlrR; SlrR
 P71062	Uncharacterized sugar transferase EpsL; ecNumbers  2...; EpsL
@@ -1720,7 +1736,7 @@ P94420	Petrobactin import ATPbinding protein YclP; 7.2.2.; YclP
 P94425	Putative monooxygenase YcnE; ecNumbers  1...; YcnE
 P94426	HTHtype transcriptional regulatory protein GabR; GabR
 P94427	Probable 4aminobutyrate aminotransferase; ecNumbers  2.6.1.19; S3amino2methylpropionate transaminase; ecNumbers  2.6.1.22; GABA aminotransferase; shortNames  GABAAT; GammaaminoNbutyrate transaminase; shortNames  GABA transaminase; Glutamatesuccinic semialdehyde transaminase; LAIBAT; aminotransferase
-P94433	HTHtype transcriptional repressor YcnK; YcnK
+P94433	HTHtype transcriptional repressor CutR; CutR
 P94439	Transcriptional regulatory protein LnrK; LnrK
 P94440	Linearmycin resistance ATPbinding protein LnrL; 7.6.2.; LnrL
 P94441	Linearmycin resistance permease protein LnrM; LnrM
@@ -1756,7 +1772,7 @@ P94584	3hydroxyacylacylcarrierprotein dehydratase FabZ; 4.2.1.59; 3Rhydroxymyris
 P94585	Largeconductance mechanosensitive channel; channel
 P94587	Putative sortase YwpE; 3.4.22.; YwpE
 P94592	Phosphatase YwpJ; 3.1.3.; YwpJ
-P94593	Uncharacterized ATPdependent helicase YwqA; ecNumbers  3.6.4.; YwqA
+P94593	Putative ATPdependent helicasetranslocase YwqA; ecNumbers  3.6.4.; YwqA
 P96499	Polyisoprenylteichoic acidpeptidoglycan teichoic acid transferase TagV; 2.7.8.; TagV
 P96578	Probable Dlyxose ketolisomerase; 5.3.1.15; Dlyxose isomerase; ketolisomerase
 P96581	Lipid II flippase Amj; Amj
@@ -1773,7 +1789,6 @@ P96677	HTHtype transcriptional repressor AseR; AseR
 P96685	Sensor histidine kinase YdfH; ecNumbers  2.7.13.3; YdfH
 P96692	Putative NADPH nitroreductase MhqN; ecNumbers  1...; MhqN
 P96693	Putative ringcleaving dioxygenase MhqO; ecNumbers  1.13.11.; MhqO
-P96710	Arabinoseproton symporter; Arabinose transporter; symporter
 P96711	Arabinose metabolism transcriptional repressor; repressor
 P96712	Multidrug resistance protein 3; Multidrugefflux transporter 3; 3
 P96715	Probable capsular polysaccharide biosynthesis protein YwqC; YwqC
@@ -1803,12 +1818,12 @@ Q08430	Sporulation kinase B; ecNumbers  2.7.13.3; B
 Q45058	Spore coat protein M; M
 Q45063	Pyruvate dehydrogenase inhibitor; inhibitor
 Q45461	Choline transport system permease protein OpuBB; OpuBB
-Q45462	Cholinebinding protein; protein
 Q45477	IsoleucinetRNA ligase; 6.1.1.5; IsoleucyltRNA synthetase; IleRS; ligase
 Q45479	Lipoprotein signal peptidase; 3.4.23.36; Prolipoprotein signal peptidase; Signal peptidase II; SPase II; peptidase
 Q45480	Uncharacterized RNA pseudouridine synthase YlyB; ecNumbers  5.4.99.; RNA pseudouridylate synthase; RNAuridine isomerase; YlyB
 Q45495	Peptide deformylase 2; shortNames  PDF 2; ecNumbers  3.5.1.88; Polypeptide deformylase 2; 2
 Q45535	Inner spore coat protein H; H
+Q45549	Transcriptional repressor NrdR; NrdR
 Q45577	Glutamateserine transporter AimA; Amino acid importer A; AimA
 Q45593	Probable peptide export ATPbinding protein YydI; YydI
 Q45601	Ribosomal RNA large subunit methyltransferase H; 2.1.1.177; 23S rRNA pseudouridine1915N3methyltransferase; 23S rRNA m3Psi1915 methyltransferase; rRNA pseudouridineN3methyltransferase RlmH; H
@@ -1825,11 +1840,11 @@ Q797E6	Intracellular iron chaperone frataxin; Fra; Iron channeling protein frata
 Q7PC63	Polyketide biosynthesis acylcarrierprotein AcpK; ACPII; AcpK
 Q7WY60	NaH antiporter subunit E; Mrp complex subunit E; Multiple resistance and pH homeostasis protein E; E
 Q7WY72	Extracellular matrix regulatory protein A; Regulator of extracellular matrix A; A
-Q99027	Sensor histidine kinase ComP; ecNumbers  2.7.13.3; ComP
 Q99171	Translocationenhancing protein TepA; TepA
 Q9JMQ2	Pyrophosphatase PpaX; ecNumbers  3.6.1.1; PpaX
 A0A2K4Z9J5	Small toxic protein BsrE; BsrE
 A0A2K4Z9K4	Probable small toxic protein BsrH; BsrH
+A0A2K4Z9M4	aspartate kinase; 2.7.2.4; kinase
 C0H3Q8	Uncharacterized HTHtype transcriptional regulator YuzN; YuzN
 C0H3R4	SigmaO factor regulatory protein RsoA; RsoA
 C0H3S9	Uncharacterized HTHtype transcriptional regulator YbzH; YbzH
@@ -1837,7 +1852,6 @@ C0H3Y8	Sporulation protein YjcZ; YjcZ
 C0H404	Probably inactive glycosylase YkzR; YkzR
 C0H412	Swarming motility protein SwrD; SwrD
 C0H415	Uncharacterized membrane protein YnzI; YnzI
-C0SP79	Probable sporulation protein YtaF; YtaF
 C0SP80	Putative lipoprotein YteS; YteS
 C0SP82	Probable oxidoreductase YoaE; ecNumbers  1...; YoaE
 C0SP84	Putative binding protein YtlA; YtlA
@@ -1912,7 +1926,6 @@ O06747	Uncharacterized protein YitL; YitL
 O06748	Uncharacterized protein YitM; YitM
 O06750	Uncharacterized protein YitO; YitO
 O06972	Uncharacterized Nudix hydrolase YvcI; ecNumbers  3.6..; YvcI
-O06973	Nucleotidebinding protein YvcJ; YvcJ
 O06977	Uncharacterized acetyltransferase YvcN; ecNumbers  2.3.1.; YvcN
 O06980	Uncharacterized ABC transporter ATPbinding protein YvcR; ecNumbers  7...; YvcR
 O06981	Uncharacterized ABC transporter permease YvcS; YvcS
@@ -1926,6 +1939,7 @@ O06992	Putative maltodextrin utilization protein YvdJ; YvdJ
 O06996	Putative sporulation hydrolase CotR; ecNumbers  3.1.1.; CotR
 O06997	Uncharacterized FADlinked oxidoreductase YvdP; ecNumbers  1.21..; Spore coat protein YvdP; YvdP
 O06999	Uncharacterized membrane protein YvdR; YvdR
+O07001	Uncharacterized HTHtype transcriptional regulator YvdT; YvdT
 O07008	HTHtype transcriptional regulator GanR; GanR
 O07016	Uncharacterized ABC transporter ATPbinding protein YvfR; ecNumbers  7...; YvfR
 O07017	Putative transport permease YvfS; YvfS
@@ -1936,7 +1950,6 @@ O07518	Uncharacterized membrane protein YhaJ; YhaJ
 O07520	Sporulation protein YhaL; YhaL
 O07522	Uncharacterized metallophosphoesterase YhaO; YhaO
 O07523	Uncharacterized protein YhaP; YhaP
-O07527	Sensor histidine kinase YhcY; ecNumbers  2.7.13.3; YhcY
 O07528	Uncharacterized transcriptional regulatory protein YhcZ; YhcZ
 O07533	Putative enoylCoA hydrataseisomerase YhaR; YhaR
 O07534	KH antiporter modulator KhtS; KhtS
@@ -2008,6 +2021,7 @@ O31489	Uncharacterized protein YdcI; YdcI
 O31490	ICEBs1 excisionase; Recombination directionality factor xis; excisionase
 O31493	Putative permeaselike protein YdzE; YdzE
 O31497	Uncharacterized HTHtype transcriptional regulator YezC; YezC
+O31500	Uncharacterized HTHtype transcriptional regulator YerO; YerO
 O31509	Probable transcriptional regulatory protein YeeI; YeeI
 O31512	Uncharacterized oxidoreductase YesF; ecNumbers  1...; YesF
 O31513	Uncharacterized Nacetyltransferase YesJ; ecNumbers  2.3.1.; YesJ
@@ -2044,10 +2058,9 @@ O31604	Competence protein CoiA; CoiA
 O31613	Uncharacterized RNA pseudouridine synthase YjbO; ecNumbers  5.4.99.; RNA pseudouridylate synthase; RNAuridine isomerase; YjbO
 O31622	Spore coat protein O; O
 O31623	Sporulation protein YjcA; YjcA
-O31625	Sporulationspecific transcription factor SpoVIF; Stage VI sporulation protein F; SpoVIF
 O31628	Uncharacterized Nacetyltransferase YjcF; ecNumbers  2.3.1.; YjcF
 O31629	Putative phosphoesterase YjcG; 3.1..; YjcG
-O31633	Putative ribosomal protein S5alanine Nacetyltransferase; 2.3.1.267; Nacetyltransferase
+O31633	Probable Nacetyltransferase YjcK; 2.3.1.; YjcK
 O31642	Uncharacterized oxidoreductase YjdA; ecNumbers  1...; YjdA
 O31647	Uncharacterized protein YjdF; YjdF
 O31648	Uncharacterized Nacetyltransferase YjdG; ecNumbers  2.3.1.; YjdG
@@ -2235,13 +2248,13 @@ O34400	Putative protein YfkA; YfkA
 O34409	Probable metallohydrolase YflN; ecNumbers  3...; YflN
 O34411	Histidinolphosphatase; shortNames  HolPase; ecNumbers  3.1.3.15; Histidinolphosphatase
 O34412	Regulatory protein YlbF; YlbF
-O34413	Putative glycosyltransferase YtcC; ecNumbers  2.4..; YtcC
 O34416	Uncharacterized transporter YoaV; YoaV
 O34421	Probable acylCoA dehydrogenase YngJ; ecNumbers  1.3.99.; YngJ
 O34436	Probable lowaffinity inorganic phosphate transporter; transporter
 O34440	Uncharacterized MFStype transporter YfmI; YfmI
 O34451	Uncharacterized ABC transporter permease protein YvrB; YvrB
 O34452	TPR repeatcontaining protein YrrB; YrrB
+O34454	UPF0111 protein YkaA; YkaA
 O34456	Hexuronate transporter; Aldohexuronate transport system; transporter
 O34457	Molybdenum cofactor biosynthesis protein B; B
 O34459	ATP phosphoribosyltransferase regulatory subunit; subunit
@@ -2264,9 +2277,9 @@ O34510	Fe3citrate import ATPbinding protein YfmF; Ferriccitrate import ATPbindin
 O34512	Uncharacterized ABC transporter ATPbinding protein YfmM; ecNumbers  7...; YfmM
 O34520	ATP phosphoribosyltransferase; shortNames  ATPPRT; ATPPRTase; ecNumbers  2.4.2.17; phosphoribosyltransferase
 O34524	Uncharacterized sodiumdependent transporter YocS; YocS
-O34528	Uncharacterized AAA domaincontaining protein YrvN; YrvN
 O34536	Uncharacterized Nacetyltransferase YfmK; ecNumbers  2.3.1.; YfmK
 O34538	Uncharacterized lipoprotein YcdA; YcdA
+O34542	Uncharacterized protein YflK; YflK
 O34546	Uncharacterized MFStype transporter YttB; YttB
 O34553	Protein YtsP; YtsP
 O34560	Uncharacterized amino acid permease YecA; YecA
@@ -2363,7 +2376,6 @@ O34924	Putative aminopeptidase YtoP; ecNumbers  3.4.11.; YtoP
 O34929	Uncharacterized MFStype transporter YfkF; YfkF
 O34933	Fe3citrate import system permease protein YfmD; Ferriccitrate import system permease protein; YfmD
 O34940	Putative sugar lactone lactonase YvrE; ecNumbers  3.1.1.; YvrE
-O34944	Putative dipeptidase YtjP; ecNumbers  3.4.13.; YtjP
 O34947	Uncharacterized protease YoaZ; ecNumbers  3.2..; YoaZ
 O34949	Uncharacterized HTHtype transcriptional regulator YkoM; YkoM
 O34953	Probable ABC transporter permease YtrD; YtrD
@@ -2463,6 +2475,7 @@ P25812	tRNA uridine 5carboxymethylaminomethyl modification enzyme MnmG; Glucosei
 P25954	ComG operon protein 2; 2
 P26381	Fructose permease IIC component; EIICFru; PTS system fructosespecific EIIC component; p28; component
 P26382	Fructose permease IID component; EIIDFru; PTS system fructosespecific EIID component; p30; component
+P26903	Dipeptide transport system permease protein DppB; DppB
 P26942	Ribosomal processing cysteine protease Prp; Prp; 3.4.22.; Prp
 P27622	Putative major teichoic acid biosynthesis protein C; C
 P27643	Stage V sporulation protein K; K
@@ -2523,7 +2536,6 @@ P37959	Uncharacterized oxidoreductase YusZ; ecNumbers  1...; ORFA; YusZ
 P37960	Metalloregulation DNAbinding stress protein; protein
 P37966	Lipoprotein LipO; Lipoprotein LplA; LipO
 P39063	Uncharacterized protein YtxD; YtxD
-P39064	Uncharacterized protein YtxE; YtxE
 P39066	Acetoin utilization protein AcuB; AcuB
 P39067	Acetoin utilization protein AcuC; AcuC
 P39072	Spore germination protein GerM; GerM
@@ -2549,6 +2561,7 @@ P39589	Uncharacterized transporter YwbF; YwbF
 P39591	Holinlike protein CidA; CidA
 P39592	Uncharacterized HTHtype transcriptional regulator YwbI; YwbI
 P39599	Uncharacterized symporter YwcA; YwcA
+P39601	Uncharacterized HTHtype transcriptional regulator YwcC; YwcC
 P39602	Uncharacterized membrane protein YwcD; YwcD
 P39608	Uncharacterized transporter YwcJ; YwcJ
 P39616	Putative aldehyde dehydrogenase YwdH; 1.2.1.3; YwdH
@@ -2621,8 +2634,7 @@ P42062	Oligopeptide transport system permease protein AppB; AppB
 P42063	Oligopeptide transport system permease protein AppC; AppC
 P42086	Xanthine permease; permease
 P42087	Putative histidine permease; permease
-P42089	Protein CgeA; CgeA
-P42090	Protein CgeB; CgeB
+P42090	Spore protein CgeB; CgeB
 P42091	Protein CgeC; CgeC
 P42092	Protein CgeD; CgeD
 P42093	Uncharacterized Nacetyltransferase CgeE; ecNumbers  2.3.1.; CgeE
@@ -2631,7 +2643,6 @@ P42100	Glycerate kinase; ecNumbers  2.7.1.31; kinase
 P42101	General stress protein 30; shortNames  GSP30; ecNumbers  2...; 30
 P42102	Uncharacterized protein YxaC; YxaC
 P42103	Uncharacterized HTHtype transcriptional regulator YxaD; YxaD
-P42105	Uncharacterized HTHtype transcriptional regulator YxaF; YxaF
 P42112	Uncharacterized MFStype transporter YxaM; YxaM
 P42178	Probable nitrate reductase molybdenum cofactor assembly chaperone NarJ; NarJ
 P42199	Lcystinebinding protein TcyA; TcyA
@@ -2672,7 +2683,6 @@ P42964	Uncharacterized membrane protein YcsG; YcsG
 P42972	Uncharacterized oxidoreductase YcsN; ecNumbers  1...; YcsN
 P42978	UPF0750 membrane protein YpjC; YpjC
 P45693	Stage V sporulation protein S; S
-P45707	Sporulation inhibitor of replication protein SirA; SirA
 P45708	UPF0154 protein YneF; YneF
 P45709	Protein CcdB; CcdB
 P45710	Protein CcdC; CcdC
@@ -2698,6 +2708,7 @@ P46327	Uncharacterized protein YxbC; YxbC
 P46330	Uncharacterized HTHtype transcriptional regulator YxbF; YxbF
 P46331	Uncharacterized oxidoreductase YxbG; ecNumbers  1...; YxbG
 P46333	Probable metabolite transport protein CsbC; CsbC
+P46335	Uncharacterized protein YxcE; YxcE
 P46337	HTHtype transcriptional regulator IolR; IolR
 P46339	Probable ABC transporter permease protein YqgH; YqgH
 P46340	Probable ABC transporter permease protein YqgI; YqgI
@@ -2732,7 +2743,6 @@ P50850	Uncharacterized protein YlxY; YlxY
 P51777	Cold shock protein CspD; CspD
 P52035	Glutathione peroxidase homolog BsaA; ecNumbers  1...; BsaA
 P54155	Peptide methionine sulfoxide reductase MsrB; 1.8.4.12; Peptidemethionine RSoxide reductase; MsrB
-P54156	Putative sigma Ldependent transcriptional regulator YplP; YplP
 P54157	Putative chalcone synthase; ecNumbers  2.3.1.74; Naringeninchalcone synthase; synthase
 P54161	53 exonuclease; ecNumbers  3.1.11.; exonuclease
 P54163	Probable queuosine precursor transporter; Q precursor transporter; transporter
@@ -2745,6 +2755,7 @@ P54335	Phagelike element PBSX protein XkdP; XkdP
 P54373	Toxin TxpA; TxpA
 P54389	TPR repeatcontaining protein YpiA; YpiA
 P54428	UPF0053 protein YrkA; YrkA
+P54431	Uncharacterized protein YrkD; YrkD
 P54435	Uncharacterized protein YrkH; YrkH
 P54439	Uncharacterized NADPH oxidoreductase YrkL; ecNumbers  1.6.99.; YrkL
 P54445	Protein PsiE homolog; homolog
@@ -2795,6 +2806,7 @@ P54591	Uncharacterized ABC transporter ATPbinding protein YhcG; YhcG
 P54592	Uncharacterized ABC transporter ATPbinding protein YhcH; YhcH
 P54594	Uncharacterized lipoprotein YhcJ; YhcJ
 P54595	Uncharacterized protein YhcK; YhcK
+P54601	Spore coat protein Flike protein YhcQ; YhcQ
 P54604	Uncharacterized RNA pseudouridine synthase YhcT; ecNumbers  5.4.99.; RNA pseudouridylate synthase; RNAuridine isomerase; YhcT
 P54607	Putative phosphatase YhcW; 3.1.3.; YhcW
 P54608	Probable hydrolase YhcX; ecNumbers  3.5..; YhcX
@@ -2823,7 +2835,7 @@ P70964	Stress response protein CsbD; CsbD
 P70981	Probable aminopeptidase YbaC; ecNumbers  3.4.11.; YbaC
 P70993	Uncharacterized HTHtype transcriptional regulator YwhA; YwhA
 P70995	Putative zinc metalloprotease YwhC; ecNumbers  3.4.24.; YwhC
-P71003	Uncharacterized protein YwhK; YwhK
+P71003	Protein YwhK; YwhK
 P71005	Antilisterial bacteriocin subtilosin biosynthesis protein AlbG; AlbG
 P71007	Antilisterial bacteriocin subtilosin biosynthesis protein AlbE; AlbE
 P71008	Antilisterial bacteriocin subtilosin biosynthesis protein AlbD; AlbD
@@ -2883,7 +2895,6 @@ P94411	Uncharacterized ABC transporter ATPbinding protein YclH; YclH
 P94412	Uncharacterized ABC transporter permease YclI; YclI
 P94419	Petrobactin import system permease protein YclO; YclO
 P94422	Uncharacterized MFStype transporter YcnB; YcnB
-P94431	Uncharacterized protein YcnI; YcnI
 P94434	Uncharacterized protein YcnL; YcnL
 P94437	Uncharacterized oxidoreductase YfiI; ecNumbers  1...; YfiI
 P94446	Sporulation cortex protein CoxA; CoxA
@@ -2971,6 +2982,7 @@ P96690	Uncharacterized HTHtype transcriptional regulator YdfL; YdfL
 P96694	Putative oxidoreductase MhqP; ecNumbers  1...; MhqP
 P96696	UPF0702 transmembrane protein YdfR; YdfR
 P96698	Spore coat protein P; P
+P96701	Uncharacterized HTHtype transcriptional regulator YdgC; YdgC
 P96703	Uncharacterized Nacetyltransferase YdgE; ecNumbers  2.3.1.; YdgE
 P96704	Uncharacterized transporter YdgF; YdgF
 P96705	Uncharacterized HTHtype transcriptional regulator YdgG; YdgG
@@ -3021,7 +3033,6 @@ Q45514	Protein SapB; SapB
 Q45537	Protein CotJB; CotJB
 Q45538	Protein CotJC; CotJC
 Q45539	Putative glycosyltransferase CsbB; ecNumbers  2.4..; CsbB
-Q45549	Transcriptional repressor NrdR; NrdR
 Q45581	Uncharacterized HTHtype transcriptional regulator YbbH; YbbH
 Q45583	Uncharacterized Nacetyltransferase YbbJ; ecNumbers  2.3.1.; YbbJ
 Q45591	Uncharacterized HTHtype transcriptional regulator YydK; YydK
@@ -3100,7 +3111,6 @@ A0A2K4Z9L9	Uncharacterized protein; protein
 A0A2K4Z9M0	Uncharacterized protein; protein
 A0A2K4Z9M1	Uncharacterized protein; protein
 A0A2K4Z9M3	Uncharacterized protein; protein
-A0A2K4Z9M4	aspartate kinase; 2.7.2.4; kinase
 A0A2K4Z9M5	Uncharacterized protein; protein
 A0A2K4Z9M6	Uncharacterized protein; protein
 A0A2K4Z9M7	YuzL family protein; protein
@@ -3272,7 +3282,6 @@ O06753	Uncharacterized protein YitR; YitR
 O06966	Putative uncharacterized protein YvcB; YvcB
 O06968	TPR repeatcontaining protein YvcD; YvcD
 O06998	Uncharacterized protein YvdQ; YvdQ
-O07001	Uncharacterized HTHtype transcriptional regulator YvdT; YvdT
 O07004	Uncharacterized protein YveF; YveF
 O07005	UPF0311 protein YveG; YveG
 O07079	Uncharacterized protein YrdA; YrdA
@@ -3341,7 +3350,6 @@ O31485	Uncharacterized membrane protein YdzA; YdzA
 O31491	Uncharacterized protein YddB; YddB
 O31494	Uncharacterized HTHtype transcriptional regulator YdzF; YdzF
 O31496	Uncharacterized protein YdzH; YdzH
-O31500	Uncharacterized HTHtype transcriptional regulator YerO; YerO
 O31505	Uncharacterized protein YezA; YezA
 O31507	Uncharacterized protein YeeG; YeeG
 O31511	Uncharacterized protein YesE; YesE
@@ -3657,6 +3665,7 @@ O34401	SPbeta prophagederived uncharacterized protein YopX; YopX
 O34402	Uncharacterized protein YrrD; YrrD
 O34405	Uncharacterized protein YkzD; YkzD
 O34407	SPbeta prophagederived uncharacterized protein YotD; YotD
+O34413	Putative glycosyltransferase YtcC; ecNumbers  2.4..; YtcC
 O34414	Uncharacterized protein YodN; YodN
 O34418	Uncharacterized protein YfkI; YfkI
 O34423	Uncharacterized protein YjqC; YjqC
@@ -3674,7 +3683,6 @@ O34446	Uncharacterized protein YjpA; YjpA
 O34447	Uncharacterized membrane protein YceF; YceF
 O34448	SPbeta prophagederived uncharacterized protein YopQ; YopQ
 O34449	SPbeta prophagederived putative antirepressor protein YoqD; YoqD
-O34454	UPF0111 protein YkaA; YkaA
 O34458	Uncharacterized protein YjfC; YjfC
 O34468	Uncharacterized Nacetyltransferase YlbP; ecNumbers  2.3.1.; YlbP
 O34471	Uncharacterized protein YtlQ; YtlQ
@@ -3691,8 +3699,6 @@ O34533	Uncharacterized HTHtype transcriptional regulator YtcD; YtcD
 O34535	Uncharacterized protein YoaT; YoaT
 O34537	SPbeta prophagederived uncharacterized protein YosV; YosV
 O34541	Uncharacterized protein YoaW; YoaW
-O34542	Uncharacterized protein YflK; YflK
-O34549	Uncharacterized protein YlbO; YlbO
 O34551	Uncharacterized membrane protein YkoI; YkoI
 O34554	Uncharacterized protein YjfA; YjfA
 O34555	Uncharacterized protein YoeD; YoeD
@@ -3885,7 +3891,6 @@ P39588	Uncharacterized protein YwbE; YwbE
 P39590	Uncharacterized protein YwbG; YwbG
 P39598	Uncharacterized protein YwbO; YwbO
 P39600	Uncharacterized protein YwcB; YwcB
-P39601	Uncharacterized HTHtype transcriptional regulator YwcC; YwcC
 P39606	Uncharacterized protein YwcH; YwcH
 P39607	Uncharacterized protein YwcI; YwcI
 P39609	Uncharacterized protein YwdA; YwdA
@@ -3910,6 +3915,7 @@ P40780	Uncharacterized protein YtxH; YtxH
 P40867	Stage V sporulation protein AB; AB
 P40868	Stage V sporulation protein AC; AC
 P40870	Stage V sporulation protein AE; AE
+P42105	Uncharacterized HTHtype transcriptional regulator YxaF; YxaF
 P42107	Uncharacterized protein YxaH; YxaH
 P42108	Uncharacterized protein YxaI; YxaI
 P42109	Uncharacterized protein YxaJ; YxaJ
@@ -3943,7 +3949,6 @@ P45901	Uncharacterized protein YqaD; YqaD
 P45902	Uncharacterized HTHtype transcriptional regulator YqaE; YqaE
 P45903	Uncharacterized HTHtype transcriptional regulator YqaF; YqaF
 P45904	Uncharacterized HTHtype transcriptional regulator YqaG; YqaG
-P45905	Uncharacterized protein YqaH; YqaH
 P45906	Uncharacterized protein YqaI; YqaI
 P45907	Uncharacterized protein YqaJ; YqaJ
 P45908	Uncharacterized protein YqaK; YqaK
@@ -3974,7 +3979,6 @@ P45938	Uncharacterized protein YqcC; YqcC
 P45939	Uncharacterized protein YqcD; YqcD
 P45940	Uncharacterized protein YqcE; YqcE
 P45944	Uncharacterized protein YqcI; YqcI
-P45945	Uncharacterized protein YqcK; YqcK
 P45948	Uncharacterized protein YqaQ; YqaQ
 P45950	Uncharacterized protein YqbQ; YqbQ
 P46323	Putative competencedamage inducible protein; protein
@@ -3983,7 +3987,6 @@ P46326	Uncharacterized protein YxbB; YxbB
 P46328	Uncharacterized protein YxbD; YxbD
 P46332	Uncharacterized protein YxcA; YxcA
 P46334	Uncharacterized protein YxcD; YxcD
-P46335	Uncharacterized protein YxcE; YxcE
 P46909	Uncharacterized protein YwiC; YwiC
 P46916	Uncharacterized protein YtxO; ORFY; YtxO
 P49779	Uncharacterized protein YqhV; YqhV
@@ -4047,7 +4050,6 @@ P54395	Uncharacterized protein YpmA; YpmA
 P54426	Uncharacterized protein YbxH; ORF3; YbxH
 P54429	Uncharacterized protein YrkB; YrkB
 P54430	Uncharacterized protein YrkC; YrkC
-P54431	Uncharacterized protein YrkD; YrkD
 P54432	Uncharacterized protein YrkE; YrkE
 P54433	Putative sulfur carrier protein YrkF; YrkF
 P54436	Putative sulfur carrier protein YrkI; YrkI
@@ -4101,14 +4103,13 @@ P54589	Uncharacterized protein YhcE; YhcE
 P54593	Uncharacterized protein YhcI; YhcI
 P54597	Uncharacterized protein YhcM; YhcM
 P54599	Uncharacterized protein YhcO; YhcO
-P54601	Spore coat protein Flike protein YhcQ; YhcQ
 P54605	Uncharacterized protein YhcU; YhcU
 P54606	CBS domaincontaining protein YhcV; YhcV
 P54724	Uncharacterized protein YfiH; YfiH
 P54940	Uncharacterized protein YxeA; YxeA
 P54942	Uncharacterized protein YxeC; YxeC
 P54943	Uncharacterized protein YxeD; YxeD
-P54944	Uncharacterized protein YxeE; YxeE
+P54944	Protein YxeE; YxeE
 P54945	Uncharacterized protein YxeF; YxeF
 P54946	Uncharacterized protein YxeG; YxeG
 P54949	Uncharacterized protein YxeJ; YxeJ
@@ -4216,7 +4217,6 @@ P96695	Thioredoxinlike protein YdfQ; YdfQ
 P96697	UPF0702 transmembrane protein YdfS; YdfS
 P96699	Uncharacterized protein YdgA; YdgA
 P96700	Uncharacterized protein YdgB; YdgB
-P96701	Uncharacterized HTHtype transcriptional regulator YdgC; YdgC
 P96702	Uncharacterized protein YdgD; YdgD
 P96714	Uncharacterized protein YwqB; YwqB
 P96719	Uncharacterized protein YwqG; YwqG

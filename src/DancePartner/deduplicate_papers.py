@@ -6,9 +6,12 @@ def deduplicate_papers(pubmed_path = None, scopus_path = None, osti_path = None)
     the deduplicated table to the pull_papers function to properly pull the data. These files are
     all exports from LitPortal.
 
-    pubmed_path: (str) The path to the LitPortal file exported from a PubMed search. Optional.
-    scopus_path: (str) The path to the LitPortal file exported from a Scopus search. Optional.
-    osti_path: (str) The path to the LitPortal file exported from an OSTI search. Optional.  
+    Args: 
+        pubmed_path: (str) The path to the LitPortal file exported from a PubMed search. Optional.
+        scopus_path: (str) The path to the LitPortal file exported from a Scopus search. Optional.
+        osti_path: (str) The path to the LitPortal file exported from an OSTI search. Optional.  
+    Returns:
+        A table with deduplicated papers
     '''
     
     ################

@@ -1,7 +1,0 @@
-Output Summary for Pulling Papers
-Created: 2025-04-09 08:58:35.931060
-Total Num. Articles: 20
-Total Num. Articles Found: 15
-Number of Full Text: 0
-Number of Title & Abstracts: 15
-Number Missing: 5

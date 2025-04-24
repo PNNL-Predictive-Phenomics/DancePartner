@@ -202,7 +202,7 @@ def run_bert(input_path, model_path, output_directory, segment_col_name, **kwarg
         segment_col_name (String): The name of the column representing the chunk of text containing the pair of biomolecules.
         **kwargz: Any additional arguments to pass to `TrainingArguments`.
     Returns:
-        None, but writes an Excel file containing the results of the model.
+        None, but writes a csv file containing the results of the model.
     Example Code:
         find_names_in_papers("example_data/papers", "example_data/sars_&_human_synonyms.csv", output_directory = "myfinds")
         run_bert("myfinds/sentence_biomolecule_pairs.csv", model_path = "biobert", output_directory = "myfinds", segment_col_name = "segment")

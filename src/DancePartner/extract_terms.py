@@ -1,6 +1,3 @@
-import spacy
-import scispacy
-import en_ner_bionlp13cg_md
 import os
 import pandas as pd
 import re
@@ -10,6 +7,13 @@ def __get_all_files(directory):
     '''
     Walk through a direcotry and pull all txt files. Remove the summary file and gzipped files. 
     '''
+
+    try:
+        import spacy
+        import scispacy
+        import en_ner_bionlp13cg_md
+    except:
+        raise Exception("Please install spacy and scispacy, and pul the en_ner_bionlp13cg_md model.")
 
     # Make a list to hold all filepaths 
     file_paths = []

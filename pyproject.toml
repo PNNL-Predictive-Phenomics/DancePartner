@@ -25,6 +25,6 @@ dependencies = [
     "bs4",
     "pypdf",
     "pywikipathways",
-    "urllib",
+    "urllib3",
     "metapub"
 ]

@@ -19,8 +19,6 @@ def find_terms_in_papers(paper_directory, terms, output_directory = None, n_gram
         verbose (Logical): If True, print status messages
     Returns:
         A Pandas DataFrame of the resulting data.
-    Example Code:
-        find_names_in_papers("example_data/papers", "example_data/sars_&_human_synonyms.csv", output_directory = "myfinds")
     """
     
     # Modify term matches
