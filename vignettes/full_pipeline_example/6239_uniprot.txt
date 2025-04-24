@@ -1,0 +1,2231 @@
+Synonym1	ID1	Type1	Synonym2	ID2	Type2	Source
+Not needed	A0A5E4M3Q4	gene product	Not needed	Q9U2R6	gene product	database
+Not needed	B1Q236	gene product	Not needed	Q9U3P2	gene product	database
+Not needed	B6VQ60	gene product	Not needed	Q21209	gene product	database
+Not needed	B7WN72	gene product	Not needed	Q8MXV3	gene product	database
+Not needed	C6KRN1	gene product	Not needed	Q22799	gene product	database
+Not needed	D0VWM8	gene product	Not needed	Q9XVS2	gene product	database
+Not needed	D9PTN5	gene product	Not needed	G5EFI7	gene product	database
+Not needed	E7EM37	gene product	Not needed	Q9BIG2	gene product	database
+Not needed	G5EBK3	gene product	Not needed	G5EDM4	gene product	database
+Not needed	G5EBV0	gene product	Not needed	Q93244	gene product	database
+Not needed	G5EBV0	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	G5EBV0	gene product	Not needed	Q93758	gene product	database
+Not needed	G5EBV6	gene product	Not needed	G5EC37	gene product	database
+Not needed	G5EBZ4	gene product	Not needed	Q21502	gene product	database
+Not needed	G5EC23	gene product	Not needed	Q20655	gene product	database
+Not needed	G5EC23	gene product	Not needed	P41932	gene product	database
+Not needed	G5EC23	gene product	Not needed	D3YT50	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q18605	gene product	database
+Not needed	G5EC32	gene product	Not needed	B1Q247	gene product	database
+Not needed	G5EC32	gene product	Not needed	O01481	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q17865	gene product	database
+Not needed	G5EC32	gene product	Not needed	G5EC89	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q93231	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q966J6	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q20670	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q22387	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q7JP75	gene product	database
+Not needed	G5EC32	gene product	Not needed	O18195	gene product	database
+Not needed	G5EC32	gene product	Not needed	G5ED33	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q9TYU9	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q17744	gene product	database
+Not needed	G5EC32	gene product	Not needed	O16299	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q17746	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q3Y407	gene product	database
+Not needed	G5EC32	gene product	Not needed	O45522	gene product	database
+Not needed	G5EC32	gene product	Not needed	O45681	gene product	database
+Not needed	G5EC32	gene product	Not needed	P45962	gene product	database
+Not needed	G5EC32	gene product	Not needed	O17583	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q9TYX9	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q22002	gene product	database
+Not needed	G5EC32	gene product	Not needed	P34400	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q03601	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q95QA6	gene product	database
+Not needed	G5EC32	gene product	Not needed	O62203	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q09442	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q20010	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q19019	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q8MXU3	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q1XFY2	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q9U2Z0	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q9XZI6	gene product	database
+Not needed	G5EC32	gene product	Not needed	G5EDS1	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q17795	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q8MQE6	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q9XVK6	gene product	database
+Not needed	G5EC32	gene product	Not needed	Q95Y58	gene product	database
+Not needed	G5EC32	gene product	Not needed	O02174	gene product	database
+Not needed	G5EC36	gene product	Not needed	P20271	gene product	database
+Not needed	G5EC37	gene product	Not needed	Q09490	gene product	database
+Not needed	G5EC44	gene product	Not needed	G5EFI9	gene product	database
+Not needed	G5EC44	gene product	Not needed	O02115	gene product	database
+Not needed	G5EC86	gene product	Not needed	O61707	gene product	database
+Not needed	G5EC89	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	G5ECG0	gene product	Not needed	O01901	gene product	database
+Not needed	G5ECG0	gene product	Not needed	G5ECY0	gene product	database
+Not needed	G5ECG0	gene product	Not needed	Q22227	gene product	database
+Not needed	G5ECG0	gene product	Not needed	Q95QA6	gene product	database
+Not needed	G5ECG0	gene product	Not needed	Q95QC4	gene product	database
+Not needed	G5ECG0	gene product	Not needed	G5EEM5	gene product	database
+Not needed	G5ECG2	gene product	Not needed	G5ECU7	gene product	database
+Not needed	G5ECH5	gene product	Not needed	Q94420	gene product	database
+Not needed	G5ECP4	gene product	Not needed	Q18008	gene product	database
+Not needed	G5ECU1	gene product	Not needed	Q17962	gene product	database
+Not needed	G5ECU1	gene product	Not needed	Q94251	gene product	database
+Not needed	G5ECU1	gene product	Not needed	G5EDX9	gene product	database
+Not needed	G5ECU1	gene product	Not needed	O17198	gene product	database
+Not needed	G5ECU1	gene product	Not needed	O16525	gene product	database
+Not needed	G5ECU1	gene product	Not needed	Q2YS43	gene product	database
+Not needed	G5ECU1	gene product	Not needed	Q18223	gene product	database
+Not needed	G5ECU1	gene product	Not needed	Q93794	gene product	database
+Not needed	G5ECU1	gene product	Not needed	P91305	gene product	database
+Not needed	G5ECU7	gene product	Not needed	G5EBE5	gene product	database
+Not needed	G5ECW5	gene product	Not needed	P42573	gene product	database
+Not needed	G5ECY0	gene product	Not needed	Q95ZY7	gene product	database
+Not needed	G5ECY0	gene product	Not needed	H2L055	gene product	database
+Not needed	G5ECY0	gene product	Not needed	Q18426	gene product	database
+Not needed	G5ED33	gene product	Not needed	P03949	gene product	database
+Not needed	G5ED33	gene product	Not needed	Q21882	gene product	database
+Not needed	G5ED33	gene product	Not needed	Q9N2Z7	gene product	database
+Not needed	G5ED33	gene product	Not needed	P45972	gene product	database
+Not needed	G5ED36	gene product	Not needed	Q9GYJ9	gene product	database
+Not needed	G5ED39	gene product	Not needed	Q18235	gene product	database
+Not needed	G5EDB9	gene product	Not needed	Q6BEV5	gene product	database
+Not needed	G5EDD8	gene product	Not needed	Q20775	gene product	database
+Not needed	G5EDD8	gene product	Not needed	G5EDX9	gene product	database
+Not needed	G5EDD8	gene product	Not needed	Q2YS43	gene product	database
+Not needed	G5EDD8	gene product	Not needed	Q11184	gene product	database
+Not needed	G5EDL3	gene product	Not needed	G5EDE7	gene product	database
+Not needed	G5EDM4	gene product	Not needed	Q22397	gene product	database
+Not needed	G5EDM7	gene product	Not needed	Q95QI7	gene product	database
+Not needed	G5EDS1	gene product	Not needed	Q10929	gene product	database
+Not needed	G5EDS1	gene product	Not needed	P03949	gene product	database
+Not needed	G5EDS1	gene product	Not needed	Q9N4P3	gene product	database
+Not needed	G5EDS1	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	G5EDS1	gene product	Not needed	Q95XW5	gene product	database
+Not needed	G5EDS1	gene product	Not needed	Q8MPT2	gene product	database
+Not needed	G5EDS1	gene product	Not needed	G5EGG0	gene product	database
+Not needed	G5EDT1	gene product	Not needed	Q22703	gene product	database
+Not needed	G5EDY0	gene product	Not needed	Q21648	gene product	database
+Not needed	G5EE01	gene product	Not needed	O61460	gene product	database
+Not needed	G5EE37	gene product	Not needed	O01427	gene product	database
+Not needed	G5EE56	gene product	Not needed	Q9BIF4	gene product	database
+Not needed	G5EE56	gene product	Not needed	Q09442	gene product	database
+Not needed	G5EEG7	gene product	Not needed	Q9N4U5	gene product	database
+Not needed	G5EEH5	gene product	Not needed	G5EG44	gene product	database
+Not needed	G5EEM0	gene product	Not needed	Q9XTB2	gene product	database
+Not needed	G5EEN3	gene product	Not needed	Q8STE5	gene product	database
+Not needed	G5EEN4	gene product	Not needed	X5M5N0	gene product	database
+Not needed	G5EF87	gene product	Not needed	P03949	gene product	database
+Not needed	G5EF87	gene product	Not needed	Q95QI7	gene product	database
+Not needed	G5EF87	gene product	Not needed	Q09248	gene product	database
+Not needed	G5EF87	gene product	Not needed	Q09975	gene product	database
+Not needed	G5EF87	gene product	Not needed	Q17539	gene product	database
+Not needed	G5EF87	gene product	Not needed	Q21831	gene product	database
+Not needed	G5EFF1	gene product	Not needed	Q20084	gene product	database
+Not needed	G5EFF1	gene product	Not needed	G5ECJ4	gene product	database
+Not needed	G5EFT5	gene product	Not needed	O01901	gene product	database
+Not needed	G5EFV3	gene product	Not needed	Q9GRZ1	gene product	database
+Not needed	G5EFV3	gene product	Not needed	O02217	gene product	database
+Not needed	G5EFV8	gene product	Not needed	O01839	gene product	database
+Not needed	G5EFV8	gene product	Not needed	P34561	gene product	database
+Not needed	G5EFV8	gene product	Not needed	Q22639	gene product	database
+Not needed	G5EG62	gene product	Not needed	Q18688	gene product	database
+Not needed	G5EG62	gene product	Not needed	P09446	gene product	database
+Not needed	G5EG62	gene product	Not needed	P02566	gene product	database
+Not needed	G5EG83	gene product	Not needed	Q9XUS9	gene product	database
+Not needed	G5EG86	gene product	Not needed	G5EGG8	gene product	database
+Not needed	G5EGD2	gene product	Not needed	O02219	gene product	database
+Not needed	H2KZB2	gene product	Not needed	Q19848	gene product	database
+Not needed	H2KZH5	gene product	Not needed	Q8MPT2	gene product	database
+Not needed	K8ESC5	gene product	Not needed	Q09490	gene product	database
+Not needed	K8ESC5	gene product	Not needed	Q23536	gene product	database
+Not needed	O01427	gene product	Not needed	O17583	gene product	database
+Not needed	O01427	gene product	Not needed	P34314	gene product	database
+Not needed	O01501	gene product	Not needed	O61847	gene product	database
+Not needed	O01836	gene product	Not needed	P91001	gene product	database
+Not needed	O01836	gene product	Not needed	P34689	gene product	database
+Not needed	O01836	gene product	Not needed	O44408	gene product	database
+Not needed	O01836	gene product	Not needed	Q9U3F4	gene product	database
+Not needed	O01839	gene product	Not needed	P34561	gene product	database
+Not needed	O01901	gene product	Not needed	O18195	gene product	database
+Not needed	O01901	gene product	Not needed	Q9U3B7	gene product	database
+Not needed	O01901	gene product	Not needed	Q9XVK6	gene product	database
+Not needed	O02219	gene product	Not needed	O44712	gene product	database
+Not needed	O02219	gene product	Not needed	G5EFA5	gene product	database
+Not needed	O02482	gene product	Not needed	O62505	gene product	database
+Not needed	O02482	gene product	Not needed	G5ECN8	gene product	database
+Not needed	O02482	gene product	Not needed	Q93616	gene product	database
+Not needed	O02482	gene product	Not needed	Q9XVV3	gene product	database
+Not needed	O02482	gene product	Not needed	G5ED66	gene product	database
+Not needed	O02482	gene product	Not needed	Q10666	gene product	database
+Not needed	O02482	gene product	Not needed	Q22678	gene product	database
+Not needed	O02482	gene product	Not needed	Q18694	gene product	database
+Not needed	O16259	gene product	Not needed	Q18688	gene product	database
+Not needed	O16259	gene product	Not needed	P09446	gene product	database
+Not needed	O16299	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	O16299	gene product	Not needed	Q9U2T9	gene product	database
+Not needed	O16299	gene product	Not needed	Q8MPT2	gene product	database
+Not needed	O16785	gene product	Not needed	Q9TZC4	gene product	database
+Not needed	O16850	gene product	Not needed	Q17941	gene product	database
+Not needed	O16850	gene product	Not needed	Q9XTG7	gene product	database
+Not needed	O16850	gene product	Not needed	Q2PJ68	gene product	database
+Not needed	O16850	gene product	Not needed	Q21921	gene product	database
+Not needed	O17087	gene product	Not needed	Q95ZK7	gene product	database
+Not needed	O17514	gene product	Not needed	Q9GYS1	gene product	database
+Not needed	O17583	gene product	Not needed	Q19955	gene product	database
+Not needed	O17583	gene product	Not needed	O45952	gene product	database
+Not needed	O17583	gene product	Not needed	P54936	gene product	database
+Not needed	O17607	gene product	Not needed	Q9GZH2	gene product	database
+Not needed	O17670	gene product	Not needed	Q11103	gene product	database
+Not needed	O17670	gene product	Not needed	Q94165	gene product	database
+Not needed	O17670	gene product	Not needed	H2KZ78	gene product	database
+Not needed	O17670	gene product	Not needed	Q9XXU2	gene product	database
+Not needed	O17670	gene product	Not needed	Q9N4P3	gene product	database
+Not needed	O17670	gene product	Not needed	Q21127	gene product	database
+Not needed	O17670	gene product	Not needed	Q10923	gene product	database
+Not needed	O17670	gene product	Not needed	Q10666	gene product	database
+Not needed	O17670	gene product	Not needed	Q9XZI6	gene product	database
+Not needed	O17670	gene product	Not needed	O17894	gene product	database
+Not needed	O17695	gene product	Not needed	Q94131	gene product	database
+Not needed	O17695	gene product	Not needed	Q10666	gene product	database
+Not needed	O17850	gene product	Not needed	P54812	gene product	database
+Not needed	O18178	gene product	Not needed	Q17941	gene product	database
+Not needed	O18214	gene product	Not needed	Q10666	gene product	database
+Not needed	O44326	gene product	Not needed	Q967F4	gene product	database
+Not needed	O44406	gene product	Not needed	P34529	gene product	database
+Not needed	O44408	gene product	Not needed	Q966L9	gene product	database
+Not needed	O44518	gene product	Not needed	P55163	gene product	database
+Not needed	O44740	gene product	Not needed	P34808	gene product	database
+Not needed	O45244	gene product	Not needed	Q21502	gene product	database
+Not needed	O45244	gene product	Not needed	P34498	gene product	database
+Not needed	O45551	gene product	Not needed	Q9TZQ3	gene product	database
+Not needed	O45666	gene product	Not needed	Q21955	gene product	database
+Not needed	O45666	gene product	Not needed	Q9N4Q7	gene product	database
+Not needed	O45666	gene product	Not needed	O16346	gene product	database
+Not needed	O45666	gene product	Not needed	Q09528	gene product	database
+Not needed	O45666	gene product	Not needed	Q09565	gene product	database
+Not needed	O45666	gene product	Not needed	Q9NAJ3	gene product	database
+Not needed	O45666	gene product	Not needed	Q65CM0	gene product	database
+Not needed	O45717	gene product	Not needed	Q20398	gene product	database
+Not needed	O45717	gene product	Not needed	Q23064-3	gene product	database
+Not needed	O45734	gene product	Not needed	Q9U9Y8	gene product	database
+Not needed	O45879	gene product	Not needed	Q53U87	gene product	database
+Not needed	O45952	gene product	Not needed	Q9BIC1	gene product	database
+Not needed	O45952	gene product	Not needed	C1P635	gene product	database
+Not needed	O45952	gene product	Not needed	P90976	gene product	database
+Not needed	O61460	gene product	Not needed	O44782	gene product	database
+Not needed	O61667	gene product	Not needed	P41958	gene product	database
+Not needed	O61955	gene product	Not needed	Q22497	gene product	database
+Not needed	O61955	gene product	Not needed	Q20898	gene product	database
+Not needed	O61955	gene product	Not needed	Q9XW13	gene product	database
+Not needed	O61955	gene product	Not needed	Q09293	gene product	database
+Not needed	O62090	gene product	Not needed	Q18825	gene product	database
+Not needed	O62090	gene product	Not needed	Q9U2Q9	gene product	database
+Not needed	O62090	gene product	Not needed	Q22227	gene product	database
+Not needed	O62305	gene product	Not needed	P91409	gene product	database
+Not needed	O62479	gene product	Not needed	Q20010	gene product	database
+Not needed	O76616	gene product	Not needed	Q20057	gene product	database
+Not needed	O76616	gene product	Not needed	Q19541	gene product	database
+Not needed	O76616	gene product	Not needed	Q09293	gene product	database
+Not needed	O76689	gene product	Not needed	Q93646	gene product	database
+Not needed	P03949	gene product	Not needed	G5EEL1	gene product	database
+Not needed	P03949	gene product	Not needed	Q11181	gene product	database
+Not needed	P03949	gene product	Not needed	Q9TYX9	gene product	database
+Not needed	P03949	gene product	Not needed	Q22227	gene product	database
+Not needed	P03949	gene product	Not needed	Q95QA6	gene product	database
+Not needed	P03949	gene product	Not needed	Q18953	gene product	database
+Not needed	P03949	gene product	Not needed	Q18320	gene product	database
+Not needed	P03949	gene product	Not needed	O02174	gene product	database
+Not needed	P10299	gene product	Not needed	P91505	gene product	database
+Not needed	P14585	gene product	Not needed	Q93794	gene product	database
+Not needed	P16356	gene product	Not needed	Q9N337	gene product	database
+Not needed	P17221	gene product	Not needed	Q9BKS1	gene product	database
+Not needed	P17221	gene product	Not needed	P49594	gene product	database
+Not needed	P17221	gene product	Not needed	P34691	gene product	database
+Not needed	P17221	gene product	Not needed	Q93794	gene product	database
+Not needed	P17221	gene product	Not needed	P34708-1	gene product	database
+Not needed	P18334	gene product	Not needed	P28548	gene product	database
+Not needed	P18334	gene product	Not needed	Q11184	gene product	database
+Not needed	P20792	gene product	Not needed	Q18688	gene product	database
+Not needed	P21541	gene product	Not needed	Q17390	gene product	database
+Not needed	P21541	gene product	Not needed	Q9BKS1	gene product	database
+Not needed	P23678	gene product	Not needed	Q21049	gene product	database
+Not needed	P28548	gene product	Not needed	Q11184	gene product	database
+Not needed	P28548	gene product	Not needed	Q09624	gene product	database
+Not needed	P29355	gene product	Not needed	Q62245	gene product	database
+Not needed	P30429	gene product	Not needed	P42573	gene product	database
+Not needed	P30429	gene product	Not needed	P41958	gene product	database
+Not needed	P30429	gene product	Not needed	Q20924	gene product	database
+Not needed	P30429	gene product	Not needed	Q9NAG4	gene product	database
+Not needed	P30429	gene product	Not needed	Q07817-1	gene product	database
+Not needed	P34260	gene product	Not needed	Q93934	gene product	database
+Not needed	P34288	gene product	Not needed	H2KYP0	gene product	database
+Not needed	P34288	gene product	Not needed	Q9XVU8	gene product	database
+Not needed	P34288	gene product	Not needed	P90900	gene product	database
+Not needed	P34288	gene product	Not needed	Q9NAN2	gene product	database
+Not needed	P34299	gene product	Not needed	Q93212	gene product	database
+Not needed	P34331	gene product	Not needed	P91349	gene product	database
+Not needed	P34341	gene product	Not needed	Q20818	gene product	database
+Not needed	P34400	gene product	Not needed	Q10929	gene product	database
+Not needed	P34441	gene product	Not needed	P34766	gene product	database
+Not needed	P34447	gene product	Not needed	Q6AW06	gene product	database
+Not needed	P34529	gene product	Not needed	G5EDI8	gene product	database
+Not needed	P34529	gene product	Not needed	Q9GZI7	gene product	database
+Not needed	P34529	gene product	Not needed	Q95XS0	gene product	database
+Not needed	P34537	gene product	Not needed	P52478	gene product	database
+Not needed	P34561	gene product	Not needed	Q22639	gene product	database
+Not needed	P34607	gene product	Not needed	Q19672	gene product	database
+Not needed	P34609	gene product	Not needed	P46822	gene product	database
+Not needed	P34619	gene product	Not needed	Q965H3	gene product	database
+Not needed	P34624	gene product	Not needed	Q8I7M8	gene product	database
+Not needed	P34689	gene product	Not needed	P91001	gene product	database
+Not needed	P34691	gene product	Not needed	Q93794	gene product	database
+Not needed	P34691	gene product	Not needed	P34708-1	gene product	database
+Not needed	P34691	gene product	Not needed	P34709	gene product	database
+Not needed	P34708	gene product	Not needed	P34709	gene product	database
+Not needed	P34708	gene product	Not needed	P17221	gene product	database
+Not needed	P34708	gene product	Not needed	P49594	gene product	database
+Not needed	P34708	gene product	Not needed	P34691	gene product	database
+Not needed	P34709	gene product	Not needed	P34708-1	gene product	database
+Not needed	P34808	gene product	Not needed	Q9XTS1	gene product	database
+Not needed	P34808	gene product	Not needed	Q9XTS3	gene product	database
+Not needed	P34808	gene product	Not needed	Q9XTF3-2	gene product	database
+Not needed	P34808	gene product	Not needed	Q94420	gene product	database
+Not needed	P37806	gene product	Not needed	G5EGG0	gene product	database
+Not needed	P39055	gene product	Not needed	P34258	gene product	database
+Not needed	P39055	gene product	Not needed	G5ECK4	gene product	database
+Not needed	P39055	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	P39055	gene product	Not needed	Q8I4E2	gene product	database
+Not needed	P39055	gene product	Not needed	Q9N2Z7	gene product	database
+Not needed	P39745	gene product	Not needed	O02289	gene product	database
+Not needed	P41779	gene product	Not needed	Q9N5D6	gene product	database
+Not needed	P41846	gene product	Not needed	Q9TZ70	gene product	database
+Not needed	P41932	gene product	Not needed	Q11184	gene product	database
+Not needed	P41932	gene product	Not needed	Q10666	gene product	database
+Not needed	P41932	gene product	Not needed	Q21921	gene product	database
+Not needed	P41958	gene product	Not needed	P42573	gene product	database
+Not needed	P41958	gene product	Not needed	P30429-2	gene product	database
+Not needed	P42171	gene product	Not needed	Q22174	gene product	database
+Not needed	P42573	gene product	Not needed	P30429-2	gene product	database
+Not needed	P46561	gene product	Not needed	P50488	gene product	database
+Not needed	P46561	gene product	Not needed	Q09624	gene product	database
+Not needed	P48727	gene product	Not needed	Q17604	gene product	database
+Not needed	P48996	gene product	Not needed	Q09591	gene product	database
+Not needed	P49594	gene product	Not needed	Q93794	gene product	database
+Not needed	P49594	gene product	Not needed	P34708-1	gene product	database
+Not needed	P50464	gene product	Not needed	Q09497	gene product	database
+Not needed	P50488	gene product	Not needed	O45799	gene product	database
+Not needed	P51875	gene product	Not needed	Q19955	gene product	database
+Not needed	P51875	gene product	Not needed	Q9TZI4	gene product	database
+Not needed	P51875	gene product	Not needed	P34427	gene product	database
+Not needed	P51875	gene product	Not needed	Q9GSX9-1	gene product	database
+Not needed	P51875	gene product	Not needed	Q86RS9	gene product	database
+Not needed	P52012	gene product	Not needed	Q21502	gene product	database
+Not needed	P53806	gene product	Not needed	Q0G819	gene product	database
+Not needed	P54811	gene product	Not needed	P54812	gene product	database
+Not needed	P54811	gene product	Not needed	Q9TXH9	gene product	database
+Not needed	P54936	gene product	Not needed	Q18624	gene product	database
+Not needed	P54936	gene product	Not needed	Q9U245	gene product	database
+Not needed	P55853	gene product	Not needed	Q23158	gene product	database
+Not needed	P55853	gene product	Not needed	Q21209	gene product	database
+Not needed	P55853	gene product	Not needed	P90740	gene product	database
+Not needed	P55853	gene product	Not needed	Q94420	gene product	database
+Not needed	P55853	gene product	Not needed	Q95017	gene product	database
+Not needed	P90916	gene product	Not needed	Q23482	gene product	database
+Not needed	P90925	gene product	Not needed	O01869	gene product	database
+Not needed	P91277	gene product	Not needed	Q9GRY9	gene product	database
+Not needed	P91277	gene product	Not needed	Q9XVS2	gene product	database
+Not needed	P91349	gene product	Not needed	P91870	gene product	database
+Not needed	P91829	gene product	Not needed	P92004	gene product	database
+Not needed	P91857	gene product	Not needed	Q8I100	gene product	database
+Not needed	P91857	gene product	Not needed	Q9GYH7	gene product	database
+Not needed	P91870	gene product	Not needed	Q9GT24	gene product	database
+Not needed	P92186	gene product	Not needed	Q09408	gene product	database
+Not needed	Q03565	gene product	Not needed	Q9XTB5	gene product	database
+Not needed	Q03565	gene product	Not needed	Q19848	gene product	database
+Not needed	Q09248	gene product	Not needed	Q17353-2	gene product	database
+Not needed	Q09349	gene product	Not needed	P90879	gene product	database
+Not needed	Q09463	gene product	Not needed	P49023	gene product	database
+Not needed	Q09490	gene product	Not needed	Q17740	gene product	database
+Not needed	Q09490	gene product	Not needed	K8ESC5-2	gene product	database
+Not needed	Q09591	gene product	Not needed	Q20060	gene product	database
+Not needed	Q0G819	gene product	Not needed	Q21017	gene product	database
+Not needed	Q10122	gene product	Not needed	Q22592	gene product	database
+Not needed	Q10122	gene product	Not needed	Q23533	gene product	database
+Not needed	Q10128	gene product	Not needed	Q18008	gene product	database
+Not needed	Q10128	gene product	Not needed	Q9NA64	gene product	database
+Not needed	Q10653	gene product	Not needed	Q9U2G4	gene product	database
+Not needed	Q10658	gene product	Not needed	O45379	gene product	database
+Not needed	Q10666	gene product	Not needed	Q18825	gene product	database
+Not needed	Q10666	gene product	Not needed	Q9XVI2	gene product	database
+Not needed	Q10666	gene product	Not needed	Q9XVD5	gene product	database
+Not needed	Q10666	gene product	Not needed	Q18694	gene product	database
+Not needed	Q10666	gene product	Not needed	Q9NAE4	gene product	database
+Not needed	Q10929	gene product	Not needed	Q966J6	gene product	database
+Not needed	Q10929	gene product	Not needed	Q95Y95	gene product	database
+Not needed	Q10929	gene product	Not needed	Q9TYX9	gene product	database
+Not needed	Q10929	gene product	Not needed	O62203	gene product	database
+Not needed	Q10953	gene product	Not needed	Q9U9Y8	gene product	database
+Not needed	Q10953	gene product	Not needed	Q19345	gene product	database
+Not needed	Q11184	gene product	Not needed	Q09958	gene product	database
+Not needed	Q11184	gene product	Not needed	Q21556	gene product	database
+Not needed	Q11184	gene product	Not needed	Q18688	gene product	database
+Not needed	Q11184	gene product	Not needed	Q20655	gene product	database
+Not needed	Q11184	gene product	Not needed	P47991	gene product	database
+Not needed	Q11184	gene product	Not needed	Q22054	gene product	database
+Not needed	Q11184	gene product	Not needed	P31946	gene product	database
+Not needed	Q17353	gene product	Not needed	Q19266	gene product	database
+Not needed	Q17353	gene product	Not needed	Q09248	gene product	database
+Not needed	Q17353	gene product	Not needed	O16502	gene product	database
+Not needed	Q17353	gene product	Not needed	H2L055	gene product	database
+Not needed	Q17353	gene product	Not needed	Q22387	gene product	database
+Not needed	Q17390	gene product	Not needed	Q9BKS1	gene product	database
+Not needed	Q17390	gene product	Not needed	Q2WF59	gene product	database
+Not needed	Q17391	gene product	Not needed	Q9NF14	gene product	database
+Not needed	Q17391	gene product	Not needed	P41886	gene product	database
+Not needed	Q17391	gene product	Not needed	P34371	gene product	database
+Not needed	Q17391	gene product	Not needed	O16612	gene product	database
+Not needed	Q17391	gene product	Not needed	Q18986	gene product	database
+Not needed	Q17391	gene product	Not needed	Q18776	gene product	database
+Not needed	Q17391	gene product	Not needed	Q94420	gene product	database
+Not needed	Q17551	gene product	Not needed	Q3SWS8	gene product	database
+Not needed	Q17604	gene product	Not needed	Q27497	gene product	database
+Not needed	Q17635	gene product	Not needed	Q21952	gene product	database
+Not needed	Q17941	gene product	Not needed	Q9XTG7	gene product	database
+Not needed	Q17941	gene product	Not needed	G5EFM0	gene product	database
+Not needed	Q17941	gene product	Not needed	Q2PJ68	gene product	database
+Not needed	Q18100	gene product	Not needed	Q19130	gene product	database
+Not needed	Q18490	gene product	Not needed	Q20057	gene product	database
+Not needed	Q18685	gene product	Not needed	Q9TZC4	gene product	database
+Not needed	Q18885	gene product	Not needed	Q86S66	gene product	database
+Not needed	Q18909	gene product	Not needed	H2L0N3	gene product	database
+Not needed	Q19202	gene product	Not needed	Q21746	gene product	database
+Not needed	Q19266	gene product	Not needed	Q9XTY6	gene product	database
+Not needed	Q19266	gene product	Not needed	Q9XTY6-1	gene product	database
+Not needed	Q19266	gene product	Not needed	Q9NAN2	gene product	database
+Not needed	Q19286	gene product	Not needed	A7DTF5	gene product	database
+Not needed	Q19289	gene product	Not needed	A7DTF5	gene product	database
+Not needed	Q19289	gene product	Not needed	Q8MPT2	gene product	database
+Not needed	Q19345	gene product	Not needed	Q9XVI2	gene product	database
+Not needed	Q19537	gene product	Not needed	Q95Y97	gene product	database
+Not needed	Q19541	gene product	Not needed	Q20057	gene product	database
+Not needed	Q19584	gene product	Not needed	Q95QZ9	gene product	database
+Not needed	Q19848	gene product	Not needed	Q86XL3	gene product	database
+Not needed	Q19872	gene product	Not needed	Q9TZK8	gene product	database
+Not needed	Q20010	gene product	Not needed	Q95ZY7	gene product	database
+Not needed	Q20010	gene product	Not needed	A5JYX3	gene product	database
+Not needed	Q20052	gene product	Not needed	P34514	gene product	database
+Not needed	Q20117	gene product	Not needed	Q966L2	gene product	database
+Not needed	Q20402	gene product	Not needed	Q9XTF3	gene product	database
+Not needed	Q20655	gene product	Not needed	Q21921	gene product	database
+Not needed	Q20709	gene product	Not needed	Q9NAN2	gene product	database
+Not needed	Q20709	gene product	Not needed	Q22174	gene product	database
+Not needed	Q21049	gene product	Not needed	P23678-1	gene product	database
+Not needed	Q21148	gene product	Not needed	Q21361	gene product	database
+Not needed	Q21148	gene product	Not needed	Q8IG69	gene product	database
+Not needed	Q21209	gene product	Not needed	Q95017	gene product	database
+Not needed	Q21215	gene product	Not needed	G5EBY5	gene product	database
+Not needed	Q21215	gene product	Not needed	Q95QM5	gene product	database
+Not needed	Q21361	gene product	Not needed	O16213	gene product	database
+Not needed	Q21361	gene product	Not needed	Q8IG69	gene product	database
+Not needed	Q21361	gene product	Not needed	Q94126	gene product	database
+Not needed	Q21361	gene product	Not needed	P92004	gene product	database
+Not needed	Q21441	gene product	Not needed	Q23023	gene product	database
+Not needed	Q21443	gene product	Not needed	Q9XTB5	gene product	database
+Not needed	Q21502	gene product	Not needed	P34498	gene product	database
+Not needed	Q21502	gene product	Not needed	G5EBT5	gene product	database
+Not needed	Q21502	gene product	Not needed	Q09530	gene product	database
+Not needed	Q21502	gene product	Not needed	Q94131	gene product	database
+Not needed	Q21633	gene product	Not needed	Q9N2Z7	gene product	database
+Not needed	Q21691	gene product	Not needed	G5EG51	gene product	database
+Not needed	Q21693	gene product	Not needed	Q9XW13	gene product	database
+Not needed	Q21738	gene product	Not needed	Q9U299	gene product	database
+Not needed	Q22227	gene product	Not needed	O16393	gene product	database
+Not needed	Q22227	gene product	Not needed	O01580	gene product	database
+Not needed	Q22227	gene product	Not needed	G5EEN7	gene product	database
+Not needed	Q22227	gene product	Not needed	Q94392	gene product	database
+Not needed	Q22397	gene product	Not needed	G5EDM4-1	gene product	database
+Not needed	Q22592	gene product	Not needed	Q23533	gene product	database
+Not needed	Q22592	gene product	Not needed	Q9TXI7	gene product	database
+Not needed	Q22601	gene product	Not needed	G5ECW9	gene product	database
+Not needed	Q22601	gene product	Not needed	Q9GYH7	gene product	database
+Not needed	Q22703	gene product	Not needed	G5EF11	gene product	database
+Not needed	Q22799	gene product	Not needed	Q17902	gene product	database
+Not needed	Q22799	gene product	Not needed	G5ECT7	gene product	database
+Not needed	Q22799	gene product	Not needed	Q23064-3	gene product	database
+Not needed	Q23023	gene product	Not needed	G5ECQ1	gene product	database
+Not needed	Q23064	gene product	Not needed	V6CJ04	gene product	database
+Not needed	Q23064	gene product	Not needed	Q22799	gene product	database
+Not needed	Q23064	gene product	Not needed	O45717	gene product	database
+Not needed	Q23272	gene product	Not needed	Q8IG69	gene product	database
+Not needed	Q23529	gene product	Not needed	G5ED30	gene product	database
+Not needed	Q23536	gene product	Not needed	K8ESC5-2	gene product	database
+Not needed	Q2PJ68	gene product	Not needed	Q9XTG7	gene product	database
+Not needed	Q8I4M5	gene product	Not needed	Q95ZK7-1	gene product	database
+Not needed	Q8IG69	gene product	Not needed	Q22156	gene product	database
+Not needed	Q8IG69	gene product	Not needed	Q94126	gene product	database
+Not needed	Q8IG69	gene product	Not needed	Q9N5A8	gene product	database
+Not needed	Q8IG69	gene product	Not needed	Q9XUK2	gene product	database
+Not needed	Q8IG69	gene product	Not needed	A0A1I6CMA8	gene product	database
+Not needed	Q8MQ03	gene product	Not needed	Q9XUS9	gene product	database
+Not needed	Q8MQ04	gene product	Not needed	Q19955	gene product	database
+Not needed	Q8MQE6	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	Q8WQG9	gene product	Not needed	P05412	gene product	database
+Not needed	Q8WQL7	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	Q93413	gene product	Not needed	Q95XS0	gene product	database
+Not needed	Q93413	gene product	Not needed	G5ECM1	gene product	database
+Not needed	Q93794	gene product	Not needed	P31695	gene product	database
+Not needed	Q94126	gene product	Not needed	Q9XUK2	gene product	database
+Not needed	Q94126	gene product	Not needed	Q9NAE4	gene product	database
+Not needed	Q94131	gene product	Not needed	Q22805	gene product	database
+Not needed	Q94131	gene product	Not needed	P34482	gene product	database
+Not needed	Q94261	gene product	Not needed	Q9N359	gene product	database
+Not needed	Q94420	gene product	Not needed	Q09230	gene product	database
+Not needed	Q94420	gene product	Not needed	Q21648	gene product	database
+Not needed	Q94420	gene product	Not needed	Q9NF71	gene product	database
+Not needed	Q94420	gene product	Not needed	P34808-2	gene product	database
+Not needed	Q94420	gene product	Not needed	Q9GYQ9	gene product	database
+Not needed	Q94420	gene product	Not needed	Q9XW53	gene product	database
+Not needed	Q95017	gene product	Not needed	Q95Q25	gene product	database
+Not needed	Q95Q25	gene product	Not needed	P34348	gene product	database
+Not needed	Q95QA6	gene product	Not needed	G5EFL5	gene product	database
+Not needed	Q95QA6	gene product	Not needed	O18302	gene product	database
+Not needed	Q95QD7	gene product	Not needed	Q23482	gene product	database
+Not needed	Q95QI7	gene product	Not needed	Q9XVS0	gene product	database
+Not needed	Q95QJ7	gene product	Not needed	Q9N2V6	gene product	database
+Not needed	Q95QJ7	gene product	Not needed	O01488	gene product	database
+Not needed	Q95Y72	gene product	Not needed	Q04908	gene product	database
+Not needed	Q95Y80	gene product	Not needed	Q965X6	gene product	database
+Not needed	Q95YF3	gene product	Not needed	Q21740	gene product	database
+Not needed	Q95ZK7	gene product	Not needed	Q9N5M6	gene product	database
+Not needed	Q95ZK7	gene product	Not needed	Q8I4M5	gene product	database
+Not needed	Q95ZK7	gene product	Not needed	Q8I4M5-3	gene product	database
+Not needed	Q95ZQ4	gene product	Not needed	Q9NAH7	gene product	database
+Not needed	Q967F4	gene product	Not needed	Q9U308	gene product	database
+Not needed	Q9BI89	gene product	Not needed	Q8I100	gene product	database
+Not needed	Q9BLB6	gene product	Not needed	Q21323	gene product	database
+Not needed	Q9GSX9	gene product	Not needed	P51875	gene product	database
+Not needed	Q9GSX9	gene product	Not needed	Q9N2V6	gene product	database
+Not needed	Q9GYJ9	gene product	Not needed	O61521	gene product	database
+Not needed	Q9GYJ9	gene product	Not needed	Q9N431	gene product	database
+Not needed	Q9GYJ9	gene product	Not needed	D9PTP5	gene product	database
+Not needed	Q9N2V6	gene product	Not needed	Q9GSX9-1	gene product	database
+Not needed	Q9N2Z7	gene product	Not needed	Q9XXI4	gene product	database
+Not needed	Q9N2Z7	gene product	Not needed	Q18966	gene product	database
+Not needed	Q9N5D6	gene product	Not needed	Q19503	gene product	database
+Not needed	Q9N5M6	gene product	Not needed	Q03571	gene product	database
+Not needed	Q9N5M6	gene product	Not needed	Q95ZK7-1	gene product	database
+Not needed	Q9N5M6	gene product	Not needed	O62486	gene product	database
+Not needed	Q9NA64	gene product	Not needed	Q18008	gene product	database
+Not needed	Q9NAD6	gene product	Not needed	O44400	gene product	database
+Not needed	Q9NAG4	gene product	Not needed	P30429-2	gene product	database
+Not needed	Q9NAG4	gene product	Not needed	Q9U2Q9	gene product	database
+Not needed	Q9NAN2	gene product	Not needed	Q8MXV3	gene product	database
+Not needed	Q9NAN2	gene product	Not needed	P34288-2	gene product	database
+Not needed	Q9NAN2	gene product	Not needed	Q9NEZ5	gene product	database
+Not needed	Q9NEZ5	gene product	Not needed	Q17549	gene product	database
+Not needed	Q9TW45	gene product	Not needed	Q21341	gene product	database
+Not needed	Q9TW65	gene product	Not needed	Q9Y048	gene product	database
+Not needed	Q9U2M5	gene product	Not needed	Q9XTR1	gene product	database
+Not needed	Q9U2Q9	gene product	Not needed	Q3LRZ3	gene product	database
+Not needed	Q9U308	gene product	Not needed	H2KYP0	gene product	database
+Not needed	Q9U389	gene product	Not needed	P34605	gene product	database
+Not needed	Q9U9Y8	gene product	Not needed	Q9U1S2	gene product	database
+Not needed	Q9U9Y8	gene product	Not needed	Q21636	gene product	database
+Not needed	Q9U9Y8	gene product	Not needed	O76449	gene product	database
+Not needed	Q9U9Y8	gene product	Not needed	Q19749	gene product	database
+Not needed	Q9U9Y8	gene product	Not needed	Q18171	gene product	database
+Not needed	Q9UK17	gene product	Not needed	Q9NZI2	gene product	database
+Not needed	Q9XTF3	gene product	Not needed	P34808	gene product	database
+Not needed	Q9XTY6	gene product	Not needed	Q9U2T9	gene product	database
+Not needed	Q9XVK6	gene product	Not needed	P34286	gene product	database
+Not needed	Q9XVK6	gene product	Not needed	Q9XWP6	gene product	database
+Not needed	Q9XW79	gene product	Not needed	Q9N4E9	gene product	database
+Not needed	Q9XWH0	gene product	Not needed	O02053	gene product	database
+Not needed	Q9XX14	gene product	Not needed	G5EGG0	gene product	database
+Not needed	Q9XZI6	gene product	Not needed	Q9U2T9	gene product	database
+Not needed	Q9XZI6	gene product	Not needed	Q95XW5	gene product	database
+Not needed	V6CJ04	gene product	Not needed	Q17902	gene product	database
+Not needed	V6CJ04	gene product	Not needed	Q23064-3	gene product	database
+Not needed	W6RTA4	gene product	Not needed	Q19980	gene product	database
+Not needed	C1P635	gene product	Not needed	Q9TZ84	gene product	database
+Not needed	C1P635	gene product	Not needed	Q18426	gene product	database
+Not needed	G2HK15	gene product	Not needed	Q19862	gene product	database
+Not needed	G5EFL5	gene product	Not needed	Q23158	gene product	database
+Not needed	G5EFL5	gene product	Not needed	Q17865	gene product	database
+Not needed	G5EFL5	gene product	Not needed	Q20712	gene product	database
+Not needed	G5EFL5	gene product	Not needed	Q9N4P3	gene product	database
+Not needed	G5EFL5	gene product	Not needed	Q20398	gene product	database
+Not needed	G5EFL5	gene product	Not needed	Q09651	gene product	database
+Not needed	G5EFM0	gene product	Not needed	Q9NGT3	gene product	database
+Not needed	G5EGG0	gene product	Not needed	Q17865	gene product	database
+Not needed	G5EGG0	gene product	Not needed	Q18043	gene product	database
+Not needed	G5EGG0	gene product	Not needed	H2KZ17	gene product	database
+Not needed	G5EGG0	gene product	Not needed	P30642	gene product	database
+Not needed	G5EGG0	gene product	Not needed	Q9XX47	gene product	database
+Not needed	G5EGG0	gene product	Not needed	Q9U252	gene product	database
+Not needed	O01422	gene product	Not needed	Q9GS00	gene product	database
+Not needed	O01422	gene product	Not needed	Q9N359	gene product	database
+Not needed	O17071	gene product	Not needed	O76371	gene product	database
+Not needed	O17680	gene product	Not needed	P50305	gene product	database
+Not needed	O17680	gene product	Not needed	P50306	gene product	database
+Not needed	O17915	gene product	Not needed	Q86G90	gene product	database
+Not needed	O76371	gene product	Not needed	Q10920	gene product	database
+Not needed	P30632	gene product	Not needed	Q19824	gene product	database
+Not needed	P34348	gene product	Not needed	Q21621	gene product	database
+Not needed	P34563	gene product	Not needed	Q9XXJ0	gene product	database
+Not needed	P34605	gene product	Not needed	Q20100	gene product	database
+Not needed	P34629	gene product	Not needed	O01812	gene product	database
+Not needed	P34638	gene product	Not needed	P34647	gene product	database
+Not needed	P45962	gene product	Not needed	Q9U3B7	gene product	database
+Not needed	P46769	gene product	Not needed	P49197	gene product	database
+Not needed	P52011	gene product	Not needed	Q9NAP8	gene product	database
+Not needed	P90900	gene product	Not needed	P34288-2	gene product	database
+Not needed	Q03601	gene product	Not needed	G5EFS1	gene product	database
+Not needed	Q09390	gene product	Not needed	G5EBR0	gene product	database
+Not needed	Q09485	gene product	Not needed	Q20759	gene product	database
+Not needed	Q17795	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	Q19418	gene product	Not needed	Q95XW5	gene product	database
+Not needed	Q19418	gene product	Not needed	Q8MPT2	gene product	database
+Not needed	Q19766	gene product	Not needed	P34453	gene product	database
+Not needed	Q19980	gene product	Not needed	Q22306	gene product	database
+Not needed	Q20628	gene product	Not needed	Q19826	gene product	database
+Not needed	Q21554	gene product	Not needed	Q86S68	gene product	database
+Not needed	Q21746	gene product	Not needed	P91419	gene product	database
+Not needed	Q21746	gene product	Not needed	Q23382	gene product	database
+Not needed	Q21746	gene product	Not needed	Q18124	gene product	database
+Not needed	Q21746	gene product	Not needed	Q21073	gene product	database
+Not needed	Q21746	gene product	Not needed	Q9XX56	gene product	database
+Not needed	Q21746	gene product	Not needed	Q9N5B1	gene product	database
+Not needed	Q21746	gene product	Not needed	O45503	gene product	database
+Not needed	Q21746	gene product	Not needed	O44606	gene product	database
+Not needed	Q21746	gene product	Not needed	O18118	gene product	database
+Not needed	Q21746	gene product	Not needed	O16948	gene product	database
+Not needed	Q21746	gene product	Not needed	Q9XUH6	gene product	database
+Not needed	Q21746	gene product	Not needed	Q9U238	gene product	database
+Not needed	Q21917	gene product	Not needed	Q09587	gene product	database
+Not needed	Q22752	gene product	Not needed	O45087	gene product	database
+Not needed	Q22836	gene product	Not needed	Q18445	gene product	database
+Not needed	Q86S66	gene product	Not needed	H2KZY3	gene product	database
+Not needed	Q8WQC0	gene product	Not needed	H2KZ17	gene product	database
+Not needed	Q95Q17	gene product	Not needed	Q6BER6	gene product	database
+Not needed	Q95R14	gene product	Not needed	Q9U3L0	gene product	database
+Not needed	Q965F9	gene product	Not needed	P34269	gene product	database
+Not needed	Q9BKS1	gene product	Not needed	G5ECR7	gene product	database
+Not needed	Q9BKS1	gene product	Not needed	P78395	gene product	database
+Not needed	Q9N423	gene product	Not needed	Q21191	gene product	database
+Not needed	Q9TYT0	gene product	Not needed	Q18097	gene product	database
+Not needed	Q9U2R6	gene product	Not needed	P92004	gene product	database
+Not needed	Q9U334	gene product	Not needed	Q25AR8	gene product	database
+Not needed	Q9XVR6	gene product	Not needed	P61088	gene product	database
+Not needed	Q9XW13	gene product	Not needed	Q8MQ52	gene product	database
+Not needed	G5EBF5	gene product	Not needed	G5EEH0	gene product	database
+Not needed	G5EBF5	gene product	Not needed	Q8MPT2	gene product	database
+Not needed	G5ECF1	gene product	Not needed	G5EF47	gene product	database
+Not needed	G5EDE7	gene product	Not needed	Q18282	gene product	database
+Not needed	G5EE53	gene product	Not needed	Q19731	gene product	database
+Not needed	G5EE53	gene product	Not needed	Q95XS0	gene product	database
+Not needed	H2KYX3	gene product	Not needed	K8F7T2	gene product	database
+Not needed	O02173	gene product	Not needed	Q9NA81	gene product	database
+Not needed	O16453	gene product	Not needed	Q9TYS3	gene product	database
+Not needed	O16519	gene product	Not needed	O45521	gene product	database
+Not needed	O18302	gene product	Not needed	Q9UAT1	gene product	database
+Not needed	O18302	gene product	Not needed	Q17744	gene product	database
+Not needed	O18302	gene product	Not needed	Q17936	gene product	database
+Not needed	O18302	gene product	Not needed	P92004	gene product	database
+Not needed	O44156	gene product	Not needed	Q27488	gene product	database
+Not needed	O44156	gene product	Not needed	Q09583	gene product	database
+Not needed	O44158	gene product	Not needed	O76258	gene product	database
+Not needed	O44400	gene product	Not needed	Q21319	gene product	database
+Not needed	O44501	gene product	Not needed	Q19752	gene product	database
+Not needed	O44501	gene product	Not needed	O18197	gene product	database
+Not needed	O44739	gene product	Not needed	Q9XWX7	gene product	database
+Not needed	O44782	gene product	Not needed	O18686	gene product	database
+Not needed	O45189	gene product	Not needed	G5EEW7	gene product	database
+Not needed	O45379	gene product	Not needed	Q18268	gene product	database
+Not needed	O45521	gene product	Not needed	Q93701	gene product	database
+Not needed	O45521	gene product	Not needed	Q95Y97	gene product	database
+Not needed	O45521	gene product	Not needed	Q9TZI2	gene product	database
+Not needed	O45799	gene product	Not needed	Q21018	gene product	database
+Not needed	O45799	gene product	Not needed	Q9XV36	gene product	database
+Not needed	O45799	gene product	Not needed	G5EEK5	gene product	database
+Not needed	O62102	gene product	Not needed	Q23237	gene product	database
+Not needed	O76577	gene product	Not needed	O61792	gene product	database
+Not needed	P34659	gene product	Not needed	Q18786	gene product	database
+Not needed	P34692	gene product	Not needed	Q9UAT1	gene product	database
+Not needed	P34692	gene product	Not needed	G5EFF2	gene product	database
+Not needed	P46577	gene product	Not needed	Q9XW68	gene product	database
+Not needed	P47207	gene product	Not needed	G5EEN7	gene product	database
+Not needed	P49181	gene product	Not needed	O01482	gene product	database
+Not needed	P53016	gene product	Not needed	Q18547	gene product	database
+Not needed	Q09583	gene product	Not needed	O17586	gene product	database
+Not needed	Q17370	gene product	Not needed	Q17589	gene product	database
+Not needed	Q17436	gene product	Not needed	Q9XXL3	gene product	database
+Not needed	Q17549	gene product	Not needed	Q22759	gene product	database
+Not needed	Q17549	gene product	Not needed	G5EBU5	gene product	database
+Not needed	Q17549	gene product	Not needed	A9D2X7	gene product	database
+Not needed	Q17549	gene product	Not needed	Q9BKU2	gene product	database
+Not needed	Q17865	gene product	Not needed	H2KYD4	gene product	database
+Not needed	Q17865	gene product	Not needed	Q7K7J0	gene product	database
+Not needed	Q17865	gene product	Not needed	Q9N415	gene product	database
+Not needed	Q17865	gene product	Not needed	Q8MPT2	gene product	database
+Not needed	Q18787	gene product	Not needed	Q20058	gene product	database
+Not needed	Q18964	gene product	Not needed	P34296	gene product	database
+Not needed	Q18964	gene product	Not needed	H2KZJ7	gene product	database
+Not needed	Q19440	gene product	Not needed	Q23624	gene product	database
+Not needed	Q20498	gene product	Not needed	O17099	gene product	database
+Not needed	Q20678	gene product	Not needed	A0A0S4XR43	gene product	database
+Not needed	Q20741	gene product	Not needed	Q9NAB0	gene product	database
+Not needed	Q21592	gene product	Not needed	Q9TZK8	gene product	database
+Not needed	Q22174	gene product	Not needed	Q20476	gene product	database
+Not needed	Q22174	gene product	Not needed	O01796	gene product	database
+Not needed	Q22174	gene product	Not needed	Q9U2E9	gene product	database
+Not needed	Q22174	gene product	Not needed	H2KYP1	gene product	database
+Not needed	Q22174	gene product	Not needed	O16997	gene product	database
+Not needed	Q22253	gene product	Not needed	O61792	gene product	database
+Not needed	Q23158	gene product	Not needed	Q9TZA6	gene product	database
+Not needed	Q27488	gene product	Not needed	Q94392	gene product	database
+Not needed	Q7K7J0	gene product	Not needed	Q95QQ9	gene product	database
+Not needed	Q7K7J0	gene product	Not needed	Q9U9I9	gene product	database
+Not needed	Q7K7J0	gene product	Not needed	Q9TYX9	gene product	database
+Not needed	Q7K7J0	gene product	Not needed	Q95Y26	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	P91419	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	Q95ZV9	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	O01299	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	H2KZV4	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	Q93637	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	Q20357	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	Q9TYX9	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	Q9N4G4	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	O02174	gene product	database
+Not needed	Q8MPT2	gene product	Not needed	Q86PI8	gene product	database
+Not needed	Q95005	gene product	Not needed	Q95008	gene product	database
+Not needed	Q95Y97	gene product	Not needed	Q9U1X7	gene product	database
+Not needed	Q9LUS8	gene product	Not needed	Q17TI5	gene product	database
+Not needed	Q9U2C3	gene product	Not needed	G5ECW9	gene product	database
+Not needed	Q9U2S6	gene product	Not needed	P91175	gene product	database
+Not needed	Q9XVS8	gene product	Not needed	Q9U757	gene product	database
+Not needed	Q9XVU8	gene product	Not needed	P34288-2	gene product	database
+Not needed	B1Q240	gene product	Not needed	Q19257	gene product	database
+Not needed	B1Q240	gene product	Not needed	Q9N3Z0	gene product	database
+Not needed	G5EBE3	gene product	Not needed	G5EBT5	gene product	database
+Not needed	G5ECL3	gene product	Not needed	Q22469	gene product	database
+Not needed	G5ECL3	gene product	Not needed	Q19335	gene product	database
+Not needed	G5ECZ8	gene product	Not needed	Q18529	gene product	database
+Not needed	G5ECZ8	gene product	Not needed	Q17415	gene product	database
+Not needed	G5ECZ8	gene product	Not needed	Q6BEV5	gene product	database
+Not needed	G5EE98	gene product	Not needed	G5EDX9	gene product	database
+Not needed	G5EE98	gene product	Not needed	O45285	gene product	database
+Not needed	G5EEG8	gene product	Not needed	O45904	gene product	database
+Not needed	G5EF34	gene product	Not needed	Q21344	gene product	database
+Not needed	G5EF34	gene product	Not needed	O16783	gene product	database
+Not needed	G5EF34	gene product	Not needed	Q9U1T5	gene product	database
+Not needed	G5EFG5	gene product	Not needed	Q9XU10	gene product	database
+Not needed	G5EFS1	gene product	Not needed	Q9TZK8	gene product	database
+Not needed	G5EFX8	gene product	Not needed	Q10923	gene product	database
+Not needed	H2KYN0	gene product	Not needed	Q9TY08	gene product	database
+Not needed	H2L055	gene product	Not needed	Q17353-3	gene product	database
+Not needed	H2L0F6	gene product	Not needed	O16525	gene product	database
+Not needed	O01482	gene product	Not needed	P91280	gene product	database
+Not needed	O01489	gene product	Not needed	P34657	gene product	database
+Not needed	O02289	gene product	Not needed	H2L0N7	gene product	database
+Not needed	O16502	gene product	Not needed	Q17353-3	gene product	database
+Not needed	O18694	gene product	Not needed	Q23543	gene product	database
+Not needed	O45904	gene product	Not needed	Q17786	gene product	database
+Not needed	O45904	gene product	Not needed	B3WFT8	gene product	database
+Not needed	O45904	gene product	Not needed	Q9XV56	gene product	database
+Not needed	O45904	gene product	Not needed	Q22290	gene product	database
+Not needed	O45904	gene product	Not needed	Q19275	gene product	database
+Not needed	O62252	gene product	Not needed	Q9XW12	gene product	database
+Not needed	O76615	gene product	Not needed	Q21453	gene product	database
+Not needed	O76630	gene product	Not needed	Q93568	gene product	database
+Not needed	P34286	gene product	Not needed	O17200	gene product	database
+Not needed	P34344	gene product	Not needed	Q9XUJ2	gene product	database
+Not needed	P34437	gene product	Not needed	O16893	gene product	database
+Not needed	Q09408	gene product	Not needed	P92186-2	gene product	database
+Not needed	Q09506	gene product	Not needed	G5EF99	gene product	database
+Not needed	Q18776	gene product	Not needed	Q20759	gene product	database
+Not needed	Q19986	gene product	Not needed	Q21827	gene product	database
+Not needed	Q21318	gene product	Not needed	Q21648	gene product	database
+Not needed	Q21319	gene product	Not needed	Q21648	gene product	database
+Not needed	Q21648	gene product	Not needed	Q19618	gene product	database
+Not needed	Q21924	gene product	Not needed	Q22387	gene product	database
+Not needed	Q22757	gene product	Not needed	Q9N590	gene product	database
+Not needed	Q22798	gene product	Not needed	Q20317	gene product	database
+Not needed	Q22798	gene product	Not needed	Q9NAC5	gene product	database
+Not needed	Q8I4A4	gene product	Not needed	Q9XV56	gene product	database
+Not needed	Q8I4A4	gene product	Not needed	Q22290	gene product	database
+Not needed	Q95XW5	gene product	Not needed	O16684	gene product	database
+Not needed	Q95XW5	gene product	Not needed	Q9TYX9	gene product	database
+Not needed	Q9GRY9	gene product	Not needed	Q9XVS2	gene product	database
+Not needed	Q9N590	gene product	Not needed	Q9XWX7	gene product	database
+Not needed	Q9NA56	gene product	Not needed	Q9XWH5	gene product	database
+Not needed	G5EFH4	gene product	Not needed	Q07009	gene product	database
+Not needed	G5EFH4	gene product	Not needed	P07711	gene product	database
+Not needed	O01442	gene product	Not needed	Q93345	gene product	database
+Not needed	O16783	gene product	Not needed	Q20002	gene product	database
+Not needed	O17100	gene product	Not needed	Q94207	gene product	database
+Not needed	O18180	gene product	Not needed	Q9N3T6	gene product	database
+Not needed	O44135	gene product	Not needed	P91246	gene product	database
+Not needed	O44714	gene product	Not needed	Q94207	gene product	database
+Not needed	O45713	gene product	Not needed	Q9TZ84	gene product	database
+Not needed	Q09387	gene product	Not needed	Q93203	gene product	database
+Not needed	Q18030	gene product	Not needed	Q9N360	gene product	database
+Not needed	Q19209	gene product	Not needed	Q9XVA3	gene product	database
+Not needed	Q20002	gene product	Not needed	Q21344	gene product	database
+Not needed	Q20577	gene product	Not needed	Q9NAC0	gene product	database
+Not needed	Q22387	gene product	Not needed	Q17353-3	gene product	database
+Not needed	Q22513	gene product	Not needed	Q9N3H6	gene product	database
+Not needed	A0A0K3AV08	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A2K5ATM0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A2K5ATN2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	B3WFY8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G4SLH0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EBH0	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G5EBH1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EBJ9	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5EBT1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EBU3	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EBV0	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	G5EBV0	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	G5EBX6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EBX9	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EBZ8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5ECH7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5ECJ6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5ECJ6	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5ECQ3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EDF7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EDR5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EDR5	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EDT6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EDW5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EE06	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G5EE56	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EE56	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EEE1	gene product	Not needed		metabolite	database
+Not needed	G5EFD2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFD9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EFE7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EFE7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFH8	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	G5EFI8	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G5EFL0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFL0	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EFM9	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFP5	gene product	Not needed		metabolite	database
+Not needed	G5EFT4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EFU0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFU0	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EFZ1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFZ1	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EG78	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G5EG78	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	G5EGK5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EGK8	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EGM1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EGQ3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G8JY02	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G8JY02	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	H1UBK1	gene product	Not needed	CHEBI:48828	metabolite	database
+Not needed	H1UBK1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H1UBK1	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	H1UBK1	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	H2KYQ5	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	H2KZW3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H2L099	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	K8FE10	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	O01326	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O01326	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O01510	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O01583	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O01658	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	O01700	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O01705	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O01739	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O01775	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O02158	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O02298	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O02655	gene product	Not needed	CHEBI:15361	metabolite	database
+Not needed	O16299	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O16374	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O17087	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O17087	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O17622	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O17670	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O17754	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O17798	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	O18017	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O18696	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	O44408	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O44476	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44514	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O44750	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44836	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44857	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44959	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O44997	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O45293	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O45307	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O45539	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O45539	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O45679	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O45797	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O45818	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O45947	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O61394	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O61460	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O61847	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O62137	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O62138	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O62140	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O62255	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O62255	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O62305	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O76360	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O76373	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P12456	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P22454	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P27715	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P30645	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P34273	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	P34283	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34409	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34409	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P34461	gene product	Not needed	CHEBI:23378	metabolite	database
+Not needed	P34461	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P34529	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34529	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P34548	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P34607	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34649	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34678	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P34690	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34693	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P34697	gene product	Not needed	CHEBI:23378	metabolite	database
+Not needed	P34697	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P39745	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P41956	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	P45895	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P46549	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P46975	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P46975	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P48376	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	P48727	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P49594	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P49594	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P50432	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	P51559	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P52275	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P54137	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	P54688	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	P83388	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P83388	gene product	Not needed	CHEBI:29036	metabolite	database
+Not needed	P84199	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P90740	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P90740	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P90820	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	P90838	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P90866	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P90895	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	P90897	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P90925	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	P90980	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P90986	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	P91001	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P91119	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P91351	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P91910	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P92199	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P98060	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q07292	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q09296	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q09298	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09374	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q09474	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q09496	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q09499	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09545	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q09545	gene product	Not needed	CHEBI:21137	metabolite	database
+Not needed	Q09545	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q09647	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q0G819	gene product	Not needed	CHEBI:29034	metabolite	database
+Not needed	Q0G819	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q10576	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q10576	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	Q10656	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q10905	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q10916	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q11179	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q17335	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q17446	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q17446	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q17745	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q17850	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q17850	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q17880	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q17880	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q17941	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q18425	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q18680	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q18801	gene product	Not needed	CHEBI:58349	metabolite	database
+Not needed	Q18846	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q18990	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q18990	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q18990	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q19087	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q19202	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q19266	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19420	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19427	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19427	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q19427	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q19469	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19546	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q19564	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q19614	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19775	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19775	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q19791	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q1ENI8	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q1ENI8	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	Q20065	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q20065	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	Q20230	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q20443	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q20480	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20481	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20616	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	Q20624	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q20646	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20679	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q20679	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	Q20679	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q20930	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20992	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q21017	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21029	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21059	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21307	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21360	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21412	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q21432	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21489	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q21734	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21921	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22000	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q22036	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q22067	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q22146	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q22258	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q22942	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q23023	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q23255	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q23290	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q23490	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	Q23498	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q23541	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q23551	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q23571	gene product	Not needed	CHEBI:83088	metabolite	database
+Not needed	Q23651	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q23670	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q23670	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q23670	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q27487	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27497	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q2L6W9	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q2PJ68	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q3Y416	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q4TT88	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q564Q1	gene product	Not needed	CHEBI:57540	metabolite	database
+Not needed	Q6DNF4	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q7K755	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q7Z1Z1	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q86C56	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q8I0P7	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q8I113	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8I136	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q8I7M8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8ITX8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8ITX8	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q8MNT9	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q8MXI4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8T3G2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8WQG9	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8WQL7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q93243	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q93244	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q93379	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q93703	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q95NM6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95Q34	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95Q89	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q95QK3	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q95XG9	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q95ZJ1	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q95ZS2	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q965G5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q965Q8	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q965X9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q968Y9	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9GN62	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9GN62	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9GRZ3	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q9GUM2	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9GYI0	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q9GYI4	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q9N2L7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9N3T2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9N3T5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9N491	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9NAH6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9NB31	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9NES8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9NES8	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9TW45	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9TW67	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9TXI7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9TXJ0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9TZM3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9TZM3	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9TZQ3	gene product	Not needed		metabolite	database
+Not needed	Q9U1Y5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U297	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q9U2M7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U2M7	gene product	Not needed	CHEBI:48828	metabolite	database
+Not needed	Q9U2M7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9U2M7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9U2M7	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q9U9Y8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9UAY4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9XTC6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XTF3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XTG7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XTQ5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XTQ6	gene product	Not needed	CHEBI:29036	metabolite	database
+Not needed	Q9XTR1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XTW2	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9XU75	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9XU84	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q9XU84	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XU84	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9XUB9	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q9XUJ7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XW79	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9XWN7	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q9XWP6	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	X5M5N0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A061AKZ2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3ARK6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A1X7RC69	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A3QMC8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	D3KFW7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EBR7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EBR7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EBW1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5ECJ8	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5ECS8	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5ED43	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5EDG8	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5EDP6	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5EE78	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EED8	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	G5EF05	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5EF05	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	G5EF05	gene product	Not needed	CHEBI:21137	metabolite	database
+Not needed	G5EF06	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EF65	gene product	Not needed	CHEBI:57540	metabolite	database
+Not needed	G5EFA4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFV7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EG63	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G8JY36	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	H2KYG4	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	H9G328	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H9G329	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H9G330	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H9G331	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	K8F7V7	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	K8F7V7	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	K8F7V7	gene product	Not needed	CHEBI:21137	metabolite	database
+Not needed	O01592	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O02058	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O16796	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O17680	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O17680	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	O17732	gene product	Not needed	CHEBI:57586	metabolite	database
+Not needed	O17732	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44199	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44510	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44512	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	O45137	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O45145	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O45218	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O45228	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O45359	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O45364	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O45583	gene product	Not needed	CHEBI:58349	metabolite	database
+Not needed	O61199	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	O61199	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O61235	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O61397	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O62139	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O76463	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P24890	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	P24893	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	P24893	gene product	Not needed	CHEBI:23378	metabolite	database
+Not needed	P24894	gene product	Not needed	CHEBI:23378	metabolite	database
+Not needed	P27604	gene product	Not needed	CHEBI:57540	metabolite	database
+Not needed	P28051	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P30635	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	P31161	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P34355	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	P34455	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	P34534	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34534	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P34534	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P34629	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P34673	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34673	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P34751	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	P41885	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P41931	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	P41937	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P41977	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P41992	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P42170	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	P46559	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P48459	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P49595	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P49595	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P49596	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P49596	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P52274	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P53588	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P53589	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P55112	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P55113	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P91137	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P91153	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P91406	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P91828	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P91917	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P92006	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	P98061	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q09508	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q09509	gene product	Not needed	CHEBI:60242	metabolite	database
+Not needed	Q09568	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09568	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q09590	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q09590	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q10002	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q10660	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q10949	gene product	Not needed	CHEBI:15361	metabolite	database
+Not needed	Q11068	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q11190	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q11190	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q17828	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q17828	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q17938	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q17949	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q18026	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q18164	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q18164	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q18164	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q18206	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q18515	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q18673	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q18677	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q18788	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q18953	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q19842	gene product	Not needed	CHEBI:57586	metabolite	database
+Not needed	Q19842	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19842	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q20176	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20296	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20375	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q20628	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20942	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21109	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q21217	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q21376	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q21773	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21988	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q22070	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q22236	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q22347	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q22531	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22619	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q22922	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q23122	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q23295	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q23381	gene product	Not needed	CHEBI:18408	metabolite	database
+Not needed	Q23500	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q23652	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q23652	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q27474	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q27483	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q27527	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q2V4U7	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q6DNF3	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q6DNF7	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q7JLI1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q7YTU4	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q86S40	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q93170	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q93459	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q93576	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q93714	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q93714	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q93873	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q94272	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q94272	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q94316	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q94360	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q95Q98	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q95YE2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q960A1	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q960A1	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q960A1	gene product	Not needed	CHEBI:71302	metabolite	database
+Not needed	Q965X7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q966F9	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q966F9	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9GYG4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9GYG4	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9NA25	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9NA25	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9TXJ8	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9TZL8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U229	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q9U2C4	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9U3F2	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q9U3S9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9XTT8	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9XVE5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9XVI6	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q9XWG3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XWG3	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9Y041	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	Q9Y194	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	U3NGQ0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	V6CIU3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	V6CJK3	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	V6CKR7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	V6CM34	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	V6CM38	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	W6RQW7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	W6RTC2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	W6SBC4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3ARJ9	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A0K3ASB9	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3ASW2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3AUF6	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A0K3AVW5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3AY55	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A131MB12	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A131MB12	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A163UTN8	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A1C5A3Y4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A5B8GIE9	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A5A631	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A5JYX9	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	B1GA73	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	B1PEW7	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	B1PEX9	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	B5BM35	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	D2IX26	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	D2IX26	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	D3NQA9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	D3YT22	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	D3YT36	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	D3YT37	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	D3YT50	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	E2CST3	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	F3NTD9	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	G4SN66	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G4XR22	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	G5EBG7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EBJ7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EBX5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EBX5	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5ECR5	gene product	Not needed	CHEBI:23378	metabolite	database
+Not needed	G5ECR5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5ECW7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EDB7	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	G5EE09	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EEH6	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5EF14	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G5EFK6	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EGH2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EGH4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EGH9	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5EGH9	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	G5EGS9	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EGT6	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	G5SKB0	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G8JY85	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G8JYF6	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	H1Y3N3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H2KYF8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H2KZ19	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H2L0M0	gene product	Not needed	CHEBI:57586	metabolite	database
+Not needed	H2L0M5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H2L2A7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H2L2D1	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	H9G2T4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H9G2T4	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	I2HAD4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	K8ESE2	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	M1ZMI3	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	M1ZMI3	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	O01541	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O01590	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O01824	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O01824	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O01884	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O02286	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O02304	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O16315	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O16654	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	O16880	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O16977	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O17264	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O17554	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	O17560	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O17624	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O17643	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O17643	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O17708	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O17751	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O17892	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O17892	gene product	Not needed	CHEBI:71302	metabolite	database
+Not needed	O17892	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	O17913	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	O17913	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O17921	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O17953	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O18183	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O18183	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O44183	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44451	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	O44501	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O44549	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O44906	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O44954	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O45138	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O45148	gene product	Not needed	CHEBI:83088	metabolite	database
+Not needed	O45417	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O45417	gene product	Not needed	CHEBI:49786	metabolite	database
+Not needed	O45799	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	O45924	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	O61856	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O61856	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	O62113	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O62218	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	O62243	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O62245	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O62317	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	O62446	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O62461	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O62515	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	O62515	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	P30648	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P32740	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P34275	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	P34436	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P34465	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	P34650	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P41847	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	P41847	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	P48458	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P48460	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P49958	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	P50305	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P50305	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	P50306	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P50306	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	P50444	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P52899	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	P52899	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P54813	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P55114	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P55115	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P55216	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	P90731	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P90755	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P90755	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P90771	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	P90787	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P90795	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	P90829	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	P90830	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P91079	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	P91134	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P91268	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P91427	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P91428	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P91851	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P91856	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q09216	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q09409	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09409	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q09454	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q09564	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q09582	gene product	Not needed	CHEBI:28115	metabolite	database
+Not needed	Q09582	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q09615	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09641	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q09653	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q09660	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q09995	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09995	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q17334	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q17574	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q17574	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q17678	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q17678	gene product	Not needed	CHEBI:48828	metabolite	database
+Not needed	Q17693	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q17790	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q18040	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q18439	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q18580	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q18580	gene product	Not needed	CHEBI:49786	metabolite	database
+Not needed	Q18600	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q18679	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q18817	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q18938	gene product	Not needed	CHEBI:57925	metabolite	database
+Not needed	Q19000	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q19000	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	Q19057	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q19133	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19243	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19269	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q19341	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q19680	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19713	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q19749	gene product	Not needed	CHEBI:83088	metabolite	database
+Not needed	Q1HB04	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20027	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	Q20191	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20340	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q20340	gene product	Not needed	CHEBI:49786	metabolite	database
+Not needed	Q20459	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20719	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q20772	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q20893	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	Q20939	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q20958	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21012	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21032	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21032	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q21102	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q21178	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21179	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21180	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21181	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21252	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21388	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21452	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q21526	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q21526	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	Q21657	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q21795	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q21962	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q22017	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q22120	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q22134	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q22134	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q22317	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22343	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q22396	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22398	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22418	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q22523	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22633	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	Q22710	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q23261	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q23296	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q23493	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q23539	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	Q23623	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q26266	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q26266	gene product	Not needed	CHEBI:21137	metabolite	database
+Not needed	Q26266	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q27499	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27504	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q27513	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27514	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27515	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27516	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27517	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27518	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27519	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27520	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27522	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q27522	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	Q27536	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q2PJ74	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q2V4U0	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q3V5J7	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q4VYA8	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q4VYA9	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q564V5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q564V5	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q5ZEQ3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q6ABN8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q7JK71	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q7KQ29	gene product	Not needed	CHEBI:57586	metabolite	database
+Not needed	Q7Z0M7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q7Z144	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q7Z144	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q86LS6	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q8I4B4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8I4D9	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q8I4E0	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q8I7H2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8I7J4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8IG39	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q8IG56	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8MXQ7	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q8MYL7	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q93353	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q93353	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q93542	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q93619	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	Q93934	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q94055	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q94392	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95X35	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q95XC4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95XM2	gene product	Not needed	CHEBI:29036	metabolite	database
+Not needed	Q95XX1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95XX1	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q965Y1	gene product	Not needed	CHEBI:48828	metabolite	database
+Not needed	Q965Y1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q965Y1	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q965Y1	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q966M6	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q966M6	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q966M6	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9GPA0	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q9GZH3	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	Q9GZI3	gene product	Not needed	CHEBI:57586	metabolite	database
+Not needed	Q9LUS8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9LUS8	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9N2V2	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9N2V9	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q9N3L2	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q9N4G7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9N4G7	gene product	Not needed	CHEBI:48828	metabolite	database
+Not needed	Q9N4G7	gene product	Not needed	CHEBI:29036	metabolite	database
+Not needed	Q9N4K2	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q9N574	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q9N5R0	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9NF11	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9NGK7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9TXP0	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9TYN2	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q9U1P4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U1Z2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U2P3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U2P3	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9U3K7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9U6P6	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9U6P6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XTD6	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9XU73	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9XVS0	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	Q9XVS0	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9XVV9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9XW15	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	Q9XWE6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XWE8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9XXD8	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q9XXJ0	gene product	Not needed	CHEBI:57540	metabolite	database
+Not needed	U4PE16	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	V6CLC6	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	A0A061ACH4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A061ACH9	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A061ACK7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A061ACL3	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A061ACP3	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	A0A061AD48	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A061AD57	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A061ADS3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A061AJL2	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A061AKN1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K2B1X6	gene product	Not needed	CHEBI:21137	metabolite	database
+Not needed	A0A0K2B1X6	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	A0A0K3ARD1	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3ARD1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A0K3ARH7	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	A0A0K3ARK9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A0K3ARQ7	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3ARR2	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3ARR7	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3ARS4	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AS63	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A0K3AS71	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AS74	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AS80	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AS85	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AS90	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3ASB8	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	A0A0K3ASG4	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A0K3ATZ5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3AU58	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A0K3AUL3	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AUL7	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AUM3	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AUN1	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AUR0	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	A0A0K3AUW1	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A0K3AV83	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AV92	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AV97	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AVA5	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AVJ9	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	A0A0K3AXH8	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AXI3	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AXJ0	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AXJ6	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0K3AXK2	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A0M7RF95	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A0M7RF98	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A0M9JJ78	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A131MBT2	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	A0A131MCL1	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	A0A131MCP7	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	A0A131MD13	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	A0A131MD67	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	A0A131MDC6	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	A0A164D3C9	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A168H3M4	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A178ENI7	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A1C5KBJ7	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	A0A1C5KBJ7	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	A0A1H5EKI7	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	A0A1M7FMH5	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	A0A1R2CQK4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A1X7RC97	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A221ZRU3	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A2C9C377	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A2C9C3G3	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A2K5ATU7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A2X0T211	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	A0A3N1D648	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A420QJT8	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A486WVJ1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A4R6K129	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A4V0IKF6	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A4V6M3D7	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A5E4M3J0	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A5K1I7Y9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A5S9MNU9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A7D6SDT2	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A7R9SW65	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A7R9XNE4	gene product	Not needed	CHEBI:71302	metabolite	database
+Not needed	A0A8S4QAX9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A8S4QD27	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0AAJ5ND74	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0AAU8T7S5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0AAU8T7S5	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A5JYU5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A5JYW2	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	A6ZJ62	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A7LPG5	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	A8W765	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A9Z1K9	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	B1GRK5	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	B1PEX6	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	B3GWC0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	B3GWC0	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	B7FAS8	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	B7WNA0	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	C1P655	gene product	Not needed	CHEBI:57586	metabolite	database
+Not needed	C3VYA8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	C8JQS2	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	D3D8W7	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	D3NQB6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	D3YT90	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	D7SFI4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	D7SFI5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	D7SFL2	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	D7SFP4	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	E0DBL0	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	E0R7L7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	E1B6Q7	gene product	Not needed	CHEBI:48828	metabolite	database
+Not needed	E1B6Q7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G3MU28	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G3MU29	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G3MU30	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G3MU68	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G4XR33	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	G5EC13	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EC97	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	G5ECC4	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G5ECC4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5ECD0	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	G5ED01	gene product	Not needed	CHEBI:57540	metabolite	database
+Not needed	G5ED52	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5ED86	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	G5EDB6	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EDC4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EDJ2	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	G5EE22	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	G5EE46	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	G5EEQ3	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G5EF01	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EG07	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	G5EGR7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EGS6	gene product	Not needed	CHEBI:23378	metabolite	database
+Not needed	G5NLX7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H1ZUV4	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	H2KY68	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	H2KY69	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	H2KY92	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	H2KY93	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	H2KYI5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H2KZ18	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H2KZG6	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	H2KZI0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H2KZY5	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	H2L060	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	H2L0D7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H2L0K5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	I2HAA9	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	K7NJD8	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	K7NJD8	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	K7NNI3	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	K7NNI3	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	K8ESD4	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O01574	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O01591	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O01685	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O01804	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O01815	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	O01926	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O02215	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O02334	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	O02627	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O02628	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O02637	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O02641	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O16220	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O16284	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O16362	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O16457	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	O16482	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O16521	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O16522	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O16607	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O16636	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O16652	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O16670	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O16671	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O16673	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O16789	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O16790	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O16795	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O17329	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O17759	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	O17759	gene product	Not needed	CHEBI:48828	metabolite	database
+Not needed	O17759	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O17759	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O17759	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	O17806	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O17807	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O17835	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	O17836	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	O17851	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O18000	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O18197	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O18197	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O44538	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O44649	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44650	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44651	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44652	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44655	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44656	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44657	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44658	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44704	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44706	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O44768	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O44768	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O44975	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O44995	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O45219	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O45391	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O45569	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O45659	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O45687	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O45830	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O45830	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O45934	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O61198	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O61198	gene product	Not needed	CHEBI:71302	metabolite	database
+Not needed	O61198	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	O61204	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O61741	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O61902	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O61902	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O61935	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O62122	gene product	Not needed	CHEBI:83088	metabolite	database
+Not needed	O62149	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	O62313	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	O62316	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	O62336	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O62377	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O62378	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	O76618	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P34269	gene product	Not needed	CHEBI:29036	metabolite	database
+Not needed	P34480	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P46558	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P46560	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P49622	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P90983	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	P91093	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P91148	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P91148	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	P91408	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	P91442	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	P91982	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	P91982	gene product	Not needed	CHEBI:17996	metabolite	database
+Not needed	Q09297	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09297	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q09316	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q09408	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09408	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q09504	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q09973	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	Q09BP6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q09EE7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q17456	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q17474	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	Q17475	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	Q17585	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q17686	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q17874	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q17898	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q17899	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q17900	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q17908	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q17994	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q18006	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q18347	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	Q18853	gene product	Not needed	CHEBI:61717	metabolite	database
+Not needed	Q19174	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q19434	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q19565	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q19655	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q19673	gene product	Not needed	CHEBI:29036	metabolite	database
+Not needed	Q19752	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q1HB05	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q1W0S5	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20063	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q20118	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q20514	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q20599	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q20634	gene product	Not needed	CHEBI:83088	metabolite	database
+Not needed	Q20680	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q20829	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21080	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q21233	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q21262	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q21318	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q21319	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q21427	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q21549	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21702	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21703	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q21742	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q21754	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q21890	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q22122	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22251	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	Q22419	gene product	Not needed	CHEBI:29034	metabolite	database
+Not needed	Q22460	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22763	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q22781	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q23227	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q23227	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q23236	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q23236	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q23318	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q23629	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	Q27245	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q27465	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27470	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27471	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27472	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27476	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27477	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27479	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27482	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27505	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27506	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27507	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27531	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q27538	gene product	Not needed	CHEBI:23378	metabolite	database
+Not needed	Q27538	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q27GT3	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q2HQL9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q2MGF0	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q2V071	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q2YS41	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q3S1I8	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	Q400M1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q4A1S8	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	Q5FC69	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q5FC71	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q5WRS4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q65CM5	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	Q65ZK3	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q66NI3	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q66NI4	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q6A577	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q6TPF0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q6TPF0	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q6TPF6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q6TPF6	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q6TPG0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q6TPG0	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q6TPG3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q6TPG3	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q6TPG4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q6TPG4	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q7JKI1	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q7JKI2	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q7JKI3	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q7JKP1	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q7JL40	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	Q7JLE3	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q7JLI9	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q7JLJ0	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q85HS3	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q86DA0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q86GU3	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q86MG7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q86MI3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q86NC1	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q86NI2	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q8HJ11	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q8I111	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	Q8I4K2	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q8IA66	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q8IA66	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q8MP09	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q93615	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q93795	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q93839	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q93968	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q93968	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q93968	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q93968	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q95Q10	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95QF9	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q95X21	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95YE6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95ZW2	gene product	Not needed	CHEBI:48828	metabolite	database
+Not needed	Q95ZW2	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q95ZW2	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q95ZW2	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q95ZW2	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q965I6	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q965L2	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q965T7	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q966D9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q966E7	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q966L1	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q9BL28	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q9BL46	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9BL88	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9GYJ1	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q9GYM9	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9N4H6	gene product	Not needed	CHEBI:57925	metabolite	database
+Not needed	Q9N4Q5	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q9N4S0	gene product	Not needed	CHEBI:57925	metabolite	database
+Not needed	Q9N4Y8	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q9N4Y8	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q9N4Z0	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q9N525	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q9N5I1	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q9N5U1	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q9NAE2	gene product	Not needed	CHEBI:57540	metabolite	database
+Not needed	Q9NAE9	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q9NAF2	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q9NAM7	gene product	Not needed	CHEBI:24875	metabolite	database
+Not needed	Q9NEU3	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9NL51	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q9TXT9	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q9TYQ8	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9TZC8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U1R5	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q9U1W6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U1W7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U1X0	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q9U296	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U296	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9U2B4	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q9U2B5	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q9U2B6	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q9U2E4	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q9U2G1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9U2G1	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q9U2H2	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9U2T0	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9U2T1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9U3P9	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q9U3T4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q9UAT1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9XTQ8	gene product	Not needed	CHEBI:71302	metabolite	database
+Not needed	Q9XUC3	gene product	Not needed	CHEBI:57586	metabolite	database
+Not needed	Q9XUT8	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q9XV04	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	Q9XV36	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q9XVA6	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	Q9XVN8	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	Q9XX97	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q9XXJ1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	S6FCW6	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	S6FN11	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	S6FWP9	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	U4PAP4	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	U4PBF4	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	U4PBG7	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	U4PBL8	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	U4PBS8	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	U4PEM9	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	U4PM84	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	U4PQV7	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	U4PQV7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	U4PR60	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	U4PRI1	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	U4PRV8	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	V6CIW4	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	V6CK03	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	V6CK03	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	V6CL86	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	V6CLA8	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	V6CLN2	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	W6RQY6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	W6SBC9	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	X5M5R6	gene product	Not needed	CHEBI:57540	metabolite	database
+Not needed	A0A061ACY6	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A061AJK0	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	A0A0B8PGP5	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3AQR2	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A0K3ARE1	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3ARE1	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A0K3AW23	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A0K3AWQ7	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A0K3AWQ7	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	A0A0M7RE22	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A131MAX6	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A131MBF3	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A131MCS3	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A178FDL0	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A1E4SHR4	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	A0A1H5EHF2	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A1H5IWE8	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A1X7HKI1	gene product	Not needed	CHEBI:49883	metabolite	database
+Not needed	A0A292YW76	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A2A9L8B3	gene product	Not needed	CHEBI:29034	metabolite	database
+Not needed	A0A2C9C2X1	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A2C9C313	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	A0A3G7TXM9	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A3N4RQB8	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	A0A4V0IJ66	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A542CTC5	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	A0A5S9MND8	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A0A7S6YJN1	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A0A8H5UCV6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	A0A8S4QB55	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	A5HBK2	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A5HBK5	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	A9Z1J6	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	B1V8J1	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	B1V8J3	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	B1V8J4	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	B6VQ96	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	B7WNB0	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	C0Z3L2	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	C6KRK8	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	C6KRK9	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	F5GUD7	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	G5EC96	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	G5EFM8	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFM8	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	G5EFR3	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	G5EFR3	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	H1ZUX4	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	H2KYN3	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	H2KYT9	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	H2KYU0	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	H2KYX0	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	H2L0D8	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	H2L0F9	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	I2HAA8	gene product	Not needed	CHEBI:30413	metabolite	database
+Not needed	J7S146	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	K9WPV7	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	N1NVC4	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	O01502	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O01581	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O01607	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	O16247	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O16271	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	O16272	gene product	Not needed	CHEBI:60344	metabolite	database
+Not needed	O44737	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	O45430	gene product	Not needed	CHEBI:57586	metabolite	database
+Not needed	O61710	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	O62512	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	O76383	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	P90989	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	P91361	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	P91361	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	Q09567	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q09946	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q17512	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q17527	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q17985	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	Q18213	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q18429	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q18621	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q18645	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q18851	gene product	Not needed	CHEBI:60240	metabolite	database
+Not needed	Q18924	gene product	Not needed	CHEBI:29108	metabolite	database
+Not needed	Q20166	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q20446	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q20697	gene product	Not needed	CHEBI:57540	metabolite	database
+Not needed	Q21243	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q22768	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q23640	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q66NI5	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q6A576	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q6AW09	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q7KX00	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q7YWP5	gene product	Not needed	CHEBI:29033	metabolite	database
+Not needed	Q8I102	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q8IAB6	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q8WSW2	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q93167	gene product	Not needed	CHEBI:18420	metabolite	database
+Not needed	Q95PY9	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q95XY8	gene product	Not needed	CHEBI:597326	metabolite	database
+Not needed	Q95YB2	gene product	Not needed	CHEBI:57692	metabolite	database
+Not needed	Q966F6	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9BKQ9	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q9N516	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9NA32	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q9TZC6	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9TZH1	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	Q9U3A1	gene product	Not needed	CHEBI:190135	metabolite	database
+Not needed	Q9XUP0	gene product	Not needed	CHEBI:38290	metabolite	database
+Not needed	Q9XWJ9	gene product	Not needed	CHEBI:58210	metabolite	database
+Not needed	R1EGY7	gene product	Not needed	CHEBI:29105	metabolite	database
+Not needed	S6FN25	gene product	Not needed	CHEBI:29035	metabolite	database
+Not needed	U4PC51	gene product	Not needed	CHEBI:58937	metabolite	database
+Not needed	V6CIZ1	gene product	Not needed	CHEBI:29103	metabolite	database
+Not needed	W6RXW2	gene product	Not needed	CHEBI:29035	metabolite	database

@@ -26,5 +26,6 @@ dependencies = [
     "pypdf",
     "pywikipathways",
     "urllib3",
-    "metapub"
+    "metapub",
+    "accelerate
 ]

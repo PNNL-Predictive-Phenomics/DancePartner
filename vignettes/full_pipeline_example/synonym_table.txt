@@ -1,0 +1,65 @@
+Synonym	ID	Type
+acetylcoa	LMFA07050281	lipid
+age1	Q94125	gene product
+atp	CHEBI:15422	metabolite
+cadaverine	CHEBI:18127	metabolite
+citrate	CHEBI:16947	metabolite
+dehydrogenase	O02640	gene product
+dim	CHEBI:50182	metabolite
+glucose	CHEBI:42758	metabolite
+lactate	CHEBI:16651	metabolite
+lvaline	CHEBI:16414	metabolite
+malate	CHEBI:15595	metabolite
+nadph	CHEBI:16474	metabolite
+oxaloacetate	CHEBI:16452	metabolite
+oxidoreductase	Q11190	gene product
+pep	CHEBI:18021	metabolite
+pgl1	CHEBI:59104	metabolite
+phosphate	CHEBI:18367	metabolite
+proteinase	P25807	gene product
+ptx	CHEBI:146207	metabolite
+putrescine	CHEBI:17148	metabolite
+pyruvate	CHEBI:15361	metabolite
+quinone	CHEBI:16509	metabolite
+ribose5phosphate	CHEBI:17797	metabolite
+sadenosylmethioninamine	CHEBI:15625	metabolite
+sds	CHEBI:8984	metabolite
+sulfide	CHEBI:16136	metabolite
+synthase	G5EDZ2	gene product
+tca	LMST05040001	lipid
+thiamin	CHEBI:18385	metabolite
+fluxes		
+splitwrmscarlet		
+n105t		
+citratesynthase		
+isocitrate		
+g52		
+splitsfgfp		
+erythrose4phosphate		
+s4e		
+q43		
+ndufa9		
+methylxanthines		
+germlineexpressed		
+hif1		
+cysl2		
+pentose		
+r71		
+sqrd1		
+cyanoalaninesynthase		
+pepcarboxykinase		
+weir		
+iis		
+module6		
+germlinespecific		
+lactatedehydrogenase		
+g53		
+gas1		
+k75		
+p64		
+ampk		
+pka		
+egl9		
+t246		
+pck1		
+a45		
