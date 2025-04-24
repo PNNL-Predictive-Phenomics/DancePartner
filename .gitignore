@@ -19,7 +19,7 @@ biobert/
 
 # Other
 example_data/scopus_api_key.txt
-example_data/api_key_ncbi.txt
+example_data/ncbi_key.txt
 example_data/bert_model_path.txt
 notebooks/scratch.ipynb
 notebooks/scratch2.ipynb

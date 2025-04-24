@@ -196,7 +196,7 @@ def run_bert(input_path, model_path, output_directory, segment_col_name, **kwarg
     """
     Function to prepare a dataframe to be inputted into the BERT model
     Args:
-        input_path (String): A path to the CSV file to run the model on. Should be a result of `ppi.find_names_in_papers`
+        input_path (String): A path to the CSV file to run the model on. Should be a result of `ppi.find_terms_in_papers`
         model_path (String): A path to the folder containing the BERT model. Put the model in a folder within this directory called biobert. Find the model here: https://huggingface.co/david-degnan/BioBERT-RE/tree/main
         output_directory (String): A path where to write the results to
         segment_col_name (String): The name of the column representing the chunk of text containing the pair of biomolecules.

@@ -27,5 +27,5 @@ dependencies = [
     "pywikipathways",
     "urllib3",
     "metapub",
-    "accelerate
+    "accelerate"
 ]

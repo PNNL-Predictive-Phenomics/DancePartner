@@ -32,7 +32,7 @@ def pull_papers(output_directory,
         type (String): Either "full text" to pull only full text, "abstract" to pull only abstracts, or "both" to first prioritize full text,
             and then prioritize abstracts. 
         include_summary_file (Boolean, default = True): Whether to write a summary .txt file desbring number of papers found from each pull_ranking method.
-        scopus_api_key (String): A string API key for Scopus-Elselvier. See documentation on how to acquire.
+        scopus_api_key (String): A string API key for Scopus-Elselvier. See https://dev.elsevier.com/.
         tarball_path (Optional, String): An optional path of where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous    
            function run may have saved articles to, which can reduce run time.
     Returns:

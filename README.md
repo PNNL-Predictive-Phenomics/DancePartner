@@ -64,7 +64,13 @@ Download the `en_ner_bionlp13cg_md` model from [here](https://allenai.github.io/
 
 ## Test Code Coverage 
 
-% coverage
+% coverage. To run tests, make sure to create the `scopus_key.txt` [file](https://dev.elsevier.com/) and `ncbi_key.txt` [file](https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/). Install the coverage package and then follow the instructions on each test file. If coverage doesn't run properly after install, deactivate the
+DancePartner virtual environment and reactivate it.
+
+```
+>>> pip install pytest
+>>> pip install coverage
+```
 
 ## Additional Stop Words
 
