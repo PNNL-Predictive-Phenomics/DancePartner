@@ -1,9 +1,0 @@
-RNAseq-based transcriptome assembly of Clostridium acetobutylicum for functional genome annotation and discovery. 
- Accurate genome annotations are essential in modern biology and biotechnology, yet they are still largely based on genome sequencing and comparative analyses. We show that the
- Clostridium acetobutylicum
- genome annotation can be markedly improved by integrating bioinformatic predictions with RNA sequencing (RNAseq) data. Samples were acquired under butanol, butyrate, and unstressed treatments across various growth conditions. Analysis of an initial assembly revealed errors due to background signals and limitations of assembly algorithms. Hurdles for RNAseq transcriptome mapping include optimizing library complexity and sequencing depth, yet most studies report low sequencing depth and ignore the effect of ribosomal RNA abundance. An integrative analysis was developed to combine motif predictions, single‐nucleotide resolution sequencing depth, and library complexity to resolve difficulties in assembly curation. This minimized false positive error and determined gene boundaries, in some cases, to the exact base‐pair of prior studies. This is the first strand‐specific transcriptome assembly in a
- Clostridium
- organism. © 2018 American Institute of Chemical Engineers
- AIChE J
- , 64: 4271–4280, 2018
- 

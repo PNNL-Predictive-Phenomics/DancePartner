@@ -1,0 +1,25 @@
+6-Methylcoumarin rescues bacterial quorum sensing induced ribosome-inactivating stress in Caenorhabditis elegans. Introduction:
+        
+      
+      Bacterial pathogenicity has for long posed severe effects on patient care. Pseudomonas aeruginosa is a common cause of hospital-acquired infections and nosocomial illnesses. It is known to infect the host by colonizing through quorum sensing and the production of exotoxins.
+    
+
+
+          Methods:
+        
+      
+      The current effort is an analysis of proteomic alterations caused by P. aeruginosa PAO1 to study the effects of quorum sensing inhibitor 6-Methylcoumarin on PAO1 infectivity in the Caenorhabditis elegans model.
+    
+
+
+          Results:
+        
+      
+      Through tandem mass tag-based quantitative proteomics approaches, 229 proteins were found to be differentially regulated in infection and upon inhibition. Among these, 34 proteins were found to be dysregulated in both infection and quorum-sensing inhibition conditions. Along with the dysregulation of proteins involved in host-pathogen interaction, PAO1 was found to induce ribosome-inactivating stress accompanied by the downregulating mitochondrial proteins. This in turn caused dysregulation of apoptosis. The expression of multiple proteins involved in ribosome biogenesis and structure, oxidative phosphorylation, and mitochondrial enzymes were altered due to infection. This mechanism, adapted by PAO1 to survive in the host, was inhibited by 6-Methylcoumarin by rescuing the downregulation of ribosomal and mitochondrial proteins.
+    
+
+
+          Conclusions:
+        
+      
+      Taken together, the data reflect the molecular alterations due to quorum sensing and the usefulness of inhibitors in controlling pathogenesis.
