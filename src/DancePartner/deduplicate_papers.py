@@ -1,16 +1,57 @@
 import pandas as pd
 
-def deduplicate_papers(pubmed_path = None, scopus_path = None, osti_path = None):
+def _read_csv_or_txt(file_path):
+    '''A simple function to read either a csv or txt file'''
+    file_path = str(file_path)
+    if ".csv" in file_path:
+        return(pd.read_csv(file_path))
+    elif ".txt" in file_path:
+        return(pd.read_table(file_path))
+
+def deduplicate_papers(pubmed_path: str = None, scopus_path: str = None, osti_path: str = None):
     '''
-    This function takes up to 3 tables from LitPortal, removes duplicate publications, and gives
+    Deduplicate papers across databases. 
+    
+    Parameters
+    ----------
+    pubmed_path
+        The path to the PubMed export of paper information. To obtain, enter the query, hit search, hit save, select "All results" and "csv".
+    
+    scopus_path
+        The path to the Scopus export of paper information. To obtain, enter the query, hit search, hit export, select "CSV" and keep all defaults checked.
+    
+    osti_path
+        The path to the OSTI export of paper information. To obtain, enter the query, hit search, and save results as a "CSV"
+    
+    Returns
+    -------
+        A table with deduplicated papers
+    '''
+
+    
+
+
+
+def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = None, osti_path: str = None):
+    '''
+    We recommend using the "generic" depulicate papers, as this special function is for an internal tool
+    called "LitPortal." This function takes up to 3 tables from LitPortal, removes duplicate publications, and gives
     the deduplicated table to the pull_papers function to properly pull the data. These files are
     all exports from LitPortal.
 
-    Args: 
-        pubmed_path: (str) The path to the LitPortal file exported from a PubMed search. Optional.
-        scopus_path: (str) The path to the LitPortal file exported from a Scopus search. Optional.
-        osti_path: (str) The path to the LitPortal file exported from an OSTI search. Optional.  
-    Returns:
+    Parameters
+    ----------
+    pubmed_path
+        The path to the LitPortal file exported from a PubMed search. Optional.
+    
+    scopus_path
+        The path to the LitPortal file exported from a Scopus search. Optional.
+    
+    osti_path
+        The path to the LitPortal file exported from an OSTI search. Optional.  
+    
+    Returns
+    -------
         A table with deduplicated papers
     '''
     
@@ -18,22 +59,14 @@ def deduplicate_papers(pubmed_path = None, scopus_path = None, osti_path = None)
     ## READ FILES ##
     ################
 
-    def read_csv_or_txt(file_path):
-        '''A simple function to read either a csv or txt file'''
-        file_path = str(file_path)
-        if ".csv" in file_path:
-            return(pd.read_csv(file_path))
-        elif ".txt" in file_path:
-            return(pd.read_table(file_path))
-
     # Read each file. If OSTI is provided, fix the DOI annotation, remove patents, and blank abstracts. 
     pubmed, scopus, osti = None, None, None
     if pubmed_path is not None:
-        pubmed = read_csv_or_txt(pubmed_path)
+        pubmed = _read_csv_or_txt(pubmed_path)
     if scopus_path is not None:
-        scopus = read_csv_or_txt(scopus_path)
+        scopus = _read_csv_or_txt(scopus_path)
     if osti_path is not None:
-        osti = read_csv_or_txt(osti_path)
+        osti = _read_csv_or_txt(osti_path)
         osti["DOI"] = osti["DOI"].str.replace("https://doi.org/", "")
         osti = osti[(osti["Publication Type"] != "Patent") & (osti["Abstract"] != "") & (osti["Abstract"] != "Not provided.")]
 

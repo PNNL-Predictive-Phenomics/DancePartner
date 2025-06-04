@@ -3,13 +3,20 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-def __pull_osti_clean(ids, output_directory):
+def __pull_osti_clean(ids: list[str], output_directory: str):
     """
     Function that pulls clean text papers from OSTI. Writes papers to a directory.
-    Args:
-        ids (List): A list of OSTI IDs.
-        output_directory (String): Path specifying where to write the papers to.
-    Returns:
+
+    Parameters
+    ----------
+    ids
+        A list of OSTI IDs.
+    
+    output_directory
+        Path specifying where to write the papers to.
+    
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
     found_ids = []
@@ -62,14 +69,23 @@ def __pull_osti_clean(ids, output_directory):
 
     return(found_ids)
 
-def __pull_osti_abstracts(ids, output_directory, abstract_include_title=True):
+def __pull_osti_abstracts(ids: list[str], output_directory: str, abstract_include_title: bool = True):
     """
     Function that pulls paper abstracts from OSTI. Writes them to a directory.
-    Args:
-        ids (List): A list of OSTI IDs.
-        output_directory (String): Path specifying where to write the papers to.
-        abstract_include_title (Boolean, default=True): Whether to include the paper's title as the first sentence of the text.
-    Returns:
+
+    Parameters
+    ----------
+    ids
+        A list of OSTI IDs.
+    
+    output_directory
+        Path specifying where to write the papers to.
+    
+    abstract_include_title 
+        Whether to include the paper's title as the first sentence of the text.
+    
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
     found_ids = []
@@ -100,13 +116,20 @@ def __pull_osti_abstracts(ids, output_directory, abstract_include_title=True):
             continue
     return(found_ids)
 
-def __pull_osti(ids, output_directory, type):
+def __pull_osti(ids: list[str], output_directory: str, type: str):
     """
     Function that pulls text from OSTI.
-    Args:
-        ids (List): A list of OSTI IDs.
-        output_directory (String): Path specifying where to write the papers to.
-    Returns:
+
+    Parameters
+    ----------
+    ids
+        A list of OSTI IDs.
+    
+    output_directory
+        Path specifying where to write the papers to.
+    
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
 

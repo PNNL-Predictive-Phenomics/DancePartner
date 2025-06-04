@@ -8,14 +8,24 @@ import io
 import urllib3
 
 
-def __pull_pubmed_clean(ids, output_directory, tarball_path):
+def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str):
     """
     Function that pulls paper abstracts from PubMed. Writes them to a directory.
-    Args:
-        ids (List): A list of PubMed IDs.
-        output_directory (String): Path specifying where to write the papers to.
-        tarball_path (Optional, String): An optional path of where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous function run may have saved articles to, which can reduce run time.
-    Returns:
+
+    Parameters
+    ----------
+    ids
+        A list of PubMed IDs.
+    
+    output_string
+        Path specifying where to write the papers to.
+    
+    tarball_path
+        An optional path of where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous function 
+        run may have saved articles to, which can reduce run time.
+
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
     
@@ -108,13 +118,20 @@ def __pull_pubmed_clean(ids, output_directory, tarball_path):
     
     return(found_ids)
 
-def __pull_pubmed_pdfs(ids, output_directory):
+def __pull_pubmed_pdfs(ids: list[str], output_directory: str):
     """
     Function that pulls PDF papers from PubMed. Writes them to a directory.
-    Args:
-        ids (List): A list of PubMed IDs.
-        output_directory (String): Path specifying where to write the papers to.
-    Returns:
+
+    Parameters
+    ----------
+    ids
+        A list of PubMed IDs as strings.
+    
+    output_directory
+        Path specifying where to write the papers to.
+    
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
 
@@ -162,13 +179,22 @@ def __pull_pubmed_pdfs(ids, output_directory):
             notfound_count += 1
     return(found_ids)
 
-def __pull_pubmed_abstracts(ids, output_directory, abstract_include_title=True):
+def __pull_pubmed_abstracts(ids: str, output_directory: str, abstract_include_title: bool = True):
     """
     Function that pulls paper abstracts from PubMed. Writes them to a directory.
-    Args:
-        ids (List): A list of PubMed IDs.
-        output_directory (String): Path specifying where to write the papers to.
-        abstract_include_title (Boolean, default=True): Whether to include the paper's title as the first sentence of the text.
+    
+
+    Parameters
+    ----------
+    ids
+        A list of PubMed IDs.
+        
+    output_directory
+        Path specifying where to write the papers to.
+    
+    abstract_include_title
+        Whether to include the paper's title as the first sentence of the text.
+    
     Returns:
         List of IDs that were found. A subset of the `ids` argument.
     """ 
@@ -203,16 +229,27 @@ def __pull_pubmed_abstracts(ids, output_directory, abstract_include_title=True):
         
     return(found_ids)
 
-def __pull_pubmed(ids, output_directory, type, tarball_path):
+def __pull_pubmed(ids: list[str], output_directory: str, type: str, tarball_path: str):
     """
     Function to pull papers from PubMed.
-    Args:
-        ids (List): A list of PubMed IDs.
-        output_directory (String): Path specifying where to write the papers to.
-        type (String): Either "full text" to pull only full text, "abstract" to pull only abstracts, or "both" to first prioritize full text,
-        and then prioritize abstracts. 
-        tarball_path (Optional, String): An optional path of where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous function run may have saved articles to, which can reduce run time.
-    Returns:
+
+    Parameters
+    ----------
+    ids
+        A list of PubMed IDs.
+    
+    output_directory
+        Path specifying where to write the papers to.
+        
+    type
+        Either "full text" to pull only full text, "abstract" to pull only abstracts, or "both" to first prioritize full text, and then prioritize abstracts. 
+    
+    tarball_path
+        An optional path of where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous function run may have saved 
+        articles to, which can reduce run time.
+
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
 

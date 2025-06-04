@@ -26,7 +26,7 @@ The literature mining pipeline may be summarized in ? key steps: `1. Pulling Pub
 ***********************
 
 Publications may be pulled from any of three databases: `PubMed <https://pubmed.ncbi.nlm.nih.gov/>`_, `Scopus <https://www.scopus.com/search/form.uri?display=basic#basic>`_,
-and `OSTI <https://www.osti.gov/>`_. 
+and `OSTI <https://www.osti.gov/>`_. There is also a function to deduplicate papers across databases (which returns a table) that may be passed to the paper pulling function.
 
 Documentation
 =============
@@ -46,11 +46,48 @@ and output the format as “PMID”.
 Scopus Example
 ==============
 
+Scopus uses DOIs to identify papers. To obtain these DOIs, enter a query into the search bar, click “Export”, select the desired format, select all documents, 
+and then export at least the DOI column. Scopus also requires string API key. See https://dev.elsevier.com/.
+
+.. code-block:: python
+
+    # Save the scopus key as a variable
+    pull_papers(
+        scopus_ids = ["10.1186/s40168-021-01035-8", "10.1002/bit.26296", "10.1002/pmic.200300397", "10.1074/mcp.M115.057117"],
+        output_directory = "scopus_papers", 
+        scopus_api_key = scopus_api_key
+    )
 
 OSTI Example
 ============
 
+To obtain OSTI IDs, enter a query and click “Save Results”, and the resulting file will contain the OSTI IDs.
+
+.. code-block:: python
+
+    pull_papers(
+        osti_ids = ["2229172", "1629838", "1766618", "1379914"], 
+        output_directory = "osti_papers"
+    )
 
 
-Multiple Example
-================
+Deduplication
+=============
+
+To deduplicate papers across databases, the following steps must be followed:
+
+**PubMed:** Enter the query, hit search, hit save, select "All results" and "csv"
+
+**Scopus:** Enter the query, hit search, hit export, select "CSV" and keep all defaults checked.
+
+**OSTI:** Enter the query, hit search, and save results as a "CSV"
+
+.. autoclass:: DancePartner.deduplicate_papers.deduplicate_papers
+
+.. code-block:: python
+
+    # Save the results as a deduplicated table
+    deduped_table = deduplicate_papers(pubmed_path, scopus_path, osti_path)
+
+    # Then pull publications using the deduped table. Use the saved scopus_api_key
+    pull_papers(deduped_table = deduped_table, output_directory = "deduped_example", scopus_api_key = scopus_api_key)

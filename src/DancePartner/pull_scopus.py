@@ -3,14 +3,23 @@ import requests
 from bs4 import BeautifulSoup
 import re
 
-def __pull_scopus_clean(ids, output_directory, scopus_api_key):
+def __pull_scopus_clean(ids: list[str], output_directory: str, scopus_api_key: str):
     """
     Function that pulls paper abstracts from Scopus. Writes them to a directory.
-    Args:
-        ids (List): A list of DOIs - scopus pulls based off the DOI. 
-        output_directory (String): Path specifying where to write the papers to.
-        scopus_api_key (String): A string API key for Scopus-Elselvier. See documentation on how to acquire.
-    Returns:
+
+    Parameters
+    ----------
+    ids
+        A list of DOIs - scopus pulls based off the DOI. 
+    
+    output_directory
+        Path specifying where to write the papers to.
+        
+    scopus_api_key
+        A string API key for Scopus-Elselvier. See documentation on how to acquire.
+    
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
 
@@ -48,15 +57,26 @@ def __pull_scopus_clean(ids, output_directory, scopus_api_key):
                 continue
     return(found_ids)
 
-def __pull_scopus_abstracts(ids, output_directory, scopus_api_key, abstract_include_title=True):
+def __pull_scopus_abstracts(ids: list[str], output_directory: str, scopus_api_key: str, abstract_include_title: bool = True):
     """
     Function that pulls paper abstracts from Scopus. Writes them to a directory.
-    Args:
-        ids (List): A list of Scopus IDs.
-        output_directory (String): Path specifying where to write the papers to.
-        scopus_api_key (String): A string API key for Scopus-Elselvier. See documentation on how to acquire.
-        abstract_include_title (Boolean, default=True): Whether to include the paper's title as the first sentence of the text.
-    Returns:
+
+    Parameters
+    ----------
+    id
+        A list of Scopus IDs.
+    
+    output_directory
+        Path specifying where to write the papers to.
+    
+    scopus_api_key
+        A string API key for Scopus-Elselvier. See documentation on how to acquire.
+    
+    abstract_include_title
+        Whether to include the paper's title as the first sentence of the text.
+    
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
 
@@ -82,14 +102,23 @@ def __pull_scopus_abstracts(ids, output_directory, scopus_api_key, abstract_incl
             continue
     return(found_ids)
 
-def __pull_scopus(ids, output_directory, type, scopus_api_key):
+def __pull_scopus(ids: list[str], output_directory: str, type: str, scopus_api_key: str):
     """
     Function that pulls paper abstracts from Scopus. Writes them to a directory.
-    Args:
-        ids (List): A list of Scopus IDs.
-        output_directory (String): Path specifying where to write the papers to.
-        scopus_api_key (String): A string API key for Scopus-Elselvier. See documentation on how to acquire.
-    Returns:
+    
+    Parameters
+    ----------
+    ids
+        A list of Scopus IDs.
+    
+    output_directory
+        Path specifying where to write the papers to.
+    
+    scopus_api_key
+        A string API key for Scopus-Elselvier. See documentation on how to acquire.
+    
+    Returns
+    -------
         List of IDs that were found. A subset of the `ids` argument.
     """
 
