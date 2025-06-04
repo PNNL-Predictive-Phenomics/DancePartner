@@ -25,7 +25,7 @@ def __get_ome_df(ome_path, delim = ","):
             if do_not_use in terms:
                 terms.remove(do_not_use)
 
-        # Is iloc ok here?
+        # Only return if there is one match
         if len(terms) > 0:
             ome_dict[ome.iloc[row, 0]] = list(set(terms))
 
@@ -129,7 +129,7 @@ def map_synonyms(term_list, omes_folder, proteome_filename, add_missing = False,
         found_lipids,
         found_metabolites,
         found_proteins
-    ]).groupby('Synonym').first().reset_index().dropna()
+    ]).dropna() # groupby('Synonym').first().reset_index(). --> remove NA
 
     # Add missing if applicable
     if add_missing:

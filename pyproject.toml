@@ -4,9 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "DancePartner"
-version = "0.0.1"
+version = "1.0.0"
 authors = [
   { name="David Degnan", email="david.degnan@pnnl.gov" },
+  { name="Clayton Strauch" },
+  { name="Moses Obiri" },
+  { name = "Erik VonKaenel" },
+  { name = "Daniel Adrian" },
   { name="Lisa Bramer", email="lisa.bramer@pnnl.gov" }
 ]
 description = "Mining multi-omics relationship networks from literature and databases"
