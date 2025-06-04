@@ -31,15 +31,23 @@ def __get_ome_df(ome_path, delim = ","):
 
     return pd.DataFrame(ome_dict.items()).explode(1).rename({0: "ID", 1: "Synonym"}, axis = 1)
 
-def list_synonyms(omes_folder, proteome_filename, min_length = 3):
+def list_synonyms(omes_folder: str, proteome_filename: str, min_length: int = 3):
     '''
-    List all possible synonyms to match.
+    List all possible synonyms to match 
     
-    Args:
-        omes_folder (String): Path to the omes folder. Required. 
-        proteome_filename (String): Name of the proteome file within the omes folder. Use the full file name. Required.
-        min_length (Integer): Minimum number of characters in a term. Default is 3.  
-    Returns:
+    Parameters
+    ----------
+    omes_folder
+        Path to the omes folder. Required. 
+    
+    proteome_filename
+        Name of the proteome file within the omes folder. Use the full file name. Required.
+    
+    min_length 
+        Minimum number of characters in a term. Default is 3.  
+    
+    Returns
+    -------
         A list of synonyms to find in papers
     '''
 

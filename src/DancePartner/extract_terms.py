@@ -3,7 +3,7 @@ import pandas as pd
 import re
 
 # Build a support function to get directories 
-def __get_all_files(directory):
+def __get_all_files(directory: str):
     '''
     Walk through a direcotry and pull all txt files. Remove the summary file and gzipped files. 
     '''
@@ -28,27 +28,42 @@ def __get_all_files(directory):
     return file_paths
 
 # Extract unique terms from papers 
-def extract_terms_scispacy(paper_directory, 
-                           omes_folder, 
-                           tags = ["GENE_OR_GENE_PRODUCT", "SIMPLE_CHEMICAL", "AMINO_ACID"],
-                           additional_stop_words = None,
-                           min_length = 3, 
-                           max_length = 100,
-                           verbose = False):
+def extract_terms_scispacy(paper_directory: str, 
+                           omes_folder: str, 
+                           tags: list[str] = ["GENE_OR_GENE_PRODUCT", "SIMPLE_CHEMICAL", "AMINO_ACID"],
+                           additional_stop_words: list[str] = None,
+                           min_length: int = 3, 
+                           max_length: int = 100,
+                           verbose: bool = False):
     '''
     Extract terms from papers
 
-    Args:
-        paper_directory (String): Directory to papers in txt format. Subdirectories are searched, and .gz and 
-            output_summary.txt files are ignored.
-        omes_folder (String): Path to the omes folder where "stop_words_english.txt" is stored. Required. 
-        tags (List[String]): A list of tags from the `en_ner_bionlp13cg_md` model. See https://allenai.github.io/scispacy/ 
-        additional_stop_words (List[String]): Add more words to be removed from consideration. Default is None. 
-        min_length (Integer): The minimum number of non-whitespace characters required. Default is 3.
-        max_length (Integer): The maximum number of characters allowed. Default is 100. 
-        verbose (Logical): Indicate whether a message should be printed as each file is processed. Default is "FALSE"
-    Returns:
-        A list of unique terms found in papers 
+    Parameters
+    ----------
+    paper_directory
+        Directory to papers in txt format. Subdirectories are searched, and .gz and output_summary.txt files are ignored.
+        
+    omes_folder
+        Path to the omes folder where "stop_words_english.txt" is stored. Required. 
+
+    tags
+        A list of tags from the `en_ner_bionlp13cg_md` model. See https://allenai.github.io/scispacy/ 
+    
+    additional_stop_words
+        Add more words to be removed from consideration. Default is None. 
+        
+    min_length
+        The minimum number of non-whitespace characters required. Default is 3.
+    
+    max_length
+        The maximum number of characters allowed. Default is 100. 
+    
+    verbose
+        Indicate whether a message should be printed as each file is processed. Default is "FALSE"
+    
+    Returns
+    -------
+        A list of unique terms found in papers written as a string
     '''
 
     # Pull papers

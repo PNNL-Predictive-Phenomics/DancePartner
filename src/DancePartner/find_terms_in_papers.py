@@ -4,20 +4,38 @@ import nltk
 import re
 from pathlib import Path
 
-def find_terms_in_papers(paper_directory, terms, output_directory = None, n_gram_max=3, max_char_length=250, padding=10, verbose = False):   
+def find_terms_in_papers(paper_directory: str, terms: list[str], output_directory: str = None, 
+                         n_gram_max: int = 3, max_char_length: int = 250, padding: int = 10, 
+                         verbose: bool = False):   
     """
     This function searches through sentences of papers to extract biomolecule pairs present in each sentence.
     It utilizes a set-intersection method on the n-grams of the sentences with the already-found biomolecule synonyms.
 
-    Args:
-        paper_directory (String): A directory path pointing to the list of papers to be parsed through.
-        terms (List[String]): List of terms to match
-        output_directory (Optional, String): A path to a directory for where to write results to.
-        n_gram_max (int, default=3): The number of n_grams to consider when combing the papers. (e.g. n_grams=2 will catch "protein A" but n_grams=1 will not).
-        max_char_length (int, default=250): The number of maximum characters that can be in a segment containing the pair of biomolecules. Does not matter if sentence length is less than max_char_length.
-        padding (int, default=10): The amount of padding (in characters) to surround the terms in a segment by at minimum.
-        verbose (Logical): If True, print status messages
-    Returns:
+    Parameters
+    ----------
+    paper_directory
+        A directory path pointing to the list of papers to be parsed through.
+    
+    terms
+        List of terms to find in papers
+    
+    output_directory
+        An optional path to a directory for where to write results to. Otherwise, the function will return the table.
+
+    n_gram_max
+        The number of n_grams to consider when combing the papers. (e.g. n_grams=2 will catch "protein A" but n_grams=1 will not). If unsure, use the default.
+    
+    max_char_length 
+        The number of maximum characters that can be in a segment containing the pair of biomolecules
+        
+    padding
+        The amount of padding (in characters) to surround the terms in a segment by at minimum.
+    
+    verbose
+        If True, print status messages
+    
+    Returns
+    -------
         A Pandas DataFrame of the resulting data.
     """
     

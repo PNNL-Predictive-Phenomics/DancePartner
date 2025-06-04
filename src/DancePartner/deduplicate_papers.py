@@ -215,8 +215,3 @@ def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = Non
     # Return the paper table
     return(paper_table)
     
-
-
-
-
-

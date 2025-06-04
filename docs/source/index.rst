@@ -91,3 +91,85 @@ To deduplicate papers across databases, the following steps must be followed:
 
     # Then pull publications using the deduped table. Use the saved scopus_api_key
     pull_papers(deduped_table = deduped_table, output_directory = "deduped_example", scopus_api_key = scopus_api_key)
+
+***********************
+2. Identifying Entities
+***********************
+
+First, biological terms (entities) need to be defined and found in articles. An option is to use ScispaCy, or 
+simply use synonym files, which is the recommended approach. To install ScispaCy, see the "Optional ScispaCy Model"
+section of the `README <https://github.com/pnnl-predictive-phenomics/DancePartner/tree/main>`_.
+
+ScispaCy
+========
+
+.. autoclass:: DancePartner.extract_terms.extract_terms_scispacy
+
+.. code-block:: python
+
+    # Extracting terms requires a path to the papers and a path to the omes folder
+    extract_terms_scispacy(paper_directory = paper_directory, omes_folder = "../omes")
+
+Synonym Files
+=============
+
+First, pull a proteome.
+
+.. autoclass:: DancePartner.pull_ome.pull_proteome
+
+.. code-block:: python
+
+    # Pull a proteome (protein and its synonyms) and place it in the omes folder
+    pull_proteome(proteome_id = "UP000001940", output_directory = "../omes")
+
+List Synonyms
+=============
+
+Then, list all synonyms.
+
+.. autoclass:: DancePartner.create_synonym_table.list_synonyms
+
+.. code-block:: python
+
+    # List the omes folder and the proteome to use in the omes folder
+    list_synonyms("../omes", "UP000001940_proteome.txt")
+
+***************************
+3. Extracting Relationships
+***************************
+
+First, sentences with terms need to be extracted and formatted for the downstream BERT model.
+
+.. autoclass:: DancePartner.find_terms_in_papers.find_terms_in_papers
+
+.. code-block:: python
+
+    # Supply this function with the directory with the papers, a list of terms, and the output directory
+    find_terms_in_papers(
+        paper_directory = paper_directory,
+        terms = my_terms,
+        n_gram_max = 5,
+        padding = 50,
+        output_directory = output_directory
+    )
+
+Next, BERT can be run. Extract the BERT model from `here <https://huggingface.co/david-degnan/BioBERT-RE/tree/main>`_. 
+Place in the top level directory of this repo in a folder called "biobert". Pull the config.json, the pytorch_model.bin, and the training_args.bin files.
+
+.. autoclass:: DancePartner.bert_functions.run_bert
+
+.. code-block:: python
+
+    # Create a variable to the output directory. Make sure the biobert model is pulled and in a location that can be referenced by model_path.
+    run_bert(
+        input_path = "/path/to/sentence_biomolecule_pairs.csv",
+        model_path = "../biobert", # Update to the path of your BERT model if necessary. We recommend placing biobert in the top directory.
+        output_directory = output_directory,
+        segment_col_name = "segment",
+        use_cpu = True
+    )
+
+**********************
+4. Collapsing Synonyms
+**********************
+

@@ -16,20 +16,28 @@ from transformers.modeling_outputs import SequenceClassifierOutput
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, classification_report, precision_recall_fscore_support
 
-def __make_bert_ready(df, segment_col_name):
+def __make_bert_ready(df: pd.DataFrame, segment_col_name: str):
     """
     Function to prepare a dataframe to be inputted into the BERT model
-    Args:
-        df (Pandas.DataFrame): The dataframe to run over. Should be a result of `ppi.find_names_in_papers`
-        segment_col_name (String): The name of the column representing the chunk of text containing the pair of biomolecules.
-    Returns:
+
+    Parameters
+    ----------
+    df 
+        The dataframe of setnences. Should be a result of `find_names_in_papers`
+    
+    segment_col_name
+        The name of the column representing the chunk of text containing the pair of biomolecules.
+    
+    Returns
+    -------
         A Pandas.DataFrame that has been cleaned
     """
+
+    # Add required columns to data frame. BERT cannot handle more than 250 characters 
     df['Term1'] = "@TERM$1"
     df['Term2'] = "@TERM$2"
     df_clean = df[(df[segment_col_name].str.len() < 250) & (df[segment_col_name].str.len() > 0)] #Check that text is btwn 1 and 250 characters
     
-
     # Replace first occurences of protein terms with MASK variables
     df_clean['Sentence'] = df_clean.apply(lambda row: re.sub(str(row["term_1"]), " @TERM$1 ", row[segment_col_name], count=1), axis=1)
     df_clean['Sentence'] = df_clean.apply(lambda row: re.sub(str(row["term_2"]), " @TERM$2 ", row.Sentence, count=1), axis=1)
@@ -41,31 +49,33 @@ def __make_bert_ready(df, segment_col_name):
     df_checked = df_checked.drop(columns=[segment_col_name])
     return(df_checked)
 
-def compute_metrics(pred):
-    """compute metrics for huggingface transformers trainer
+def __preprocess_data(df: pd.DataFrame, tokenizer: BertTokenizer, x_col: str, y_col: str, e1_col: str, e2_col: str):
     """
-    labels = pred.label_ids
-    preds = pred.predictions.argmax(-1)
-    precision, recall, f1, _ = precision_recall_fscore_support(
-        labels, preds, average="macro"
-    )
-    acc = accuracy_score(labels, preds)
-    print(classification_report(labels, preds, digits=3, target_names=CLASSES))
-    return {"accuracy": acc, "precision": precision, "recall": recall, "f1": f1}
+    Function to preprocess data for BERT
 
-def preprocess_data(df, tokenizer, x_col, y_col, e1_col, e2_col):
-    """preprocesse data
+    Parameters
+    ----------
+    df
+        The dataframe from __make_bert_ready
+    
+    tokenizer
+        A tokenizer object from the transformers package
 
-    Args:
-        df: source dataframe data
-        tokenizer: tokenizer
-        x_col: sentence column name
-        y_col: label column name
-        e1_col: first entity column name
-        e2_col: second entity column name
+    x_col
+        The sentence column name
 
-    Returns:
-        SrcDataset: SrcDataset
+    y_col
+        The label column name
+
+    e1_col
+        The first entity column name
+
+    e2_col
+        The second entity column name
+
+    Returns
+    -------
+        A SrcDataset
     """
     # 2-Masted-senteces input format
     x1 = df.apply(lambda x: x[x_col].replace(x[e1_col], "[MASK]"), axis=1).tolist()
@@ -80,7 +90,8 @@ def preprocess_data(df, tokenizer, x_col, y_col, e1_col, e2_col):
     return dataset
 
 class SrcDataset(torch.utils.data.Dataset):
-    """Dataset class for BertSRC
+    """
+    Dataset class for BertSRC
     """
     def __init__(self, encodings, labels):
         self.encodings = encodings
@@ -95,7 +106,8 @@ class SrcDataset(torch.utils.data.Dataset):
         return len(self.labels)
 
 class BertSrcClassifier(BertPreTrainedModel):
-    """BertSRC Classifier
+    """
+    Dataset class for BertSRC Classifier
     """
     def __init__(self, config, mask_token_id: int, num_token_layer: int = 2):
         super().__init__(config)
@@ -192,20 +204,31 @@ class BertSrcClassifier(BertPreTrainedModel):
             attentions=outputs.attentions,
         )
 
-def run_bert(input_path, model_path, output_directory, segment_col_name, **kwargz):
+def run_bert(input_path: str, model_path: str, output_directory: str, segment_col_name: str, **kwargz):
     """
     Function to prepare a dataframe to be inputted into the BERT model
-    Args:
-        input_path (String): A path to the CSV file to run the model on. Should be a result of `ppi.find_terms_in_papers`
-        model_path (String): A path to the folder containing the BERT model. Put the model in a folder within this directory called biobert. Find the model here: https://huggingface.co/david-degnan/BioBERT-RE/tree/main
-        output_directory (String): A path where to write the results to
-        segment_col_name (String): The name of the column representing the chunk of text containing the pair of biomolecules.
-        **kwargz: Any additional arguments to pass to `TrainingArguments`.
-    Returns:
-        None, but writes a csv file containing the results of the model.
-    Example Code:
-        find_names_in_papers("example_data/papers", "example_data/sars_&_human_synonyms.csv", output_directory = "myfinds")
-        run_bert("myfinds/sentence_biomolecule_pairs.csv", model_path = "biobert", output_directory = "myfinds", segment_col_name = "segment")
+
+    Parameters
+    ----------
+    input_path
+        A path to the CSV file to run the model on. Should be a result of `ppi.find_terms_in_papers`
+    
+    model_path
+        A path to the folder containing the BERT model. Put the model in a folder within this directory called biobert. 
+        Find the model here: https://huggingface.co/david-degnan/BioBERT-RE/tree/main
+    
+    output_directory
+        A path where to write the results to
+    
+    segment_col_name
+        The name of the column representing the chunk of text containing the pair of biomolecules.
+    
+    **kwargz
+        Any additional arguments to pass to `TrainingArguments`.
+    
+    Returns
+    -------
+        Writes a csv file containing the results of the model.
     """
 
     CLASSES = ["0", "1"]
@@ -222,7 +245,7 @@ def run_bert(input_path, model_path, output_directory, segment_col_name, **kwarg
 
     test = pd.read_csv(input_path)
     test = __make_bert_ready(test, segment_col_name)
-    test_dataset = preprocess_data(test, tokenizer, x_col="Sentence", y_col="Guess", e1_col="Term1", e2_col="Term2")
+    test_dataset = __preprocess_data(test, tokenizer, x_col = "Sentence", y_col = "Guess", e1_col = "Term1", e2_col = "Term2")
 
     training_args = TrainingArguments(
         output_dir="./checkpoints",

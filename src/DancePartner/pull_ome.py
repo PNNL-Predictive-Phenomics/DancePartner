@@ -8,14 +8,20 @@ import zipfile
 import io
 import json
 
-def pull_proteome(proteome_id, output_directory):
+def pull_proteome(proteome_id: str, output_directory: str):
     """
     Function that pulls a proteome and its synonyms for a species. 
 
-    Args:
-        proteome_id (String): Search for a proteome ID here: https://www.uniprot.org/proteomes/. It starts with "UP"
-        output_directory (String): Path specifying where to write the result within the current directory. 
-    Returns:
+    Parameters
+    ----------
+    proteome_id
+        Search for a proteome ID here: https://www.uniprot.org/proteomes/. It starts with "UP"
+        
+    output_directory
+        Path specifying where to write the result within the current directory. 
+    
+    Returns
+    -------
         Protein IDs and their synonyms in a text file
     """
 
@@ -85,19 +91,24 @@ def pull_proteome(proteome_id, output_directory):
         print(proteome_id + " is not recognized as a proper proteome_id")
     
     
-def pull_genome(species_id, ncbi_api_key, output_directory):
+def pull_genome(species_id: str, ncbi_api_key: str, output_directory: str):
     """
     Function that pulls a genome for a species.
 
-    Args:
-        species_id (String or Numeric): The taxon ID for the organism of interest.
-        ncbi_api_key (String): A String API key to the NCBI database. See: https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/ 
-        output_directory (String): Path specifying where to write the result.
-    Returns:
+    Parameters
+    ----------
+    species_id
+        The taxon ID for the organism of interest.
+    
+    ncbi_api_key
+        A String API key to the NCBI database. See: https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/ 
+    
+    output_directory
+        Path specifying where to write the result.
+    
+    Returns
+    -------
         Text file with all genes from genome
-    Example Code:
-        ncbi_key = open("example_data/ncbi_key.txt")
-        pull_genome(2097, "test_omes", ncbi_key.read())
     """
     
     if ncbi_api_key is None:
