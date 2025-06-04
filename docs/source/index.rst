@@ -28,18 +28,29 @@ The literature mining pipeline may be summarized in ? key steps: `1. Pulling Pub
 Publications may be pulled from any of three databases: `PubMed <https://pubmed.ncbi.nlm.nih.gov/>`_, `Scopus <https://www.scopus.com/search/form.uri?display=basic#basic>`_,
 and `OSTI <https://www.osti.gov/>`_. 
 
-PubMed
-======
+Documentation
+=============
 
-**Getting Paper IDs**
+.. autoclass:: DancePartner.pull_papers.pull_papers
 
-**Documentation & Example Code**
+PubMed Example
+==============
 
-Scopus
-======
+PubMed requires a list of PubMed IDs called PMIDs. To obtain PMIDs, simply enter a query into the search bar of PubMed, click “Save”, select “All results”, 
+and output the format as “PMID”. 
 
-**Getting Paper IDs**
+.. code-block:: python
 
-**Documentation & Example Code**
+    pull_papers(database = "pubmed", ids = [9851916], output_directory = "papers")
+
+Scopus Example
+==============
 
 
+OSTI Example
+============
+
+
+
+Multiple Example
+================

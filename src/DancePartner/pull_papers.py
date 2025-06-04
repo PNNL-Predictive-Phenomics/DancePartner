@@ -5,40 +5,54 @@ from .pull_pubmed import __pull_pubmed
 from .pull_scopus import __pull_scopus
 from .pull_osti import __pull_osti
 
-def pull_papers(output_directory, 
-                pubmed_ids = None, 
-                scopus_ids = None, 
-                osti_ids = None, 
-                deduped_table = None,
-                type = "both", 
-                include_summary_file = True, 
-                tarball_path = None, 
-                scopus_api_key = None):
+def pull_papers(output_directory: str, 
+                pubmed_ids: list[str] = None, 
+                scopus_ids: list[str] = None, 
+                osti_ids: list[str] = None, 
+                deduped_table: pd.DataFrame = None,
+                type: str = "both", 
+                include_summary_file: bool = True, 
+                tarball_path: str = None, 
+                scopus_api_key: str = None):
     """ 
-    This Function takes a list of IDs referencing a literature database and mines the available text. 
-    Function does not return any value, but it writes data when run. If multiple IDs are provided, 
+    Given a list of IDs referencing a literature database, pull available text, prioritizing full text whenever available, then titles and abstracts. 
+    A summary file of what was pulled is also generated. 
+    
+    Parameters
+    ----------
+    output_directory
+        A string indicating the directory path for where to write results.
+
+    pubmed_ids
+        A list of PubMed IDs as strings. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use multiple databases, upload a dedeuped_table.
+
+    scopus_ids
+        A list of DOIs. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use multiple databases, upload a dedeuped_table.
+
+    osti_ids
+        A list of OSTI IDs. A list of PubMed IDs. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use multiple databases, upload a dedeuped_table.
+    
+    deduped_table
+        A pandas DataFrame o deduplicated table of papers from deduplicate_papers. pubmed_ids, scopus_ids, and osti_ids should all be None to use a deduped table. 
+    
+    type 
+        Either "full text" to pull only full text, "abstract" to pull only abstracts, or "both" to first prioritize full text, and then prioritize abstracts. 
+        
+    include_summary_file
+        A boolean where True will write a summary .txt file desbring number of papers found from each pull_ranking method.
+
+    tarball_path 
+        An optional string for the path where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous    
+        function run may have saved articles to, which can reduce run time.
+
+    scopus_api_key 
+        A string API key for Scopus-Elselvier. Only needed when pulling papers from Scopus. See https://dev.elsevier.com/.
 
     
-    Parameters:
-        output_directory (String): A directory path for where to write results.
-        pubmed_ids (List[String]): A list of PubMed IDs. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use
-            multiple databases, upload a dedeuped_table.
-        scopus_ids (List[String]): A list of DOIs. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use
-            multiple databases, upload a dedeuped_table.
-        osti_ids (List[String]): A list of OSTI IDs. A list of PubMed IDs. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use
-            multiple databases, upload a dedeuped_table.
-        deduped_table (Pandas DataFrame): A deduplicated table of papers from deduplicate_papers. pubmed_ids, scopus_ids,
-            and osti_ids should all be None to use a deduped table. 
-        type (String): Either "full text" to pull only full text, "abstract" to pull only abstracts, or "both" to first prioritize full text,
-            and then prioritize abstracts. 
-        include_summary_file (Boolean, default = True): Whether to write a summary .txt file desbring number of papers found from each pull_ranking method.
-        scopus_api_key (String): A string API key for Scopus-Elselvier. See https://dev.elsevier.com/.
-        tarball_path (Optional, String): An optional path of where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous    
-           function run may have saved articles to, which can reduce run time.
-    Returns:
-        Extracted papers 
-    Example Code: 
-        pull_papers(database = "pubmed", ids = [9851916], output_directory = "papers")
+    Returns
+    -------
+        Extracted papers as text files in folders, with a summary file
+
     """
 
     # First detect IDs to use
