@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to DancePartner! &#8212; DancePartner 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=def86cc0" />
+    
+    <script src="_static/documentation_options.js?v=8d563738"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="#">DancePartner 1.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to DancePartner!</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="welcome-to-dancepartner">
+<h1>Welcome to DancePartner!<a class="headerlink" href="#welcome-to-dancepartner" title="Link to this heading">¶</a></h1>
+<p><em>DancePartner</em> is a python package for mining multi-omics relationship networks from literature and databases.
+Though <em>DancePartner</em> may be organized into an intuitive pipeline, it should be thought of as a toolbox of
+functions for building multi-omics networks for various needs, whether those be networks derived only from literature,
+databases, or a mix of the two. We welcome additions to our package and are happy to collaborate with anyone willing
+to add code to this framework. For simplicity, we will present the code in three different pipelines:</p>
+<p><a class="reference internal" href="#a-mining-from-literature">A. Mining from Literature</a></p>
+<p><a class="reference internal" href="#b-mining-from-databases">B. Mining from Databases</a></p>
+<p><a class="reference internal" href="#c-building-and-combining-networks">C. Building and Combining Networks</a></p>
+</section>
+<section id="a-mining-from-literature">
+<h1>A. Mining from Literature<a class="headerlink" href="#a-mining-from-literature" title="Link to this heading">¶</a></h1>
+<p>The literature mining pipeline may be summarized in 5 key steps: <a class="reference internal" href="#pulling-publications">1. Pulling Publications</a>, <a class="reference internal" href="#identifying-entities">2. Identifying Entities</a>,
+<a class="reference internal" href="#extracting-relationships">3. Extracting Relationships</a>, <a class="reference internal" href="#collapsing-synonyms">4. Collapsing Synonyms</a>, and <a class="reference internal" href="#construct-network-table">5. Construct Network Table</a>.</p>
+<section id="pulling-publications">
+<h2>1. Pulling Publications<a class="headerlink" href="#pulling-publications" title="Link to this heading">¶</a></h2>
+<p>Publications may be pulled from any of three databases: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>, <a class="reference external" href="https://www.scopus.com/search/form.uri?display=basic#basic">Scopus</a>,
+and <a class="reference external" href="https://www.osti.gov/">OSTI</a>. There is also a function to deduplicate papers across databases (which returns a table) that may be passed to the paper pulling function.</p>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.pull_papers.pull_papers">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.pull_papers.</span></span><span class="sig-name descname"><span class="pre">pull_papers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pubmed_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scopus_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">osti_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deduped_table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'both'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_summary_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tarball_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scopus_api_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.pull_papers.pull_papers" title="Link to this definition">¶</a></dt>
+<dd><p>Given a list of IDs referencing a literature database, pull available text, prioritizing full text whenever available, then titles and abstracts.
+A summary file of what was pulled is also generated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>output_directory</strong> (<em>str</em>) – A string indicating the directory path for where to write results.</p></li>
+<li><p><strong>pubmed_ids</strong> (<em>list</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – A list of PubMed IDs as strings. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use multiple databases, upload a dedeuped_table.</p></li>
+<li><p><strong>scopus_ids</strong> (<em>list</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – A list of DOIs. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use multiple databases, upload a dedeuped_table.</p></li>
+<li><p><strong>osti_ids</strong> (<em>list</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – A list of OSTI IDs. A list of PubMed IDs. Only one of pubmed_ids, scopus_ids, or osti_ids can be provided. If wanting to use multiple databases, upload a dedeuped_table.</p></li>
+<li><p><strong>deduped_table</strong> (<em>pandas.core.frame.DataFrame</em><em> | </em><em>None</em>) – A pandas DataFrame o deduplicated table of papers from deduplicate_papers. pubmed_ids, scopus_ids, and osti_ids should all be None to use a deduped table.</p></li>
+<li><p><strong>type</strong> (<em>str</em>) – Either “full text” to pull only full text, “abstract” to pull only abstracts, or “both” to first prioritize full text, and then prioritize abstracts.</p></li>
+<li><p><strong>include_summary_file</strong> (<em>bool</em>) – A boolean where True will write a summary .txt file desbring number of papers found from each pull_ranking method.</p></li>
+<li><p><strong>tarball_path</strong> (<em>str</em><em> | </em><em>None</em>) – An optional string for the path where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous
+function run may have saved articles to, which can reduce run time.</p></li>
+<li><p><strong>scopus_api_key</strong> (<em>str</em><em> | </em><em>None</em>) – A string API key for Scopus-Elselvier. Only needed when pulling papers from Scopus. See <a class="reference external" href="https://dev.elsevier.com/">https://dev.elsevier.com/</a>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Extracted papers as text files in folders, with a summary file</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="pubmed-example">
+<h3>PubMed Example<a class="headerlink" href="#pubmed-example" title="Link to this heading">¶</a></h3>
+<p>PubMed requires a list of PubMed IDs called PMIDs. To obtain PMIDs, simply enter a query into the search bar of PubMed, click “Save”, select “All results”,
+and output the format as “PMID”.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pull_papers</span><span class="p">(</span><span class="n">database</span> <span class="o">=</span> <span class="s2">&quot;pubmed&quot;</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9851916</span><span class="p">],</span> <span class="n">output_directory</span> <span class="o">=</span> <span class="s2">&quot;papers&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="scopus-example">
+<h3>Scopus Example<a class="headerlink" href="#scopus-example" title="Link to this heading">¶</a></h3>
+<p>Scopus uses DOIs to identify papers. To obtain these DOIs, enter a query into the search bar, click “Export”, select the desired format, select all documents,
+and then export at least the DOI column. Scopus also requires string API key. See <a class="reference external" href="https://dev.elsevier.com/">https://dev.elsevier.com/</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Save the scopus key as a variable</span>
+<span class="n">pull_papers</span><span class="p">(</span>
+    <span class="n">scopus_ids</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;10.1186/s40168-021-01035-8&quot;</span><span class="p">,</span> <span class="s2">&quot;10.1002/bit.26296&quot;</span><span class="p">,</span> <span class="s2">&quot;10.1002/pmic.200300397&quot;</span><span class="p">,</span> <span class="s2">&quot;10.1074/mcp.M115.057117&quot;</span><span class="p">],</span>
+    <span class="n">output_directory</span> <span class="o">=</span> <span class="s2">&quot;scopus_papers&quot;</span><span class="p">,</span>
+    <span class="n">scopus_api_key</span> <span class="o">=</span> <span class="n">scopus_api_key</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="osti-example">
+<h3>OSTI Example<a class="headerlink" href="#osti-example" title="Link to this heading">¶</a></h3>
+<p>To obtain OSTI IDs, enter a query and click “Save Results”, and the resulting file will contain the OSTI IDs.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pull_papers</span><span class="p">(</span>
+    <span class="n">osti_ids</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;2229172&quot;</span><span class="p">,</span> <span class="s2">&quot;1629838&quot;</span><span class="p">,</span> <span class="s2">&quot;1766618&quot;</span><span class="p">,</span> <span class="s2">&quot;1379914&quot;</span><span class="p">],</span>
+    <span class="n">output_directory</span> <span class="o">=</span> <span class="s2">&quot;osti_papers&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="deduplication">
+<h3>Deduplication<a class="headerlink" href="#deduplication" title="Link to this heading">¶</a></h3>
+<p>To deduplicate papers across databases, the following steps must be followed:</p>
+<p><strong>PubMed:</strong> Enter the query, hit search, hit save, select “All results” and “csv”</p>
+<p><strong>Scopus:</strong> Enter the query, hit search, hit export, select “CSV” and keep all defaults checked.</p>
+<p><strong>OSTI:</strong> Enter the query, hit search, and save results as a “CSV”</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.deduplicate_papers.deduplicate_papers">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.deduplicate_papers.</span></span><span class="sig-name descname"><span class="pre">deduplicate_papers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pubmed_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scopus_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">osti_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.deduplicate_papers.deduplicate_papers" title="Link to this definition">¶</a></dt>
+<dd><p>Deduplicate papers across databases.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pubmed_path</strong> (<em>str</em><em> | </em><em>None</em>) – The path to the PubMed export of paper information. To obtain, enter the query, hit search, hit save, select “All results” and “csv”.</p></li>
+<li><p><strong>scopus_path</strong> (<em>str</em><em> | </em><em>None</em>) – The path to the Scopus export of paper information. To obtain, enter the query, hit search, hit export, select “CSV” and keep all defaults checked.</p></li>
+<li><p><strong>osti_path</strong> (<em>str</em><em> | </em><em>None</em>) – The path to the OSTI export of paper information. To obtain, enter the query, hit search, and save results as a “CSV”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A table with deduplicated papers</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Save the results as a deduplicated table</span>
+<span class="n">deduped_table</span> <span class="o">=</span> <span class="n">deduplicate_papers</span><span class="p">(</span><span class="n">pubmed_path</span><span class="p">,</span> <span class="n">scopus_path</span><span class="p">,</span> <span class="n">osti_path</span><span class="p">)</span>
+
+<span class="c1"># Then pull publications using the deduped table. Use the saved scopus_api_key</span>
+<span class="n">pull_papers</span><span class="p">(</span><span class="n">deduped_table</span> <span class="o">=</span> <span class="n">deduped_table</span><span class="p">,</span> <span class="n">output_directory</span> <span class="o">=</span> <span class="s2">&quot;deduped_example&quot;</span><span class="p">,</span> <span class="n">scopus_api_key</span> <span class="o">=</span> <span class="n">scopus_api_key</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="identifying-entities">
+<h2>2. Identifying Entities<a class="headerlink" href="#identifying-entities" title="Link to this heading">¶</a></h2>
+<p>First, biological terms (entities) need to be defined and found in articles. An option is to use ScispaCy, or
+simply use synonym files, which is the recommended approach. To install ScispaCy, see the “Optional ScispaCy Model”
+section of the <a class="reference external" href="https://github.com/pnnl-predictive-phenomics/DancePartner/tree/main">README</a>.</p>
+<section id="scispacy">
+<h3>ScispaCy<a class="headerlink" href="#scispacy" title="Link to this heading">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.extract_terms.extract_terms_scispacy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.extract_terms.</span></span><span class="sig-name descname"><span class="pre">extract_terms_scispacy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paper_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omes_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">['GENE_OR_GENE_PRODUCT',</span> <span class="pre">'SIMPLE_CHEMICAL',</span> <span class="pre">'AMINO_ACID']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">additional_stop_words</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.extract_terms.extract_terms_scispacy" title="Link to this definition">¶</a></dt>
+<dd><p>Extract terms from papers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paper_directory</strong> (<em>str</em>) – Directory to papers in txt format. Subdirectories are searched, and .gz and output_summary.txt files are ignored.</p></li>
+<li><p><strong>omes_folder</strong> (<em>str</em>) – Path to the omes folder where “stop_words_english.txt” is stored. Required.</p></li>
+<li><p><strong>tags</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – A list of tags from the <cite>en_ner_bionlp13cg_md</cite> model. See <a class="reference external" href="https://allenai.github.io/scispacy/">https://allenai.github.io/scispacy/</a></p></li>
+<li><p><strong>additional_stop_words</strong> (<em>list</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – Add more words to be removed from consideration. Default is None.</p></li>
+<li><p><strong>min_length</strong> (<em>int</em>) – The minimum number of non-whitespace characters required. Default is 3.</p></li>
+<li><p><strong>max_length</strong> (<em>int</em>) – The maximum number of characters allowed. Default is 100.</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – Indicate whether a message should be printed as each file is processed. Default is “FALSE”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of unique terms found in papers written as a string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extracting terms requires a path to the papers and a path to the omes folder</span>
+<span class="n">extract_terms_scispacy</span><span class="p">(</span><span class="n">paper_directory</span> <span class="o">=</span> <span class="n">paper_directory</span><span class="p">,</span> <span class="n">omes_folder</span> <span class="o">=</span> <span class="s2">&quot;../omes&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="synonym-files">
+<h3>Synonym Files<a class="headerlink" href="#synonym-files" title="Link to this heading">¶</a></h3>
+<p>First, pull a proteome.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.pull_ome.pull_proteome">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.pull_ome.</span></span><span class="sig-name descname"><span class="pre">pull_proteome</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proteome_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.pull_ome.pull_proteome" title="Link to this definition">¶</a></dt>
+<dd><p>Function that pulls a proteome and its synonyms for a species.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>proteome_id</strong> (<em>str</em>) – Search for a proteome ID here: <a class="reference external" href="https://www.uniprot.org/proteomes/">https://www.uniprot.org/proteomes/</a>. It starts with “UP”</p></li>
+<li><p><strong>output_directory</strong> (<em>str</em>) – Path specifying where to write the result within the current directory.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Protein IDs and their synonyms in a text file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pull a proteome (protein and its synonyms) and place it in the omes folder</span>
+<span class="n">pull_proteome</span><span class="p">(</span><span class="n">proteome_id</span> <span class="o">=</span> <span class="s2">&quot;UP000001940&quot;</span><span class="p">,</span> <span class="n">output_directory</span> <span class="o">=</span> <span class="s2">&quot;../omes&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="list-synonyms">
+<h3>List Synonyms<a class="headerlink" href="#list-synonyms" title="Link to this heading">¶</a></h3>
+<p>Then, list all synonyms.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.create_synonym_table.list_synonyms">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.create_synonym_table.</span></span><span class="sig-name descname"><span class="pre">list_synonyms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">omes_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteome_filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.create_synonym_table.list_synonyms" title="Link to this definition">¶</a></dt>
+<dd><p>List all possible synonyms to match</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>omes_folder</strong> (<em>str</em>) – Path to the omes folder. Required.</p></li>
+<li><p><strong>proteome_filename</strong> (<em>str</em>) – Name of the proteome file within the omes folder. Use the full file name. Required.</p></li>
+<li><p><strong>min_length</strong> (<em>int</em>) – Minimum number of characters in a term. Default is 3.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of synonyms to find in papers</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># List the omes folder and the proteome to use in the omes folder</span>
+<span class="n">list_synonyms</span><span class="p">(</span><span class="s2">&quot;../omes&quot;</span><span class="p">,</span> <span class="s2">&quot;UP000001940_proteome.txt&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="extracting-relationships">
+<h2>3. Extracting Relationships<a class="headerlink" href="#extracting-relationships" title="Link to this heading">¶</a></h2>
+<p>First, sentences with terms need to be extracted and formatted for the downstream BERT model.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.find_terms_in_papers.find_terms_in_papers">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.find_terms_in_papers.</span></span><span class="sig-name descname"><span class="pre">find_terms_in_papers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paper_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">terms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_gram_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_char_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">250</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.find_terms_in_papers.find_terms_in_papers" title="Link to this definition">¶</a></dt>
+<dd><p>This function searches through sentences of papers to extract biomolecule pairs present in each sentence.
+It utilizes a set-intersection method on the n-grams of the sentences with the already-found biomolecule synonyms.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paper_directory</strong> (<em>str</em>) – A directory path pointing to the list of papers to be parsed through.</p></li>
+<li><p><strong>terms</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – List of terms to find in papers</p></li>
+<li><p><strong>output_directory</strong> (<em>str</em><em> | </em><em>None</em>) – An optional path to a directory for where to write results to. Otherwise, the function will return the table.</p></li>
+<li><p><strong>n_gram_max</strong> (<em>int</em>) – The number of n_grams to consider when combing the papers. (e.g. n_grams=2 will catch “protein A” but n_grams=1 will not). If unsure, use the default.</p></li>
+<li><p><strong>max_char_length</strong> (<em>int</em>) – The number of maximum characters that can be in a segment containing the pair of biomolecules</p></li>
+<li><p><strong>padding</strong> (<em>int</em>) – The amount of padding (in characters) to surround the terms in a segment by at minimum.</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – If True, print status messages</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Pandas DataFrame of the resulting data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Supply this function with the directory with the papers, a list of terms, and the output directory</span>
+<span class="n">find_terms_in_papers</span><span class="p">(</span>
+    <span class="n">paper_directory</span> <span class="o">=</span> <span class="n">paper_directory</span><span class="p">,</span>
+    <span class="n">terms</span> <span class="o">=</span> <span class="n">my_terms</span><span class="p">,</span>
+    <span class="n">n_gram_max</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="n">padding</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span>
+    <span class="n">output_directory</span> <span class="o">=</span> <span class="n">output_directory</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Next, BERT can be run. Extract the BERT model from <a class="reference external" href="https://huggingface.co/david-degnan/BioBERT-RE/tree/main">here</a>.
+Place in the top level directory of this repo in a folder called “biobert”. Pull the config.json, the pytorch_model.bin, and the training_args.bin files.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.bert_functions.run_bert">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.bert_functions.</span></span><span class="sig-name descname"><span class="pre">run_bert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_col_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargz</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.bert_functions.run_bert" title="Link to this definition">¶</a></dt>
+<dd><p>Function to prepare a dataframe to be inputted into the BERT model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_path</strong> (<em>str</em>) – A path to the CSV file to run the model on. Should be a result of <cite>ppi.find_terms_in_papers</cite></p></li>
+<li><p><strong>model_path</strong> (<em>str</em>) – A path to the folder containing the BERT model. Put the model in a folder within this directory called biobert.
+Find the model here: <a class="reference external" href="https://huggingface.co/david-degnan/BioBERT-RE/tree/main">https://huggingface.co/david-degnan/BioBERT-RE/tree/main</a></p></li>
+<li><p><strong>output_directory</strong> (<em>str</em>) – A path where to write the results to</p></li>
+<li><p><strong>segment_col_name</strong> (<em>str</em>) – The name of the column representing the chunk of text containing the pair of biomolecules.</p></li>
+<li><p><strong>**kwargz</strong> – Any additional arguments to pass to <cite>TrainingArguments</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Writes a csv file containing the results of the model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a variable to the output directory. Make sure the biobert model is pulled and in a location that can be referenced by model_path.</span>
+<span class="n">run_bert</span><span class="p">(</span>
+    <span class="n">input_path</span> <span class="o">=</span> <span class="s2">&quot;/path/to/sentence_biomolecule_pairs.csv&quot;</span><span class="p">,</span>
+    <span class="n">model_path</span> <span class="o">=</span> <span class="s2">&quot;../biobert&quot;</span><span class="p">,</span> <span class="c1"># Update to the path of your BERT model if necessary. We recommend placing biobert in the top directory.</span>
+    <span class="n">output_directory</span> <span class="o">=</span> <span class="n">output_directory</span><span class="p">,</span>
+    <span class="n">segment_col_name</span> <span class="o">=</span> <span class="s2">&quot;segment&quot;</span><span class="p">,</span>
+    <span class="n">use_cpu</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="collapsing-synonyms">
+<h2>4. Collapsing Synonyms<a class="headerlink" href="#collapsing-synonyms" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.create_synonym_table.map_synonyms">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.create_synonym_table.</span></span><span class="sig-name descname"><span class="pre">map_synonyms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">term_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omes_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteome_filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_missing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.create_synonym_table.map_synonyms" title="Link to this definition">¶</a></dt>
+<dd><p>Map synonyms to IDs in the order of lipids, metabolites, and finally gene products.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>term_list</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – List of terms to map to lipidome, metabolome, and proteome.</p></li>
+<li><p><strong>omes_folder</strong> (<em>str</em>) – Path to the omes folder. Required.</p></li>
+<li><p><strong>proteome_filename</strong> (<em>str</em>) – Name of the proteome file within the omes folder. Use the full file name. Required.</p></li>
+<li><p><strong>add_missing</strong> (<em>bool</em>) – If True, add terms that weren’t mapped to synonyms. Optional.</p></li>
+<li><p><strong>output_directory</strong> (<em>bool</em><em> | </em><em>None</em>) – A path to a directory for where to write results to.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A table with the synonym, its ID, and the type (gene product, lipid, metabolite)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># A term list, the path the ome folder, the name of the proteome file to use, and a path to</span>
+<span class="c1"># the output directory are all needed</span>
+<span class="n">map_synonyms</span><span class="p">(</span>
+    <span class="n">term_list</span> <span class="o">=</span> <span class="n">all_found_terms</span><span class="p">,</span>
+    <span class="n">omes_folder</span> <span class="o">=</span> <span class="s2">&quot;../omes&quot;</span><span class="p">,</span>
+    <span class="n">proteome_filename</span> <span class="o">=</span> <span class="s2">&quot;UP000001940_proteome.txt&quot;</span><span class="p">,</span>
+    <span class="n">add_missing</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">output_directory</span> <span class="o">=</span> <span class="n">output_directory</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="construct-network-table">
+<h2>5. Construct Network Table<a class="headerlink" href="#construct-network-table" title="Link to this heading">¶</a></h2>
+<p>A network table that lists each edge between nodes can finally be built
+and visualized in a downstream function.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.construct_network.build_network_table">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.construct_network.</span></span><span class="sig-name descname"><span class="pre">build_network_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">BERT_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synonyms</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.construct_network.build_network_table" title="Link to this definition">¶</a></dt>
+<dd><p>Build a network table of edges with biomolecule IDs and their synonyms</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>BERT_data</strong> (<em>pandas.core.frame.DataFrame</em>) – The output table from run_bert() as a pandas DataFrame.</p></li>
+<li><p><strong>synonyms</strong> (<em>pandas.core.frame.DataFrame</em>) – The output table from map_synonyms() as a pandas DataFrame.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A network table of synonyms, IDs, types (gene product, metabolite, lipid), and the source (literature or database)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pass the BERT table and synonyms</span>
+<span class="n">build_network_table</span><span class="p">(</span><span class="n">BERT_data</span> <span class="o">=</span> <span class="n">BERT_Table</span><span class="p">,</span> <span class="n">synonyms</span> <span class="o">=</span> <span class="n">Synonym_Table</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="b-mining-from-databases">
+<h1>B. Mining from Databases<a class="headerlink" href="#b-mining-from-databases" title="Link to this heading">¶</a></h1>
+<p>There are functions to mine relationships from UniProt, WikiPathways, and KEGG. There is a file for relationships in LipidMaps. See the vignettes.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.pull_relationships.pull_uniprot">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.pull_relationships.</span></span><span class="sig-name descname"><span class="pre">pull_uniprot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">species_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_self_relationships</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.pull_relationships.pull_uniprot" title="Link to this definition">¶</a></dt>
+<dd><p>Function that pulls protein-protein and protein-metabolite interactions for a species.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>species_id</strong> (<em>str</em>) – The taxon ID for the organism of interest.</p></li>
+<li><p><strong>output_directory</strong> (<em>str</em><em> | </em><em>None</em>) – Path specifying where to write the result.</p></li>
+<li><p><strong>remove_self_relationships</strong> (<em>bool</em>) – True to remove any relationships to self, and False to maintain them. Default is True.</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – Whether progress messages should be written or not. Default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pull_uniprot</span><span class="p">(</span>
+    <span class="n">species_id</span> <span class="o">=</span> <span class="mi">1423</span><span class="p">,</span>
+    <span class="n">output_directory</span> <span class="o">=</span> <span class="n">output_directory</span><span class="p">,</span>
+    <span class="n">remove_self_relationships</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">verbose</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.pull_relationships.pull_wikipathways">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.pull_relationships.</span></span><span class="sig-name descname"><span class="pre">pull_wikipathways</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">species_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">species_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omes_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteome_filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_self_relationships</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.pull_relationships.pull_wikipathways" title="Link to this definition">¶</a></dt>
+<dd><p>Extract relationships from metabolic networks stored in WikiPathways</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>species_name</strong> (<em>str</em>) – The name for the species. Select species from here: <a class="reference external" href="https://www.wikipathways.org/browse/organisms.html">https://www.wikipathways.org/browse/organisms.html</a>. Use proper Genus species format</p></li>
+<li><p><strong>species_id</strong> (<em>str</em>) – The taxon ID for the organism of interest</p></li>
+<li><p><strong>omes_folder</strong> (<em>str</em>) – Path to the omes folder</p></li>
+<li><p><strong>proteome_filename</strong> (<em>str</em>) – Name of the proteome file</p></li>
+<li><p><strong>output_directory</strong> (<em>str</em><em> | </em><em>None</em>) – Path specifying where to write the result.</p></li>
+<li><p><strong>remove_self_relationships</strong> (<em>bool</em>) – True to remove any relationships to self, and False to maintain them. Default is True.</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – Whether progress messages should be written or not. Default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pull_wikipathways</span><span class="p">(</span>
+    <span class="n">species_name</span> <span class="o">=</span> <span class="s2">&quot;Bacillus subtilis&quot;</span><span class="p">,</span>
+    <span class="n">species_id</span> <span class="o">=</span> <span class="s2">&quot;1423&quot;</span><span class="p">,</span>
+    <span class="n">omes_folder</span> <span class="o">=</span> <span class="s2">&quot;../omes&quot;</span><span class="p">,</span>
+    <span class="n">proteome_filename</span> <span class="o">=</span> <span class="s2">&quot;UP000001570_proteome.txt&quot;</span><span class="p">,</span>
+    <span class="n">output_directory</span><span class="o">=</span> <span class="n">output_directory</span><span class="p">,</span>
+    <span class="n">verbose</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.pull_relationships.pull_kegg">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.pull_relationships.</span></span><span class="sig-name descname"><span class="pre">pull_kegg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kegg_species_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">omes_folder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">proteome_filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flatten_module</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_self_relationships</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.pull_relationships.pull_kegg" title="Link to this definition">¶</a></dt>
+<dd><p>Extract relationships from metabolic networks (modules) stored in KEGG</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kegg_species_id</strong> (<em>str</em>) – The name for the species. Select species from here: <a class="reference external" href="https://rest.kegg.jp/list/organism">https://rest.kegg.jp/list/organism</a></p></li>
+<li><p><strong>species_id</strong> – The taxon ID for the organism of interest</p></li>
+<li><p><strong>omes_folder</strong> (<em>str</em>) – Path to the omes folder</p></li>
+<li><p><strong>proteome_filename</strong> (<em>str</em>) – Name of the proteome file</p></li>
+<li><p><strong>output_directory</strong> (<em>str</em><em> | </em><em>None</em>) – Path specifying where to write the result.</p></li>
+<li><p><strong>flatten_module</strong> (<em>bool</em>) – If True, everything in a module will be considered related to everything else in a module. If False,
+metabolic relationships as defined by KEGG will be preserved. Default is False.</p></li>
+<li><p><strong>remove_self_relationships</strong> (<em>bool</em>) – True to remove any relationships to self, and False to maintain them. Default is True.</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – Whether progress messages should be written or not. Default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pull_kegg</span><span class="p">(</span>
+    <span class="n">kegg_species_id</span> <span class="o">=</span> <span class="s2">&quot;bsu&quot;</span><span class="p">,</span>
+    <span class="n">omes_folder</span> <span class="o">=</span> <span class="s2">&quot;../omes&quot;</span><span class="p">,</span>
+    <span class="n">proteome_filename</span> <span class="o">=</span> <span class="s2">&quot;UP000001570_proteome.txt&quot;</span><span class="p">,</span>
+    <span class="n">output_directory</span> <span class="o">=</span> <span class="n">output_directory</span><span class="p">,</span>
+    <span class="n">flatten_module</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">verbose</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="c-building-and-combining-networks">
+<h1>C. Building and Combining Networks<a class="headerlink" href="#c-building-and-combining-networks" title="Link to this heading">¶</a></h1>
+<section id="combining-networks">
+<h2>Combining Networks<a class="headerlink" href="#combining-networks" title="Link to this heading">¶</a></h2>
+<p>Network tables can easily be combined with <cite>pd.concat</cite>. Any other tools used to make networks can be visualized in DancePartner,
+assuming they have the seven required columns: Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source. Synonyms for Term 1 and Term 2
+(Synonym1 &amp; Synonym2) can be anything as can identifiers (ID1 and ID2). Type must be “lipid”, “metabolite”, or “gene product”.
+Source must be either “literature” or “database”.</p>
+</section>
+<section id="duplicate-removal">
+<h2>Duplicate Removal<a class="headerlink" href="#duplicate-removal" title="Link to this heading">¶</a></h2>
+<p>If using your own network files, you may want to consider deduplication of relationships, as they are symmetric, meaning that
+ID1 &amp; ID2 = ID2 &amp; ID1 (or a relationship between ATP &amp; ATP synthase is the same as a relationship between ATP synthase and ATP).</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.pull_relationships.remove_relationship_duplicates">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.pull_relationships.</span></span><span class="sig-name descname"><span class="pre">remove_relationship_duplicates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network_table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_self_relationships</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.pull_relationships.remove_relationship_duplicates" title="Link to this definition">¶</a></dt>
+<dd><p>Remove all duplicates from a network table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>network_table</strong> (<em>pandas.core.frame.DataFrame</em>) – Output of build_network_table, pull_protein_protein_interactions,  etc. Use pd.concat to concatenate multiple tables together.</p></li>
+<li><p><strong>remove_self_relationships</strong> (<em>bool</em>) – True to remove any relationships to self, and False to maintain them. Default is True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A table with unique interacting biomolecules</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">remove_relationship_duplicates</span><span class="p">(</span>
+    <span class="n">network_table</span> <span class="o">=</span> <span class="n">network_table</span><span class="p">,</span>
+    <span class="n">remove_self_relationships</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="visualize-calculate-network-metrics">
+<h2>Visualize &amp; Calculate Network Metrics<a class="headerlink" href="#visualize-calculate-network-metrics" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.construct_network.visualize_network">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.construct_network.</span></span><span class="sig-name descname"><span class="pre">visualize_network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network_table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gene_product_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#D55E00'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metabolite_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0072B2'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lipid_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#E69F00'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">literature_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#56B4E9'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#000000'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_labels</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.construct_network.visualize_network" title="Link to this definition">¶</a></dt>
+<dd><p>Visualize a network table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>network_table</strong> (<em>pandas.core.frame.DataFrame</em>) – Output of build_network_table, pull_protein_protein_interactions, etc. Use pd.concat to concatenate multiple tables together.</p></li>
+<li><p><strong>gene_product_color</strong> (<em>str</em>) – Hexadecimal for the gene product node color. Default is #D55E00 (vermillion).</p></li>
+<li><p><strong>metabolite_color</strong> (<em>str</em>) – Hexadecimal for the metabolite node color. Default is #0072B2 (blue).</p></li>
+<li><p><strong>lipid_color</strong> (<em>str</em>) – Hexadecimal for the lipid node color. Default is #E69F00 (orange).</p></li>
+<li><p><strong>literature_color</strong> (<em>str</em>) – Hexadecimal for the literature edge color. Default is #56B4E9 (skyblue).</p></li>
+<li><p><strong>database_color</strong> (<em>str</em>) – Hexadecimal for the database edge color. Default is #000000 (black).</p></li>
+<li><p><strong>node_size</strong> (<em>int</em>) – Size of the nodes. Default is 30.</p></li>
+<li><p><strong>edge_weight</strong> (<em>int</em>) – Weight of the edges. Default is 4.</p></li>
+<li><p><strong>with_labels</strong> (<em>bool</em>) – Whether labels should be included or not. Default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>A network object and the visualization of that object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">visualize_network</span><span class="p">(</span><span class="n">network_table</span> <span class="o">=</span> <span class="n">network_table</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="DancePartner.construct_network.calculate_network_metrics">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">DancePartner.construct_network.</span></span><span class="sig-name descname"><span class="pre">calculate_network_metrics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Graph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'all'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#DancePartner.construct_network.calculate_network_metrics" title="Link to this definition">¶</a></dt>
+<dd><p>Calculate network metrics for the multi-omics network.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>network</strong> (<em>networkx.classes.graph.Graph</em>) – The output of visualize_network</p></li>
+<li><p><strong>metric</strong> (<em>str</em>) – Either “number of components”, “average component size”, “degree centrality”, “clustering coefficient”, or “all”. Default is “all”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Network summary metrics</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Welcome to DancePartner!</a></li>
+<li><a class="reference internal" href="#a-mining-from-literature">A. Mining from Literature</a><ul>
+<li><a class="reference internal" href="#pulling-publications">1. Pulling Publications</a><ul>
+<li><a class="reference internal" href="#documentation">Documentation</a><ul>
+<li><a class="reference internal" href="#DancePartner.pull_papers.pull_papers"><code class="docutils literal notranslate"><span class="pre">pull_papers</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pubmed-example">PubMed Example</a></li>
+<li><a class="reference internal" href="#scopus-example">Scopus Example</a></li>
+<li><a class="reference internal" href="#osti-example">OSTI Example</a></li>
+<li><a class="reference internal" href="#deduplication">Deduplication</a><ul>
+<li><a class="reference internal" href="#DancePartner.deduplicate_papers.deduplicate_papers"><code class="docutils literal notranslate"><span class="pre">deduplicate_papers</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#identifying-entities">2. Identifying Entities</a><ul>
+<li><a class="reference internal" href="#scispacy">ScispaCy</a><ul>
+<li><a class="reference internal" href="#DancePartner.extract_terms.extract_terms_scispacy"><code class="docutils literal notranslate"><span class="pre">extract_terms_scispacy</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#synonym-files">Synonym Files</a><ul>
+<li><a class="reference internal" href="#DancePartner.pull_ome.pull_proteome"><code class="docutils literal notranslate"><span class="pre">pull_proteome</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#list-synonyms">List Synonyms</a><ul>
+<li><a class="reference internal" href="#DancePartner.create_synonym_table.list_synonyms"><code class="docutils literal notranslate"><span class="pre">list_synonyms</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#extracting-relationships">3. Extracting Relationships</a><ul>
+<li><a class="reference internal" href="#DancePartner.find_terms_in_papers.find_terms_in_papers"><code class="docutils literal notranslate"><span class="pre">find_terms_in_papers</span></code></a></li>
+<li><a class="reference internal" href="#DancePartner.bert_functions.run_bert"><code class="docutils literal notranslate"><span class="pre">run_bert</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#collapsing-synonyms">4. Collapsing Synonyms</a><ul>
+<li><a class="reference internal" href="#DancePartner.create_synonym_table.map_synonyms"><code class="docutils literal notranslate"><span class="pre">map_synonyms</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#construct-network-table">5. Construct Network Table</a><ul>
+<li><a class="reference internal" href="#DancePartner.construct_network.build_network_table"><code class="docutils literal notranslate"><span class="pre">build_network_table</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#b-mining-from-databases">B. Mining from Databases</a><ul>
+<li><a class="reference internal" href="#DancePartner.pull_relationships.pull_uniprot"><code class="docutils literal notranslate"><span class="pre">pull_uniprot</span></code></a></li>
+<li><a class="reference internal" href="#DancePartner.pull_relationships.pull_wikipathways"><code class="docutils literal notranslate"><span class="pre">pull_wikipathways</span></code></a></li>
+<li><a class="reference internal" href="#DancePartner.pull_relationships.pull_kegg"><code class="docutils literal notranslate"><span class="pre">pull_kegg</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#c-building-and-combining-networks">C. Building and Combining Networks</a><ul>
+<li><a class="reference internal" href="#combining-networks">Combining Networks</a></li>
+<li><a class="reference internal" href="#duplicate-removal">Duplicate Removal</a><ul>
+<li><a class="reference internal" href="#DancePartner.pull_relationships.remove_relationship_duplicates"><code class="docutils literal notranslate"><span class="pre">remove_relationship_duplicates</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#visualize-calculate-network-metrics">Visualize &amp; Calculate Network Metrics</a><ul>
+<li><a class="reference internal" href="#DancePartner.construct_network.visualize_network"><code class="docutils literal notranslate"><span class="pre">visualize_network</span></code></a></li>
+<li><a class="reference internal" href="#DancePartner.construct_network.calculate_network_metrics"><code class="docutils literal notranslate"><span class="pre">calculate_network_metrics</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="#">DancePartner 1.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to DancePartner!</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, David Degnan, Clayton Strauch, Moses Obiri, Erik VonKaenel, Daniel Adrian, Lisa Bramer.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    </div>
+  </body>
+</html>

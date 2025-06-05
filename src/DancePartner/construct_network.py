@@ -19,7 +19,7 @@ def build_network_table(BERT_data: pd.DataFrame, synonyms: pd.DataFrame):
     
     Returns
     -------
-        A network table of synonms, IDs, types (gene product, metabolite, lipid), and the source (literature or database)
+        A network table of synonyms, IDs, types (gene product, metabolite, lipid), and the source (literature or database)
     '''
 
     ############################
@@ -45,30 +45,49 @@ def build_network_table(BERT_data: pd.DataFrame, synonyms: pd.DataFrame):
     # Return table
     return term_table
 
-def visualize_network(network_table, 
-                      gene_product_color = "#D55E00", 
-                      metabolite_color = "#0072B2", 
-                      lipid_color = "#E69F00", 
-                      literature_color = "#56B4E9",
-                      database_color = "#000000",
-                      node_size = 30,
-                      edge_weight = 4,
-                      with_labels = False):
+def visualize_network(network_table: pd.DataFrame, 
+                      gene_product_color: str = "#D55E00", 
+                      metabolite_color: str = "#0072B2", 
+                      lipid_color: str = "#E69F00", 
+                      literature_color:str = "#56B4E9",
+                      database_color: str = "#000000",
+                      node_size: int = 30,
+                      edge_weight: int = 4,
+                      with_labels: bool = False):
     '''
-    Visualize a network_table    
+    Visualize a network table    
     
-    Args:
-        network_table (Pandas DataFrame): Output of build_network_table, pull_protein_protein_interactions, 
-           etc. Use pd.concat to concatenate multiple tables together. 
-        gene_product_color (String): Hexadecimal for the gene product node color. Default is #D55E00 (vermillion).
-        metabolite_color (String): Hexadecimal for the metabolite node color. Default is #0072B2 (blue).
-        lipid_color (String): Hexadecimal for the lipid node color. Default is #E69F00 (orange).
-        literature_color (String): Hexadecimal for the literature edge color. Default is #56B4E9 (skyblue).
-        database_color (String): Hexadecimal for the database edge color. Default is #000000 (black).
-        node_size (Integer): Size of the nodes. Default is 30. 
-        edge_weight (Integer): Weight of the edges. Default is 4.
-        with_labels (Logical): Whether labels should be included or not. Default is False. 
-    Returns:
+    Parameters
+    ----------
+    network_table
+        Output of build_network_table, pull_protein_protein_interactions, etc. Use pd.concat to concatenate multiple tables together. 
+    
+    gene_product_color
+        Hexadecimal for the gene product node color. Default is #D55E00 (vermillion).
+    
+    metabolite_color
+        Hexadecimal for the metabolite node color. Default is #0072B2 (blue).
+    
+    lipid_color
+        Hexadecimal for the lipid node color. Default is #E69F00 (orange).
+    
+    literature_color
+        Hexadecimal for the literature edge color. Default is #56B4E9 (skyblue).
+    
+    database_color
+        Hexadecimal for the database edge color. Default is #000000 (black).
+    
+    node_size
+        Size of the nodes. Default is 30. 
+    
+    edge_weight
+        Weight of the edges. Default is 4.
+    
+    with_labels
+        Whether labels should be included or not. Default is False. 
+    
+    Returns
+    -------
         A network object and the visualization of that object
     '''
 
@@ -147,15 +166,20 @@ def visualize_network(network_table,
     ])
     return network
 
-def calculate_network_metrics(network, metric = "all"):
+def calculate_network_metrics(network: nx.Graph, metric: str = "all"):
     '''
     Calculate network metrics for the multi-omics network.    
     
-    Args:
-        network (networkx object): The output of visualize network
-        metric (String): Either "number of components", "average component size", "degree centrality"
-            "clustering coefficient", or "all". Default is "all". 
-    Returns:
+    Parameters
+    ----------
+    network
+        The output of visualize_network
+    
+    metric
+        Either "number of components", "average component size", "degree centrality", "clustering coefficient", or "all". Default is "all". 
+    
+    Returns
+    -------
         Network summary metrics
     '''
 

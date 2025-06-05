@@ -20,24 +20,30 @@ pd.options.mode.chained_assignment = None
 ## DATA PREPARING FUNCTIONS ##
 ##############################
 
-def __parse_url(url):
+def __parse_url(url: str):
     '''
     Simple parsing function to extract data from an API call
 
-    Args:
-        url (String): The url to parse
+    Parameters
+    ----------
+    url
+        The url to parse
     '''
     req = requests.get(url,  timeout = 500)
     return BeautifulSoup(req.content, "html.parser")
 
-def __upper_triangle_meshgrid(x):
+def __upper_triangle_meshgrid(x: np.array):
     """
     Generates all combinations of x and x, and returns only the upper triangle,
     meaning the not self-self relationships and the unique relationships.
 
-    Args:
-        x (Numpy Array): A list of terms to make the meshgrid out of
-    Returns:
+    Parameters
+    ----------
+    x
+        A list of terms to make the meshgrid out of
+    
+    Returns
+    -------
         A pandas DataFrame of only the unique combinations
     """
 
@@ -55,16 +61,21 @@ def __upper_triangle_meshgrid(x):
     combos = combos[combos[0] != combos[1]]
     return(combos.reset_index(drop = True))
 
-def remove_relationship_duplicates(network_table, remove_self_relationships = True): 
+def remove_relationship_duplicates(network_table: pd.DataFrame, remove_self_relationships: bool = True): 
     '''
     Remove all duplicates from a network table.
     
-    Args:
-        network_table (Pandas DataFrame): Output of build_network_table, pull_protein_protein_interactions, 
-           etc. Use pd.concat to concatenate multiple tables together. 
-        remove_self_relationships (Logical): True to remove any relationships to self, and False to maintain them. Default is True.
-    Returns:
-        A file with unique interacting biomolecules
+    Parameters
+    ---------- 
+    network_table
+        Output of build_network_table, pull_protein_protein_interactions,  etc. Use pd.concat to concatenate multiple tables together. 
+    
+    remove_self_relationships
+        True to remove any relationships to self, and False to maintain them. Default is True.
+    
+    Returns
+    -------
+        A table with unique interacting biomolecules
     '''
 
     # Remove self-relationships if possible
@@ -80,17 +91,27 @@ def remove_relationship_duplicates(network_table, remove_self_relationships = Tr
 ## INTERACTOMES ##
 ##################
 
-def pull_uniprot(species_id, output_directory = None, remove_self_relationships = True, verbose = True):
+def pull_uniprot(species_id: str, output_directory: str = None, remove_self_relationships: bool = True, verbose: bool = True):
     """
     Function that pulls protein-protein and protein-metabolite interactions for a species. 
 
-    Args:
-        species_id (String or Numeric): The taxon ID for the organism of interest.
-        output_directory (String): Path specifying where to write the result.
-        remove_self_relationships (Logical): True to remove any relationships to self, and False to maintain them. Default is True.
-        verbose (Logical): Whether progress messages should be written or not. Default is False.
-    Returns:
-        A dataframe denoting relationships in 7 columns: Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source
+    Parameters
+    ----------
+    species_id
+        The taxon ID for the organism of interest.
+    
+    output_directory
+        Path specifying where to write the result.
+    
+    remove_self_relationships
+        True to remove any relationships to self, and False to maintain them. Default is True.
+    
+    verbose
+        Whether progress messages should be written or not. Default is False.
+    
+    Returns
+    -------
+        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     """
 
     # Write progress message if requested
@@ -190,21 +211,37 @@ def pull_uniprot(species_id, output_directory = None, remove_self_relationships 
 ## METABOLIC NETWORKS ##
 ########################
 
-def pull_wikipathways(species_name, species_id, omes_folder, proteome_filename, output_directory = None, remove_self_relationships = True, verbose = False):
+def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, proteome_filename: str, 
+                      output_directory: str = None, remove_self_relationships: bool = True, verbose: bool = False):
     '''
     Extract relationships from metabolic networks stored in WikiPathways
 
-    Args:
-        species_name (String): The name for the species. Select species from here: https://www.wikipathways.org/browse/organisms.html.
-            Use proper Genus species format.
-        species_id (String or Numeric): The taxon ID for the organism of interest. Required.
-        omes_folder (String): Path to the omes folder. Required. 
-        proteome_filename (String): Path to the proteom
-        output_directory (String): Path specifying where to write the result.
-        remove_self_relationships (Logical): True to remove any relationships to self, and False to maintain them. Default is True.
-        verbose (Logical): Whether progress messages should be written or not. Default is False. 
-    Returns:
-        A dataframe denoting relationships in 7 columns: Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source
+    Parameters
+    ----------
+    species_name
+        The name for the species. Select species from here: https://www.wikipathways.org/browse/organisms.html. Use proper Genus species format
+    
+    species_id
+        The taxon ID for the organism of interest
+
+    omes_folder
+        Path to the omes folder 
+    
+    proteome_filename
+        Name of the proteome file
+
+    output_directory
+        Path specifying where to write the result.
+    
+    remove_self_relationships
+        True to remove any relationships to self, and False to maintain them. Default is True.
+    
+    verbose
+        Whether progress messages should be written or not. Default is False. 
+    
+    Returns
+    -------
+        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     '''
 
     # Extract all pathways
@@ -307,22 +344,41 @@ def pull_wikipathways(species_name, species_id, omes_folder, proteome_filename, 
     else:
         return final_relationships
     
-def pull_kegg(kegg_species_id, omes_folder, proteome_filename, output_directory = None, flatten_module = False, remove_self_relationships = True, verbose = False):
+def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, output_directory: str = None, 
+              flatten_module: bool = False, remove_self_relationships: bool = True, verbose: bool = False):
     '''
     Extract relationships from metabolic networks (modules) stored in KEGG
 
-    Args:
-        kegg_species_id (String): The name for the species. Select species from here: https://rest.kegg.jp/list/organism
-        species_id (String or Numeric): The taxon ID for the organism of interest. Required.
-        omes_folder (String): Path to the omes folder. Required. 
-        proteome_filename (String): Path to the proteome
-        output_directory (String): Path specifying where to write the result.
-        flatten_module (Logical): If True, everything in a module will be considered related to everything else in a module. If False, 
-            metabolic relationships as defined by KEGG will be preserved. Default: False. 
-        remove_self_relationships (Logical): True to remove any relationships to self, and False to maintain them. Default is True.
-        verbose (Logical): Whether progress messages should be written or not. Default is False. 
-    Returns:
-        A dataframe denoting relationships in 7 columns: Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source
+    Parameters
+    ----------
+    kegg_species_id
+        The name for the species. Select species from here: https://rest.kegg.jp/list/organism
+    
+    species_id
+        The taxon ID for the organism of interest
+    
+    omes_folder
+        Path to the omes folder 
+    
+    proteome_filename
+        Name of the proteome file
+    
+    output_directory
+        Path specifying where to write the result.
+    
+    flatten_module
+        If True, everything in a module will be considered related to everything else in a module. If False, 
+        metabolic relationships as defined by KEGG will be preserved. Default is False. 
+    
+    remove_self_relationships
+        True to remove any relationships to self, and False to maintain them. Default is True.
+    
+    verbose
+        Whether progress messages should be written or not. Default is False. 
+    
+    Returns
+    -------
+        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     '''
 
     ## Pull Organism--------------------------------------------------------------------------------------
