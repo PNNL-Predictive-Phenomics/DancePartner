@@ -19,7 +19,7 @@ A. Mining from Literature
 #########################
 
 The literature mining pipeline may be summarized in ? key steps: `1. Pulling Publications`_, `2. Identifying Entities`_,
-`3. Extracting Relationships`_, `4. Collapsing Synonyms`_, and `5. Building Networks`_.
+`3. Extracting Relationships`_, `4. Collapsing Synonyms`_, and `5. Construct Network Table`_.
 
 ***********************
 1. Pulling Publications
@@ -173,3 +173,30 @@ Place in the top level directory of this repo in a folder called "biobert". Pull
 4. Collapsing Synonyms
 **********************
 
+.. autoclass:: DancePartner.create_synonym_table.map_synonyms
+
+.. code-block:: python
+
+    # A term list, the path the ome folder, the name of the proteome file to use, and a path to
+    # the output directory are all needed
+    map_synonyms(
+        term_list = all_found_terms,
+        omes_folder = "../omes",
+        proteome_filename = "UP000001940_proteome.txt",
+        add_missing = True,
+        output_directory = output_directory
+    )
+
+**************************
+5. Construct Network Table
+**************************
+
+A network table that lists each edge between nodes can finally be built
+and visualized in a downstream function.
+
+.. autoclass:: DancePartner.construct_network.build_network_table
+
+.. code-block:: python
+
+    # Pass the BERT table and synonyms 
+    build_network_table(BERT_data = BERT_Table, synonyms = Synonym_Table)

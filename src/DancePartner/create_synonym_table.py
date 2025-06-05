@@ -74,18 +74,29 @@ def list_synonyms(omes_folder: str, proteome_filename: str, min_length: int = 3)
     return toi
 
 
-def map_synonyms(term_list, omes_folder, proteome_filename, add_missing = False, output_directory = None):
+def map_synonyms(term_list: list[str], omes_folder: str, proteome_filename: str, add_missing: bool = False, output_directory: bool = None):
     '''
     Map synonyms to IDs in the order of lipids, metabolites, and finally gene products. 
 
-    Args:
-        term_list (List[String]): List of terms to map to lipidome, metabolome, and proteome. 
-        organism_id (Integer): The UniProt organism ID.
-        omes_folder (String): Path to the omes folder. Required. 
-        proteome_filename (String): Name of the proteome file within the omes folder. Use the full file name. Required.
-        add_missing (Optional, Logical): If True, add terms that weren't mapped to synonyms. Optional.
-        output_directory (Optional, String): A path to a directory for where to write results to.
-    Returns:
+    Parameters
+    ----------
+    term_list 
+        List of terms to map to lipidome, metabolome, and proteome. 
+
+    omes_folder
+        Path to the omes folder. Required. 
+    
+    proteome_filename
+        Name of the proteome file within the omes folder. Use the full file name. Required.
+    
+    add_missing
+        If True, add terms that weren't mapped to synonyms. Optional.
+    
+    output_directory
+        A path to a directory for where to write results to.
+    
+    Returns
+    -------
         A table with the synonym, its ID, and the type (gene product, lipid, metabolite)
     '''
 

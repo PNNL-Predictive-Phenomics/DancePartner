@@ -4,14 +4,21 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 
-def build_network_table(BERT_data, synonyms):
+def build_network_table(BERT_data: pd.DataFrame, synonyms: pd.DataFrame):
     '''
-    Build a network table of collapsed terms 
+    Build a network table of edges with biomolecule IDs and their synonyms
 
-    Args:
-        BERT_data (Pandas DataFrame): The output table from run_bert() as a pandas DataFrame.
-        synonyms (Pandas DataFrame): The output table from map_synonyms() as a pandas DataFrame.
-    Returns:
+    Parameters
+    -----------
+    BERT_data 
+        The output table from run_bert() as a pandas DataFrame.
+    
+    synonyms
+        The output table from map_synonyms() as a pandas DataFrame.
+    
+    
+    Returns
+    -------
         A network table of synonms, IDs, types (gene product, metabolite, lipid), and the source (literature or database)
     '''
 
