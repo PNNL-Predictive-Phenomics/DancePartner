@@ -41,6 +41,8 @@ This package contains a `vignettes/` folder with various example vignettes that 
 
 Extract the BERT model from [here](https://huggingface.co/david-degnan/BioBERT-RE/tree/main). Place in the top level directory of this repo in a folder called "biobert". Pull the `config.json`, the `pytorch_model.bin`, and the `training_args.bin` files.
 
+See full Sphinx documentation [here](https://pnnl-predictive-phenomics.github.io/DancePartner/)
+
 ## Scopus API Key
 
 An API key is needed to pull papers from Scopus. Instructions to obtain one can be found [here](https://dev.elsevier.com/).
