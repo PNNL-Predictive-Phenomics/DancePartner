@@ -6,6 +6,7 @@
 
 This tool is designed with five steps with various options at each step. Users can select one or multiple options, and outputs can be combined. The steps are 1. Select Papers, 2. Identify Entities, 3. Extract Relationships, 4. Collapse Synonyms, and 5. Build Network. *DancePartner* has been designed to easily pull and use AI/ML models so that non-ML experts can easily pull and use these functions and methods. More details about each step are provided in the summary graphic above.
 
+See full Sphinx documentation [here](https://pnnl-predictive-phenomics.github.io/DancePartner/)
 
 ## Cite
 
@@ -40,8 +41,6 @@ This package contains a `vignettes/` folder with various example vignettes that 
 ## Pull the BERT Model
 
 Extract the BERT model from [here](https://huggingface.co/david-degnan/BioBERT-RE/tree/main). Place in the top level directory of this repo in a folder called "biobert". Pull the `config.json`, the `pytorch_model.bin`, and the `training_args.bin` files.
-
-See full Sphinx documentation [here](https://pnnl-predictive-phenomics.github.io/DancePartner/)
 
 ## Scopus API Key
 
