@@ -29,7 +29,7 @@ def pull_proteome(proteome_id: str, output_directory: str):
     try:
         url = "https://rest.uniprot.org/uniprotkb/stream?format=json&query=%28%28proteome%3A" + str(proteome_id) + "%29%29"
 
-        # Read the file
+        # Read the filev
         req = requests.get(url, stream = True)
         soup = BeautifulSoup(req.content, 'html.parser')
         myjson = json.loads(str(soup))
@@ -89,66 +89,3 @@ def pull_proteome(proteome_id: str, output_directory: str):
             return(proteome)
     except:
         print(proteome_id + " is not recognized as a proper proteome_id")
-    
-    
-def pull_genome(species_id: str, ncbi_api_key: str, output_directory: str):
-    """
-    Function that pulls a genome for a species.
-
-    Parameters
-    ----------
-    species_id
-        The taxon ID for the organism of interest.
-    
-    ncbi_api_key
-        A String API key to the NCBI database. See: https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/ 
-    
-    output_directory
-        Path specifying where to write the result.
-    
-    Returns
-    -------
-        Text file with all genes from genome
-    """
-    
-    if ncbi_api_key is None:
-        raise ValueError("Must specify `ncbi_api_key` for proper use of function. See documentation.")
-    auth = HTTPBasicAuth('api-key', ncbi_api_key)
-
-    # Use species ID to find accession IDs
-    url = "https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/taxon/" + str(species_id) + "/dataset_report?filters.assembly_level=chromosome&filters.assembly_level=complete_genome&table_fields=assminfo-accession&table_fields=assminfo-name"
-    req = requests.get(url, headers={'Accept':'application/json'}, auth=auth)
-    response = req.json()
-    if len(response['reports']) > 0:
-        accession_id = response['reports'][0]['accession']
-    else:
-        print("No accessions found for species ID.")
-        return(None)
-    
-    # Use accession id to download fasta file (cds)
-    url = "https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/accession/" + str(accession_id) + \
-        "/download?chromosomes=1&chromosomes=2&chromosomes=3&chromosomes=X&chromosomes=Y&chromosomes=MT&include_annotation_type=GENOME_GFF&include_annotation_type=GENOME_GBFF&include_annotation_type=GENOME_GTF&include_annotation_type=CDS_FASTA"
-    data = requests.get(url, headers={'Accept':'application/zip'}, auth=auth)
-    z = zipfile.ZipFile(io.BytesIO(data.content))
-
-    # Look for correct file in zip folder
-    try:
-        fasta_file = next(x for x in z.namelist() if ".fna" in x)
-    except StopIteration:
-        print("No Fasta file found in request.")
-        return(None)
-    
-    # Parse fasta file  (keep lines that aren't nucleotide sequences, i.e line begins with '>') amd write results to .txt file
-    with open(os.path.join(output_directory, str(species_id) + "_ncbi_genes.txt"), "w") as f:
-        for line in z.open(fasta_file, "r").readlines():
-            line_string = line.decode() #downloaded zip file reads in bytes --> convert to strings
-            if line_string[0] == ">":
-
-                # Finally extract the gene name if possible. If not, proceed.
-                try:
-                    f.write(re.search("\[gene=(.*?)\]", line_string).group(1))
-                except AttributeError:
-                    continue
-
-    return(None)
-    
