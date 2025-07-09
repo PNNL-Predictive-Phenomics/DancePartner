@@ -98,3 +98,7 @@ Here are some examples of more complicated queries if needed:
 **Scopus:** `TITLE-ABS-KEY ( e AND coli AND proteomics AND e AND coli AND metabolism ) AND PUBYEAR > 20000101 AND PUBYEAR < 20240224)`
 
 **OSTI:** `q=e coli proteomics AND e coli metabolism&publication_date_start=1/1/2000&publication_date_end=2/3/2024`
+
+## Synonym Tables
+
+Because a specific gene or protein can have multiple synonyms and database identifiers, here we [to do]
