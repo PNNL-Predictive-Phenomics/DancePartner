@@ -510,6 +510,9 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
     else: 
 
         for module in modules:
+                
+            #if verbose:
+            #    print(module)
 
             try: 
 
@@ -557,30 +560,40 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
                             
                 # Pull protein-protein relationships----------------------------------
 
-                # Extract proteins
-                proteins = [protein.split("  ")[1].split(" [")[0] for protein in orthology]
+                try:
 
-                # Extract protein-protein relationships
-                protein_IDs = []
+                    # Extract proteins
+                    proteins = [protein.split("  ")[1].split(" [")[0] for protein in orthology]
 
-                for el in range(len(proteins)-1):
-                    protein_IDs.append(proteins[el] + " & " + proteins[el+1])
+                    # Extract protein-protein relationships
+                    protein_IDs = []
 
-                protein_IDs = list(set(protein_IDs))
+                    for el in range(len(proteins)-1):
+                        protein_IDs.append(proteins[el] + " & " + proteins[el+1])
+
+                    protein_IDs = list(set(protein_IDs))
+
+                except:
+
+                    pass
 
                 # Pull metabolite-metabolite relationships-----------------------------
-
+            
                 # Extract metabolites
                 metabolite_rellys = []
 
                 # Extract common names
                 KIDs = pd.DataFrame([x.split("  ") for x in compound]).rename({0:"KEGG", 1:"Name"}, axis = 1)
+                if (len(KIDs.columns) == 1):
+                    KIDs["Name"] = "No name given"
 
                 # Extract metaboilte relationships
                 for react in reaction:
-                    metabs = react.split("  ")[1].replace("-&gt;", "+").split("+")
-                    metabs = [KIDs[KIDs["KEGG"] == metab.strip()]["Name"].tolist()[0] for metab in metabs]
-                    metabolite_rellys.append(__upper_triangle_meshgrid(metabs))
+                    if react != "":
+                        metabs = " ".join(react.split(" ")[1:]).replace("-&gt;", "+").split("+")
+                        metabs = [metab.strip().split(" ")[-1] for metab in metabs]
+                        metabs = [KIDs[KIDs["KEGG"] == metab]["Name"].tolist()[0] for metab in metabs]
+                        metabolite_rellys.append(__upper_triangle_meshgrid(metabs))
 
                 # Clean duplicates
                 metabolite_rellys = pd.concat(metabolite_rellys).reset_index(drop = True).replace("nan", np.nan).dropna().reset_index(drop = True)
@@ -593,25 +606,34 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
 
                 # Pull metabolite-protein relationships---------------------------------
 
-                metab_prot_IDs = []
+                try:
 
-                # Pull associated reaction per protein
-                for ortho in orthology:
-                    protein = ortho.split("  ")[1].split(" [")[0]
-                    rns = ortho.split("[RN:")[1].split(" ")
-                    rns = [rn.replace("]", "").strip() for rn in rns]
+                    metab_prot_IDs = []
 
-                    # Pull metabolites in a reaction
-                    for rn in rns:
-                        selected = [x for x in reaction if rn in x][0]
-                        metabs = selected.split("  ")[1].replace("-&gt;", "+").split("+")
-                        metabs = [KIDs[KIDs["KEGG"] == metab.strip()]["Name"].tolist()[0] for metab in metabs]
-                        metab_prot_IDs.extend([metab + " & " + protein for metab in metabs])
+                    # Pull associated reaction per protein
+                    for ortho in orthology:
+                        protein = ortho.split("  ")[1].split(" [")[0]
+                        rns = ortho.split("[RN:")[1].split(" ")
+                        rns = [rn.replace("]", "").strip() for rn in rns]
+
+                        # Pull metabolites in a reaction
+                        for rn in rns:
+                            selected = [x for x in reaction if rn in x][0]
+                            metabs = selected.split("  ")[1].replace("-&gt;", "+").split("+")
+                            metabs = [KIDs[KIDs["KEGG"] == metab.strip()]["Name"].tolist()[0] for metab in metabs]
+                            metab_prot_IDs.extend([metab + " & " + protein for metab in metabs])
+
+                except:
+
+                    pass
 
                 # Map synonyms and return relationships---------------------------------
 
                 # Extract all IDs
-                pre_all_IDs = protein_IDs
+                try:
+                    pre_all_IDs = protein_IDs
+                except:
+                    pre_all_IDs = []
                 pre_all_IDs.extend(metabolite_IDs)
                 all_IDs = []
                 for id in pre_all_IDs:
@@ -625,7 +647,11 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
                 module_table = []
 
                 # Pull all module relationships
-                all_rels = protein_IDs
+                try:
+                    all_rels = protein_IDs
+                except:
+                    all_rels = []
+
                 all_rels.extend(metabolite_IDs)
                 all_rels.extend(metab_prot_IDs)
 
