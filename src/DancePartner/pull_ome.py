@@ -3,9 +3,6 @@ import requests
 import re
 import pandas as pd
 from bs4 import BeautifulSoup
-from requests.auth import HTTPBasicAuth
-import zipfile
-import io
 import json
 
 def pull_proteome(proteome_id: str, output_directory: str):
