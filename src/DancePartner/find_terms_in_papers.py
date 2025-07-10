@@ -4,8 +4,12 @@ import nltk
 import re
 from pathlib import Path
 
-def find_terms_in_papers(paper_directory: str, terms: list[str], output_directory: str = None, 
-                         n_gram_max: int = 3, max_char_length: int = 250, padding: int = 10, 
+def find_terms_in_papers(paper_directory: str, 
+                         terms: list[str], 
+                         output_directory: str = None, 
+                         n_gram_max: int = 3, 
+                         max_char_length: int = 250, 
+                         padding: int = 10, 
                          verbose: bool = False):   
     """
     This function searches through sentences of papers to extract biomolecule pairs present in each sentence.
@@ -40,7 +44,7 @@ def find_terms_in_papers(paper_directory: str, terms: list[str], output_director
     """
     
     # Modify term matches
-    terms = [re.sub("[^\s\d\w]|\n", '', term.lower()) for term in terms]
+    terms = [re.sub("[^\s\d\w]|\n", '', str(term).lower()) for term in terms]
 
     matches = []
     for root, _, files in os.walk(paper_directory):
