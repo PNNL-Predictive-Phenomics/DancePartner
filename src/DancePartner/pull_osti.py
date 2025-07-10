@@ -57,7 +57,7 @@ def __pull_osti_clean(ids: list[str], output_directory: str):
                             if len(parsed_text_lines) < 5:
                                 continue
                             filename = os.path.join(write_path, paper_id + ".txt")
-                            with open(filename, 'w', errors="ignore") as f:
+                            with open(filename, 'w', encoding='utf8') as f:
                                 f.write("\n".join(parsed_text_lines))
                             found_ids.append(paper_id)
                             #break from for loop over links once fulltext found
@@ -101,7 +101,7 @@ def __pull_osti_abstracts(ids: list[str], output_directory: str, abstract_includ
                 abstract = BeautifulSoup(data['description'], features="lxml").find("p").get_text()
                 if abstract is None:
                     continue
-                with open(os.path.join(write_path, paper_id + ".txt"), "w", errors = "ignore") as f:
+                with open(os.path.join(write_path, paper_id + ".txt"), "w", encoding='utf8') as f:
                     if abstract_include_title:
                         f.write(BeautifulSoup(data['title'], features="lxml").get_text() + ". ")
                     f.write(abstract)

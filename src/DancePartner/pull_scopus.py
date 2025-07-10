@@ -50,7 +50,7 @@ def __pull_scopus_clean(ids: list[str], output_directory: str, scopus_api_key: s
                 # Grab text and remove empty lines
                 parsed_text = soup.get_text()
                 parsed_text_lines = [x for x in parsed_text.split("\n") if x.split()]
-                with open(os.path.join(write_path, re.sub("[./-]", "_", paper_id) + ".txt"), "w", errors = "ignore") as f:
+                with open(os.path.join(write_path, re.sub("[./-]", "_", paper_id) + ".txt"), "w", encoding='utf8') as f:
                     f.write('\n'.join(parsed_text_lines))
                 found_ids.append(paper_id)
             except AttributeError:
@@ -93,7 +93,7 @@ def __pull_scopus_abstracts(ids: list[str], output_directory: str, scopus_api_ke
             abstract = soup.find("abstract").find("ce:para").get_text()
             if abstract is None:
                 continue
-            with open(os.path.join(write_path, re.sub("[./-]", "_", str(paper_id)) + ".txt"), "w", errors = "ignore") as f:
+            with open(os.path.join(write_path, re.sub("[./-]", "_", str(paper_id)) + ".txt"), "w", encoding='utf8') as f:
                 if abstract_include_title:
                     f.write(soup.find("dc:title").get_text() + ". ")
                 f.write(abstract)
