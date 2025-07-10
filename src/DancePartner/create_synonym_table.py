@@ -31,7 +31,7 @@ def __get_ome_df(ome_path, delim = ","):
 
     return pd.DataFrame(ome_dict.items()).explode(1).rename({0: "ID", 1: "Synonym"}, axis = 1)
 
-def list_synonyms(omes_folder: str, proteome_filename: str, min_length: int = 3):
+def list_synonyms(omes_folder: str, proteome_filename: str, genome_filename: str, min_length: int = 3):
     '''
     List all possible synonyms to match 
     
@@ -41,7 +41,10 @@ def list_synonyms(omes_folder: str, proteome_filename: str, min_length: int = 3)
         Path to the omes folder. Required. 
     
     proteome_filename
-        Name of the proteome file within the omes folder. Use the full file name. Required.
+        Name of the proteome file within the omes folder. Use the full file name. Optional.
+
+    genome_filename
+        Name fo the genome file within the omes folder. Use the full file name. Optional.
     
     min_length 
         Minimum number of characters in a term. Default is 3.  
@@ -57,13 +60,19 @@ def list_synonyms(omes_folder: str, proteome_filename: str, min_length: int = 3)
     # Parse metabolome
     metabolome = __get_ome_df(os.path.join(omes_folder, "CHEBI_Metabolome.txt"), "\t")
 
-    # Parse proteome
-    proteome = __get_ome_df(os.path.join(omes_folder, proteome_filename), "\t")
-
     # List terms of interest
     toi = lipidome["Synonym"].tolist()
     toi.extend(metabolome["Synonym"].tolist())
-    toi.extend(proteome["Synonym"].tolist())
+
+    # Parse and add proteome if not none
+    if proteome_filename is not None:
+        proteome = __get_ome_df(os.path.join(omes_folder, proteome_filename), "\t")
+        toi.extend(proteome["Synonym"].tolist())
+
+    # Parse and add genome if not none
+    if genome_filename is not None:
+        genome = __get_ome_df(os.path.join(omes_folder, proteome_filename), "\t")
+        toi.extend(genome["Synonym"].tolist())
 
     # Remove stop words 
     stopwords = pd.read_csv(os.path.join(omes_folder, "stop_words_english.txt"))["stopwords"].tolist()
