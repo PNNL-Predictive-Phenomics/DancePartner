@@ -174,24 +174,22 @@ def make_synonym_table(omes_folder: str,
     else:
         return(synonym_table)
 
-    
 
-
-def map_synonyms(term_list: list[str], omes_folder: str, proteome_filename: str, add_missing: bool = False, output_directory: bool = None):
+def map_synonyms(term_list: list[str], 
+                 synonym_table: str,
+                 add_missing: bool = False, 
+                 output_directory: bool = None):
     '''
-    Map synonyms to IDs in the order of lipids, metabolites, and finally gene products. 
+    Map synonyms to IDs
 
     Parameters
     ----------
     term_list 
         List of terms to map to lipidome, metabolome, and proteome. 
 
-    omes_folder
-        Path to the omes folder. Required. 
-    
-    proteome_filename
-        Name of the proteome file within the omes folder. Use the full file name. Required.
-    
+    synonym_table
+        A synonym table as created in make_synonym_table
+        
     add_missing
         If True, add terms that weren't mapped to synonyms. Optional.
     
@@ -200,58 +198,17 @@ def map_synonyms(term_list: list[str], omes_folder: str, proteome_filename: str,
     
     Returns
     -------
-        A table with the synonym, its ID, and the type (gene product, lipid, metabolite)
+    A table with the DancePartner ID group, a synonym, its ID, and the type (gene product, lipid, metabolite)
     '''
 
     # Format terms
     term_list = [re.sub(r'[^a-zA-Z0-9]', '', term.strip().lower()) for term in term_list]
 
-    # Start data.frame to hold all terms
-    terms = pd.DataFrame({"Synonym": term_list})
+    # Remove the ID column
+    synonym_table = synonym_table[["DancePartnerID", "Synonym", "Type"]]
 
-    #################
-    ## FIND LIPIDS ##
-    #################
-
-    # Parse lipidome
-    lipidome = __get_ome_df(os.path.join(omes_folder, "LipidMaps_Lipidome.csv"))
-
-    # Map lipids
-    found_lipids = terms.merge(lipidome)
-    found_lipids["Type"] = "lipid"
-
-    ######################
-    ## FIND METABOLITES ##
-    ######################
-
-    # Parse metabolome
-    metabolome = __get_ome_df(os.path.join(omes_folder, "CHEBI_Metabolome.txt"), "\t")
-
-    # Map metabolites
-    found_metabolites = terms.merge(metabolome)
-    found_metabolites["Type"] = "metabolite"
-
-    ########################
-    ## FIND GENE PRODUCTS ##
-    ########################
-
-    # Parse proteome
-    proteome = __get_ome_df(os.path.join(omes_folder, proteome_filename), "\t")
-
-    # Map proteins
-    found_proteins = terms.merge(proteome)
-    found_proteins["Type"] = "gene product"
-
-    ################
-    ## PAIR TERMS ##
-    ################
-
-    # Merge and take first entry per synonym
-    SynonymTable = pd.concat([
-        found_lipids,
-        found_metabolites,
-        found_proteins
-    ]).dropna() # groupby('Synonym').first().reset_index(). --> remove NA
+    # Subset the large table. Drop duplicates. 
+    SynonymTable = synonym_table[synonym_table["Synonym"].isin(term_list)].drop_duplicates().reset_index(drop = True)
 
     # Add missing if applicable
     if add_missing:
@@ -259,7 +216,9 @@ def map_synonyms(term_list: list[str], omes_folder: str, proteome_filename: str,
         if len(missing) > 0:
             SynonymTable = pd.concat([
                 SynonymTable,
-                pd.DataFrame({"Synonym":missing, "ID": ["" for x in range(len(missing))], "Type": ["" for x in range(len(missing))]})
+                pd.DataFrame({"DancePartnerID": ["" for x in range(len(missing))],
+                              "Synonym": missing, 
+                              "Type": ["" for x in range(len(missing))]})
             ]).reset_index(drop = True)
     
     if output_directory is not None:

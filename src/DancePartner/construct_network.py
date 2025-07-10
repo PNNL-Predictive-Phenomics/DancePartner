@@ -28,15 +28,17 @@ def build_network_table(BERT_data: pd.DataFrame, synonyms: pd.DataFrame):
 
     # Make a table for term1 and term2 and bind columns
     term1_table = pd.merge(BERT_data[["term_1"]].rename({"term_1":"Synonym"}, axis = 1), synonyms, how = "left")
-    term1_table = term1_table.rename({"Synonym":"Synonym1", "ID":"ID1", "Type":"Type1"}, axis = 1)
+    term1_table = term1_table.rename({"Synonym":"Synonym1", "DancePartnerID":"ID1", "Type":"Type1"}, axis = 1)
     term2_table = pd.merge(BERT_data[["term_2"]].rename({"term_2":"Synonym"}, axis = 1), synonyms, how = "left")
-    term2_table = term2_table.rename({"Synonym":"Synonym2", "ID":"ID2", "Type":"Type2"}, axis = 1)
+    term2_table = term2_table.rename({"Synonym":"Synonym2", "DancePartnerID":"ID2", "Type":"Type2"}, axis = 1)
     term_table = pd.concat([term1_table, term2_table], axis = 1)
 
     # Filter out any unknowns
     term_table = term_table.dropna()
     term_table = term_table[(term_table["ID1"] != "")]
     term_table = term_table[term_table["ID2"] != ""]
+    term_table["ID1"] = term_table["ID1"].astype(int)
+    term_table["ID2"] = term_table["ID2"].astype(int)
 
     # Filter out cases where the IDs are the same
     term_table = term_table[term_table["ID1"] != term_table["ID2"]].reset_index(drop = True)

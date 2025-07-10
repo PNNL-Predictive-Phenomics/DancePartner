@@ -200,6 +200,10 @@ def pull_uniprot(species_id: str, output_directory: str = None, remove_self_rela
     final_relationships = remove_relationship_duplicates(relationships, remove_self_relationships)
     final_relationships = final_relationships.dropna().reset_index(drop = True)
 
+    ## Map to DancePartner Identifiers--------------------------------------------------------------
+
+
+
     # Write or return output
     if output_directory is not None:
         final_relationships.to_csv(os.path.join(output_directory, str(species_id) + "_uniprot.txt"), index=False, sep = "\t")
