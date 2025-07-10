@@ -94,7 +94,7 @@ def extract_terms_scispacy(paper_directory: str,
         if verbose:
             print("On paper...", file)
         
-        with open(file, "r") as info:
+        with open(file, "r", errors = "ignore") as info:
 
             # Read entire paper
             content = info.read()

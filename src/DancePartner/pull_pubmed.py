@@ -72,7 +72,7 @@ def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str
                 # Download the tarball from the FTP location
                 if response.status_code == 200:
                     filename = os.path.join(tarball_path, pmcid + ".tar.gz")
-                    with open(filename, 'wb') as f:
+                    with open(filename, 'wb', errors = "ignore") as f:
                         f.write(response.raw.read())
                 else:
                     notfound_count += 1
@@ -104,7 +104,7 @@ def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str
                                 x.decompose()
                             pmid = soup.find("article-id", attrs={"pub-id-type":"pmid"}).get_text()
                             file_name = os.path.join(write_path, str(pmid) + ".txt")
-                            with open(file_name, "w") as f:
+                            with open(file_name, "w", errors="ignore") as f:
                                 for p in soup.find_all("p", recurisve=False):
                                     f.write(p.get_text())
                             # success --> append id (Integer type) to found-list
@@ -150,7 +150,7 @@ def __pull_pubmed_pdfs(ids: list[str], output_directory: str):
             pdf = io.BytesIO(req.content)
             reader = pypdf.PdfReader(pdf)
             filename = os.path.join(write_path, str(pmid) + ".txt")
-            with open(filename, 'w') as f:
+            with open(filename, 'w', errors="ignore") as f:
                 for i in range(len(reader.pages)):
                     f.write(" ".join(reader.pages[i].extract_text().split("\n"))) 
             # success --> append id (Integer type) to found-list
@@ -212,7 +212,7 @@ def __pull_pubmed_abstracts(ids: str, output_directory: str, abstract_include_ti
         soup = BeautifulSoup(req.content, "html.parser")
         try:
             abstract = soup.find(id="eng-abstract").get_text().strip()
-            with open(os.path.join(write_path, str(pmid) + ".txt"), "w")as f:
+            with open(os.path.join(write_path, str(pmid) + ".txt"), "w", errors="ignore") as f:
                 if abstract_include_title:
                     f.write(soup.find("meta", {"name":"citation_title"})['content'])
                     f.write(". ")
