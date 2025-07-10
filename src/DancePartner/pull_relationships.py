@@ -91,7 +91,11 @@ def remove_relationship_duplicates(network_table: pd.DataFrame, remove_self_rela
 ## INTERACTOMES ##
 ##################
 
-def pull_uniprot(species_id: str, output_directory: str = None, remove_self_relationships: bool = True, verbose: bool = True):
+def pull_uniprot(species_id: str, 
+                 synonym_table: pd.DataFrame,
+                 output_directory: str = None, 
+                 remove_self_relationships: bool = True, 
+                 verbose: bool = True):
     """
     Function that pulls protein-protein and protein-metabolite interactions for a species. 
 
@@ -99,6 +103,9 @@ def pull_uniprot(species_id: str, output_directory: str = None, remove_self_rela
     ----------
     species_id
         The taxon ID for the organism of interest.
+
+    synonym_table
+        A pandas DataFrame of the synonym table made with `make_synonym_table`
     
     output_directory
         Path specifying where to write the result.
@@ -193,16 +200,38 @@ def pull_uniprot(species_id: str, output_directory: str = None, remove_self_rela
     prot_metab["Source"] = "database"
     prot_metab = prot_metab[["Synonym1", "ID1", "Type1", "Synonym2", "ID2", "Type2", "Source"]]
 
-    ## Combine Datasets------------------------------------------------------------------------------
+    ## Combine Datasets-----------------------------------------------------------------------------
 
-    # Concatenate tables and remove duplicates
-    relationships = pd.concat([prot_prot, prot_metab])
-    final_relationships = remove_relationship_duplicates(relationships, remove_self_relationships)
-    final_relationships = final_relationships.dropna().reset_index(drop = True)
+    # Concatenate tables 
+    uniprot = pd.concat([prot_prot, prot_metab])
 
     ## Map to DancePartner Identifiers--------------------------------------------------------------
 
+    # Pull just unique IDs
+    uniqueID = synonym_table[["DancePartnerID", "ID", "Type"]].drop_duplicates().reset_index(drop = True)
 
+    # Get the left and right DancePartnerIDs
+    left_IDs = pd.merge(uniprot["ID1"], uniqueID.rename({"ID":"ID1"}, axis = 1), how = "left")
+    right_IDs = pd.merge(uniprot["ID2"], uniqueID.rename({"ID":"ID2"}, axis = 1), how = "left")
+
+    # Replace ID1 and ID2 with DancePartnerIDs
+    uniprot["ID1"] = left_IDs["DancePartnerID"]
+    uniprot["Type1"] = left_IDs["Type"]
+    uniprot["ID2"] = right_IDs["DancePartnerID"]
+    uniprot["Type2"] = right_IDs["Type"]
+
+    # Drop NA and duplicates
+    uniprot = uniprot.dropna().drop_duplicates().reset_index(drop = True)
+
+    # Fix ID types
+    uniprot["ID1"] = uniprot["ID1"].astype(int)
+    uniprot["ID2"] = uniprot["ID2"].astype(int)
+
+    # Final cleanup---------------------------------------------------------------------------------
+
+    # Remove any relationship duplicates
+    final_relationships = remove_relationship_duplicates(uniprot, remove_self_relationships)
+    final_relationships = final_relationships.dropna().reset_index(drop = True)
 
     # Write or return output
     if output_directory is not None:
