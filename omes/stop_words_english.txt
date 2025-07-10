@@ -1202,6 +1202,7 @@ ubiquitinylate
 ubiquitinylated
 ubiquitinylates
 un
+uncharacterizedprotein
 under
 underneath
 undoing
