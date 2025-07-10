@@ -123,13 +123,13 @@ def make_synonym_table(omes_folder: str,
         ome = pd.concat([ome, genome])
 
     # Read the stop words file
-    stopwords = pd.read_csv(os.path.join("../omes/stop_words_english.txt"))["stopwords"].tolist()
+    stopwords = pd.read_csv(os.path.join(omes_folder, "stop_words_english.txt"))["stopwords"].tolist()
 
     ## Build the synonym table------------------------------------------------------------------------------------------
 
     # Clean terms that are too short or are a stopword
     unique_terms = list(set(ome["Synonym"].to_list()))
-    cleaned_terms = [term for term in unique_terms if len(term) >= 3 and term not in stopwords]
+    cleaned_terms = [term for term in unique_terms if len(term) >= min_length and term not in stopwords]
     ome = ome[ome["Synonym"].isin(cleaned_terms)].reset_index(drop = True)
 
     # Build unique Synonym Group Names

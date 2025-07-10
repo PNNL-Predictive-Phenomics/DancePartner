@@ -28,7 +28,12 @@ def __parse_url(url: str):
     ----------
     url
         The url to parse
+
+    Returns
+    -------
+    A beatiful soup object that can be further parsed depending on need
     '''
+
     req = requests.get(url,  timeout = 500)
     return BeautifulSoup(req.content, "html.parser")
 
@@ -44,7 +49,7 @@ def __upper_triangle_meshgrid(x: np.array):
     
     Returns
     -------
-        A pandas DataFrame of only the unique combinations
+    A pandas DataFrame of only the unique combinations
     """
 
     # Make a meshgrid of x and y 
@@ -61,7 +66,8 @@ def __upper_triangle_meshgrid(x: np.array):
     combos = combos[combos[0] != combos[1]]
     return(combos.reset_index(drop = True))
 
-def remove_relationship_duplicates(network_table: pd.DataFrame, remove_self_relationships: bool = True): 
+def remove_relationship_duplicates(network_table: pd.DataFrame, 
+                                   remove_self_relationships: bool = True): 
     '''
     Remove all duplicates from a network table.
     
@@ -75,7 +81,7 @@ def remove_relationship_duplicates(network_table: pd.DataFrame, remove_self_rela
     
     Returns
     -------
-        A table with unique interacting biomolecules
+    A table with unique interacting biomolecules
     '''
 
     # Remove self-relationships if possible
@@ -118,7 +124,7 @@ def pull_uniprot(species_id: str,
     
     Returns
     -------
-        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
+    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     """
 
     # Write progress message if requested
@@ -244,8 +250,12 @@ def pull_uniprot(species_id: str,
 ## METABOLIC NETWORKS ##
 ########################
 
-def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, proteome_filename: str, 
-                      output_directory: str = None, remove_self_relationships: bool = True, verbose: bool = False):
+def pull_wikipathways(species_name: str, 
+                      species_id: str, 
+                      synonym_table: pd.DataFrame,
+                      output_directory: str = None, 
+                      remove_self_relationships: bool = True, 
+                      verbose: bool = False):
     '''
     Extract relationships from metabolic networks stored in WikiPathways
 
@@ -257,11 +267,8 @@ def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, prot
     species_id
         The taxon ID for the organism of interest
 
-    omes_folder
-        Path to the omes folder 
-    
-    proteome_filename
-        Name of the proteome file
+    synonym_table
+        A pandas DataFrame of the synonym table made with `make_synonym_table`
 
     output_directory
         Path specifying where to write the result.
@@ -274,7 +281,7 @@ def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, prot
     
     Returns
     -------
-        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
+    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     '''
 
     # Extract all pathways
@@ -304,57 +311,22 @@ def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, prot
                     wp_data.append(content)
 
             # Synonyms need to be parsed and collapsed 
-            pre_nodes = pd.DataFrame(wp_data).drop_duplicates()
+            pre_nodes = pd.DataFrame(wp_data)[5].to_list()
+            terms = [x for x in pre_nodes if x is not None]
 
-            # If there is more than 6 columns, collapse the outside columns 
-            if len(pre_nodes.columns) > 6: 
-                col5 = []
-                for row in range(len(pre_nodes)):
-                    col5.append(" & ".join(pre_nodes.iloc[row, 5:].dropna().tolist()))
-                pre_nodes[5] = col5 
-
-            # Remove any cases of column 3 having a missing value
-            pre_nodes = pre_nodes.dropna(subset = [3])
-
-            # Map Terms
-            if verbose:
-                print("...Mapping terms to standardized IDs")
-
-            # Map IDs to our list of standardized terms 
-            IDs = []
-            Types = []
-
-            # Reset the index of pre_nodes
-            pre_nodes = pre_nodes.reset_index(drop = True)
-
-            for row in range(len(pre_nodes)):
-
-                terms = []
-                terms.append(pre_nodes.loc[row, 2])
-                terms.extend(pre_nodes.loc[row, 5].split(" & "))
-                terms = [x.split(":")[-1] for x in terms if x not in ["CHEBI:"]]
-
-                syns = map_synonyms(terms, omes_folder, proteome_filename)
-                try:
-                    IDs.append(syns[syns["ID"] != ""]["ID"][0])
-                    Types.append(syns[syns["ID"] != ""]["Type"][0])
-                except:
-                    IDs.append("")
-                    Types.append("")
-
-            # Add official ID and Type
-            pre_nodes[2] = IDs
-            pre_nodes[3] = Types
-            pre_nodes = pre_nodes[pre_nodes[2] != ""]
-
-            if len(pre_nodes) == 0:
-                continue
+            # Map all synonyms 
+            map_terms = map_synonyms(
+                term_list = terms,
+                synonym_table = synonym_table
+            )
 
             # Pull node information. An edge will be drawn between every node. 
-            nodes = pre_nodes.loc[:,[2,3,5]].rename({2: "ID1", 3: "Type1", 5: "Synonym1"}, axis = 1)
+            nodes = map_terms.rename({"DancePartnerID": "ID1", "Type": "Type1", "Synonym": "Synonym1"}, axis = 1)
 
             # Extract upper triangle
-            ut = __upper_triangle_meshgrid(nodes["ID1"]).rename({0:"ID1", 1:"ID2"}, axis = 1)
+            ut = __upper_triangle_meshgrid(nodes["ID1"].astype(str)).rename({0:"ID1", 1:"ID2"}, axis = 1)
+            ut["ID1"] = ut["ID1"].astype(int)
+            ut["ID2"] = ut["ID2"].astype(int)
 
             # Left join both columns 
             relationship_table = pd.merge(ut[["ID1"]], nodes).reset_index(drop = True).join(
