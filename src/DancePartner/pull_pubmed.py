@@ -72,7 +72,7 @@ def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str
                 # Download the tarball from the FTP location
                 if response.status_code == 200:
                     filename = os.path.join(tarball_path, pmcid + ".tar.gz")
-                    with open(filename, 'w') as f:
+                    with open(filename, 'wb') as f:
                         f.write(response.raw.read())
                 else:
                     notfound_count += 1
