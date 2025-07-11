@@ -5,7 +5,8 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import json
 
-def pull_proteome(proteome_id: str, output_directory: str):
+def pull_proteome(proteome_id: str, 
+                  output_directory: str):
     """
     Function that pulls a proteome and its synonyms for a species. 
 
@@ -89,7 +90,9 @@ def pull_proteome(proteome_id: str, output_directory: str):
     except:
         print(proteome_id + " is not recognized as a proper proteome_id")
 
-def pull_genome_from_GTF(GTF_file: str, output_directory: str):
+def pull_genome_from_GTF(GTF_file: str, 
+                         output_directory: str,
+                         file_name: str = None):
     '''
     Extract the Gene IDs and Gene Names from a GTF file
 
@@ -100,6 +103,9 @@ def pull_genome_from_GTF(GTF_file: str, output_directory: str):
     
     output_directory
         Path specifying where to write the result within the current directory. 
+
+    file_name
+        Additional name for the outputted synonym file 
     
     Returns
     -------
@@ -149,6 +155,9 @@ def pull_genome_from_GTF(GTF_file: str, output_directory: str):
 
     # Write genome
     if output_directory is not None:
-        genome.to_csv(os.path.join(output_directory, "genome.txt"), index=False, sep = "\t")
+        if file_name is not None:
+            genome.to_csv(os.path.join(output_directory, str(file_name) + "_" +  "genome.txt"), index=False, sep = "\t")
+        else:
+            genome.to_csv(os.path.join(output_directory, "genome.txt"), index=False, sep = "\t")
     else:
         return(genome)
