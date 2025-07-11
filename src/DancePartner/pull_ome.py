@@ -63,6 +63,8 @@ def pull_proteome(proteome_id: str, output_directory: str):
                         x = x.replace('recommendedName', '')
                         x = x.replace('fullName', '')
                         x = x.replace('alternativeNames', '')
+                        x = x.replace('shortNames', '')
+                        x = x.replace('ecNumbers', '')
                         x = x.strip()
                         if len(x) >= 3:
                             clean_splits.append(x)

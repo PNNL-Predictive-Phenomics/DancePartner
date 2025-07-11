@@ -649,6 +649,7 @@ lets
 liberate
 liberated
 liberates
+ligase
 ligate
 ligated
 ligates
@@ -1092,6 +1093,7 @@ suppresses
 suppressor
 sure
 surface
+synthase
 system
 t
 take
@@ -1180,6 +1182,7 @@ toward
 towards
 train
 transcript
+transferase
 transmembrane
 transport
 tried

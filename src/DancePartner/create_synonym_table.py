@@ -71,6 +71,7 @@ def make_synonym_table(omes_folder: str,
                        proteome_filename: str = None, 
                        genome_filename: str = None, 
                        min_length: int = 3,
+                       drop_numerics: bool = True,
                        output_directory: str = None):
     '''
     Generate a complete synonym table with the DancePartner Supergroup ID, a synonym, an ID, and the type.
@@ -91,6 +92,9 @@ def make_synonym_table(omes_folder: str,
     
     min_length 
         Minimum number of characters in a term. Default is 3.  
+
+    drop_numerics
+        Drop all synonym terms that are numerics
     
     output_directory
         A path to a directory for where to write results to.
@@ -125,12 +129,27 @@ def make_synonym_table(omes_folder: str,
     # Read the stop words file
     stopwords = pd.read_csv(os.path.join(omes_folder, "stop_words_english.txt"))["stopwords"].tolist()
 
-    ## Build the synonym table------------------------------------------------------------------------------------------
+    ## Clean terms------------------------------------------------------------------------------------------
 
     # Clean terms that are too short or are a stopword
     unique_terms = list(set(ome["Synonym"].to_list()))
     cleaned_terms = [term for term in unique_terms if len(term) >= min_length and term not in stopwords]
     ome = ome[ome["Synonym"].isin(cleaned_terms)].reset_index(drop = True)
+
+    # Remove numerics if requested
+    def is_not_numeric(value):
+        """Checks if a value is numeric or can be converted to a numeric type."""
+        try:
+            float(value) 
+            return False
+        except (ValueError, TypeError):
+            return True
+        
+    if drop_numerics:
+        numeric_terms = [term for term in unique_terms if is_not_numeric(term)]
+        ome = ome[ome["Synonym"].isin(numeric_terms)].reset_index(drop = True)
+
+    ## Define supergroups-----------------------------------------------------------------------------------
 
     # Build unique Synonym Group Names
     Synonym_Groups = ome.groupby("Synonym").agg({"ID": list, "Type": list}).reset_index()
