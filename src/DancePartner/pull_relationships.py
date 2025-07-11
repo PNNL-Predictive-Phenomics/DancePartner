@@ -349,8 +349,12 @@ def pull_wikipathways(species_name: str,
     else:
         return final_relationships
     
-def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, output_directory: str = None, 
-              flatten_module: bool = False, remove_self_relationships: bool = True, verbose: bool = False):
+def pull_kegg(kegg_species_id: str, 
+              synonym_table: pd.DataFrame,
+              output_directory: str = None, 
+              flatten_module: bool = False, 
+              remove_self_relationships: bool = True, 
+              verbose: bool = False):
     '''
     Extract relationships from metabolic networks (modules) stored in KEGG
 
@@ -359,15 +363,9 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
     kegg_species_id
         The name for the species. Select species from here: https://rest.kegg.jp/list/organism
     
-    species_id
-        The taxon ID for the organism of interest
-    
-    omes_folder
-        Path to the omes folder 
-    
-    proteome_filename
-        Name of the proteome file
-    
+    synonym_table
+        A pandas DataFrame of the synonym table made with `make_synonym_table`    
+
     output_directory
         Path specifying where to write the result.
     
@@ -383,7 +381,7 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
     
     Returns
     -------
-        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
+    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     '''
 
     ## Pull Organism--------------------------------------------------------------------------------------
@@ -646,7 +644,7 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
                 all_IDs = list(set(all_IDs))
 
                 # MAP IDs to synonyms
-                syns = map_synonyms(all_IDs, omes_folder, proteome_filename)
+                syns = map_synonyms(all_IDs, synonym_table)
 
                 # Construct table
                 module_table = []
@@ -667,8 +665,9 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
                     term2 = re.sub(r'[^a-zA-Z0-9]', '', rel.split(" & ")[1].strip().lower())
 
                     # Make table
-                    sub_table = pd.concat([syns[syns["Synonym"] == term1].rename({"Synonym":"Synonym1", "ID":"ID1", "Type":"Type1"}, axis = 1).reset_index(drop = True), 
-                                           syns[syns["Synonym"] == term2].rename({"Synonym":"Synonym2", "ID":"ID2", "Type":"Type2"}, axis = 1).reset_index(drop = True)], axis = 1)
+                    sub_table = pd.concat([syns[syns["Synonym"] == term1].rename({"Synonym":"Synonym1", "DancePartnerID":"ID1", "Type":"Type1"}, axis = 1).reset_index(drop = True), 
+                                           syns[syns["Synonym"] == term2].rename({"Synonym":"Synonym2", "DancePartnerID":"ID2", "Type":"Type2"}, axis = 1).reset_index(drop = True)], 
+                                           axis = 1)
                     
                     module_table.append(sub_table)
 
@@ -685,6 +684,10 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
     # Remove duplicates
     relationships = pd.concat(relations)
     final_relationships = remove_relationship_duplicates(relationships, remove_self_relationships)
+
+    # Set ID type
+    final_relationships["ID1"] = final_relationships["ID1"].astype(int)
+    final_relationships["ID2"] = final_relationships["ID2"].astype(int)
 
     if output_directory is not None:
         final_relationships.to_csv(os.path.join(output_directory, str(kegg_species_id) + "_kegg.txt"), index=False, sep = "\t")
