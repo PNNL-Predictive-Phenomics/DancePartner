@@ -694,3 +694,43 @@ def pull_kegg(kegg_species_id: str,
         return None
     else:
         return final_relationships
+    
+def pull_lipidmaps(omes_folder: str, 
+                   synonym_table: pd.DataFrame,
+                   output_directory: str = None,
+                   remove_self_relationships: bool = True):
+    '''
+    Extract relationships from metabolic networks/reactions stored in a local copy of LipidMaps
+
+    Parameters
+    ----------
+    ome_folder
+        Folder with the LipidMaps_Lipidome.csv file in it
+    
+    synonym_table
+        A pandas DataFrame of the synonym table made with `make_synonym_table`    
+
+    output_directory
+        Path specifying where to write the result.
+    
+    Returns
+    -------
+    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
+    '''
+
+    # Read lipid maps and update IDs to the synonym file
+    LM = pd.read_csv(os.path.join(omes_folder, "LipidMaps_Relationships.txt"), sep = "\t")
+
+    # Update IDs
+    LM["ID1"] = [synonym_table[synonym_table["ID"] == x]["DancePartnerID"].tolist()[0] for x in LM["ID1"]]
+    LM["ID2"] = [synonym_table[synonym_table["ID"] == x]["DancePartnerID"].tolist()[0] for x in LM["ID2"]]
+    LM = LM[LM["ID1"] != LM["ID2"]]
+
+    # Remove duplicate and self relationships
+    final_relationships = remove_relationship_duplicates(LM, remove_self_relationships)
+
+    if output_directory is not None:
+        final_relationships.to_csv(os.path.join(output_directory, "LipidMaps.txt"), index=False, sep = "\t")
+        return None
+    else:
+        return final_relationships
