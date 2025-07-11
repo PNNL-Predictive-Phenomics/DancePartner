@@ -32,6 +32,8 @@ actually
 acylate
 acylated
 acylates
+acyltransferase
+adenylyltransferase
 added
 adhere
 adhered
@@ -53,6 +55,7 @@ ah
 ahead
 aint
 alcohol
+aldolase
 alkylate
 alkylated
 alkylates
@@ -93,7 +96,7 @@ annexes
 announce
 another
 anterior
-anterior
+antiporter
 any
 anybody
 anyhow
@@ -210,6 +213,7 @@ carbons
 carboxylate
 carboxylated
 carboxylates
+carboxypeptidase
 catabolize
 catabolized
 catabolizes
@@ -268,6 +272,7 @@ constricts
 contain
 containing
 contains
+containscapsidprotein
 controlled
 core
 corresponding
@@ -291,6 +296,7 @@ darent
 data
 date
 de
+deacetylase
 deaminase
 death
 decrease
@@ -332,6 +338,7 @@ distal
 dissipate
 dissipated
 dissipates
+dna
 do
 does
 doesnt
@@ -604,6 +611,8 @@ inner
 inside
 insofar
 instead
+integrate
+integrase
 interact
 interacted
 interacts
@@ -701,6 +710,8 @@ loss
 low
 lower
 ltd
+lyase
+lysozyme
 m
 made
 mainly
@@ -728,6 +739,7 @@ metabolizes
 methylate
 methylated
 methylates
+methyltransferase
 mg
 might
 mightnt
@@ -772,6 +784,8 @@ need
 neednt
 needs
 neither
+neuropeptide
+neuropeptidelikeprotein
 neutron
 never
 neverf
@@ -854,6 +868,8 @@ overall
 overexpression
 owing
 own
+oxidoreductase
+oxidase
 oxygen
 oxygenated
 oxygenated
@@ -876,15 +892,18 @@ pathways
 peptide
 per
 perhaps
+permease
 peptidase
 phosphatase
 phosphorylate
 phosphorylated
 phosphorylates
+phosphorylase
 placed
 please
 plus
 polypeptide
+polyprotein
 poorly
 possible
 possibly
@@ -992,6 +1011,7 @@ resulted
 resulting
 results
 right
+rna
 rnai
 rotamase
 round
@@ -1010,6 +1030,7 @@ scaffold
 sec
 second
 secondly
+secretedprotein
 section
 see
 seeing
@@ -1115,6 +1136,7 @@ suppresses
 suppressor
 sure
 surface
+symporter
 synthase
 synthetase
 system
@@ -1206,6 +1228,7 @@ towards
 train
 transcript
 transferase
+transglycosylase
 transmembrane
 transport
 transporter
