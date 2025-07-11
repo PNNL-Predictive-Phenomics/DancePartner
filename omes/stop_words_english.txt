@@ -56,6 +56,8 @@ alcohol
 alkylate
 alkylated
 alkylates
+alpha
+alpha1
 all
 allow
 allows
@@ -74,6 +76,8 @@ amidst
 amino acid
 amino acids
 aminoacid
+aminopeptidase
+aminotransferase
 among
 amongst
 amount
@@ -129,6 +133,7 @@ associated
 associated
 associates
 at
+atpase
 attach
 attached
 attaches
@@ -164,6 +169,7 @@ beside
 besides
 best
 beta
+beta1
 better
 between
 beyond
@@ -278,12 +284,14 @@ crylated
 crylates
 cs
 currently
+cyclase
 d
 dare
 darent
 data
 date
 de
+deaminase
 death
 decrease
 decreased
@@ -291,6 +299,7 @@ decreases
 defect
 deficient
 definitely
+dehydrogenase
 delta
 deplete
 depleted
@@ -319,6 +328,7 @@ diminish
 diminished
 diminishes
 directly
+distal
 dissipate
 dissipated
 dissipates
@@ -454,10 +464,12 @@ front
 full
 further
 furthermore
+fused
 g
 gain
 gains
 gamma
+gamma1
 gave
 gene
 genes
@@ -497,6 +509,7 @@ havent
 having
 he
 hed
+helicase
 hell
 hello
 help
@@ -528,6 +541,7 @@ hinders
 his
 hither
 home
+homeotic
 homolog
 homolog
 homologue
@@ -543,6 +557,7 @@ hydrogenated
 hydrogens
 hydrogens
 hydrogens
+hydrolase
 hydrolyze
 hydrolyzed
 hydrolyzes
@@ -606,6 +621,7 @@ inward
 is
 isnt
 isoform
+isomerase
 it
 itd
 itd
@@ -662,6 +678,7 @@ line
 link
 linked
 links
+lipase
 lipid
 lipidized
 lipidome
@@ -859,6 +876,8 @@ pathways
 peptide
 per
 perhaps
+peptidase
+phosphatase
 phosphorylate
 phosphorylated
 phosphorylates
@@ -888,6 +907,7 @@ promote
 promoted
 promotes
 promptly
+protease
 protein
 protein
 proteined
@@ -933,6 +953,7 @@ receptor
 reduce
 reduced
 reduces
+reductase
 ref
 refs
 regarding
@@ -972,6 +993,7 @@ resulting
 results
 right
 rnai
+rotamase
 round
 run
 s
@@ -1094,6 +1116,7 @@ suppressor
 sure
 surface
 synthase
+synthetase
 system
 t
 take
@@ -1185,6 +1208,7 @@ transcript
 transferase
 transmembrane
 transport
+transporter
 tried
 tries
 trigger
