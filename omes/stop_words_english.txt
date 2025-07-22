@@ -13,6 +13,8 @@ aboolished
 about
 above
 abroad
+absence
+absent
 abst
 accordance
 according
@@ -60,6 +62,7 @@ ago
 ah
 ahead
 aint
+air
 alcohol
 aldolase
 alkylate
@@ -188,6 +191,7 @@ binds
 biol
 biosynthesis
 biosynthetic
+black
 block
 blocked
 blocks
@@ -199,6 +203,8 @@ both
 bottom
 bound
 bounded
+brain
+brains
 bridge
 bridged
 bridges
@@ -241,6 +247,8 @@ chains
 changes
 channel
 cholesterol
+chromosome
+chromosomes
 clearly
 cleave
 cleaved
@@ -304,13 +312,18 @@ crylated
 crylates
 cs
 currently
+cutoff
+cutoffs
 cyclase
 cycle
 cycles
 cycling
+cytoplasm
+cytoplasmic
 d
 dare
 darent
+dark
 data
 date
 de
@@ -323,6 +336,8 @@ decrease
 decreased
 decreases
 defect
+defected
+defects
 deficient
 definitely
 dehydratase
@@ -351,6 +366,7 @@ deter
 deterred
 deters
 development
+diamond
 did
 didnt
 different
@@ -378,6 +394,8 @@ done
 donor
 dont
 dorsal
+doublesex
+doublesexes
 down
 downregulate
 downregulated
@@ -429,6 +447,8 @@ enzyme
 enzymes
 epimerase
 epsilon
+error
+errors
 especially
 esterase
 et
@@ -472,6 +492,7 @@ fastens
 fatty acid
 fatty acids
 female
+females
 few
 fewer
 ff
@@ -732,6 +753,8 @@ liked
 likely
 likewise
 line
+lined
+lines
 link
 linked
 links
@@ -768,6 +791,7 @@ mainly
 make
 makes
 male
+males
 many
 marker
 max
@@ -798,6 +822,8 @@ mill
 million
 min
 mine
+minibrain
+minibrains
 minus
 miss
 mitochondria
@@ -806,6 +832,11 @@ ml
 moderate
 moderated
 moderates
+modified
+modifier
+modifiers
+modifies
+modify
 modulate
 modulated
 modulates
@@ -813,6 +844,9 @@ molecule
 monooxygenase
 more
 moreover
+morphogenesis
+morphological
+morphology
 most
 mostly
 move
@@ -901,6 +935,8 @@ one
 ones
 only
 onto
+oocyte
+oocytes
 operon
 operons
 opposite
@@ -916,6 +952,8 @@ ours
 ourselves
 out
 outside
+ovaries
+ovary
 over
 overall
 overexpression
@@ -962,6 +1000,7 @@ potentially
 pp
 predictor
 predominantly
+presence
 present
 presumably
 prevent
@@ -1108,6 +1147,8 @@ serious
 seriously
 seven
 several
+sex
+sexes
 shall
 shant
 shape
@@ -1214,6 +1255,8 @@ targeting
 tell
 ten
 tends
+testes
+testis
 tether
 tethered
 tethers
@@ -1301,6 +1344,8 @@ truly
 try
 trying
 ts
+tube
+tubes
 tumor
 twelve
 twenty
