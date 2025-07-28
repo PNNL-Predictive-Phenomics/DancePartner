@@ -204,7 +204,7 @@ class BertSrcClassifier(BertPreTrainedModel):
             attentions=outputs.attentions,
         )
 
-def run_bert(input_path: str, model_path: str, output_directory: str, segment_col_name: str, **kwargz):
+def run_bert(input_path: str, model_path: str, segment_col_name: str, output_directory: str = None, **kwargz):
     """
     Function to prepare a dataframe to be inputted into the BERT model
 
@@ -217,11 +217,11 @@ def run_bert(input_path: str, model_path: str, output_directory: str, segment_co
         A path to the folder containing the BERT model. Put the model in a folder within this directory called biobert. 
         Find the model here: https://huggingface.co/david-degnan/BioBERT-RE/tree/main
     
-    output_directory
-        A path where to write the results to
-    
     segment_col_name
         The name of the column representing the chunk of text containing the pair of biomolecules.
+
+    output_directory
+        A path where to write the results to. If none, the CSV is simply returned.
     
     **kwargz
         Any additional arguments to pass to `TrainingArguments`.
@@ -264,6 +264,9 @@ def run_bert(input_path: str, model_path: str, output_directory: str, segment_co
     probs = nn.functional.softmax(torch.from_numpy(trainer_out.predictions), dim = -1)
     test[["True Negative", "True Positive"]] = pd.DataFrame(probs)
     test = test.drop("Guess", axis = 1)
-    test.to_csv(os.path.join(output_directory, "bert_results.txt"), sep = '\t', index = False, header = True)
 
-    return(None)
+    if output_directory is not None:
+        test.to_csv(os.path.join(output_directory, "bert_results.txt"), sep = '\t', index = False, header = True)
+        return(None)
+    else:
+        return(test)
