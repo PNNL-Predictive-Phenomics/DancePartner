@@ -263,10 +263,10 @@ def __pull_pubmed(ids: list[str], output_directory: str, type: str, tarball_path
     elif type == "abstract":
         return({"full": [], "abstract": __pull_pubmed_abstracts(ids, output_directory)})
     elif type == "both":
-        #found_ids_clean = __pull_pubmed_clean(ids, output_directory, tarball_path)
-        #remaining_ids = [the_id for the_id in ids if the_id not in found_ids_clean]
-        found_ids_pdf = __pull_pubmed_pdfs(ids, output_directory)
-        remaining_ids = [the_id for the_id in ids if the_id not in found_ids_pdf]
+        found_ids_clean = __pull_pubmed_clean(ids, output_directory, tarball_path)
+        remaining_ids = [the_id for the_id in ids if the_id not in found_ids_clean]
+        found_ids_pdf = __pull_pubmed_pdfs(remaining_ids, output_directory)
+        remaining_ids = [the_id for the_id in remaining_ids if the_id not in found_ids_pdf]
         found_ids_abstract = __pull_pubmed_abstracts(remaining_ids, output_directory)
         found_ids_clean.extend(found_ids_pdf)
         return({"full": found_ids_clean, "abstract": found_ids_abstract})
