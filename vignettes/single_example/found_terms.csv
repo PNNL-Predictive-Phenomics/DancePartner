@@ -1,0 +1,71 @@
+paper_id,term_1,term_2,id,sentence_index,segment_length,segment
+Example,remdesivir,ritonavir,Example,0,66,fcacy of remdesivir andcombination lopinavir ritonavir and interf
+Example,rtv,ifnb,Example,321,126,ritonavir rtv were solubilized in 100 dmso and provided bygilead sciences inc recombinant human interferon beta ifnb protein w
+Example,remdesivir,rtv,Example,321,62,remdesivir rdv lopinavirlpv and ritonavir rtv were solubilized
+Example,ritonavir,ifnb,Example,321,141,irlpv and ritonavir rtv were solubilized in 100 dmso and provided bygilead sciences inc recombinant human interferon beta ifnb protein waspur
+Example,remdesivir,ritonavir,Example,321,52,remdesivir rdv lopinavirlpv and ritonavir rtv were s
+Example,ritonavir,rtv,Example,321,39,irlpv and ritonavir rtv were solubilize
+Example,remdesivir,ifnb,Example,321,164,remdesivir rdv lopinavirlpv and ritonavir rtv were solubilized in 100 dmso and provided bygilead sciences inc recombinant human interferon beta ifnb protein waspurc
+Example,rtv,ifnb,Example,333,185,to better understand the antiviral activities of rdv lpv rtv ifnb orcombinations of lpvrtv or lpvrtvifnb we performed efcacy andcytotoxicity assays in human lung epithelial cells calu3
+Example,lpv,ifnb,Example,333,185,to better understand the antiviral activities of rdv lpv rtv ifnb orcombinations of lpvrtv or lpvrtvifnb we performed efcacy andcytotoxicity assays in human lung epithelial cells calu3
+Example,lpv,rtv,Example,333,185,to better understand the antiviral activities of rdv lpv rtv ifnb orcombinations of lpvrtv or lpvrtvifnb we performed efcacy andcytotoxicity assays in human lung epithelial cells calu3
+Example,lpv,rtv,Example,338,216,lpv 10 mmstock and rtv 10 mm stock were similarly diluted in dmso although variousamounts of stock compound were added directly to media to obtain the top fourdilutions in the tenpoint curve 50 m 25 m 125 m 625 m
+Example,ifnb,lpv,Example,342,109,tion with ifnb werst performed comparativeequilibrium dialysis ced23 and determined that 5 m lpv in 10 fbsc
+Example,ifnb,lopinavir,Example,343,227,we then combined a dose response of human ifnb with axedconcentration of lpvrtv molar ratio of 461 5 m lopinavir and 11 mritonavir based on the human plasma equivalent maximal concentration of lpvas determined by ced ie 5 m
+Example,lpv,ifnb,Example,344,165,thus this study was aimed at determining if themaximal amount of lpv attainable in humans provided an additive or synergisticantiviral effect when combined with ifnb
+Example,lpv,rtv,Example,355,94,lpv 32 mgml rtv 8 mgml was solubilized in vehiclecontaining 90 propylene glycol and 10 ethanol
+Example,lpv,rtv,Example,356,73,the ratio of lpv to rtv washeld at 41 weightweight for all studies herein
+Example,dpp4,hdpp4,Example,360,199,we recently developed a mouse model formerscov through the mutation of mouse dpp4 at 288 and 330 via crisprcas9 thus humanizing the receptor hdpp4 and rendering mice susceptible tomerscov infection22
+Example,ifnb,hdpp4,Example,381,185,to generate a pharmacokinetic andpharmacodynamic pkpd relationship for ifnb we subcutaneously administered mouse ifnb r d systems to 1820 weekold male and femaleces1cor ces1c hdpp4 mice
+Example,ces1c,ifnb,Example,424,226,inrandomly assigned groups of 1214weekold ces1c hdpp4 female mice wecompared vehicle lpvrtvifnb low 16 miukg or 48e4 iu30 g mouse40 g30 g mouse lpvrtvifnb high 40 miukg or 12 miu30 g mouse1000 g30 g mouse and ifnb high alone
+Example,hdpp4,ifnb,Example,424,226,inrandomly assigned groups of 1214weekold ces1c hdpp4 female mice wecompared vehicle lpvrtvifnb low 16 miukg or 48e4 iu30 g mouse40 g30 g mouse lpvrtvifnb high 40 miukg or 12 miu30 g mouse1000 g30 g mouse and ifnb high alone
+Example,lpv,rtv,Example,412,126,a humanequivalent dose of a coformulation of lpv 160 mgkg and rtv 40 mgkg at5 mlkg was administered once daily via oral gavage
+Example,ces1c,hdpp4,Example,409,133,in therst study inrandomly assigned groups n  910 of 1113weekold ces1c hdpp4 femalemice we compared vehicle lpvrtvifnb or ifnb alone
+Example,ces1c,ifnb,Example,409,133,in therst study inrandomly assigned groups n  910 of 1113weekold ces1c hdpp4 femalemice we compared vehicle lpvrtvifnb or ifnb alone
+Example,hdpp4,ifnb,Example,409,133,in therst study inrandomly assigned groups n  910 of 1113weekold ces1c hdpp4 femalemice we compared vehicle lpvrtvifnb or ifnb alone
+Example,hdpp4,ifnb,Example,239,97,micewhere hdpp4 is delivered to lung tissue by adenoviral transduction intranasal ifnb given befo
+Example,ip10,cxcl10,Example,392,163,to monitor induction of interferon inducedprotein expression we quantitated levels of mouse ifngamma inducible protein10 ip10 cxcl10 in plasma via elisa invitrogen
+Example,ces1c,hdpp4,Example,386,207,second we compared the responses to a 25 human equivalent doseof ifnb ie 40 miukg or 12 miu30 g mouse 1000 g30 g mouse inces1cor ces1c hdpp4 mice n  25group to ensure that these mouse lines respondsimilarly
+Example,ifnb,ces1c,Example,386,207,second we compared the responses to a 25 human equivalent doseof ifnb ie 40 miukg or 12 miu30 g mouse 1000 g30 g mouse inces1cor ces1c hdpp4 mice n  25group to ensure that these mouse lines respondsimilarly
+Example,ifnb,hdpp4,Example,386,207,second we compared the responses to a 25 human equivalent doseof ifnb ie 40 miukg or 12 miu30 g mouse 1000 g30 g mouse inces1cor ces1c hdpp4 mice n  25group to ensure that these mouse lines respondsimilarly
+Example,ifnb,ces1c,Example,384,92,first we compared 1 and25 human equivalent doses of ifnb in cohorts n  20group of ces1c mice
+Example,ces1c,hdpp4,Example,381,185,to generate a pharmacokinetic andpharmacodynamic pkpd relationship for ifnb we subcutaneously administered mouse ifnb r d systems to 1820 weekold male and femaleces1cor ces1c hdpp4 mice
+Example,ifnb,ces1c,Example,381,185,to generate a pharmacokinetic andpharmacodynamic pkpd relationship for ifnb we subcutaneously administered mouse ifnb r d systems to 1820 weekold male and femaleces1cor ces1c hdpp4 mice
+Example,ifnb,mx1,Example,391,141,esponseto ifnb treatment in pbmcs was quantitated by qrtpcr for the classic interferon stimulated gene mx dynaminlike gtpase 1 mx1 by taqman 
+Example,hdpp4,remdesivir,Example,218,130,maleces1c hdpp4 mice infected with 5e 04pfu mers m35c4 and treated witha subcutaneous vehicle for rdv n 13 or remdesivir rdv 25 mg
+Example,lpv,rtv,Example,208,27,ribavirin lpv rtv and immun
+Example,lpv,ifnb,Example,208,93,ribavirin lpv rtv and immunomodulators eg corticosteroids interferon alpha2a2b ifnb as single
+Example,lpv,rtv,Example,37,106,we then performed parallel antiviral assays in calu3 cells withmersnluc comparing lpv rtv ifnb and rdv fig
+Example,lpv,ifnb,Example,37,106,we then performed parallel antiviral assays in calu3 cells withmersnluc comparing lpv rtv ifnb and rdv fig
+Example,rtv,ifnb,Example,37,106,we then performed parallel antiviral assays in calu3 cells withmersnluc comparing lpv rtv ifnb and rdv fig
+Example,ifnb,lpv,Example,31,66,resultsrdv and ifnb have superior antiviral activity to lpv andrtv
+Example,lpv,rtv,Example,18,163,lpv is a human immunodeciency virus 1 hiv1 protease inhibitor that is usuallycombined with rtv to increase lpv halflife through the inhibition of cytochrome p4507
+Example,lopinavir,lpv,Example,17,191,multiple us food and drug administration fdaapproved therapies have been evaluated for antiviral activityagainst merscov in vitro including lopinavir lpv ritonavirrtv and interferon beta ifnb
+Example,lpv,rtv,Example,43,113,in contrastthe respective ec50 values generated for lpv and rtv were 116and 249 m with cc50 values 50 m fig1b c
+Example,lpv,ifnb,Example,17,191,multiple us food and drug administration fdaapproved therapies have been evaluated for antiviral activityagainst merscov in vitro including lopinavir lpv ritonavirrtv and interferon beta ifnb
+Example,lpv,rtv,Example,2,97,here we show thatremdesivir rdv and ifnb have superior antiviral activity to lpv and rtv in vitro
+Example,ifnb,lpv,Example,2,97,here we show thatremdesivir rdv and ifnb have superior antiviral activity to lpv and rtv in vitro
+Example,ifnb,rtv,Example,2,97,here we show thatremdesivir rdv and ifnb have superior antiviral activity to lpv and rtv in vitro
+Example,lopinavir,ritonavir,Example,1,200,there are no approved treatments for merscov infectionalthough a combination of lopinavir ritonavir and interferon beta lpvrtvifnb is currently being evaluated in humans in the kingdom of saudi arabia
+Example,remdesivir,lopinavir,Example,0,56,fcacy of remdesivir andcombination lopinavir ritonavir 
+Example,lopinavir,ritonavir,Example,0,39,mbination lopinavir ritonavir and inter
+Example,lopinavir,ifnb,Example,17,191,multiple us food and drug administration fdaapproved therapies have been evaluated for antiviral activityagainst merscov in vitro including lopinavir lpv ritonavirrtv and interferon beta ifnb
+Example,ces1c,hdpp4,Example,424,226,inrandomly assigned groups of 1214weekold ces1c hdpp4 female mice wecompared vehicle lpvrtvifnb low 16 miukg or 48e4 iu30 g mouse40 g30 g mouse lpvrtvifnb high 40 miukg or 12 miu30 g mouse1000 g30 g mouse and ifnb high alone
+Example,lpv,rtv,Example,44,54,thus the sifor lpv and rtv was  43 and  2 respectively
+Example,ifnb,lpv,Example,48,196,together these data demonstrate that rdv and ifnb havesuperior in vitro antiviral activity compared with lpv and rtvand that rtv does not signicantly enhance the antiviral activityof lpv in vitro
+Example,rtv,ifnb,Example,208,89,virin lpv rtv and immunomodulators eg corticosteroids interferon alpha2a2b ifnb as single
+Example,ces1c,remdesivir,Example,180,204,apercent starting weight left of 12 14weekold female ces1c hdpp4mice infected with 5e 04 pfu mers m35c4 and treated bid with either vehicle n  9 or remdesivir rdv 25 mgkgn  9 subcutaneously beginning1 dpi
+Example,hdpp4,remdesivir,Example,118,94,maleces1c hdpp4 miceprophylactically administered subcutaneous vehicle or remdesivir rdv 25 mg
+Example,hdpp4,ifnb,Example,101,125,thus we observed an expectedisg response in the blood and lung tissue of bothces1 andces1 hdpp4 mice following ifnb treatment
+Example,ifnb,ip10,Example,99,231,similarly a single dose of ifnb signicantly inducedsustained expression p  005 twoway anova with sideksmultiple comparison test of interferon gammainduced protein10 ip10 cxcl10 in the serum of both strains of micesupplementary fig
+Example,ip10,cxcl10,Example,99,231,similarly a single dose of ifnb signicantly inducedsustained expression p  005 twoway anova with sideksmultiple comparison test of interferon gammainduced protein10 ip10 cxcl10 in the serum of both strains of micesupplementary fig
+Example,ifnb,rtv,Example,48,196,together these data demonstrate that rdv and ifnb havesuperior in vitro antiviral activity compared with lpv and rtvand that rtv does not signicantly enhance the antiviral activityof lpv in vitro
+Example,ifnb,cxcl10,Example,99,231,similarly a single dose of ifnb signicantly inducedsustained expression p  005 twoway anova with sideksmultiple comparison test of interferon gammainduced protein10 ip10 cxcl10 in the serum of both strains of micesupplementary fig
+Example,ifnb,lpv,Example,83,167,1 rdv and ifnb have superior antiviral activity to lpv and rtvgraphs depict mean  inhibition of merscov replication leftyaxis and cytotoxicity rightyaxis of antivirals
+Example,dpp4,hdpp4,Example,58,139,to enable testing of rdv in mice we bredces1cmice with mice harboring a modi ed dpp4 humanized viacrisprcas9 at residues 288 and 330 hdpp4
+Example,lpv,rtv,Example,51,120,thus we combined lpv 5 mand rtv 109 m at axed molar ratio of 461 in combinationwith increasing concentrations of ifnb
+Example,lpv,ifnb,Example,51,120,thus we combined lpv 5 mand rtv 109 m at axed molar ratio of 461 in combinationwith increasing concentrations of ifnb
+Example,rtv,ifnb,Example,51,120,thus we combined lpv 5 mand rtv 109 m at axed molar ratio of 461 in combinationwith increasing concentrations of ifnb
+Example,lpv,rtv,Example,48,196,together these data demonstrate that rdv and ifnb havesuperior in vitro antiviral activity compared with lpv and rtvand that rtv does not signicantly enhance the antiviral activityof lpv in vitro
+Example,ces1c,hdpp4,Example,97,144,importantly the kinetics ofmx1 geneexpression in target organ of merscov the lung was similar inboth ces1c and ces1c hdpp4 mice supplementaryfig
+Example,ces1c,hdpp4,Example,435,152,for headtohead therapeutic efcacy studiescomparing rdv to lpvrtvifnb female 912weekold ces1c hdpp4 wererandomly assigned to each treatment group n 1012

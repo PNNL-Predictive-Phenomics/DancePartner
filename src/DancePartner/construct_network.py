@@ -14,7 +14,7 @@ def build_network_table(BERT_data: pd.DataFrame, synonyms: pd.DataFrame):
         The output table from run_bert() as a pandas DataFrame.
     
     synonyms
-        The output table from map_synonyms() as a pandas DataFrame.
+        The output table from a synonym function as a pandas DataFrame. Can be built manually. Requires the columns DancePartnerID, ID, Synonym, Type.
     
     
     Returns
@@ -211,3 +211,82 @@ def calculate_network_metrics(network: nx.Graph, metric: str = "all"):
 
     else: 
         print(metric + " is not a recognized metric")
+
+def run_cooccurrence(found_terms: pd.DataFrame, synonyms: pd.DataFrame, relational_term: bool = False):
+    '''
+    Use co-occurrence (whether two terms appear in the same sentence) or relational_term (co-occurrence with a check to ensure a relational
+    term like "binds" is in the sentence) to determine relationships. The output is a network table.
+
+    Parameters
+    ----------
+    found_terms
+        The output table from find_terms_in_papers() as a pandas DataFrame.
+
+    synonyms
+        The output table from a synonym function as a pandas DataFrame. Can be built manually. Requires the columns DancePartnerID, ID, Synonym, Type.
+
+    relational_term
+        A boolean to indicate whether sentences should be filtered by a relational term. Default is False. 
+    
+    
+    Returns
+    -------
+        A network table of synonyms, IDs, types (gene product, metabolite, lipid), and the source (literature or database)
+    '''
+
+    ################################
+    ## FILTER TO RELATIONAL TERMS ##
+    ################################
+
+    if relational_term:
+
+        # Show the list of terms
+        rel_terms = ["abate", "abated","abating","abatement","abolish","abolished","abolishing","abolition","acetylate","acetylated","acetylating","acetylation","acrylate","acrylated","acrylating","acrylation","activate",
+                 "activated","activating","activation","acylate","acylated","acylating","acylation","adhere","adhered","adhering","adhesion","affix","affixed","affixing","affixion","aggregate","aggregated","aggregating",
+                 "aggregation","align","aligned","aligning","alignment","alkylate","alkylated","alkylating","alkylation","anabolize","anabolized","anabolizing","anabolism","annex","annexed","annexing","annexation","append",
+                 "appended","appending","appendage","assemble", "assembled", "assembling", "assembly", "associate", "associated", "associating", "association", "attach", "attached", "attaching", "attachment", "attenuate", 
+                 "attenuated", "attenuating", "attenuation", "bind", "bound", "binding", "binding", "block", "blocked", "blocking", "blockage", "bridge", "bridged", "bridging", "butylate", "butylated", "butylating", 
+                 "butylation", "carboxylate", "carboxylated", "carboxylating", "carboxylation", "catabolize", "catabolized", "catabolizing", "catabolism", "catalyze", "catalyzed", "catalyzing", "catalysis", "change", 
+                 "changed", "changing", "changeover", "chain", "chained", "chaining", "cleave", "cleaved", "cleaving", "cleavage", "cluster", "clustered", "clustering", "cohere", "cohered", "cohering", "cohesion", 
+                 "combine", "combined", "combining", "combination", "complex", "complexed", "complexing", "complexation", "confine", "confined", "confining", "confinement", "connect", "connected", "connecting", 
+                 "connection", "constrain", "constrained", "constraining", "constraint", "constrict", "constricted", "constricting", "constriction", "couple", "coupled", "coupling", "create", "created", "creating", 
+                 "creation", "crylate", "crylated", "crylating", "crylation", "decrease", "decreased", "decreasing", "decrement", "detach", "detached", "detaching", "detachment", "detain", "detained", "detaining", 
+                 "detention", "deter", "deterred", "deterring", "deterrence", "dilute", "diluted", "diluting", "dilution", "dimerize", "dimerized", "dimerizing", "dimerization", "diminish", "diminished", "diminishing", 
+                 "diminishment", "disassemble", "disassembled", "disassembling", "disassembly", "dissipate", "dissipated", "dissipating", "dissipation", "elevate", "elevated", "elevating", "elevation", "eliminate", 
+                 "eliminated", "eliminating", "elimination", "enhance", "enhanced", "enhancing", "enhancement", "ethylate", "ethylated", "ethylating", "ethylation", "extenuate", "extenuated", "extenuating", "extenuation", 
+                 "facilitate", "facilitated", "facilitating", "facilitation", "fasten", "fastened", "fastening", "free", "freed", "freeing", "freedom", "fuse", "fused", "fusing", "fusion", "generate", "generated", 
+                 "generating", "generation", "group", "grouped", "grouping", "grouping", "glycosylate", "glycosylated", "glycosylating", "glycosylation", "hemolyze", "hemolyzed", "hemolyzing", "hemolysis", "hinder", 
+                 "hindered", "hindering", "hindrance", "hydrolyze", "hydrolyzed", "hydrolyzing", "hydrolysis", "impair", "impaired", "impairing", "impairment", "impede", "impeded", "impeding", "impedance", "increase", 
+                 "increased", "increasing", "increment", "induce", "induced", "inducing", "induction", "inhibit", "inhibited", "inhibiting", "inhibition", "interact", "interacted", "interacting", "interaction", 
+                 "intercept", "intercepted", "intercepting", "interception", "interfere", "interfered", "interfering", "interference", "intricate", "intricated", "intricating", "intrication", "join", "joined", 
+                 "joining", "joining", "liberate", "liberated", "liberating", "liberation", "ligate", "ligated", "ligating", "ligation", "link", "linked", "linking", "linkage", "loosen", "loosened", "loosening", 
+                 "metabolize", "metabolized", "metabolizing", "metabolism", "methylate", "methylated", "methylating", "methylation", "moderate", "moderated", "moderating", "moderation", "modulate", "modulated", 
+                 "modulating", "modulation", "neutralize", "neutralized", "neutralizing", "neutralization", "obstruct", "obstructed", "obstructing", "obstruction", "occlude", "occluded", "occluding", "occlusion", 
+                 "oligomerize", "oligomerized", "oligomerizing", "oligomerization", "organize", "organized", "organizing", "organization", "osmolyze", "osmolyzed", "osmolyzing", "osmolysis", "pair", "paired", 
+                 "pairing", "phosphorylate", "phosphorylated", "phosphorylating", "phosphorylation", "prevent", "prevented", "preventing", "prevention", "prohibit", "prohibited", "prohibiting", "prohibition", 
+                 "promote", "promoted", "promoting", "promotion", "produce", "produced", "producing", "production", "react", "reacted", "reacting", "reaction", "reduce", "reduced", "reducing", "reduction", 
+                 "regulate", "regulated", "regulating", "regulation", "relate", "related", "relating", "relation", "release", "released", "releasing", "release", "repress", "repressed", "repressing", "repression", 
+                 "restrict", "restricted", "restricting", "restriction", "silence", "silenced", "silencing", "slice", "sliced", "slicing", "slicing", "stimulate", "stimulated", "stimulating", "stimulation", "stop", 
+                 "stopped", "stopping", "strap", "strapped", "strapping", "subdue", "subdued", "subduing", "subdual", "supplement", "supplemented", "supplementing", "supplementation", "suppress", "suppressed", 
+                 "suppressing", "suppression", "tether", "tethered", "tethering", "trigger", "triggered", "triggering", "unite", "united", "uniting", "union", "ubiquitinylate", "ubiquitinylated", "ubiquitinylating", 
+                 "ubiquitination", "weaken", "weakened", "weakening", "wrap", "wrapped", "wrapping", "xylosylate", "xylosylated", "xylosylating", "xylosylation", "zip", "zipped", "zipping"]
+        
+        # Indicate whether a row should be kept or tossed based on whether its sentence has one of the words
+        found_terms = found_terms[[any([rel_term in segment for rel_term in rel_terms]) for segment in found_terms["segment"]]]
+
+        # If there is nothing left, let the user know
+        if (len(found_terms) == 0):
+            print("No relational terms found. Returning None.")
+            return None
+    
+    #####################
+    ## CONSTRUCT TABLE ##
+    #####################
+
+    network_table = pd.concat([
+        pd.DataFrame({"Synonym":found_terms["term_1"]}).merge(synonyms[["DancePartnerID", "Synonym", "Type"]]).rename(columns = {"Synonym": "Synonym1", "DancePartnerID": "ID1", "Type": "Type1"}),
+        pd.DataFrame({"Synonym":found_terms["term_2"]}).merge(synonyms[["DancePartnerID", "Synonym", "Type"]]).rename(columns = {"Synonym": "Synonym2", "DancePartnerID": "ID2", "Type": "Type2"})
+    ], axis = 1)
+    network_table["Source"] = "literature"
+
+    return(network_table)
