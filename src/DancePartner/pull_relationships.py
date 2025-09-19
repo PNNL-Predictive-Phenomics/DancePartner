@@ -28,7 +28,12 @@ def __parse_url(url: str):
     ----------
     url
         The url to parse
+
+    Returns
+    -------
+    A beatiful soup object that can be further parsed depending on need
     '''
+
     req = requests.get(url,  timeout = 500)
     return BeautifulSoup(req.content, "html.parser")
 
@@ -44,7 +49,7 @@ def __upper_triangle_meshgrid(x: np.array):
     
     Returns
     -------
-        A pandas DataFrame of only the unique combinations
+    A pandas DataFrame of only the unique combinations
     """
 
     # Make a meshgrid of x and y 
@@ -61,7 +66,8 @@ def __upper_triangle_meshgrid(x: np.array):
     combos = combos[combos[0] != combos[1]]
     return(combos.reset_index(drop = True))
 
-def remove_relationship_duplicates(network_table: pd.DataFrame, remove_self_relationships: bool = True): 
+def remove_relationship_duplicates(network_table: pd.DataFrame, 
+                                   remove_self_relationships: bool = True): 
     '''
     Remove all duplicates from a network table.
     
@@ -75,7 +81,7 @@ def remove_relationship_duplicates(network_table: pd.DataFrame, remove_self_rela
     
     Returns
     -------
-        A table with unique interacting biomolecules
+    A table with unique interacting biomolecules
     '''
 
     # Remove self-relationships if possible
@@ -91,7 +97,11 @@ def remove_relationship_duplicates(network_table: pd.DataFrame, remove_self_rela
 ## INTERACTOMES ##
 ##################
 
-def pull_uniprot(species_id: str, output_directory: str = None, remove_self_relationships: bool = True, verbose: bool = True):
+def pull_uniprot(species_id: str, 
+                 synonym_table: pd.DataFrame,
+                 output_directory: str = None, 
+                 remove_self_relationships: bool = True, 
+                 verbose: bool = True):
     """
     Function that pulls protein-protein and protein-metabolite interactions for a species. 
 
@@ -99,6 +109,9 @@ def pull_uniprot(species_id: str, output_directory: str = None, remove_self_rela
     ----------
     species_id
         The taxon ID for the organism of interest.
+
+    synonym_table
+        A pandas DataFrame of the synonym table made with `make_synonym_table`
     
     output_directory
         Path specifying where to write the result.
@@ -111,7 +124,7 @@ def pull_uniprot(species_id: str, output_directory: str = None, remove_self_rela
     
     Returns
     -------
-        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
+    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     """
 
     # Write progress message if requested
@@ -193,11 +206,37 @@ def pull_uniprot(species_id: str, output_directory: str = None, remove_self_rela
     prot_metab["Source"] = "database"
     prot_metab = prot_metab[["Synonym1", "ID1", "Type1", "Synonym2", "ID2", "Type2", "Source"]]
 
-    ## Combine Datasets------------------------------------------------------------------------------
+    ## Combine Datasets-----------------------------------------------------------------------------
 
-    # Concatenate tables and remove duplicates
-    relationships = pd.concat([prot_prot, prot_metab])
-    final_relationships = remove_relationship_duplicates(relationships, remove_self_relationships)
+    # Concatenate tables 
+    uniprot = pd.concat([prot_prot, prot_metab])
+
+    ## Map to DancePartner Identifiers--------------------------------------------------------------
+
+    # Pull just unique IDs
+    uniqueID = synonym_table[["DancePartnerID", "ID", "Type"]].drop_duplicates().reset_index(drop = True)
+
+    # Get the left and right DancePartnerIDs
+    left_IDs = pd.merge(uniprot["ID1"], uniqueID.rename({"ID":"ID1"}, axis = 1), how = "left")
+    right_IDs = pd.merge(uniprot["ID2"], uniqueID.rename({"ID":"ID2"}, axis = 1), how = "left")
+
+    # Replace ID1 and ID2 with DancePartnerIDs
+    uniprot["ID1"] = left_IDs["DancePartnerID"]
+    uniprot["Type1"] = left_IDs["Type"]
+    uniprot["ID2"] = right_IDs["DancePartnerID"]
+    uniprot["Type2"] = right_IDs["Type"]
+
+    # Drop NA and duplicates
+    uniprot = uniprot.dropna().drop_duplicates().reset_index(drop = True)
+
+    # Fix ID types
+    uniprot["ID1"] = uniprot["ID1"].astype(int)
+    uniprot["ID2"] = uniprot["ID2"].astype(int)
+
+    # Final cleanup---------------------------------------------------------------------------------
+
+    # Remove any relationship duplicates
+    final_relationships = remove_relationship_duplicates(uniprot, remove_self_relationships)
     final_relationships = final_relationships.dropna().reset_index(drop = True)
 
     # Write or return output
@@ -211,8 +250,12 @@ def pull_uniprot(species_id: str, output_directory: str = None, remove_self_rela
 ## METABOLIC NETWORKS ##
 ########################
 
-def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, proteome_filename: str, 
-                      output_directory: str = None, remove_self_relationships: bool = True, verbose: bool = False):
+def pull_wikipathways(species_name: str, 
+                      species_id: str, 
+                      synonym_table: pd.DataFrame,
+                      output_directory: str = None, 
+                      remove_self_relationships: bool = True, 
+                      verbose: bool = False):
     '''
     Extract relationships from metabolic networks stored in WikiPathways
 
@@ -224,11 +267,8 @@ def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, prot
     species_id
         The taxon ID for the organism of interest
 
-    omes_folder
-        Path to the omes folder 
-    
-    proteome_filename
-        Name of the proteome file
+    synonym_table
+        A pandas DataFrame of the synonym table made with `make_synonym_table`
 
     output_directory
         Path specifying where to write the result.
@@ -241,7 +281,7 @@ def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, prot
     
     Returns
     -------
-        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
+    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     '''
 
     # Extract all pathways
@@ -271,57 +311,22 @@ def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, prot
                     wp_data.append(content)
 
             # Synonyms need to be parsed and collapsed 
-            pre_nodes = pd.DataFrame(wp_data).drop_duplicates()
+            pre_nodes = pd.DataFrame(wp_data)[5].to_list()
+            terms = [x for x in pre_nodes if x is not None]
 
-            # If there is more than 6 columns, collapse the outside columns 
-            if len(pre_nodes.columns) > 6: 
-                col5 = []
-                for row in range(len(pre_nodes)):
-                    col5.append(" & ".join(pre_nodes.iloc[row, 5:].dropna().tolist()))
-                pre_nodes[5] = col5 
-
-            # Remove any cases of column 3 having a missing value
-            pre_nodes = pre_nodes.dropna(subset = [3])
-
-            # Map Terms
-            if verbose:
-                print("...Mapping terms to standardized IDs")
-
-            # Map IDs to our list of standardized terms 
-            IDs = []
-            Types = []
-
-            # Reset the index of pre_nodes
-            pre_nodes = pre_nodes.reset_index(drop = True)
-
-            for row in range(len(pre_nodes)):
-
-                terms = []
-                terms.append(pre_nodes.loc[row, 2])
-                terms.extend(pre_nodes.loc[row, 5].split(" & "))
-                terms = [x.split(":")[-1] for x in terms if x not in ["CHEBI:"]]
-
-                syns = map_synonyms(terms, omes_folder, proteome_filename)
-                try:
-                    IDs.append(syns[syns["ID"] != ""]["ID"][0])
-                    Types.append(syns[syns["ID"] != ""]["Type"][0])
-                except:
-                    IDs.append("")
-                    Types.append("")
-
-            # Add official ID and Type
-            pre_nodes[2] = IDs
-            pre_nodes[3] = Types
-            pre_nodes = pre_nodes[pre_nodes[2] != ""]
-
-            if len(pre_nodes) == 0:
-                continue
+            # Map all synonyms 
+            map_terms = map_synonyms(
+                term_list = terms,
+                synonym_table = synonym_table
+            )
 
             # Pull node information. An edge will be drawn between every node. 
-            nodes = pre_nodes.loc[:,[2,3,5]].rename({2: "ID1", 3: "Type1", 5: "Synonym1"}, axis = 1)
+            nodes = map_terms.rename({"DancePartnerID": "ID1", "Type": "Type1", "Synonym": "Synonym1"}, axis = 1)
 
             # Extract upper triangle
-            ut = __upper_triangle_meshgrid(nodes["ID1"]).rename({0:"ID1", 1:"ID2"}, axis = 1)
+            ut = __upper_triangle_meshgrid(nodes["ID1"].astype(str)).rename({0:"ID1", 1:"ID2"}, axis = 1)
+            ut["ID1"] = ut["ID1"].astype(int)
+            ut["ID2"] = ut["ID2"].astype(int)
 
             # Left join both columns 
             relationship_table = pd.merge(ut[["ID1"]], nodes).reset_index(drop = True).join(
@@ -344,8 +349,12 @@ def pull_wikipathways(species_name: str, species_id: str, omes_folder: str, prot
     else:
         return final_relationships
     
-def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, output_directory: str = None, 
-              flatten_module: bool = False, remove_self_relationships: bool = True, verbose: bool = False):
+def pull_kegg(kegg_species_id: str, 
+              synonym_table: pd.DataFrame,
+              output_directory: str = None, 
+              flatten_module: bool = False, 
+              remove_self_relationships: bool = True, 
+              verbose: bool = False):
     '''
     Extract relationships from metabolic networks (modules) stored in KEGG
 
@@ -354,15 +363,9 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
     kegg_species_id
         The name for the species. Select species from here: https://rest.kegg.jp/list/organism
     
-    species_id
-        The taxon ID for the organism of interest
-    
-    omes_folder
-        Path to the omes folder 
-    
-    proteome_filename
-        Name of the proteome file
-    
+    synonym_table
+        A pandas DataFrame of the synonym table made with `make_synonym_table`    
+
     output_directory
         Path specifying where to write the result.
     
@@ -378,7 +381,7 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
     
     Returns
     -------
-        A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
+    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
     '''
 
     ## Pull Organism--------------------------------------------------------------------------------------
@@ -641,7 +644,7 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
                 all_IDs = list(set(all_IDs))
 
                 # MAP IDs to synonyms
-                syns = map_synonyms(all_IDs, omes_folder, proteome_filename)
+                syns = map_synonyms(all_IDs, synonym_table)
 
                 # Construct table
                 module_table = []
@@ -662,8 +665,9 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
                     term2 = re.sub(r'[^a-zA-Z0-9]', '', rel.split(" & ")[1].strip().lower())
 
                     # Make table
-                    sub_table = pd.concat([syns[syns["Synonym"] == term1].rename({"Synonym":"Synonym1", "ID":"ID1", "Type":"Type1"}, axis = 1).reset_index(drop = True), 
-                                           syns[syns["Synonym"] == term2].rename({"Synonym":"Synonym2", "ID":"ID2", "Type":"Type2"}, axis = 1).reset_index(drop = True)], axis = 1)
+                    sub_table = pd.concat([syns[syns["Synonym"] == term1].rename({"Synonym":"Synonym1", "DancePartnerID":"ID1", "Type":"Type1"}, axis = 1).reset_index(drop = True), 
+                                           syns[syns["Synonym"] == term2].rename({"Synonym":"Synonym2", "DancePartnerID":"ID2", "Type":"Type2"}, axis = 1).reset_index(drop = True)], 
+                                           axis = 1)
                     
                     module_table.append(sub_table)
 
@@ -681,8 +685,52 @@ def pull_kegg(kegg_species_id: str, omes_folder: str, proteome_filename: str, ou
     relationships = pd.concat(relations)
     final_relationships = remove_relationship_duplicates(relationships, remove_self_relationships)
 
+    # Set ID type
+    final_relationships["ID1"] = final_relationships["ID1"].astype(int)
+    final_relationships["ID2"] = final_relationships["ID2"].astype(int)
+
     if output_directory is not None:
         final_relationships.to_csv(os.path.join(output_directory, str(kegg_species_id) + "_kegg.txt"), index=False, sep = "\t")
+        return None
+    else:
+        return final_relationships
+    
+def pull_lipidmaps(omes_folder: str, 
+                   synonym_table: pd.DataFrame,
+                   output_directory: str = None,
+                   remove_self_relationships: bool = True):
+    '''
+    Extract relationships from metabolic networks/reactions stored in a local copy of LipidMaps
+
+    Parameters
+    ----------
+    ome_folder
+        Folder with the LipidMaps_Lipidome.csv file in it
+    
+    synonym_table
+        A pandas DataFrame of the synonym table made with `make_synonym_table`    
+
+    output_directory
+        Path specifying where to write the result.
+    
+    Returns
+    -------
+    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
+    '''
+
+    # Read lipid maps and update IDs to the synonym file
+    LM = pd.read_csv(os.path.join(omes_folder, "LipidMaps_Relationships.txt"), sep = "\t")
+
+    # Update IDs
+    LM["ID1"] = [synonym_table[synonym_table["ID"] == x]["DancePartnerID"].tolist()[0] for x in LM["ID1"]]
+    LM["ID2"] = [synonym_table[synonym_table["ID"] == x]["DancePartnerID"].tolist()[0] for x in LM["ID2"]]
+    LM = LM[LM["ID1"] != LM["ID2"]]
+
+    # Remove duplicate and self relationships
+    final_relationships = remove_relationship_duplicates(LM, remove_self_relationships)
+
+    if output_directory is not None:
+        final_relationships.to_csv(os.path.join(output_directory, "LipidMaps.txt"), index=False, sep = "\t")
         return None
     else:
         return final_relationships

@@ -1,620 +1,741 @@
 Synonym1	ID1	Type1	Synonym2	ID2	Type2	Source
-aspartatesemialdehydedehydrogenase	Q04797	gene product	homoserinedehydrogenase	P19582	gene product	database
-aspartatekinase	A0A2K4Z9M4	gene product	aspartatesemialdehydedehydrogenase	Q04797	gene product	database
-osuccinyllhomoserine	CHEBI:16160	metabolite	lhomoserine	CHEBI:15699	metabolite	database
-lhomoserine	CHEBI:15699	metabolite	laspartate4semialdehyde	CHEBI:537519	metabolite	database
-lcystathionine	CHEBI:17482	metabolite	osuccinyllhomoserine	CHEBI:16160	metabolite	database
-4phospholaspartate	CHEBI:30407	metabolite	laspartate	CHEBI:29991	metabolite	database
-lmethionine	CHEBI:16044	metabolite	lhomocysteine	CHEBI:17588	metabolite	database
-lhomocysteine	CHEBI:17588	metabolite	lcystathionine	CHEBI:17482	metabolite	database
-laspartate4semialdehyde	CHEBI:537519	metabolite	4phospholaspartate	CHEBI:30407	metabolite	database
-laspartate	CHEBI:29991	metabolite	aspartatekinase	A0A2K4Z9M4	gene product	database
-4phospholaspartate	CHEBI:30407	metabolite	aspartatekinase	A0A2K4Z9M4	gene product	database
-4phospholaspartate	CHEBI:30407	metabolite	aspartatesemialdehydedehydrogenase	Q04797	gene product	database
-laspartate4semialdehyde	CHEBI:537519	metabolite	aspartatesemialdehydedehydrogenase	Q04797	gene product	database
-laspartate4semialdehyde	CHEBI:537519	metabolite	homoserinedehydrogenase	P19582	gene product	database
-lhomoserine	CHEBI:15699	metabolite	homoserinedehydrogenase	P19582	gene product	database
-lhomocysteine	CHEBI:17588	metabolite	methioninesynthase	P80877	gene product	database
-lmethionine	CHEBI:16044	metabolite	methioninesynthase	P80877	gene product	database
-2succinylbenzoate	CHEBI:18325	metabolite	1r6r6hydroxy2succinylcyclohexa24diene1carboxylate	CHEBI:39564	metabolite	database
-isochorismate	CHEBI:29780	metabolite	chorismate	CHEBI:29748	metabolite	database
-2succinylbenzoylcoa	CHEBI:57364	metabolite	2succinylbenzoate	CHEBI:18325	metabolite	database
-14dihydroxy2naphthoate	CHEBI:11173	metabolite	14dihydroxy2naphthoylcoa	CHEBI:52668	metabolite	database
-14dihydroxy2naphthoylcoa	CHEBI:52668	metabolite	2succinylbenzoylcoa	CHEBI:57364	metabolite	database
-menaquinol	CHEBI:18151	metabolite	demethylmenaquinonemethyltransferase	P31113	gene product	database
-6phospho3hexuloisomerase	P42404	gene product	6phosphofructokinase	O34529	gene product	database
-3hexulose6phosphatesynthase	P42405	gene product	6phospho3hexuloisomerase	P42404	gene product	database
-dfructose6phosphate	CHEBI:15946	metabolite	darabinohex3ulose6phosphate	CHEBI:58542	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	dfructose16bisphosphate	CHEBI:16905	metabolite	database
-dfructose16bisphosphate	CHEBI:16905	metabolite	dfructose6phosphate	CHEBI:15946	metabolite	database
-formaldehyde	CHEBI:16842	metabolite	dribulose5phosphate	CHEBI:17363	metabolite	database
-darabinohex3ulose6phosphate	CHEBI:58542	metabolite	dribulose5phosphate	CHEBI:17363	metabolite	database
-darabinohex3ulose6phosphate	CHEBI:58542	metabolite	formaldehyde	CHEBI:16842	metabolite	database
-dribulose5phosphate	CHEBI:17363	metabolite	3hexulose6phosphatesynthase	P42405	gene product	database
-formaldehyde	CHEBI:16842	metabolite	3hexulose6phosphatesynthase	P42405	gene product	database
-darabinohex3ulose6phosphate	CHEBI:58542	metabolite	3hexulose6phosphatesynthase	P42405	gene product	database
-darabinohex3ulose6phosphate	CHEBI:58542	metabolite	6phospho3hexuloisomerase	P42404	gene product	database
-dfructose6phosphate	CHEBI:15946	metabolite	6phospho3hexuloisomerase	P42404	gene product	database
-dfructose6phosphate	CHEBI:15946	metabolite	6phosphofructokinase	O34529	gene product	database
-dfructose16bisphosphate	CHEBI:16905	metabolite	6phosphofructokinase	O34529	gene product	database
-shikimatekinase	P37944	gene product	3phosphoshikimate1carboxyvinyltransferase	P20691	gene product	database
-3dehydroquinatesynthase	P31102	gene product	3dehydroquinatedehydratase	P35146	gene product	database
-3phosphoshikimate1carboxyvinyltransferase	P20691	gene product	chorismatesynthase	P31104	gene product	database
-shikimate3phosphate	CHEBI:17052	metabolite	shikimate	CHEBI:16119	metabolite	database
-5o1carboxyvinyl3phosphoshikimate	CHEBI:16257	metabolite	shikimate3phosphate	CHEBI:17052	metabolite	database
-3dehydroshikimate	CHEBI:16630	metabolite	3dehydroquinate	CHEBI:32364	metabolite	database
-shikimate	CHEBI:16119	metabolite	3dehydroshikimate	CHEBI:16630	metabolite	database
-chorismate	CHEBI:29748	metabolite	5o1carboxyvinyl3phosphoshikimate	CHEBI:16257	metabolite	database
-2dehydro3deoxydarabinoheptonate7phosphate	CHEBI:18150	metabolite	phosphoenolpyruvate	CHEBI:18021	metabolite	database
-2dehydro3deoxydarabinoheptonate7phosphate	CHEBI:18150	metabolite	derythrose4phosphate	CHEBI:16897	metabolite	database
-derythrose4phosphate	CHEBI:16897	metabolite	phosphoenolpyruvate	CHEBI:18021	metabolite	database
-3dehydroquinate	CHEBI:32364	metabolite	2dehydro3deoxydarabinoheptonate7phosphate	CHEBI:18150	metabolite	database
-2dehydro3deoxydarabinoheptonate7phosphate	CHEBI:18150	metabolite	3dehydroquinatesynthase	P31102	gene product	database
-3dehydroquinate	CHEBI:32364	metabolite	3dehydroquinatesynthase	P31102	gene product	database
-3dehydroquinate	CHEBI:32364	metabolite	3dehydroquinatedehydratase	P35146	gene product	database
-3dehydroshikimate	CHEBI:16630	metabolite	3dehydroquinatedehydratase	P35146	gene product	database
-shikimate	CHEBI:16119	metabolite	shikimatekinase	P37944	gene product	database
-shikimate3phosphate	CHEBI:17052	metabolite	shikimatekinase	P37944	gene product	database
-shikimate3phosphate	CHEBI:17052	metabolite	3phosphoshikimate1carboxyvinyltransferase	P20691	gene product	database
-5o1carboxyvinyl3phosphoshikimate	CHEBI:16257	metabolite	3phosphoshikimate1carboxyvinyltransferase	P20691	gene product	database
-5o1carboxyvinyl3phosphoshikimate	CHEBI:16257	metabolite	chorismatesynthase	P31104	gene product	database
-chorismate	CHEBI:29748	metabolite	chorismatesynthase	P31104	gene product	database
-utpglucose1phosphateuridylyltransferase	Q05852	gene product	glycogensynthase	P39125	gene product	database
-amylose	CHEBI:28102	metabolite	adpglucose	CHEBI:15751	metabolite	database
-udpglucose	CHEBI:18066	metabolite	dglucose1phosphate	CHEBI:16077	metabolite	database
-amylose	CHEBI:28102	metabolite	udpglucose	CHEBI:18066	metabolite	database
-adpglucose	CHEBI:15751	metabolite	dglucose1phosphate	CHEBI:16077	metabolite	database
-dglucose1phosphate	CHEBI:16077	metabolite	utpglucose1phosphateuridylyltransferase	Q05852	gene product	database
-udpglucose	CHEBI:18066	metabolite	utpglucose1phosphateuridylyltransferase	Q05852	gene product	database
-udpglucose	CHEBI:18066	metabolite	glycogensynthase	P39125	gene product	database
-amylose	CHEBI:28102	metabolite	glycogensynthase	P39125	gene product	database
-dglucose1phosphate	CHEBI:16077	metabolite	glucose1phosphateadenylyltransferase	P39122	gene product	database
-adpglucose	CHEBI:15751	metabolite	glucose1phosphateadenylyltransferase	P39122	gene product	database
-lglutamate5semialdehyde	CHEBI:17232	metabolite	lornithine	CHEBI:15729	metabolite	database
-s1pyrroline5carboxylate	CHEBI:17388	metabolite	lproline	CHEBI:17203	metabolite	database
-s1pyrroline5carboxylate	CHEBI:17388	metabolite	lglutamate5semialdehyde	CHEBI:17232	metabolite	database
-guanylatekinase	O34328	gene product	nucleosidediphosphatekinase	P31103	gene product	database
-gdp	CHEBI:17552	metabolite	gmp	CHEBI:17345	metabolite	database
-xanthosine5phosphate	CHEBI:15652	metabolite	imp	CHEBI:17202	metabolite	database
-gmp	CHEBI:17345	metabolite	xanthosine5phosphate	CHEBI:15652	metabolite	database
-gtp	CHEBI:15996	metabolite	gdp	CHEBI:17552	metabolite	database
-imp	CHEBI:17202	metabolite	impdehydrogenase	P21879	gene product	database
-xanthosine5phosphate	CHEBI:15652	metabolite	impdehydrogenase	P21879	gene product	database
-gmp	CHEBI:17345	metabolite	guanylatekinase	O34328	gene product	database
-gdp	CHEBI:17552	metabolite	guanylatekinase	O34328	gene product	database
-gdp	CHEBI:17552	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-gtp	CHEBI:15996	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-succinylcoa	CHEBI:15380	metabolite	2oxoglutarate	CHEBI:16810	metabolite	database
-fumarate	CHEBI:29806	metabolite	succinate	CHEBI:30031	metabolite	database
-smalate	CHEBI:15589	metabolite	fumarate	CHEBI:29806	metabolite	database
-succinate	CHEBI:30031	metabolite	succinylcoa	CHEBI:15380	metabolite	database
-oxaloacetate	CHEBI:16452	metabolite	smalate	CHEBI:15589	metabolite	database
-smalate	CHEBI:15589	metabolite	malatedehydrogenase	P49814	gene product	database
-oxaloacetate	CHEBI:16452	metabolite	malatedehydrogenase	P49814	gene product	database
-transaldolase	P19669	gene product	glucose6phosphateisomerase	P80860	gene product	database
-6phosphogluconolactonase	O34499	gene product	6phosphogluconatedehydrogenase	P80859	gene product	database
-transketolase	P45694	gene product	transaldolase	P19669	gene product	database
-6phosphogluconatedehydrogenase	P80859	gene product	ribulosephosphate3epimerase	O34557	gene product	database
-glucose6phosphate1dehydrogenase	P54547	gene product	6phosphogluconolactonase	O34499	gene product	database
-alphadglucose6phosphate	CHEBI:17665	metabolite	dfructose6phosphate	CHEBI:15946	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	derythrose4phosphate	CHEBI:16897	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	dxylulose5phosphate	CHEBI:16332	metabolite	database
-dribose5phosphate	CHEBI:17797	metabolite	dribulose5phosphate	CHEBI:17363	metabolite	database
-sedoheptulose7phosphate	CHEBI:15721	metabolite	dribose5phosphate	CHEBI:17797	metabolite	database
-derythrose4phosphate	CHEBI:16897	metabolite	sedoheptulose7phosphate	CHEBI:15721	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	sedoheptulose7phosphate	CHEBI:15721	metabolite	database
-dfructose6phosphate	CHEBI:15946	metabolite	derythrose4phosphate	CHEBI:16897	metabolite	database
-dglucono15lactone6phosphate	CHEBI:16938	metabolite	betadglucose6phosphate	CHEBI:17719	metabolite	database
-dxylulose5phosphate	CHEBI:16332	metabolite	dribulose5phosphate	CHEBI:17363	metabolite	database
-betadglucose6phosphate	CHEBI:17719	metabolite	alphadglucose6phosphate	CHEBI:17665	metabolite	database
-sedoheptulose7phosphate	CHEBI:15721	metabolite	dxylulose5phosphate	CHEBI:16332	metabolite	database
-6phosphodgluconate	CHEBI:48928	metabolite	dglucono15lactone6phosphate	CHEBI:16938	metabolite	database
-dfructose6phosphate	CHEBI:15946	metabolite	dxylulose5phosphate	CHEBI:16332	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	dfructose6phosphate	CHEBI:15946	metabolite	database
-dxylulose5phosphate	CHEBI:16332	metabolite	derythrose4phosphate	CHEBI:16897	metabolite	database
-dfructose6phosphate	CHEBI:15946	metabolite	sedoheptulose7phosphate	CHEBI:15721	metabolite	database
-dxylulose5phosphate	CHEBI:16332	metabolite	dribose5phosphate	CHEBI:17797	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	dribose5phosphate	CHEBI:17797	metabolite	database
-dribulose5phosphate	CHEBI:17363	metabolite	6phosphodgluconate	CHEBI:48928	metabolite	database
-betadglucose6phosphate	CHEBI:17719	metabolite	glucose6phosphate1dehydrogenase	P54547	gene product	database
-dglucono15lactone6phosphate	CHEBI:16938	metabolite	glucose6phosphate1dehydrogenase	P54547	gene product	database
-dglucono15lactone6phosphate	CHEBI:16938	metabolite	6phosphogluconolactonase	O34499	gene product	database
-6phosphodgluconate	CHEBI:48928	metabolite	6phosphogluconolactonase	O34499	gene product	database
-6phosphodgluconate	CHEBI:48928	metabolite	6phosphogluconatedehydrogenase	P80859	gene product	database
-dribulose5phosphate	CHEBI:17363	metabolite	6phosphogluconatedehydrogenase	P80859	gene product	database
-dribulose5phosphate	CHEBI:17363	metabolite	ribulosephosphate3epimerase	O34557	gene product	database
-dxylulose5phosphate	CHEBI:16332	metabolite	ribulosephosphate3epimerase	O34557	gene product	database
-dribose5phosphate	CHEBI:17797	metabolite	transketolase	P45694	gene product	database
-dxylulose5phosphate	CHEBI:16332	metabolite	transketolase	P45694	gene product	database
-sedoheptulose7phosphate	CHEBI:15721	metabolite	transketolase	P45694	gene product	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	transketolase	P45694	gene product	database
-derythrose4phosphate	CHEBI:16897	metabolite	transketolase	P45694	gene product	database
-dfructose6phosphate	CHEBI:15946	metabolite	transketolase	P45694	gene product	database
-sedoheptulose7phosphate	CHEBI:15721	metabolite	transaldolase	P19669	gene product	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	transaldolase	P19669	gene product	database
-derythrose4phosphate	CHEBI:16897	metabolite	transaldolase	P19669	gene product	database
-dfructose6phosphate	CHEBI:15946	metabolite	transaldolase	P19669	gene product	database
-dfructose6phosphate	CHEBI:15946	metabolite	glucose6phosphateisomerase	P80860	gene product	database
-alphadglucose6phosphate	CHEBI:17665	metabolite	glucose6phosphateisomerase	P80860	gene product	database
-betadglucose6phosphate	CHEBI:17719	metabolite	glucose6phosphateisomerase	P80860	gene product	database
-adenylosuccinatelyase	P12047	gene product	adenylatekinase	P16304	gene product	database
-atp	CHEBI:15422	metabolite	adp	CHEBI:16761	metabolite	database
-n612dicarboxyethylamp	CHEBI:15919	metabolite	imp	CHEBI:17202	metabolite	database
-amp	CHEBI:16027	metabolite	n612dicarboxyethylamp	CHEBI:15919	metabolite	database
-adp	CHEBI:16761	metabolite	amp	CHEBI:16027	metabolite	database
-n612dicarboxyethylamp	CHEBI:15919	metabolite	adenylosuccinatelyase	P12047	gene product	database
-amp	CHEBI:16027	metabolite	adenylosuccinatelyase	P12047	gene product	database
-amp	CHEBI:16027	metabolite	adenylatekinase	P16304	gene product	database
-adp	CHEBI:16761	metabolite	adenylatekinase	P16304	gene product	database
-adp	CHEBI:16761	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-atp	CHEBI:15422	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-heme	CHEBI:17627	metabolite	fecoproporphyriniii	CHEBI:68438	metabolite	database
-uroporphyrinogeniii	CHEBI:15437	metabolite	hydroxymethylbilane	CHEBI:16645	metabolite	database
-fecoproporphyriniii	CHEBI:68438	metabolite	coproporphyriniii	CHEBI:15439	metabolite	database
-porphobilinogen	CHEBI:17381	metabolite	5aminolevulinate	CHEBI:17549	metabolite	database
-hydroxymethylbilane	CHEBI:16645	metabolite	porphobilinogen	CHEBI:17381	metabolite	database
-5aminolevulinate	CHEBI:17549	metabolite	s4amino5oxopentanoate	CHEBI:15757	metabolite	database
-coproporphyrinogeniii	CHEBI:15439	metabolite	uroporphyrinogeniii	CHEBI:15437	metabolite	database
-dtdpglucose	CHEBI:15700	metabolite	dglucose1phosphate	CHEBI:16077	metabolite	database
-dtdplrhamnose	CHEBI:15774	metabolite	dtdp4dehydrobetalrhamnose	CHEBI:62830	metabolite	database
-dglucose1phosphate	CHEBI:16077	metabolite	glucose1phosphatethymidylyltransferase	P39629	gene product	database
-dtdpglucose	CHEBI:15700	metabolite	glucose1phosphatethymidylyltransferase	P39629	gene product	database
-phosphoenolpyruvate	CHEBI:18021	metabolite	oxaloacetate	CHEBI:16452	metabolite	database
-glyceronephosphate	CHEBI:16108	metabolite	dglyceraldehyde3phosphate	CHEBI:29052	metabolite	database
-dfructose16bisphosphate	CHEBI:16905	metabolite	glyceronephosphate	CHEBI:16108	metabolite	database
-3phosphodglyceroylphosphate	CHEBI:16001	metabolite	3phosphodglycerate	CHEBI:17794	metabolite	database
-3phosphodglycerate	CHEBI:17794	metabolite	2phosphodglycerate	CHEBI:17835	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	3phosphodglyceroylphosphate	CHEBI:16001	metabolite	database
-2phosphodglycerate	CHEBI:17835	metabolite	phosphoenolpyruvate	CHEBI:18021	metabolite	database
-phosphoenolpyruvate	CHEBI:18021	metabolite	enolase	P37869	gene product	database
-2phosphodglycerate	CHEBI:17835	metabolite	enolase	P37869	gene product	database
-3phosphodglycerate	CHEBI:17794	metabolite	phosphoglyceratekinase	P40924	gene product	database
-3phosphodglyceroylphosphate	CHEBI:16001	metabolite	phosphoglyceratekinase	P40924	gene product	database
-citrate	CHEBI:16947	metabolite	acetylcoa	LMFA07050281	lipid	database
-citrate	CHEBI:16947	metabolite	oxaloacetate	CHEBI:16452	metabolite	database
-acetylcoa	LMFA07050281	lipid	oxaloacetate	CHEBI:16452	metabolite	database
-oxaloacetate	CHEBI:16452	metabolite	citratesynthase	P45858	gene product	database
-acetylcoa	LMFA07050281	lipid	citratesynthase	P45858	gene product	database
-citrate	CHEBI:16947	metabolite	citratesynthase	P45858	gene product	database
-7carboxy7deazaguaninesynthase	O31677	gene product	7cyano7deazaguaninesynthase	O31675	gene product	database
-6carboxy5678tetrahydropterin	CHEBI:61032	metabolite	78dihydroneopterin3triphosphate	CHEBI:18372	metabolite	database
-7aminomethyl7carbaguanine	CHEBI:45126	metabolite	7cyano7carbaguanine	CHEBI:45075	metabolite	database
-6carboxy5678tetrahydropterin	CHEBI:61032	metabolite	7carboxy7deazaguaninesynthase	O31677	gene product	database
-7cyano7carbaguanine	CHEBI:45075	metabolite	7cyano7deazaguaninesynthase	O31675	gene product	database
-dihydroneopterinaldolase	P28823	gene product	2amino4hydroxy6hydroxymethyldihydropteridinepyrophosphokinase	P29252	gene product	database
-2amino4hydroxy6hydroxymethyldihydropteridinepyrophosphokinase	P29252	gene product	dihydropteroatesynthase	P28822	gene product	database
-dihydroneopterinphosphate	CHEBI:48954	metabolite	78dihydroneopterin3triphosphate	CHEBI:18372	metabolite	database
-6hydroxymethyl78dihydropterin	CHEBI:44841	metabolite	78dihydroneopterin	CHEBI:17001	metabolite	database
-tetrahydrofolate	CHEBI:15635	metabolite	dihydrofolate	CHEBI:15633	metabolite	database
-78dihydroneopterin	CHEBI:17001	metabolite	78dihydroneopterin3triphosphate	CHEBI:18372	metabolite	database
-78dihydroneopterin	CHEBI:17001	metabolite	dihydroneopterinphosphate	CHEBI:48954	metabolite	database
-dihydropteroate	CHEBI:4581	metabolite	6hydroxymethyl78dihydropterin	CHEBI:44841	metabolite	database
-dihydrofolate	CHEBI:15633	metabolite	dihydropteroate	CHEBI:4581	metabolite	database
-gtp	CHEBI:15996	metabolite	gtpcyclohydrolasei	P19465	gene product	database
-25diaminopyrimidinenucleosidetriphosphate	CHEBI:929	metabolite	gtpcyclohydrolasei	P19465	gene product	database
-78dihydroneopterin3triphosphate	CHEBI:18372	metabolite	gtpcyclohydrolasei	P19465	gene product	database
-78dihydroneopterin	CHEBI:17001	metabolite	dihydroneopterinaldolase	P28823	gene product	database
-6hydroxymethyl78dihydropterin	CHEBI:44841	metabolite	dihydroneopterinaldolase	P28823	gene product	database
-6hydroxymethyl78dihydropterin	CHEBI:44841	metabolite	2amino4hydroxy6hydroxymethyldihydropteridinepyrophosphokinase	P29252	gene product	database
-6hydroxymethyl78dihydropterin	CHEBI:44841	metabolite	dihydropteroatesynthase	P28822	gene product	database
-dihydropteroate	CHEBI:4581	metabolite	dihydropteroatesynthase	P28822	gene product	database
-dihydrofolate	CHEBI:15633	metabolite	dihydrofolatereductase	P11045	gene product	database
-tetrahydrofolate	CHEBI:15635	metabolite	dihydrofolatereductase	P11045	gene product	database
-sulfite	CHEBI:17359	metabolite	3phosphoadenylylsulfate	CHEBI:17980	metabolite	database
-hydrogensulfide	CHEBI:16136	metabolite	sulfite	CHEBI:17359	metabolite	database
-adenylylsulfate	CHEBI:17709	metabolite	sulfate	CHEBI:16189	metabolite	database
-3phosphoadenylylsulfate	CHEBI:17980	metabolite	adenylylsulfate	CHEBI:17709	metabolite	database
-sulfate	CHEBI:16189	metabolite	sulfateadenylyltransferase	O34764	gene product	database
-adenylylsulfate	CHEBI:17709	metabolite	sulfateadenylyltransferase	O34764	gene product	database
-sadenosyllmethionine	CHEBI:15414	metabolite	lmethionine	CHEBI:16044	metabolite	database
-lhomocysteine	CHEBI:17588	metabolite	sribosyllhomocysteine	CHEBI:90364	metabolite	database
-sadenosyllhomocysteine	CHEBI:16680	metabolite	sadenosyllmethionine	CHEBI:15414	metabolite	database
-lcysteine	CHEBI:17561	metabolite	lcystathionine	CHEBI:17482	metabolite	database
-sribosyllhomocysteine	CHEBI:90364	metabolite	sadenosyllhomocysteine	CHEBI:16680	metabolite	database
-sribosyllhomocysteine	CHEBI:90364	metabolite	sribosylhomocysteinelyase	O34667	gene product	database
-lhomocysteine	CHEBI:17588	metabolite	sribosylhomocysteinelyase	O34667	gene product	database
-lcystathionine	CHEBI:17482	metabolite	cystathioninegammalyase	O05394	gene product	database
-lcysteine	CHEBI:17561	metabolite	cystathioninegammalyase	O05394	gene product	database
-enolase	P37869	gene product	pyruvatekinase	P80885	gene product	database
-pyruvate	CHEBI:15361	metabolite	phosphoenolpyruvate	CHEBI:18021	metabolite	database
-3phosphodglycerate	CHEBI:17794	metabolite	dglyceraldehyde3phosphate	CHEBI:29052	metabolite	database
-glyceronephosphate	CHEBI:16108	metabolite	triosephosphateisomerase	P27876	gene product	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	triosephosphateisomerase	P27876	gene product	database
-phosphoenolpyruvate	CHEBI:18021	metabolite	pyruvatekinase	P80885	gene product	database
-pyruvate	CHEBI:15361	metabolite	pyruvatekinase	P80885	gene product	database
-transaldolase	P19669	gene product	ribulosephosphate3epimerase	O34557	gene product	database
-s2aceto2hydroxybutanoate	CHEBI:49256	metabolite	2oxobutanoate	CHEBI:16763	metabolite	database
-r3hydroxy3methyl2oxopentanoate	CHEBI:49257	metabolite	s2aceto2hydroxybutanoate	CHEBI:49256	metabolite	database
-r23dihydroxy3methylpentanoate	CHEBI:49258	metabolite	r3hydroxy3methyl2oxopentanoate	CHEBI:49257	metabolite	database
-s3methyl2oxopentanoicacid	CHEBI:15614	metabolite	r23dihydroxy3methylpentanoate	CHEBI:49258	metabolite	database
-3hydroxy3methyl2oxobutanoicacid	LMFA01020277	lipid	s2acetolactate	CHEBI:18409	metabolite	database
-lvaline	CHEBI:16414	metabolite	3methyl2oxobutanoicacid	LMFA01020274	lipid	database
-lisoleucine	CHEBI:17191	metabolite	s3methyl2oxopentanoicacid	CHEBI:15614	metabolite	database
-s2acetolactate	CHEBI:18409	metabolite	pyruvate	CHEBI:15361	metabolite	database
-pyruvate	CHEBI:15361	metabolite	acetolactatesynthase	Q04789	gene product	database
-s2acetolactate	CHEBI:18409	metabolite	acetolactatesynthase	Q04789	gene product	database
-2oxobutanoate	CHEBI:16763	metabolite	acetolactatesynthase	Q04789	gene product	database
-s2aceto2hydroxybutanoate	CHEBI:49256	metabolite	acetolactatesynthase	Q04789	gene product	database
-3methyl2oxobutanoicacid	LMFA01020274	lipid	dihydroxyaciddehydratase	P51785	gene product	database
-r23dihydroxy3methylpentanoate	CHEBI:49258	metabolite	dihydroxyaciddehydratase	P51785	gene product	database
-s3methyl2oxopentanoicacid	CHEBI:15614	metabolite	dihydroxyaciddehydratase	P51785	gene product	database
-precorrin2dehydrogenase	O34813	gene product	sirohydrochlorinferrochelatase	O34632	gene product	database
-porphobilinogensynthase	P30950	gene product	hydroxymethylbilanesynthase	P16616	gene product	database
-hydroxymethylbilanesynthase	P16616	gene product	uroporphyrinogeniiisynthase	P21248	gene product	database
-siroheme	CHEBI:28599	metabolite	sirohydrochlorin	CHEBI:18023	metabolite	database
-precorrin2	CHEBI:50602	metabolite	uroporphyrinogeniii	CHEBI:15437	metabolite	database
-sirohydrochlorin	CHEBI:18023	metabolite	precorrin2	CHEBI:50602	metabolite	database
-s4amino5oxopentanoate	CHEBI:15757	metabolite	glutamyltrnareductase	P16618	gene product	database
-5aminolevulinate	CHEBI:17549	metabolite	porphobilinogensynthase	P30950	gene product	database
-porphobilinogen	CHEBI:17381	metabolite	porphobilinogensynthase	P30950	gene product	database
-porphobilinogen	CHEBI:17381	metabolite	hydroxymethylbilanesynthase	P16616	gene product	database
-hydroxymethylbilane	CHEBI:16645	metabolite	hydroxymethylbilanesynthase	P16616	gene product	database
-hydroxymethylbilane	CHEBI:16645	metabolite	uroporphyrinogeniiisynthase	P21248	gene product	database
-uroporphyrinogeniii	CHEBI:15437	metabolite	uroporphyrinogeniiisynthase	P21248	gene product	database
-precorrin2	CHEBI:50602	metabolite	precorrin2dehydrogenase	O34813	gene product	database
-sirohydrochlorin	CHEBI:18023	metabolite	precorrin2dehydrogenase	O34813	gene product	database
-sirohydrochlorin	CHEBI:18023	metabolite	sirohydrochlorinferrochelatase	O34632	gene product	database
-siroheme	CHEBI:28599	metabolite	sirohydrochlorinferrochelatase	O34632	gene product	database
-lglutamate	CHEBI:29985	metabolite	lglutamate5semialdehyde	CHEBI:17232	metabolite	database
-lglutamate5semialdehyde	CHEBI:17232	metabolite	1pyrroline5carboxylatedehydrogenase	P39634	gene product	database
-lglutamate	CHEBI:29985	metabolite	1pyrroline5carboxylatedehydrogenase	P39634	gene product	database
-hydrogensulfide	CHEBI:16136	metabolite	oacetyllserine	CHEBI:17981	metabolite	database
-lcysteine	CHEBI:17561	metabolite	oacetyllserine	CHEBI:17981	metabolite	database
-lcysteine	CHEBI:17561	metabolite	hydrogensulfide	CHEBI:16136	metabolite	database
-oacetyllserine	CHEBI:17981	metabolite	lserine	CHEBI:17115	metabolite	database
-oacetyllserine	CHEBI:17981	metabolite	cysteinesynthase	P37887	gene product	database
-hydrogensulfide	CHEBI:16136	metabolite	cysteinesynthase	P37887	gene product	database
-lcysteine	CHEBI:17561	metabolite	cysteinesynthase	P37887	gene product	database
-34r4hydroxycyclohexa15dien1yl2oxopropanoate	CHEBI:84354	metabolite	prephenate	CHEBI:29934	metabolite	database
-ldihydroanticapsin	CHEBI:84358	metabolite	epoxy4sh4hpp	CHEBI:84357	metabolite	database
-lanticapsin	CHEBI:84310	metabolite	ldihydroanticapsin	CHEBI:84358	metabolite	database
-bacilysin	CHEBI:84311	metabolite	lanticapsin	CHEBI:84310	metabolite	database
-epoxy4sh4hpp	CHEBI:84357	metabolite	epoxy3eh2hpp	CHEBI:84356	metabolite	database
-palmitoylcoa	CHEBI:15525	metabolite	hexadecanoicacid	LMFA01010001	lipid	database
-hexadecanoicacid	LMFA01010001	lipid	longchainfattyacidcoaligase	O07610	gene product	database
-palmitoylcoa	CHEBI:15525	metabolite	longchainfattyacidcoaligase	O07610	gene product	database
-imidazoleglycerolphosphatedehydratase	O34683	gene product	histidinolphosphateaminotransferase	P17731	gene product	database
-histidinolphosphateaminotransferase	P17731	gene product	histidinolphosphatase	O34411	gene product	database
-lhistidinol	CHEBI:16255	metabolite	lhistidinolphosphate	CHEBI:16996	metabolite	database
-phosphoribosylamp	CHEBI:18374	metabolite	15phosphodribosylatp	CHEBI:73200	metabolite	database
-15phosphodribosylatp	CHEBI:73200	metabolite	5phosphoalphadribose1diphosphate	CHEBI:17111	metabolite	database
-n5phosphod1ribulosylformimino5amino15phosphodribosyl4imidazolecarboxamide	CHEBI:27735	metabolite	55phosphodribosylaminoformimino15phosphoribosylimidazole4carboxamide	CHEBI:18302	metabolite	database
-55phosphodribosylaminoformimino15phosphoribosylimidazole4carboxamide	CHEBI:18302	metabolite	phosphoribosylamp	CHEBI:18374	metabolite	database
-3imidazol4yl2oxopropylphosphate	CHEBI:16426	metabolite	derythro1imidazol4ylglycerol3phosphate	CHEBI:17805	metabolite	database
-lhistidinolphosphate	CHEBI:16996	metabolite	3imidazol4yl2oxopropylphosphate	CHEBI:16426	metabolite	database
-derythro1imidazol4ylglycerol3phosphate	CHEBI:17805	metabolite	n5phosphod1ribulosylformimino5amino15phosphodribosyl4imidazolecarboxamide	CHEBI:27735	metabolite	database
-lhistidine	CHEBI:15971	metabolite	lhistidinal	CHEBI:64802	metabolite	database
-lhistidinal	CHEBI:64802	metabolite	lhistidinol	CHEBI:16255	metabolite	database
-5phosphoalphadribose1diphosphate	CHEBI:17111	metabolite	atpphosphoribosyltransferase	O34520	gene product	database
-15phosphodribosylatp	CHEBI:73200	metabolite	atpphosphoribosyltransferase	O34520	gene product	database
-55phosphodribosylaminoformimino15phosphoribosylimidazole4carboxamide	CHEBI:18302	metabolite	phosphoribosylformimino5aminoimidazolecarboxamideribotideisomerase	O35006	gene product	database
-n5phosphod1ribulosylformimino5amino15phosphodribosyl4imidazolecarboxamide	CHEBI:27735	metabolite	phosphoribosylformimino5aminoimidazolecarboxamideribotideisomerase	O35006	gene product	database
-derythro1imidazol4ylglycerol3phosphate	CHEBI:17805	metabolite	imidazoleglycerolphosphatedehydratase	O34683	gene product	database
-3imidazol4yl2oxopropylphosphate	CHEBI:16426	metabolite	imidazoleglycerolphosphatedehydratase	O34683	gene product	database
-3imidazol4yl2oxopropylphosphate	CHEBI:16426	metabolite	histidinolphosphateaminotransferase	P17731	gene product	database
-lhistidinolphosphate	CHEBI:16996	metabolite	histidinolphosphateaminotransferase	P17731	gene product	database
-lhistidinolphosphate	CHEBI:16996	metabolite	histidinolphosphatase	O34411	gene product	database
-lhistidinol	CHEBI:16255	metabolite	histidinolphosphatase	O34411	gene product	database
-lhistidinol	CHEBI:16255	metabolite	histidinoldehydrogenase	O34651	gene product	database
-lhistidinal	CHEBI:64802	metabolite	histidinoldehydrogenase	O34651	gene product	database
-lhistidine	CHEBI:15971	metabolite	histidinoldehydrogenase	O34651	gene product	database
-d3phosphoglyceratedehydrogenase	P35136	gene product	phosphoserineaminotransferase	P80862	gene product	database
-phosphoserineaminotransferase	P80862	gene product	phosphoserinephosphatase	P94526	gene product	database
-ophospholserine	CHEBI:15811	metabolite	3phosphonooxypyruvate	CHEBI:18110	metabolite	database
-lserine	CHEBI:17115	metabolite	ophospholserine	CHEBI:15811	metabolite	database
-3phosphonooxypyruvate	CHEBI:18110	metabolite	3phosphodglycerate	CHEBI:17794	metabolite	database
-3phosphodglycerate	CHEBI:17794	metabolite	d3phosphoglyceratedehydrogenase	P35136	gene product	database
-3phosphonooxypyruvate	CHEBI:18110	metabolite	d3phosphoglyceratedehydrogenase	P35136	gene product	database
-3phosphonooxypyruvate	CHEBI:18110	metabolite	phosphoserineaminotransferase	P80862	gene product	database
-ophospholserine	CHEBI:15811	metabolite	phosphoserineaminotransferase	P80862	gene product	database
-ophospholserine	CHEBI:15811	metabolite	phosphoserinephosphatase	P94526	gene product	database
-lserine	CHEBI:17115	metabolite	phosphoserinephosphatase	P94526	gene product	database
-nucleosidediphosphatekinase	P31103	gene product	dutppyrophosphatase	O34919	gene product	database
-dump	CHEBI:17622	metabolite	dutp	CHEBI:17625	metabolite	database
-dtmp	CHEBI:63528	metabolite	dump	CHEBI:17622	metabolite	database
-dtdp	CHEBI:18075	metabolite	dtmp	CHEBI:63528	metabolite	database
-dutp	CHEBI:17625	metabolite	dudp	CHEBI:28850	metabolite	database
-dttp	CHEBI:18077	metabolite	dtdp	CHEBI:18075	metabolite	database
-dudp	CHEBI:28850	metabolite	udp	CHEBI:17659	metabolite	database
-dudp	CHEBI:28850	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-dutp	CHEBI:17625	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-dtdp	CHEBI:18075	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-dttp	CHEBI:18077	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-dutp	CHEBI:17625	metabolite	dutppyrophosphatase	O34919	gene product	database
-dump	CHEBI:17622	metabolite	dutppyrophosphatase	O34919	gene product	database
-dtmp	CHEBI:63528	metabolite	dtmpkinase	P37537	gene product	database
-dtdp	CHEBI:18075	metabolite	dtmpkinase	P37537	gene product	database
-imidazolonepropionase	P42084	gene product	formiminoglutamase	P42068	gene product	database
-urocanatehydratase	P25503	gene product	imidazolonepropionase	P42084	gene product	database
-histidineammonialyase	P10944	gene product	urocanatehydratase	P25503	gene product	database
-nformyllglutamate	CHEBI:17684	metabolite	nformiminolglutamate	CHEBI:7274	metabolite	database
-4imidazolone5propanoate	CHEBI:27384	metabolite	urocanate	CHEBI:27247	metabolite	database
-lglutamate	CHEBI:29985	metabolite	nformyllglutamate	CHEBI:17684	metabolite	database
-urocanate	CHEBI:27247	metabolite	lhistidine	CHEBI:15971	metabolite	database
-lglutamate	CHEBI:29985	metabolite	nformiminolglutamate	CHEBI:7274	metabolite	database
-nformiminolglutamate	CHEBI:7274	metabolite	4imidazolone5propanoate	CHEBI:27384	metabolite	database
-lhistidine	CHEBI:15971	metabolite	histidineammonialyase	P10944	gene product	database
-urocanate	CHEBI:27247	metabolite	histidineammonialyase	P10944	gene product	database
-urocanate	CHEBI:27247	metabolite	urocanatehydratase	P25503	gene product	database
-4imidazolone5propanoate	CHEBI:27384	metabolite	urocanatehydratase	P25503	gene product	database
-4imidazolone5propanoate	CHEBI:27384	metabolite	imidazolonepropionase	P42084	gene product	database
-nformiminolglutamate	CHEBI:7274	metabolite	imidazolonepropionase	P42084	gene product	database
-nformiminolglutamate	CHEBI:7274	metabolite	formiminoglutamase	P42068	gene product	database
-lglutamate	CHEBI:29985	metabolite	formiminoglutamase	P42068	gene product	database
-uridylatekinase	O31749	gene product	nucleosidediphosphatekinase	P31103	gene product	database
-cytidylatekinase	P38493	gene product	uridylatekinase	O31749	gene product	database
-nucleosidediphosphatekinase	P31103	gene product	ctpsynthase	P13242	gene product	database
-ctp	CHEBI:17677	metabolite	utp	CHEBI:15713	metabolite	database
-udp	CHEBI:17659	metabolite	ump	CHEBI:16695	metabolite	database
-cdp	CHEBI:17239	metabolite	ctp	CHEBI:17677	metabolite	database
-utp	CHEBI:15713	metabolite	udp	CHEBI:17659	metabolite	database
-ump	CHEBI:16695	metabolite	cytidylatekinase	P38493	gene product	database
-udp	CHEBI:17659	metabolite	cytidylatekinase	P38493	gene product	database
-ump	CHEBI:16695	metabolite	uridylatekinase	O31749	gene product	database
-udp	CHEBI:17659	metabolite	uridylatekinase	O31749	gene product	database
-udp	CHEBI:17659	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-utp	CHEBI:15713	metabolite	nucleosidediphosphatekinase	P31103	gene product	database
-utp	CHEBI:15713	metabolite	ctpsynthase	P13242	gene product	database
-ctp	CHEBI:17677	metabolite	ctpsynthase	P13242	gene product	database
-homoserinedehydrogenase	P19582	gene product	homoserinekinase	P04948	gene product	database
-homoserinekinase	P04948	gene product	threoninesynthase	P04990	gene product	database
-lthreonine	CHEBI:16857	metabolite	ophospholhomoserine	CHEBI:15961	metabolite	database
-ophospholhomoserine	CHEBI:15961	metabolite	lhomoserine	CHEBI:15699	metabolite	database
-lhomoserine	CHEBI:15699	metabolite	homoserinekinase	P04948	gene product	database
-ophospholhomoserine	CHEBI:15961	metabolite	homoserinekinase	P04948	gene product	database
-ophospholhomoserine	CHEBI:15961	metabolite	threoninesynthase	P04990	gene product	database
-lthreonine	CHEBI:16857	metabolite	threoninesynthase	P04990	gene product	database
-dethiobiotin	CHEBI:16691	metabolite	78diaminononanoate	CHEBI:2247	metabolite	database
-78diaminononanoate	CHEBI:2247	metabolite	8amino7oxononanoate	LMFA01060168	lipid	database
-biotin	CHEBI:15956	metabolite	dethiobiotin	CHEBI:16691	metabolite	database
-2r3s3isopropylmalate	CHEBI:35121	metabolite	alphaisopropylmalate	CHEBI:28107	metabolite	database
-alphaisopropylmalate	CHEBI:28107	metabolite	3methyl2oxobutanoicacid	LMFA01020274	lipid	database
-alphaisopropylmalate	CHEBI:28107	metabolite	acetylcoa	LMFA07050281	lipid	database
-4methyl2oxopentanoate	CHEBI:17865	metabolite	2r3s3isopropylmalate	CHEBI:35121	metabolite	database
-acetylcoa	LMFA07050281	lipid	3methyl2oxobutanoicacid	LMFA01020274	lipid	database
-3methyl2oxobutanoicacid	LMFA01020274	lipid	2isopropylmalatesynthase	P94565	gene product	database
-acetylcoa	LMFA07050281	lipid	2isopropylmalatesynthase	P94565	gene product	database
-alphaisopropylmalate	CHEBI:28107	metabolite	2isopropylmalatesynthase	P94565	gene product	database
-2r3s3isopropylmalate	CHEBI:35121	metabolite	3isopropylmalatedehydrogenase	P05645	gene product	database
-4methyl2oxopentanoate	CHEBI:17865	metabolite	3isopropylmalatedehydrogenase	P05645	gene product	database
-nh3	CHEBI:16134	metabolite	nitrite	CHEBI:16301	metabolite	database
-nitrite	CHEBI:16301	metabolite	nitrate	CHEBI:17632	metabolite	database
-4methyl52phosphooxyethylthiazole	CHEBI:58296	metabolite	52hydroxyethyl4methylthiazole	CHEBI:17957	metabolite	database
-4amino2methyl5phosphooxymethylpyrimidine	CHEBI:58354	metabolite	4amino5hydroxymethyl2methylpyrimidine	CHEBI:16892	metabolite	database
-thiaminmonophosphate	CHEBI:9533	metabolite	4methyl52phosphooxyethylthiazole	CHEBI:58296	metabolite	database
-5phosphoalphadribose1diphosphate	CHEBI:17111	metabolite	dribose5phosphate	CHEBI:17797	metabolite	database
-molybdopterin	CHEBI:44074	metabolite	precursorz	CHEBI:59648	metabolite	database
-adenylatedmolybdopterin	CHEBI:62728	metabolite	molybdopterin	CHEBI:44074	metabolite	database
-precursorz	CHEBI:59648	metabolite	8s38cyclo78dihydroguanosine5triphosphate	CHEBI:131766	metabolite	database
-8s38cyclo78dihydroguanosine5triphosphate	CHEBI:131766	metabolite	gtp	CHEBI:15996	metabolite	database
-8s38cyclo78dihydroguanosine5triphosphate	CHEBI:131766	metabolite	cyclicpyranopterinmonophosphatesynthase	O05520	gene product	database
-precursorz	CHEBI:59648	metabolite	cyclicpyranopterinmonophosphatesynthase	O05520	gene product	database
-precursorz	CHEBI:59648	metabolite	molybdopterinsynthasecatalyticsubunit	O31705	gene product	database
-molybdopterin	CHEBI:44074	metabolite	molybdopterinsynthasecatalyticsubunit	O31705	gene product	database
-nicotinatedribonucleotide	CHEBI:15763	metabolite	pyridine23dicarboxylate	CHEBI:16675	metabolite	database
-nad	CHEBI:15846	metabolite	deaminonad	CHEBI:18304	metabolite	database
-pyridine23dicarboxylate	CHEBI:16675	metabolite	iminoaspartate	CHEBI:50616	metabolite	database
-deaminonad	CHEBI:18304	metabolite	nicotinatedribonucleotide	CHEBI:15763	metabolite	database
-iminoaspartate	CHEBI:50616	metabolite	laspartate	CHEBI:29991	metabolite	database
-laspartate	CHEBI:29991	metabolite	laspartateoxidase	P38032	gene product	database
-iminoaspartate	CHEBI:50616	metabolite	laspartateoxidase	P38032	gene product	database
-iminoaspartate	CHEBI:50616	metabolite	quinolinatesynthase	Q9KWZ1	gene product	database
-pyridine23dicarboxylate	CHEBI:16675	metabolite	quinolinatesynthase	Q9KWZ1	gene product	database
-nicotinatedribonucleotide	CHEBI:15763	metabolite	nicotinatenucleotideadenylyltransferase	P54455	gene product	database
-deaminonad	CHEBI:18304	metabolite	nicotinatenucleotideadenylyltransferase	P54455	gene product	database
-nacetyllglutamate5phosphate	CHEBI:16878	metabolite	nacetyllglutamate	CHEBI:17533	metabolite	database
-lornithine	CHEBI:15729	metabolite	nacetylornithine	CHEBI:16543	metabolite	database
-nacetylornithine	CHEBI:16543	metabolite	nacetyllglutamate5semialdehyde	CHEBI:16319	metabolite	database
-nacetyllglutamate5semialdehyde	CHEBI:16319	metabolite	nacetyllglutamate5phosphate	CHEBI:16878	metabolite	database
-nacetyllglutamate	CHEBI:17533	metabolite	lglutamate	CHEBI:29985	metabolite	database
-nacetyllglutamate	CHEBI:17533	metabolite	acetylglutamatekinase	P68729	gene product	database
-nacetyllglutamate5phosphate	CHEBI:16878	metabolite	acetylglutamatekinase	P68729	gene product	database
-nacetyllglutamate5phosphate	CHEBI:16878	metabolite	nacetylgammaglutamylphosphatereductase	P23715	gene product	database
-nacetyllglutamate5semialdehyde	CHEBI:16319	metabolite	nacetylgammaglutamylphosphatereductase	P23715	gene product	database
-nacetyllglutamate5semialdehyde	CHEBI:16319	metabolite	acetylornithineaminotransferase	P36839	gene product	database
-nacetylornithine	CHEBI:16543	metabolite	acetylornithineaminotransferase	P36839	gene product	database
-nacetylornithine	CHEBI:16543	metabolite	aminoacylase	P54983	gene product	database
-lornithine	CHEBI:15729	metabolite	aminoacylase	P54983	gene product	database
-nacetylalphadglucosamine1phosphate	CHEBI:16446	metabolite	alphadglucosamine1phosphate	CHEBI:27625	metabolite	database
-dglucosamine6phosphate	CHEBI:20995	metabolite	dfructose6phosphate	CHEBI:15946	metabolite	database
-udpnacetylalphadglucosamine	LMSL01010002	lipid	nacetylalphadglucosamine1phosphate	CHEBI:16446	metabolite	database
-alphadglucosamine1phosphate	CHEBI:27625	metabolite	dglucosamine6phosphate	CHEBI:20995	metabolite	database
-dglucosamine6phosphate	CHEBI:20995	metabolite	phosphoglucosaminemutase	O34824	gene product	database
-alphadglucosamine1phosphate	CHEBI:27625	metabolite	phosphoglucosaminemutase	O34824	gene product	database
-alphadglucosamine1phosphate	CHEBI:27625	metabolite	glucosamine1phosphatenacetyltransferase	P14192	gene product	database
-nacetylalphadglucosamine1phosphate	CHEBI:16446	metabolite	glucosamine1phosphatenacetyltransferase	P14192	gene product	database
-udpnacetylalphadglucosamine	LMSL01010002	lipid	udpnacetylglucosaminepyrophosphorylase	P14192	gene product	database
-phosphoribosylamineglycineligase	P12039	gene product	phosphoribosylglycinamideformyltransferase	P12040	gene product	database
-amidophosphoribosyltransferase	P00497	gene product	phosphoribosylamineglycineligase	P12039	gene product	database
-5carboxyaminoimidazoleribonucleotidemutase	P12044	gene product	phosphoribosylaminoimidazolesuccinocarboxamidesynthase	P12046	gene product	database
-15phosphoribosyl5amino4imidazolecarboxamide	CHEBI:18406	metabolite	15phosphoribosyl5amino4nsuccinocarboxamideimidazole	CHEBI:18319	metabolite	database
-2formamidon15phosphoribosylacetamidine	CHEBI:18413	metabolite	5phosphoribosylnformylglycinamide	CHEBI:18272	metabolite	database
-15phosphoribosyl5amino4nsuccinocarboxamideimidazole	CHEBI:18319	metabolite	15phosphodribosyl5amino4imidazolecarboxylate	CHEBI:28413	metabolite	database
-5phosphoribosylglycinamide	CHEBI:18349	metabolite	5phosphoribosylamine	CHEBI:37737	metabolite	database
-5phosphoribosylnformylglycinamide	CHEBI:18272	metabolite	5phosphoribosylglycinamide	CHEBI:18349	metabolite	database
-5phosphoribosylamine	CHEBI:37737	metabolite	5phosphoalphadribose1diphosphate	CHEBI:17111	metabolite	database
-5phosphoribosylamine	CHEBI:37737	metabolite	lglutamine	CHEBI:18050	metabolite	database
-aminoimidazoleribotide	CHEBI:138560	metabolite	2formamidon15phosphoribosylacetamidine	CHEBI:18413	metabolite	database
-imp	CHEBI:17202	metabolite	15phosphoribosyl5formamido4imidazolecarboxamide	CHEBI:18381	metabolite	database
-15phosphodribosyl5amino4imidazolecarboxylate	CHEBI:28413	metabolite	aminoimidazoleribotide	CHEBI:138560	metabolite	database
-15phosphoribosyl5formamido4imidazolecarboxamide	CHEBI:18381	metabolite	15phosphoribosyl5amino4imidazolecarboxamide	CHEBI:18406	metabolite	database
-15phosphodribosyl5amino4imidazolecarboxylate	CHEBI:28413	metabolite	5carboxyamino15phosphodribosylimidazole	CHEBI:48000	metabolite	database
-5carboxyamino15phosphodribosylimidazole	CHEBI:48000	metabolite	aminoimidazoleribotide	CHEBI:138560	metabolite	database
-lglutamine	CHEBI:18050	metabolite	5phosphoalphadribose1diphosphate	CHEBI:17111	metabolite	database
-5phosphoalphadribose1diphosphate	CHEBI:17111	metabolite	amidophosphoribosyltransferase	P00497	gene product	database
-lglutamine	CHEBI:18050	metabolite	amidophosphoribosyltransferase	P00497	gene product	database
-5phosphoribosylamine	CHEBI:37737	metabolite	amidophosphoribosyltransferase	P00497	gene product	database
-5phosphoribosylamine	CHEBI:37737	metabolite	phosphoribosylamineglycineligase	P12039	gene product	database
-5phosphoribosylglycinamide	CHEBI:18349	metabolite	phosphoribosylamineglycineligase	P12039	gene product	database
-5phosphoribosylglycinamide	CHEBI:18349	metabolite	phosphoribosylglycinamideformyltransferase	P12040	gene product	database
-5phosphoribosylnformylglycinamide	CHEBI:18272	metabolite	phosphoribosylglycinamideformyltransferase	P12040	gene product	database
-2formamidon15phosphoribosylacetamidine	CHEBI:18413	metabolite	phosphoribosylformylglycinamidinecycloligase	P12043	gene product	database
-aminoimidazoleribotide	CHEBI:138560	metabolite	phosphoribosylformylglycinamidinecycloligase	P12043	gene product	database
-aminoimidazoleribotide	CHEBI:138560	metabolite	5carboxyaminoimidazoleribonucleotidemutase	P12044	gene product	database
-5carboxyamino15phosphodribosylimidazole	CHEBI:48000	metabolite	5carboxyaminoimidazoleribonucleotidemutase	P12044	gene product	database
-15phosphodribosyl5amino4imidazolecarboxylate	CHEBI:28413	metabolite	phosphoribosylaminoimidazolesuccinocarboxamidesynthase	P12046	gene product	database
-15phosphoribosyl5amino4nsuccinocarboxamideimidazole	CHEBI:18319	metabolite	phosphoribosylaminoimidazolesuccinocarboxamidesynthase	P12046	gene product	database
-15phosphoribosyl5amino4nsuccinocarboxamideimidazole	CHEBI:18319	metabolite	adenylosuccinatelyase	P12047	gene product	database
-15phosphoribosyl5amino4imidazolecarboxamide	CHEBI:18406	metabolite	adenylosuccinatelyase	P12047	gene product	database
-15phosphoribosyl5amino4imidazolecarboxamide	CHEBI:18406	metabolite	phosphoribosylaminoimidazolecarboxamideformyltransferase	P12048	gene product	database
-15phosphoribosyl5formamido4imidazolecarboxamide	CHEBI:18381	metabolite	phosphoribosylaminoimidazolecarboxamideformyltransferase	P12048	gene product	database
-imp	CHEBI:17202	metabolite	impcyclohydrolase	P12048	gene product	database
-riboflavinsynthase	P16440	gene product	riboflavinkinase	P54575	gene product	database
-riboflavin	CHEBI:57986	metabolite	67dimethyl81dribityllumazine	CHEBI:17601	metabolite	database
-67dimethyl81dribityllumazine	CHEBI:17601	metabolite	34dihydroxy2butanone4phosphate	CHEBI:50606	metabolite	database
-fmn	CHEBI:17621	metabolite	riboflavin	CHEBI:57986	metabolite	database
-34dihydroxy2butanone4phosphate	CHEBI:50606	metabolite	dribulose5phosphate	CHEBI:17363	metabolite	database
-67dimethyl81dribityllumazine	CHEBI:17601	metabolite	5amino61dribitylaminouracil	CHEBI:15934	metabolite	database
-5amino61dribitylaminouracil	CHEBI:15934	metabolite	5amino65phosphoribitylaminouracil	CHEBI:18247	metabolite	database
-34dihydroxy2butanone4phosphate	CHEBI:50606	metabolite	5amino61dribitylaminouracil	CHEBI:15934	metabolite	database
-5amino65phosphoribitylaminouracil	CHEBI:18247	metabolite	5amino65phosphoribosylaminouracil	CHEBI:18337	metabolite	database
-fad	CHEBI:16238	metabolite	fmn	CHEBI:17621	metabolite	database
-gtp	CHEBI:15996	metabolite	gtpcyclohydrolaseii	P17620	gene product	database
-5amino65phosphoribosylaminouracil	CHEBI:18337	metabolite	5amino65phosphoribosylaminouracilreductase	P17618	gene product	database
-5amino65phosphoribitylaminouracil	CHEBI:18247	metabolite	5amino65phosphoribosylaminouracilreductase	P17618	gene product	database
-67dimethyl81dribityllumazine	CHEBI:17601	metabolite	riboflavinsynthase	P16440	gene product	database
-riboflavin	CHEBI:57986	metabolite	riboflavinsynthase	P16440	gene product	database
-riboflavin	CHEBI:57986	metabolite	riboflavinkinase	P54575	gene product	database
-fmn	CHEBI:17621	metabolite	riboflavinkinase	P54575	gene product	database
-fad	CHEBI:16238	metabolite	fmnadenylyltransferase	P54575	gene product	database
-8amino7oxononanoate	LMFA01060168	lipid	pimeloylcoa	CHEBI:15504	metabolite	database
-pimeloylcoa	CHEBI:15504	metabolite	pimelate	CHEBI:17774	metabolite	database
-lglutamine	CHEBI:18050	metabolite	dglyceraldehyde3phosphate	CHEBI:29052	metabolite	database
-pyridoxalphosphate	CHEBI:18405	metabolite	dglyceraldehyde3phosphate	CHEBI:29052	metabolite	database
-pyridoxalphosphate	CHEBI:18405	metabolite	lglutamine	CHEBI:18050	metabolite	database
-lglutamine	CHEBI:18050	metabolite	dribose5phosphate	CHEBI:17797	metabolite	database
-pyridoxalphosphate	CHEBI:18405	metabolite	dribose5phosphate	CHEBI:17797	metabolite	database
-2dehydro3deoxygluconokinase	P50845	gene product	2dehydro3deoxyphosphogluconatealdolase	P50846	gene product	database
-glucuronateisomerase	O34808	gene product	tagaturonatereductase	O34354	gene product	database
-2dehydro3deoxy6phosphodgluconate	CHEBI:15925	metabolite	2dehydro3deoxydgluconate	CHEBI:17032	metabolite	database
-pyruvate	CHEBI:15361	metabolite	2dehydro3deoxy6phosphodgluconate	CHEBI:15925	metabolite	database
-dtagaturonate	CHEBI:17886	metabolite	dgalacturonate	CHEBI:12952	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	2dehydro3deoxy6phosphodgluconate	CHEBI:15925	metabolite	database
-2dehydro3deoxydgluconate	CHEBI:17032	metabolite	daltronate	CHEBI:17360	metabolite	database
-daltronate	CHEBI:17360	metabolite	dtagaturonate	CHEBI:17886	metabolite	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	pyruvate	CHEBI:15361	metabolite	database
-dgalacturonate	CHEBI:12952	metabolite	glucuronateisomerase	O34808	gene product	database
-dtagaturonate	CHEBI:17886	metabolite	glucuronateisomerase	O34808	gene product	database
-dtagaturonate	CHEBI:17886	metabolite	tagaturonatereductase	O34354	gene product	database
-daltronate	CHEBI:17360	metabolite	tagaturonatereductase	O34354	gene product	database
-2dehydro3deoxydgluconate	CHEBI:17032	metabolite	2dehydro3deoxygluconokinase	P50845	gene product	database
-2dehydro3deoxy6phosphodgluconate	CHEBI:15925	metabolite	2dehydro3deoxygluconokinase	P50845	gene product	database
-2dehydro3deoxy6phosphodgluconate	CHEBI:15925	metabolite	2dehydro3deoxyphosphogluconatealdolase	P50846	gene product	database
-pyruvate	CHEBI:15361	metabolite	2dehydro3deoxyphosphogluconatealdolase	P50846	gene product	database
-dglyceraldehyde3phosphate	CHEBI:29052	metabolite	2dehydro3deoxyphosphogluconatealdolase	P50846	gene product	database
-kanosamine6phosphate	CHEBI:31748	metabolite	3dehydrodglucose6phosphate	CHEBI:75052	metabolite	database
-kanosamine	CHEBI:31747	metabolite	kanosamine6phosphate	CHEBI:31748	metabolite	database
-3dehydrodglucose6phosphate	CHEBI:75052	metabolite	dglucose6phosphate	CHEBI:4170	metabolite	database
-phosphateacetyltransferase	P39646	gene product	acetatekinase	P37877	gene product	database
-acetate	LMFA01010002	lipid	acetylphosphate	CHEBI:15350	metabolite	database
-acetylphosphate	CHEBI:15350	metabolite	acetylcoa	LMFA07050281	lipid	database
-acetylcoa	LMFA07050281	lipid	phosphateacetyltransferase	P39646	gene product	database
-acetylphosphate	CHEBI:15350	metabolite	phosphateacetyltransferase	P39646	gene product	database
-acetylphosphate	CHEBI:15350	metabolite	acetatekinase	P37877	gene product	database
-acetate	LMFA01010002	lipid	acetatekinase	P37877	gene product	database
-argininosuccinatesynthase	O34347	gene product	argininosuccinatelyase	O34858	gene product	database
-ornithinecarbamoyltransferase	P18186	gene product	argininosuccinatesynthase	O34347	gene product	database
-fumarate	CHEBI:29806	metabolite	larginine	CHEBI:16467	metabolite	database
-fumarate	CHEBI:29806	metabolite	nlargininosuccinate	CHEBI:15682	metabolite	database
-laspartate	CHEBI:29991	metabolite	lcitrulline	CHEBI:16349	metabolite	database
-lcitrulline	CHEBI:16349	metabolite	carbamoylphosphate	CHEBI:17672	metabolite	database
-larginine	CHEBI:16467	metabolite	nlargininosuccinate	CHEBI:15682	metabolite	database
-lornithine	CHEBI:15729	metabolite	carbamoylphosphate	CHEBI:17672	metabolite	database
-nlargininosuccinate	CHEBI:15682	metabolite	lcitrulline	CHEBI:16349	metabolite	database
-nlargininosuccinate	CHEBI:15682	metabolite	laspartate	CHEBI:29991	metabolite	database
-lcitrulline	CHEBI:16349	metabolite	lornithine	CHEBI:15729	metabolite	database
-carbamoylphosphate	CHEBI:17672	metabolite	ornithinecarbamoyltransferase	P18186	gene product	database
-lornithine	CHEBI:15729	metabolite	ornithinecarbamoyltransferase	P18186	gene product	database
-lcitrulline	CHEBI:16349	metabolite	ornithinecarbamoyltransferase	P18186	gene product	database
-lcitrulline	CHEBI:16349	metabolite	argininosuccinatesynthase	O34347	gene product	database
-laspartate	CHEBI:29991	metabolite	argininosuccinatesynthase	O34347	gene product	database
-nlargininosuccinate	CHEBI:15682	metabolite	argininosuccinatesynthase	O34347	gene product	database
-nlargininosuccinate	CHEBI:15682	metabolite	argininosuccinatelyase	O34858	gene product	database
-larginine	CHEBI:16467	metabolite	argininosuccinatelyase	O34858	gene product	database
-fumarate	CHEBI:29806	metabolite	argininosuccinatelyase	O34858	gene product	database
-3methyl2oxobutanoatehydroxymethyltransferase	P52996	gene product	2dehydropantoate2reductase	O34661	gene product	database
-2dehydropantoate2reductase	O34661	gene product	aspartate1decarboxylase	P52999	gene product	database
-aspartate1decarboxylase	P52999	gene product	pantoatebetaalanineligase	P52998	gene product	database
-pantothenate	CHEBI:16454	metabolite	betaalanine	CHEBI:16958	metabolite	database
-betaalanine	CHEBI:16958	metabolite	laspartate	CHEBI:29991	metabolite	database
-rpantoate	CHEBI:15980	metabolite	2dehydropantoate	CHEBI:17094	metabolite	database
-betaalanine	CHEBI:16958	metabolite	rpantoate	CHEBI:15980	metabolite	database
-2dehydropantoate	CHEBI:17094	metabolite	3methyl2oxobutanoicacid	LMFA01020274	lipid	database
-pantothenate	CHEBI:16454	metabolite	rpantoate	CHEBI:15980	metabolite	database
-3methyl2oxobutanoicacid	LMFA01020274	lipid	3methyl2oxobutanoatehydroxymethyltransferase	P52996	gene product	database
-2dehydropantoate	CHEBI:17094	metabolite	3methyl2oxobutanoatehydroxymethyltransferase	P52996	gene product	database
-2dehydropantoate	CHEBI:17094	metabolite	2dehydropantoate2reductase	O34661	gene product	database
-rpantoate	CHEBI:15980	metabolite	2dehydropantoate2reductase	O34661	gene product	database
-laspartate	CHEBI:29991	metabolite	aspartate1decarboxylase	P52999	gene product	database
-betaalanine	CHEBI:16958	metabolite	aspartate1decarboxylase	P52999	gene product	database
-rpantoate	CHEBI:15980	metabolite	pantoatebetaalanineligase	P52998	gene product	database
-betaalanine	CHEBI:16958	metabolite	pantoatebetaalanineligase	P52998	gene product	database
-pantothenate	CHEBI:16454	metabolite	pantoatebetaalanineligase	P52998	gene product	database
-glucose6phosphateisomerase	P80860	gene product	6phosphofructokinase	O34529	gene product	database
-alphadglucose6phosphate	CHEBI:17665	metabolite	alphadglucose	CHEBI:17925	metabolite	database
-aminotransferase	O07566	gene product	nacetyldiaminopimelatedeacetylase	O34916	gene product	database
-4hydroxytetrahydrodipicolinatereductase	P42976	gene product	tetrahydrodipicolinatenacetyltransferase	O34981	gene product	database
-nacetyldiaminopimelatedeacetylase	O34916	gene product	diaminopimelateepimerase	O32114	gene product	database
-tetrahydrodipicolinatenacetyltransferase	O34981	gene product	aminotransferase	O07566	gene product	database
-diaminopimelateepimerase	O32114	gene product	diaminopimelatedecarboxylase	P23630	gene product	database
-aspartatesemialdehydedehydrogenase	Q04797	gene product	4hydroxytetrahydrodipicolinatesynthase	Q04796	gene product	database
-4hydroxytetrahydrodipicolinatesynthase	Q04796	gene product	4hydroxytetrahydrodipicolinatereductase	P42976	gene product	database
-nacetyll2amino6oxopimelate	CHEBI:17355	metabolite	2345tetrahydrodipicolinate	CHEBI:11408	metabolite	database
-2s4s4hydroxy2345tetrahydrodipicolinate	CHEBI:67139	metabolite	laspartate4semialdehyde	CHEBI:537519	metabolite	database
-llysine	CHEBI:18019	metabolite	meso26diaminoheptanedioate	CHEBI:30308	metabolite	database
-2345tetrahydrodipicolinate	CHEBI:11408	metabolite	2s4s4hydroxy2345tetrahydrodipicolinate	CHEBI:67139	metabolite	database
-ll26diaminoheptanedioate	CHEBI:16026	metabolite	n6acetylll26diaminoheptanedioate	CHEBI:18317	metabolite	database
-n6acetylll26diaminoheptanedioate	CHEBI:18317	metabolite	nacetyll2amino6oxopimelate	CHEBI:17355	metabolite	database
-meso26diaminoheptanedioate	CHEBI:30308	metabolite	ll26diaminoheptanedioate	CHEBI:16026	metabolite	database
-laspartate4semialdehyde	CHEBI:537519	metabolite	4hydroxytetrahydrodipicolinatesynthase	Q04796	gene product	database
-2s4s4hydroxy2345tetrahydrodipicolinate	CHEBI:67139	metabolite	4hydroxytetrahydrodipicolinatesynthase	Q04796	gene product	database
-2s4s4hydroxy2345tetrahydrodipicolinate	CHEBI:67139	metabolite	4hydroxytetrahydrodipicolinatereductase	P42976	gene product	database
-2345tetrahydrodipicolinate	CHEBI:11408	metabolite	4hydroxytetrahydrodipicolinatereductase	P42976	gene product	database
-2345tetrahydrodipicolinate	CHEBI:11408	metabolite	tetrahydrodipicolinatenacetyltransferase	O34981	gene product	database
-nacetyll2amino6oxopimelate	CHEBI:17355	metabolite	tetrahydrodipicolinatenacetyltransferase	O34981	gene product	database
-nacetyll2amino6oxopimelate	CHEBI:17355	metabolite	aminotransferase	O07566	gene product	database
-n6acetylll26diaminoheptanedioate	CHEBI:18317	metabolite	aminotransferase	O07566	gene product	database
-n6acetylll26diaminoheptanedioate	CHEBI:18317	metabolite	nacetyldiaminopimelatedeacetylase	O34916	gene product	database
-ll26diaminoheptanedioate	CHEBI:16026	metabolite	nacetyldiaminopimelatedeacetylase	O34916	gene product	database
-ll26diaminoheptanedioate	CHEBI:16026	metabolite	diaminopimelateepimerase	O32114	gene product	database
-meso26diaminoheptanedioate	CHEBI:30308	metabolite	diaminopimelateepimerase	O32114	gene product	database
-meso26diaminoheptanedioate	CHEBI:30308	metabolite	diaminopimelatedecarboxylase	P23630	gene product	database
-llysine	CHEBI:18019	metabolite	diaminopimelatedecarboxylase	P23630	gene product	database
-acetoacetylacp	CHEBI:2393	metabolite	acetylcoa	LMFA07050281	lipid	database
-malonylacylcarrierprotein	CHEBI:17330	metabolite	acetylacylcarrierprotein	CHEBI:17093	metabolite	database
-acetoacetylacp	CHEBI:2393	metabolite	malonylacylcarrierprotein	CHEBI:17330	metabolite	database
-acetoacetylacp	CHEBI:2393	metabolite	acetylacylcarrierprotein	CHEBI:17093	metabolite	database
-malonylacylcarrierprotein	CHEBI:17330	metabolite	acetylcoa	LMFA07050281	lipid	database
-acetylacylcarrierprotein	CHEBI:17093	metabolite	acetylcoa	LMFA07050281	lipid	database
-malonylcoa	LMFA07050345	lipid	acetylcoa	LMFA07050281	lipid	database
-malonylacylcarrierprotein	CHEBI:17330	metabolite	malonylcoa	LMFA07050345	lipid	database
-spermidinesynthase	P70998	gene product	sadenosylhomocysteinenucleosidase	O32028	gene product	database
-methylthioribose1phosphateisomerase	O31662	gene product	methylthioribulose1phosphatedehydratase	O31668	gene product	database
-smethyl5thiodribose1phosphate	CHEBI:27859	metabolite	5methylthioadenosine	CHEBI:17509	metabolite	database
-2hydroxy3keto5methylthiopentenyl1phosphate	CHEBI:50605	metabolite	23diketo5methylthiopentyl1phosphate	CHEBI:50604	metabolite	database
-5methylthiodribose	CHEBI:16895	metabolite	5methylthioadenosine	CHEBI:17509	metabolite	database
-lmethionine	CHEBI:16044	metabolite	4methylthio2oxobutanoicacid	LMFA01060170	lipid	database
-sadenosylmethioninamine	CHEBI:15625	metabolite	sadenosyllmethionine	CHEBI:15414	metabolite	database
-5methylthioadenosine	CHEBI:17509	metabolite	sadenosylmethioninamine	CHEBI:15625	metabolite	database
-smethyl5thiodribose1phosphate	CHEBI:27859	metabolite	5methylthiodribose	CHEBI:16895	metabolite	database
-sadenosylmethioninamine	CHEBI:15625	metabolite	spermidinesynthase	P70998	gene product	database
-5methylthioadenosine	CHEBI:17509	metabolite	spermidinesynthase	P70998	gene product	database
-5methylthioadenosine	CHEBI:17509	metabolite	sadenosylhomocysteinenucleosidase	O32028	gene product	database
-5methylthiodribose	CHEBI:16895	metabolite	sadenosylhomocysteinenucleosidase	O32028	gene product	database
-smethyl5thiodribose1phosphate	CHEBI:27859	metabolite	methylthioribose1phosphateisomerase	O31662	gene product	database
-23diketo5methylthiopentyl1phosphate	CHEBI:50604	metabolite	methylthioribulose1phosphatedehydratase	O31668	gene product	database
-2hydroxy3keto5methylthiopentenyl1phosphate	CHEBI:50605	metabolite	2hydroxy3keto5methylthiopentenyl1phosphatephosphatase	O31667	gene product	database
-4methylthio2oxobutanoicacid	LMFA01060170	lipid	lglutamine4methylsulfanyl2oxobutanoateaminotransferase	O31665	gene product	database
-lmethionine	CHEBI:16044	metabolite	lglutamine4methylsulfanyl2oxobutanoateaminotransferase	O31665	gene product	database
-lglutamyl5phosphate	CHEBI:17798	metabolite	lglutamate	CHEBI:29985	metabolite	database
-lglutamate5semialdehyde	CHEBI:17232	metabolite	lglutamyl5phosphate	CHEBI:17798	metabolite	database
-lglutamyl5phosphate	CHEBI:17798	metabolite	glutamate5semialdehydedehydrogenase	P39821	gene product	database
-lglutamate5semialdehyde	CHEBI:17232	metabolite	glutamate5semialdehydedehydrogenase	P39821	gene product	database
-phosphatidatecytidylyltransferase	O31752	gene product	phosphatidylserinesynthase	P39823	gene product	database
-phosphatidylserine	CHEBI:18303	metabolite	cdpdiacylglycerol	CHEBI:17962	metabolite	database
-cdpdiacylglycerol	CHEBI:17962	metabolite	phosphatidate	CHEBI:16337	metabolite	database
-phosphatidylethanolamine	CHEBI:16038	metabolite	phosphatidylserine	CHEBI:18303	metabolite	database
-phosphatidate	CHEBI:16337	metabolite	phosphatidatecytidylyltransferase	O31752	gene product	database
-cdpdiacylglycerol	CHEBI:17962	metabolite	phosphatidatecytidylyltransferase	O31752	gene product	database
-cdpdiacylglycerol	CHEBI:17962	metabolite	phosphatidylserinesynthase	P39823	gene product	database
-phosphatidylserine	CHEBI:18303	metabolite	phosphatidylserinesynthase	P39823	gene product	database
+enolase	78181	gene product	pyruvatekinase	79506	gene product	database
+2phosphodglycerate	29522	metabolite	3phosphodglycerate	28972	metabolite	database
+pyruvate	27804	metabolite	phosphoenolpyruvate	29643	metabolite	database
+3phosphodglycerate	28972	metabolite	dglyceraldehyde3phosphate	29033	metabolite	database
+3phosphodglyceroylphosphate	28259	metabolite	dglyceraldehyde3phosphate	29033	metabolite	database
+phosphoenolpyruvate	29643	metabolite	2phosphodglycerate	29522	metabolite	database
+3phosphodglycerate	28972	metabolite	3phosphodglyceroylphosphate	28259	metabolite	database
+dglyceraldehyde3phosphate	29033	metabolite	glyceronephosphate	28332	metabolite	database
+glyceronephosphate	28332	metabolite	triosephosphateisomerase	78507	gene product	database
+dglyceraldehyde3phosphate	29033	metabolite	triosephosphateisomerase	78507	gene product	database
+3phosphodglyceroylphosphate	28259	metabolite	phosphoglyceratekinase	79317	gene product	database
+3phosphodglycerate	28972	metabolite	phosphoglyceratekinase	79317	gene product	database
+2phosphodglycerate	29522	metabolite	enolase	78181	gene product	database
+phosphoenolpyruvate	29643	metabolite	enolase	78181	gene product	database
+phosphoenolpyruvate	29643	metabolite	pyruvatekinase	79506	gene product	database
+pyruvate	27804	metabolite	pyruvatekinase	79506	gene product	database
+galactokinase	79260	gene product	udpglucosehexose1phosphateuridylyltransferase	78282	gene product	database
+udpalphadgalactose	45579	metabolite	alphadgalactose1phosphate	29609	metabolite	database
+alphadgalactose1phosphate	29609	metabolite	alphadgalactose	30425	metabolite	database
+malonylacylcarrierprotein	29172	metabolite	tetradecanoylacp	32090	metabolite	database
+acetoacetylacp	33091	metabolite	acetylacylcarrierprotein	29000	metabolite	database
+malonylacylcarrierprotein	29172	metabolite	decanoylacp	33486	metabolite	database
+3oxohexadecanoylacp	33011	metabolite	malonylacylcarrierprotein	29172	metabolite	database
+malonylacylcarrierprotein	29172	metabolite	acetylacylcarrierprotein	29000	metabolite	database
+acetoacetylacp	33091	metabolite	malonylacylcarrierprotein	29172	metabolite	database
+3oxohexadecanoylacp	33011	metabolite	tetradecanoylacp	32090	metabolite	database
+malonylacylcarrierprotein	29172	metabolite	octanoylacp	33983	metabolite	database
+acetylacylcarrierprotein	29000	metabolite	3oxoacylacylcarrierproteinsynthaseii	78390	gene product	database
+malonylacylcarrierprotein	29172	metabolite	3oxoacylacylcarrierproteinsynthaseii	78390	gene product	database
+acetoacetylacp	33091	metabolite	3oxoacylacylcarrierproteinsynthaseii	78390	gene product	database
+octanoylacp	33983	metabolite	3oxoacylacylcarrierproteinsynthaseii	78390	gene product	database
+decanoylacp	33486	metabolite	3oxoacylacylcarrierproteinsynthaseii	78390	gene product	database
+tetradecanoylacp	32090	metabolite	3oxoacylacylcarrierproteinsynthaseii	78390	gene product	database
+3oxohexadecanoylacp	33011	metabolite	3oxoacylacylcarrierproteinsynthaseii	78390	gene product	database
+nucleosidediphosphatekinase	78513	gene product	dutppyrophosphatase	78080	gene product	database
+dump	29372	metabolite	dutp	29375	metabolite	database
+dudp	30886	metabolite	udp	29397	metabolite	database
+dttp	29683	metabolite	dtdp	29682	metabolite	database
+dtmp	28949	metabolite	dump	29372	metabolite	database
+dutp	29375	metabolite	dudp	30886	metabolite	database
+dtdp	29682	metabolite	dtmp	28949	metabolite	database
+dudp	30886	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+dutp	29375	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+dtdp	29682	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+dttp	29683	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+dutp	29375	metabolite	dutppyrophosphatase	78080	gene product	database
+dump	29372	metabolite	dutppyrophosphatase	78080	gene product	database
+dtmp	28949	metabolite	dtmpkinase	79205	gene product	database
+dtdp	29682	metabolite	dtmpkinase	79205	gene product	database
+isochorismate	35282	metabolite	chorismate	31063	metabolite	database
+2succinylbenzoylcoa	41094	metabolite	2succinylbenzoate	29844	metabolite	database
+14dihydroxy2naphthoylcoa	40388	metabolite	2succinylbenzoylcoa	41094	metabolite	database
+14dihydroxy2naphthoate	34452	metabolite	14dihydroxy2naphthoylcoa	40388	metabolite	database
+2succinylbenzoate	29844	metabolite	1r6r6hydroxy2succinylcyclohexa24diene1carboxylate	38314	metabolite	database
+menaquinol	29733	metabolite	demethylmenaquinonemethyltransferase	79171	gene product	database
+palmitoylcoa	7589	lipid	hexadecanoicacid	39	lipid	database
+hexadecanoicacid	39	lipid	longchainfattyacidcoaligase	78804	gene product	database
+palmitoylcoa	7589	lipid	longchainfattyacidcoaligase	78804	gene product	database
+udpglucosehexose1phosphateuridylyltransferase	78282	gene product	udpglucose4epimerase	78254	gene product	database
+aldose1epimerase	79294	gene product	galactokinase	79260	gene product	database
+udpglucose	29677	metabolite	alphadgalactose1phosphate	29609	metabolite	database
+alphadgalactose	30425	metabolite	dgalactose	33467	metabolite	database
+udpalphadgalactose	45579	metabolite	udpglucose	29677	metabolite	database
+dglucose1phosphate	28309	metabolite	udpglucose	29677	metabolite	database
+dglucose1phosphate	28309	metabolite	udpalphadgalactose	45579	metabolite	database
+dglucose1phosphate	28309	metabolite	alphadgalactose1phosphate	29609	metabolite	database
+dgalactose	33467	metabolite	aldose1epimerase	79294	gene product	database
+alphadgalactose	30425	metabolite	aldose1epimerase	79294	gene product	database
+alphadgalactose	30425	metabolite	galactokinase	79260	gene product	database
+alphadgalactose1phosphate	29609	metabolite	galactokinase	79260	gene product	database
+alphadgalactose1phosphate	29609	metabolite	udpglucosehexose1phosphateuridylyltransferase	78282	gene product	database
+udpglucose	29677	metabolite	udpglucosehexose1phosphateuridylyltransferase	78282	gene product	database
+udpalphadgalactose	45579	metabolite	udpglucosehexose1phosphateuridylyltransferase	78282	gene product	database
+dglucose1phosphate	28309	metabolite	udpglucosehexose1phosphateuridylyltransferase	78282	gene product	database
+alphadglucosamine1phosphate	30144	metabolite	dglucosamine6phosphate	34690	metabolite	database
+udpnacetylalphadglucosamine	23190	lipid	nacetylalphadglucosamine1phosphate	28569	metabolite	database
+dglucosamine6phosphate	34690	metabolite	dfructose6phosphate	28220	metabolite	database
+nacetylalphadglucosamine1phosphate	28569	metabolite	alphadglucosamine1phosphate	30144	metabolite	database
+dglucosamine6phosphate	34690	metabolite	phosphoglucosaminemutase	78420	gene product	database
+alphadglucosamine1phosphate	30144	metabolite	phosphoglucosaminemutase	78420	gene product	database
+alphadglucosamine1phosphate	30144	metabolite	glucosamine1phosphatenacetyltransferase	78118	gene product	database
+nacetylalphadglucosamine1phosphate	28569	metabolite	glucosamine1phosphatenacetyltransferase	78118	gene product	database
+udpnacetylalphadglucosamine	23190	lipid	udpnacetylglucosaminepyrophosphorylase	78118	gene product	database
+quinone	28610	metabolite	hydroquinone	29350	metabolite	database
+pyridoxalphosphate	29902	metabolite	lglutamine	29664	metabolite	database
+pyridoxalphosphate	29902	metabolite	dribose5phosphate	29496	metabolite	database
+lglutamine	29664	metabolite	dglyceraldehyde3phosphate	29033	metabolite	database
+dglyceraldehyde3phosphate	29033	metabolite	dribose5phosphate	29496	metabolite	database
+pyridoxalphosphate	29902	metabolite	dglyceraldehyde3phosphate	29033	metabolite	database
+lglutamine	29664	metabolite	dribose5phosphate	29496	metabolite	database
+riboflavinsynthase	78465	gene product	riboflavinkinase	79453	gene product	database
+67dimethyl81dribityllumazine	29354	metabolite	5amino61dribitylaminouracil	28211	metabolite	database
+34dihydroxy2butanone4phosphate	39582	metabolite	dribulose5phosphate	29198	metabolite	database
+34dihydroxy2butanone4phosphate	39582	metabolite	5amino61dribitylaminouracil	28211	metabolite	database
+riboflavin	41259	metabolite	67dimethyl81dribityllumazine	29354	metabolite	database
+fad	28425	metabolite	fmn	29371	metabolite	database
+67dimethyl81dribityllumazine	29354	metabolite	34dihydroxy2butanone4phosphate	39582	metabolite	database
+fmn	29371	metabolite	riboflavin	41259	metabolite	database
+5amino61dribitylaminouracil	28211	metabolite	5amino65phosphoribitylaminouracil	29791	metabolite	database
+5amino65phosphoribitylaminouracil	29791	metabolite	5amino65phosphoribosylaminouracil	29852	metabolite	database
+gtp	28255	metabolite	gtpcyclohydrolaseii	78467	gene product	database
+5amino65phosphoribosylaminouracil	29852	metabolite	5amino65phosphoribosylaminouracilreductase	78125	gene product	database
+5amino65phosphoribitylaminouracil	29791	metabolite	5amino65phosphoribosylaminouracilreductase	78125	gene product	database
+67dimethyl81dribityllumazine	29354	metabolite	riboflavinsynthase	78465	gene product	database
+riboflavin	41259	metabolite	riboflavinsynthase	78465	gene product	database
+riboflavin	41259	metabolite	riboflavinkinase	79453	gene product	database
+fmn	29371	metabolite	riboflavinkinase	79453	gene product	database
+fad	28425	metabolite	fmnadenylyltransferase	79453	gene product	database
+s3methyl2oxopentanoicacid	27984	metabolite	r23dihydroxy3methylpentanoate	39341	metabolite	database
+2oxobutanoate	1937	lipid	lthreonine	28851	metabolite	database
+r3hydroxy3methyl2oxopentanoate	39340	metabolite	s2aceto2hydroxybutanoate	39339	metabolite	database
+s2aceto2hydroxybutanoate	39339	metabolite	2oxobutanoate	1937	lipid	database
+r23dihydroxy3methylpentanoate	39341	metabolite	r3hydroxy3methyl2oxopentanoate	39340	metabolite	database
+lisoleucine	29074	metabolite	s3methyl2oxopentanoicacid	27984	metabolite	database
+udpnacetylmuramate	41337	metabolite	udpnacetyl31carboxyvinyldglucosamine	45908	metabolite	database
+udpnacetyl31carboxyvinyldglucosamine	45908	metabolite	udpnacetylalphadglucosamine	23190	lipid	database
+ornithinecarbamoyltransferase	79101	gene product	argininosuccinatesynthase	78938	gene product	database
+argininosuccinatesynthase	78938	gene product	argininosuccinatelyase	80129	gene product	database
+laspartate	31079	metabolite	lcitrulline	28503	metabolite	database
+fumarate	31068	metabolite	nlargininosuccinate	28032	metabolite	database
+lcitrulline	28503	metabolite	lornithine	28067	metabolite	database
+lcitrulline	28503	metabolite	carbamoylphosphate	29404	metabolite	database
+lornithine	28067	metabolite	carbamoylphosphate	29404	metabolite	database
+larginine	28582	metabolite	nlargininosuccinate	28032	metabolite	database
+nlargininosuccinate	28032	metabolite	laspartate	31079	metabolite	database
+fumarate	31068	metabolite	larginine	28582	metabolite	database
+nlargininosuccinate	28032	metabolite	lcitrulline	28503	metabolite	database
+carbamoylphosphate	29404	metabolite	ornithinecarbamoyltransferase	79101	gene product	database
+lornithine	28067	metabolite	ornithinecarbamoyltransferase	79101	gene product	database
+lcitrulline	28503	metabolite	ornithinecarbamoyltransferase	79101	gene product	database
+lcitrulline	28503	metabolite	argininosuccinatesynthase	78938	gene product	database
+laspartate	31079	metabolite	argininosuccinatesynthase	78938	gene product	database
+nlargininosuccinate	28032	metabolite	argininosuccinatesynthase	78938	gene product	database
+nlargininosuccinate	28032	metabolite	argininosuccinatelyase	80129	gene product	database
+larginine	28582	metabolite	argininosuccinatelyase	80129	gene product	database
+fumarate	31068	metabolite	argininosuccinatelyase	80129	gene product	database
+adenylosuccinatelyase	78110	gene product	adenylatekinase	78120	gene product	database
+atp	27845	metabolite	adp	28774	metabolite	database
+adp	28774	metabolite	amp	28274	metabolite	database
+n612dicarboxyethylamp	28201	metabolite	imp	29084	metabolite	database
+amp	28274	metabolite	n612dicarboxyethylamp	28201	metabolite	database
+n612dicarboxyethylamp	28201	metabolite	adenylosuccinatelyase	78110	gene product	database
+amp	28274	metabolite	adenylosuccinatelyase	78110	gene product	database
+amp	28274	metabolite	adenylatekinase	78120	gene product	database
+adp	28774	metabolite	adenylatekinase	78120	gene product	database
+adp	28774	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+atp	27845	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+dethiobiotin	28723	metabolite	78diaminononanoate	2418	lipid	database
+8amino7oxononanoate	2061	lipid	pimeloylcoa	27910	metabolite	database
+biotin	28230	metabolite	dethiobiotin	28723	metabolite	database
+78diaminononanoate	2418	lipid	8amino7oxononanoate	2061	lipid	database
+betainealdehyde	28051	metabolite	choline	27799	metabolite	database
+betaine	29461	metabolite	betainealdehyde	28051	metabolite	database
+choline	27799	metabolite	cholinedehydrogenase	78641	gene product	database
+betainealdehyde	28051	metabolite	cholinedehydrogenase	78641	gene product	database
+kanosamine	36079	metabolite	kanosamine6phosphate	36080	metabolite	database
+kanosamine6phosphate	36080	metabolite	3dehydrodglucose6phosphate	48621	metabolite	database
+3dehydrodglucose6phosphate	48621	metabolite	dglucose6phosphate	33470	metabolite	database
+dephosphocoa	27879	metabolite	pantetheine4phosphate	27617	metabolite	database
+coa	27792	metabolite	dephosphocoa	27879	metabolite	database
+d4phosphopantothenate	28192	metabolite	pantothenate	28573	metabolite	database
+pantetheine4phosphate	27617	metabolite	r4phosphopantothenoyllcysteine	28096	metabolite	database
+r4phosphopantothenoyllcysteine	28096	metabolite	d4phosphopantothenate	28192	metabolite	database
+phosphateacetyltransferase	79270	gene product	acetatekinase	78543	gene product	database
+acetylphosphate	27796	metabolite	acetylcoa	7519	lipid	database
+acetate	40	lipid	acetylphosphate	27796	metabolite	database
+acetylcoa	7519	lipid	phosphateacetyltransferase	79270	gene product	database
+acetylphosphate	27796	metabolite	phosphateacetyltransferase	79270	gene product	database
+acetylphosphate	27796	metabolite	acetatekinase	78543	gene product	database
+acetate	40	lipid	acetatekinase	78543	gene product	database
+phosphoglucomutase	78471	gene product	utpglucose1phosphateuridylyltransferase	78282	gene product	database
+alphadglucose6phosphate	29401	metabolite	alphadglucose	29581	metabolite	database
+dglucose1phosphate	28309	metabolite	alphadglucose6phosphate	29401	metabolite	database
+amidophosphoribosyltransferase	78090	gene product	phosphoribosylamineglycineligase	79071	gene product	database
+phosphoribosylamineglycineligase	79071	gene product	phosphoribosylglycinamideformyltransferase	79072	gene product	database
+5carboxyaminoimidazoleribonucleotidemutase	80194	gene product	phosphoribosylaminoimidazolesuccinocarboxamidesynthase	80195	gene product	database
+15phosphoribosyl5amino4imidazolecarboxamide	29903	metabolite	15phosphoribosyl5amino4nsuccinocarboxamideimidazole	29839	metabolite	database
+aminoimidazoleribotide	58226	metabolite	2formamidon15phosphoribosylacetamidine	29910	metabolite	database
+15phosphoribosyl5amino4nsuccinocarboxamideimidazole	29839	metabolite	15phosphodribosyl5amino4imidazolecarboxylate	30635	metabolite	database
+5phosphoribosylamine	31452	metabolite	5phosphoalphadribose1diphosphate	29014	metabolite	database
+5phosphoribosylglycinamide	29858	metabolite	5phosphoribosylamine	31452	metabolite	database
+15phosphoribosyl5formamido4imidazolecarboxamide	29883	metabolite	15phosphoribosyl5amino4imidazolecarboxamide	29903	metabolite	database
+lglutamine	29664	metabolite	5phosphoalphadribose1diphosphate	29014	metabolite	database
+15phosphodribosyl5amino4imidazolecarboxylate	30635	metabolite	5carboxyamino15phosphodribosylimidazole	38986	metabolite	database
+5phosphoribosylnformylglycinamide	29805	metabolite	5phosphoribosylglycinamide	29858	metabolite	database
+2formamidon15phosphoribosylacetamidine	29910	metabolite	5phosphoribosylnformylglycinamide	29805	metabolite	database
+imp	29084	metabolite	15phosphoribosyl5formamido4imidazolecarboxamide	29883	metabolite	database
+5carboxyamino15phosphodribosylimidazole	38986	metabolite	aminoimidazoleribotide	58226	metabolite	database
+15phosphodribosyl5amino4imidazolecarboxylate	30635	metabolite	aminoimidazoleribotide	58226	metabolite	database
+5phosphoribosylamine	31452	metabolite	lglutamine	29664	metabolite	database
+5phosphoalphadribose1diphosphate	29014	metabolite	amidophosphoribosyltransferase	78090	gene product	database
+lglutamine	29664	metabolite	amidophosphoribosyltransferase	78090	gene product	database
+5phosphoribosylamine	31452	metabolite	amidophosphoribosyltransferase	78090	gene product	database
+5phosphoribosylamine	31452	metabolite	phosphoribosylamineglycineligase	79071	gene product	database
+5phosphoribosylglycinamide	29858	metabolite	phosphoribosylamineglycineligase	79071	gene product	database
+5phosphoribosylglycinamide	29858	metabolite	phosphoribosylglycinamideformyltransferase	79072	gene product	database
+5phosphoribosylnformylglycinamide	29805	metabolite	phosphoribosylglycinamideformyltransferase	79072	gene product	database
+2formamidon15phosphoribosylacetamidine	29910	metabolite	phosphoribosylformylglycinamidinecycloligase	79073	gene product	database
+aminoimidazoleribotide	58226	metabolite	phosphoribosylformylglycinamidinecycloligase	79073	gene product	database
+aminoimidazoleribotide	58226	metabolite	5carboxyaminoimidazoleribonucleotidemutase	80194	gene product	database
+5carboxyamino15phosphodribosylimidazole	38986	metabolite	5carboxyaminoimidazoleribonucleotidemutase	80194	gene product	database
+15phosphodribosyl5amino4imidazolecarboxylate	30635	metabolite	phosphoribosylaminoimidazolesuccinocarboxamidesynthase	80195	gene product	database
+15phosphoribosyl5amino4nsuccinocarboxamideimidazole	29839	metabolite	phosphoribosylaminoimidazolesuccinocarboxamidesynthase	80195	gene product	database
+15phosphoribosyl5amino4nsuccinocarboxamideimidazole	29839	metabolite	adenylosuccinatelyase	78110	gene product	database
+15phosphoribosyl5amino4imidazolecarboxamide	29903	metabolite	adenylosuccinatelyase	78110	gene product	database
+15phosphoribosyl5amino4imidazolecarboxamide	29903	metabolite	phosphoribosylaminoimidazolecarboxamideformyltransferase	79075	gene product	database
+15phosphoribosyl5formamido4imidazolecarboxamide	29883	metabolite	phosphoribosylaminoimidazolecarboxamideformyltransferase	79075	gene product	database
+imp	29084	metabolite	impcyclohydrolase	79075	gene product	database
+fecoproporphyriniii	45881	metabolite	coproporphyriniii	27861	metabolite	database
+hydroxymethylbilane	28695	metabolite	porphobilinogen	29209	metabolite	database
+heme	29377	metabolite	fecoproporphyriniii	45881	metabolite	database
+coproporphyrinogeniii	27861	metabolite	uroporphyrinogeniii	27860	metabolite	database
+5aminolevulinate	27948	metabolite	s4amino5oxopentanoate	28087	metabolite	database
+uroporphyrinogeniii	27860	metabolite	hydroxymethylbilane	28695	metabolite	database
+porphobilinogen	29209	metabolite	5aminolevulinate	27948	metabolite	database
+7carboxy7deazaguaninesynthase	78030	gene product	7cyano7deazaguaninesynthase	78345	gene product	database
+6carboxy5678tetrahydropterin	42726	metabolite	78dihydroneopterin3triphosphate	29875	metabolite	database
+7aminomethyl7carbaguanine	38683	metabolite	7cyano7carbaguanine	31758	metabolite	database
+6carboxy5678tetrahydropterin	42726	metabolite	7carboxy7deazaguaninesynthase	78030	gene product	database
+7cyano7carbaguanine	31758	metabolite	7cyano7deazaguaninesynthase	78345	gene product	database
+4hydroxy3methylbut2enyldiphosphatereductase	79439	gene product	isopentenyldiphosphatedeltaisomerase	78612	gene product	database
+1deoxydxylulose5phosphatesynthase	79445	gene product	1deoxydxylulose5phosphatereductoisomerase	78864	gene product	database
+2cmethylderythritol4phosphatecytidylyltransferase	78152	gene product	4diphosphocytidyl2cmethylderythritolkinase	79210	gene product	database
+1deoxydxylulose5phosphatereductoisomerase	78864	gene product	2cmethylderythritol4phosphatecytidylyltransferase	78152	gene product	database
+1deoxydxylulose5phosphate	28600	metabolite	pyruvate	27804	metabolite	database
+2cmethylderythritol24cyclodiphosphate	29919	metabolite	2phospho4cytidine5diphospho2cmethylderythritol	28836	metabolite	database
+4cytidine5diphospho2cmethylderythritol	28658	metabolite	2cmethylderythritol4phosphate	29471	metabolite	database
+dimethylallyldiphosphate	21548	lipid	isopentenyldiphosphate	21549	lipid	database
+2cmethylderythritol4phosphate	29471	metabolite	1deoxydxylulose5phosphate	28600	metabolite	database
+pyruvate	27804	metabolite	2r2hydroxy3phosphonooxypropanal	29033	metabolite	database
+1hydroxy2methyl2butenyl4diphosphate	21550	lipid	2cmethylderythritol24cyclodiphosphate	29919	metabolite	database
+2phospho4cytidine5diphospho2cmethylderythritol	28836	metabolite	4cytidine5diphospho2cmethylderythritol	28658	metabolite	database
+isopentenyldiphosphate	21549	lipid	1hydroxy2methyl2butenyl4diphosphate	21550	lipid	database
+1deoxydxylulose5phosphate	28600	metabolite	2r2hydroxy3phosphonooxypropanal	29033	metabolite	database
+2r2hydroxy3phosphonooxypropanal	29033	metabolite	1deoxydxylulose5phosphatesynthase	79445	gene product	database
+pyruvate	27804	metabolite	1deoxydxylulose5phosphatesynthase	79445	gene product	database
+1deoxydxylulose5phosphate	28600	metabolite	1deoxydxylulose5phosphatesynthase	79445	gene product	database
+1deoxydxylulose5phosphate	28600	metabolite	1deoxydxylulose5phosphatereductoisomerase	78864	gene product	database
+2cmethylderythritol4phosphate	29471	metabolite	1deoxydxylulose5phosphatereductoisomerase	78864	gene product	database
+2cmethylderythritol4phosphate	29471	metabolite	2cmethylderythritol4phosphatecytidylyltransferase	78152	gene product	database
+4cytidine5diphospho2cmethylderythritol	28658	metabolite	2cmethylderythritol4phosphatecytidylyltransferase	78152	gene product	database
+4cytidine5diphospho2cmethylderythritol	28658	metabolite	4diphosphocytidyl2cmethylderythritolkinase	79210	gene product	database
+2phospho4cytidine5diphospho2cmethylderythritol	28836	metabolite	4diphosphocytidyl2cmethylderythritolkinase	79210	gene product	database
+aspartatekinase	79628	gene product	aspartatesemialdehydedehydrogenase	78680	gene product	database
+aspartatesemialdehydedehydrogenase	78680	gene product	homoserinedehydrogenase	78130	gene product	database
+lhomocysteine	29103	metabolite	lcystathionine	29279	metabolite	database
+lmethionine	28288	metabolite	lhomocysteine	29103	metabolite	database
+laspartate4semialdehyde	32861	metabolite	4phospholaspartate	31109	metabolite	database
+lcystathionine	29279	metabolite	osuccinyllhomoserine	28367	metabolite	database
+osuccinyllhomoserine	28367	metabolite	lhomoserine	28042	metabolite	database
+4phospholaspartate	31109	metabolite	laspartate	31079	metabolite	database
+lhomoserine	28042	metabolite	laspartate4semialdehyde	32861	metabolite	database
+laspartate	31079	metabolite	aspartatekinase	79628	gene product	database
+4phospholaspartate	31109	metabolite	aspartatekinase	79628	gene product	database
+4phospholaspartate	31109	metabolite	aspartatesemialdehydedehydrogenase	78680	gene product	database
+laspartate4semialdehyde	32861	metabolite	aspartatesemialdehydedehydrogenase	78680	gene product	database
+laspartate4semialdehyde	32861	metabolite	homoserinedehydrogenase	78130	gene product	database
+lhomoserine	28042	metabolite	homoserinedehydrogenase	78130	gene product	database
+lhomocysteine	29103	metabolite	methioninesynthase	78651	gene product	database
+lmethionine	28288	metabolite	methioninesynthase	78651	gene product	database
+2methyltransaconitate	41570	metabolite	2methylcitrate	27971	metabolite	database
+succinate	31082	metabolite	2s3r3hydroxybutane123tricarboxylate	27978	metabolite	database
+smalate	27962	metabolite	fumarate	31068	metabolite	database
+propanoylcoa	27936	metabolite	oxaloacetate	28571	metabolite	database
+fumarate	31068	metabolite	succinate	31082	metabolite	database
+2s3r3hydroxybutane123tricarboxylate	27978	metabolite	zbut2ene123tricarboxylate	28746	metabolite	database
+zbut2ene123tricarboxylate	28746	metabolite	2methylcitrate	27971	metabolite	database
+zbut2ene123tricarboxylate	28746	metabolite	2methyltransaconitate	41570	metabolite	database
+2methylcitrate	27971	metabolite	propanoylcoa	27936	metabolite	database
+oxaloacetate	28571	metabolite	smalate	27962	metabolite	database
+2methylcitrate	27971	metabolite	oxaloacetate	28571	metabolite	database
+2amino4hydroxy6hydroxymethyldihydropteridinepyrophosphokinase	79162	gene product	dihydropteroatesynthase	79159	gene product	database
+dihydroneopterinaldolase	79160	gene product	2amino4hydroxy6hydroxymethyldihydropteridinepyrophosphokinase	79162	gene product	database
+dihydrofolate	27998	metabolite	dihydropteroate	29524	metabolite	database
+78dihydroneopterin	28941	metabolite	dihydroneopterinphosphate	31944	metabolite	database
+78dihydroneopterin	28941	metabolite	78dihydroneopterin3triphosphate	29875	metabolite	database
+dihydropteroate	29524	metabolite	6hydroxymethyl78dihydropterin	38664	metabolite	database
+tetrahydrofolate	28000	metabolite	dihydrofolate	27998	metabolite	database
+6hydroxymethyl78dihydropterin	38664	metabolite	78dihydroneopterin	28941	metabolite	database
+dihydroneopterinphosphate	31944	metabolite	78dihydroneopterin3triphosphate	29875	metabolite	database
+gtp	28255	metabolite	gtpcyclohydrolasei	79106	gene product	database
+25diaminopyrimidinenucleosidetriphosphate	32964	metabolite	gtpcyclohydrolasei	79106	gene product	database
+78dihydroneopterin3triphosphate	29875	metabolite	gtpcyclohydrolasei	79106	gene product	database
+78dihydroneopterin	28941	metabolite	dihydroneopterinaldolase	79160	gene product	database
+6hydroxymethyl78dihydropterin	38664	metabolite	dihydroneopterinaldolase	79160	gene product	database
+6hydroxymethyl78dihydropterin	38664	metabolite	2amino4hydroxy6hydroxymethyldihydropteridinepyrophosphokinase	79162	gene product	database
+6hydroxymethyl78dihydropterin	38664	metabolite	dihydropteroatesynthase	79159	gene product	database
+dihydropteroate	29524	metabolite	dihydropteroatesynthase	79159	gene product	database
+dihydrofolate	27998	metabolite	dihydrofolatereductase	79069	gene product	database
+tetrahydrofolate	28000	metabolite	dihydrofolatereductase	79069	gene product	database
+homoserinekinase	80178	gene product	threoninesynthase	79047	gene product	database
+homoserinedehydrogenase	78130	gene product	homoserinekinase	80178	gene product	database
+ophospholhomoserine	28234	metabolite	lhomoserine	28042	metabolite	database
+lthreonine	28851	metabolite	ophospholhomoserine	28234	metabolite	database
+lhomoserine	28042	metabolite	homoserinekinase	80178	gene product	database
+ophospholhomoserine	28234	metabolite	homoserinekinase	80178	gene product	database
+ophospholhomoserine	28234	metabolite	threoninesynthase	79047	gene product	database
+lthreonine	28851	metabolite	threoninesynthase	79047	gene product	database
+lvaline	28546	metabolite	3methyl2oxobutanoicacid	337	lipid	database
+s2acetolactate	29906	metabolite	pyruvate	27804	metabolite	database
+3hydroxy3methyl2oxobutanoicacid	340	lipid	s2acetolactate	29906	metabolite	database
+pyruvate	27804	metabolite	acetolactatesynthase	78525	gene product	database
+s2acetolactate	29906	metabolite	acetolactatesynthase	78525	gene product	database
+2oxobutanoate	1937	lipid	acetolactatesynthase	78525	gene product	database
+s2aceto2hydroxybutanoate	39339	metabolite	acetolactatesynthase	78525	gene product	database
+3methyl2oxobutanoicacid	337	lipid	dihydroxyaciddehydratase	78617	gene product	database
+r23dihydroxy3methylpentanoate	39341	metabolite	dihydroxyaciddehydratase	78617	gene product	database
+s3methyl2oxopentanoicacid	27984	metabolite	dihydroxyaciddehydratase	78617	gene product	database
+nucleosidediphosphatekinase	78513	gene product	ctpsynthase	78113	gene product	database
+uridylatekinase	78034	gene product	nucleosidediphosphatekinase	78513	gene product	database
+cytidylatekinase	79238	gene product	uridylatekinase	78034	gene product	database
+udp	29397	metabolite	ump	28726	metabolite	database
+ctp	29407	metabolite	utp	28054	metabolite	database
+cdp	29107	metabolite	ctp	29407	metabolite	database
+utp	28054	metabolite	udp	29397	metabolite	database
+ump	28726	metabolite	cytidylatekinase	79238	gene product	database
+udp	29397	metabolite	cytidylatekinase	79238	gene product	database
+ump	28726	metabolite	uridylatekinase	78034	gene product	database
+udp	29397	metabolite	uridylatekinase	78034	gene product	database
+udp	29397	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+utp	28054	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+utp	28054	metabolite	ctpsynthase	78113	gene product	database
+ctp	29407	metabolite	ctpsynthase	78113	gene product	database
+spermidinesynthase	79484	gene product	sadenosylhomocysteinenucleosidase	78363	gene product	database
+methylthioribose1phosphateisomerase	78029	gene product	methylthioribulose1phosphatedehydratase	78341	gene product	database
+5methylthiodribose	28875	metabolite	5methylthioadenosine	29294	metabolite	database
+sadenosyllmethionine	27842	metabolite	lmethionine	28288	metabolite	database
+smethyl5thiodribose1phosphate	30299	metabolite	5methylthiodribose	28875	metabolite	database
+smethyl5thiodribose1phosphate	30299	metabolite	5methylthioadenosine	29294	metabolite	database
+lmethionine	28288	metabolite	4methylthio2oxobutanoicacid	2063	lipid	database
+sadenosylmethioninamine	27993	metabolite	sadenosyllmethionine	27842	metabolite	database
+5methylthioadenosine	29294	metabolite	sadenosylmethioninamine	27993	metabolite	database
+2hydroxy3keto5methylthiopentenyl1phosphate	39581	metabolite	23diketo5methylthiopentyl1phosphate	39580	metabolite	database
+sadenosylmethioninamine	27993	metabolite	spermidinesynthase	79484	gene product	database
+5methylthioadenosine	29294	metabolite	spermidinesynthase	79484	gene product	database
+5methylthioadenosine	29294	metabolite	sadenosylhomocysteinenucleosidase	78363	gene product	database
+5methylthiodribose	28875	metabolite	sadenosylhomocysteinenucleosidase	78363	gene product	database
+smethyl5thiodribose1phosphate	30299	metabolite	methylthioribose1phosphateisomerase	78029	gene product	database
+23diketo5methylthiopentyl1phosphate	39580	metabolite	methylthioribulose1phosphatedehydratase	78341	gene product	database
+2hydroxy3keto5methylthiopentenyl1phosphate	39581	metabolite	2hydroxy3keto5methylthiopentenyl1phosphatephosphatase	78849	gene product	database
+4methylthio2oxobutanoicacid	2063	lipid	lglutamine4methylsulfanyl2oxobutanoateaminotransferase	78340	gene product	database
+lmethionine	28288	metabolite	lglutamine4methylsulfanyl2oxobutanoateaminotransferase	78340	gene product	database
+5phosphoalphadribose1diphosphate	29014	metabolite	dribose5phosphate	29496	metabolite	database
+dfructose16bisphosphate	28883	metabolite	dglyceraldehyde3phosphate	29033	metabolite	database
+phosphoenolpyruvate	29643	metabolite	oxaloacetate	28571	metabolite	database
+dfructose6phosphate	28220	metabolite	dfructose16bisphosphate	28883	metabolite	database
+dfructose16bisphosphate	28883	metabolite	glyceronephosphate	28332	metabolite	database
+shikimatekinase	79229	gene product	3phosphoshikimate1carboxyvinyltransferase	79114	gene product	database
+3dehydroquinatesynthase	79167	gene product	3dehydroquinatedehydratase	79180	gene product	database
+3phosphoshikimate1carboxyvinyltransferase	79114	gene product	chorismatesynthase	79168	gene product	database
+shikimate	28340	metabolite	3dehydroshikimate	28687	metabolite	database
+2dehydro3deoxydarabinoheptonate7phosphate	29732	metabolite	derythrose4phosphate	28876	metabolite	database
+shikimate3phosphate	28974	metabolite	shikimate	28340	metabolite	database
+3dehydroshikimate	28687	metabolite	3dehydroquinate	31217	metabolite	database
+3dehydroquinate	31217	metabolite	2dehydro3deoxydarabinoheptonate7phosphate	29732	metabolite	database
+2dehydro3deoxydarabinoheptonate7phosphate	29732	metabolite	phosphoenolpyruvate	29643	metabolite	database
+derythrose4phosphate	28876	metabolite	phosphoenolpyruvate	29643	metabolite	database
+chorismate	31063	metabolite	5o1carboxyvinyl3phosphoshikimate	28437	metabolite	database
+5o1carboxyvinyl3phosphoshikimate	28437	metabolite	shikimate3phosphate	28974	metabolite	database
+2dehydro3deoxydarabinoheptonate7phosphate	29732	metabolite	3dehydroquinatesynthase	79167	gene product	database
+3dehydroquinate	31217	metabolite	3dehydroquinatesynthase	79167	gene product	database
+3dehydroquinate	31217	metabolite	3dehydroquinatedehydratase	79180	gene product	database
+3dehydroshikimate	28687	metabolite	3dehydroquinatedehydratase	79180	gene product	database
+shikimate	28340	metabolite	shikimatekinase	79229	gene product	database
+shikimate3phosphate	28974	metabolite	shikimatekinase	79229	gene product	database
+shikimate3phosphate	28974	metabolite	3phosphoshikimate1carboxyvinyltransferase	79114	gene product	database
+5o1carboxyvinyl3phosphoshikimate	28437	metabolite	3phosphoshikimate1carboxyvinyltransferase	79114	gene product	database
+5o1carboxyvinyl3phosphoshikimate	28437	metabolite	chorismatesynthase	79168	gene product	database
+chorismate	31063	metabolite	chorismatesynthase	79168	gene product	database
+transaldolase	78131	gene product	glucose6phosphateisomerase	35007	metabolite	database
+transketolase	79356	gene product	transaldolase	78131	gene product	database
+6phosphogluconatedehydrogenase	78646	gene product	ribulosephosphate3epimerase	78957	gene product	database
+6phosphogluconolactonase	78949	gene product	6phosphogluconatedehydrogenase	78646	gene product	database
+glucose6phosphate1dehydrogenase	79076	gene product	6phosphogluconolactonase	78949	gene product	database
+dxylulose5phosphate	28490	metabolite	derythrose4phosphate	28876	metabolite	database
+sedoheptulose7phosphate	28059	metabolite	dribose5phosphate	29496	metabolite	database
+dfructose6phosphate	28220	metabolite	dglyceraldehyde3phosphate	29033	metabolite	database
+sedoheptulose7phosphate	28059	metabolite	dxylulose5phosphate	28490	metabolite	database
+dfructose6phosphate	28220	metabolite	dxylulose5phosphate	28490	metabolite	database
+6phosphodgluconate	31941	metabolite	dglucono15lactone6phosphate	28902	metabolite	database
+dxylulose5phosphate	28490	metabolite	dribulose5phosphate	29198	metabolite	database
+dribose5phosphate	29496	metabolite	dribulose5phosphate	29198	metabolite	database
+dglyceraldehyde3phosphate	29033	metabolite	dxylulose5phosphate	28490	metabolite	database
+dxylulose5phosphate	28490	metabolite	dribose5phosphate	29496	metabolite	database
+dribulose5phosphate	29198	metabolite	6phosphodgluconate	31941	metabolite	database
+betadglucose6phosphate	29438	metabolite	alphadglucose6phosphate	29401	metabolite	database
+derythrose4phosphate	28876	metabolite	dglyceraldehyde3phosphate	29033	metabolite	database
+dglucono15lactone6phosphate	28902	metabolite	betadglucose6phosphate	29438	metabolite	database
+dfructose6phosphate	28220	metabolite	sedoheptulose7phosphate	28059	metabolite	database
+dglyceraldehyde3phosphate	29033	metabolite	sedoheptulose7phosphate	28059	metabolite	database
+dfructose6phosphate	28220	metabolite	derythrose4phosphate	28876	metabolite	database
+derythrose4phosphate	28876	metabolite	sedoheptulose7phosphate	28059	metabolite	database
+alphadglucose6phosphate	29401	metabolite	dfructose6phosphate	28220	metabolite	database
+betadglucose6phosphate	29438	metabolite	glucose6phosphate1dehydrogenase	79076	gene product	database
+dglucono15lactone6phosphate	28902	metabolite	glucose6phosphate1dehydrogenase	79076	gene product	database
+dglucono15lactone6phosphate	28902	metabolite	6phosphogluconolactonase	78949	gene product	database
+6phosphodgluconate	31941	metabolite	6phosphogluconolactonase	78949	gene product	database
+6phosphodgluconate	31941	metabolite	6phosphogluconatedehydrogenase	78646	gene product	database
+dribulose5phosphate	29198	metabolite	6phosphogluconatedehydrogenase	78646	gene product	database
+dribulose5phosphate	29198	metabolite	ribulosephosphate3epimerase	78957	gene product	database
+dxylulose5phosphate	28490	metabolite	ribulosephosphate3epimerase	78957	gene product	database
+dribose5phosphate	29496	metabolite	transketolase	79356	gene product	database
+dxylulose5phosphate	28490	metabolite	transketolase	79356	gene product	database
+sedoheptulose7phosphate	28059	metabolite	transketolase	79356	gene product	database
+dglyceraldehyde3phosphate	29033	metabolite	transketolase	79356	gene product	database
+derythrose4phosphate	28876	metabolite	transketolase	79356	gene product	database
+dfructose6phosphate	28220	metabolite	transketolase	79356	gene product	database
+sedoheptulose7phosphate	28059	metabolite	transaldolase	78131	gene product	database
+dglyceraldehyde3phosphate	29033	metabolite	transaldolase	78131	gene product	database
+derythrose4phosphate	28876	metabolite	transaldolase	78131	gene product	database
+dfructose6phosphate	28220	metabolite	transaldolase	78131	gene product	database
+dfructose6phosphate	28220	metabolite	glucose6phosphateisomerase	35007	metabolite	database
+alphadglucose6phosphate	29401	metabolite	glucose6phosphateisomerase	35007	metabolite	database
+betadglucose6phosphate	29438	metabolite	glucose6phosphateisomerase	35007	metabolite	database
+pimeloylcoa	27910	metabolite	pimelate	2788	lipid	database
+utpglucose1phosphateuridylyltransferase	78282	gene product	glycogensynthase	79249	gene product	database
+amylose	27862	metabolite	adpglucose	28084	metabolite	database
+adpglucose	28084	metabolite	dglucose1phosphate	28309	metabolite	database
+amylose	27862	metabolite	udpglucose	29677	metabolite	database
+udpglucose	29677	metabolite	glycogensynthase	79249	gene product	database
+amylose	27862	metabolite	glycogensynthase	79249	gene product	database
+dglucose1phosphate	28309	metabolite	glucose1phosphateadenylyltransferase	79247	gene product	database
+adpglucose	28084	metabolite	glucose1phosphateadenylyltransferase	79247	gene product	database
+malonylacylcarrierprotein	29172	metabolite	malonylcoa	7574	lipid	database
+acetylacylcarrierprotein	29000	metabolite	acetylcoa	7519	lipid	database
+malonylcoa	7574	lipid	acetylcoa	7519	lipid	database
+malonylacylcarrierprotein	29172	metabolite	acetylcoa	7519	lipid	database
+acetoacetylacp	33091	metabolite	acetylcoa	7519	lipid	database
+citrate	28503	metabolite	oxaloacetate	28571	metabolite	database
+oxaloacetate	28571	metabolite	acetylcoa	7519	lipid	database
+succinylcoa	27819	metabolite	2oxoglutarate	28814	metabolite	database
+succinate	31082	metabolite	succinylcoa	27819	metabolite	database
+citrate	28503	metabolite	acetylcoa	7519	lipid	database
+s1pyrroline5carboxylate	28183	metabolite	lglutamate5semialdehyde	29105	metabolite	database
+lglutamate5semialdehyde	29105	metabolite	lglutamyl5phosphate	29497	metabolite	database
+lproline	29085	metabolite	s1pyrroline5carboxylate	28183	metabolite	database
+lglutamyl5phosphate	29497	metabolite	lglutamate	31076	metabolite	database
+lglutamyl5phosphate	29497	metabolite	glutamate5semialdehydedehydrogenase	79291	gene product	database
+lglutamate5semialdehyde	29105	metabolite	glutamate5semialdehydedehydrogenase	79291	gene product	database
+nacetylornithine	28631	metabolite	nacetyllglutamate5semialdehyde	28480	metabolite	database
+lornithine	28067	metabolite	nacetylornithine	28631	metabolite	database
+nacetyllglutamate5semialdehyde	28480	metabolite	nacetyllglutamate5phosphate	28864	metabolite	database
+nacetyllglutamate5phosphate	28864	metabolite	nacetyllglutamate	29311	metabolite	database
+nacetyllglutamate	29311	metabolite	lglutamate	31076	metabolite	database
+nacetyllglutamate	29311	metabolite	acetylglutamatekinase	79476	gene product	database
+nacetyllglutamate5phosphate	28864	metabolite	acetylglutamatekinase	79476	gene product	database
+nacetyllglutamate5phosphate	28864	metabolite	nacetylgammaglutamylphosphatereductase	79137	gene product	database
+nacetyllglutamate5semialdehyde	28480	metabolite	nacetylgammaglutamylphosphatereductase	79137	gene product	database
+nacetyllglutamate5semialdehyde	28480	metabolite	acetylornithineaminotransferase	79191	gene product	database
+nacetylornithine	28631	metabolite	acetylornithineaminotransferase	79191	gene product	database
+nacetylornithine	28631	metabolite	aminoacylase	80546	gene product	database
+lornithine	28067	metabolite	aminoacylase	80546	gene product	database
+3methyl2oxobutanoatehydroxymethyltransferase	78554	gene product	2dehydropantoate2reductase	78970	gene product	database
+2dehydropantoate2reductase	78970	gene product	aspartate1decarboxylase	79413	gene product	database
+aspartate1decarboxylase	79413	gene product	pantoatebetaalanineligase	79412	gene product	database
+rpantoate	28246	metabolite	2dehydropantoate	29001	metabolite	database
+pantothenate	28573	metabolite	rpantoate	28246	metabolite	database
+pantothenate	28573	metabolite	betaalanine	28914	metabolite	database
+betaalanine	28914	metabolite	laspartate	31079	metabolite	database
+betaalanine	28914	metabolite	rpantoate	28246	metabolite	database
+2dehydropantoate	29001	metabolite	3methyl2oxobutanoicacid	337	lipid	database
+3methyl2oxobutanoicacid	337	lipid	3methyl2oxobutanoatehydroxymethyltransferase	78554	gene product	database
+2dehydropantoate	29001	metabolite	3methyl2oxobutanoatehydroxymethyltransferase	78554	gene product	database
+2dehydropantoate	29001	metabolite	2dehydropantoate2reductase	78970	gene product	database
+rpantoate	28246	metabolite	2dehydropantoate2reductase	78970	gene product	database
+laspartate	31079	metabolite	aspartate1decarboxylase	79413	gene product	database
+betaalanine	28914	metabolite	aspartate1decarboxylase	79413	gene product	database
+rpantoate	28246	metabolite	pantoatebetaalanineligase	79412	gene product	database
+betaalanine	28914	metabolite	pantoatebetaalanineligase	79412	gene product	database
+pantothenate	28573	metabolite	pantoatebetaalanineligase	79412	gene product	database
+lhomocysteine	29103	metabolite	sribosyllhomocysteine	29336	metabolite	database
+sadenosyllhomocysteine	28716	metabolite	sadenosyllmethionine	27842	metabolite	database
+sribosyllhomocysteine	29336	metabolite	sadenosyllhomocysteine	28716	metabolite	database
+lcysteine	27801	metabolite	lcystathionine	29279	metabolite	database
+sribosyllhomocysteine	29336	metabolite	sribosylhomocysteinelyase	78410	gene product	database
+lhomocysteine	29103	metabolite	sribosylhomocysteinelyase	78410	gene product	database
+lcystathionine	29279	metabolite	cystathioninegammalyase	78005	gene product	database
+lcysteine	27801	metabolite	cystathioninegammalyase	78005	gene product	database
+nitrite	28468	metabolite	nitrate	29381	metabolite	database
+nh3	28350	metabolite	nitrite	28468	metabolite	database
+lglutamate5semialdehyde	29105	metabolite	lornithine	28067	metabolite	database
+2alphahydroxyethylthiaminediphosphate	32971	metabolite	thiamindiphosphate	29816	metabolite	database
+2alphahydroxyethylthiaminediphosphate	32971	metabolite	pyruvate	27804	metabolite	database
+thiamindiphosphate	29816	metabolite	pyruvate	27804	metabolite	database
+acetylcoa	7519	lipid	pyruvate	27804	metabolite	database
+transaldolase	78131	gene product	ribulosephosphate3epimerase	78957	gene product	database
+4methyl2oxopentanoate	29543	metabolite	2r3s3isopropylmalate	31307	metabolite	database
+alphaisopropylmalate	30452	metabolite	3methyl2oxobutanoicacid	337	lipid	database
+acetylcoa	7519	lipid	3methyl2oxobutanoicacid	337	lipid	database
+alphaisopropylmalate	30452	metabolite	acetylcoa	7519	lipid	database
+2r3s3isopropylmalate	31307	metabolite	alphaisopropylmalate	30452	metabolite	database
+3methyl2oxobutanoicacid	337	lipid	2isopropylmalatesynthase	79554	gene product	database
+acetylcoa	7519	lipid	2isopropylmalatesynthase	79554	gene product	database
+alphaisopropylmalate	30452	metabolite	2isopropylmalatesynthase	79554	gene product	database
+2r3s3isopropylmalate	31307	metabolite	3isopropylmalatedehydrogenase	78436	gene product	database
+4methyl2oxopentanoate	29543	metabolite	3isopropylmalatedehydrogenase	78436	gene product	database
+xanthine	29433	metabolite	guanine	28422	metabolite	database
+guanine	28422	metabolite	guanosine	28767	metabolite	database
+urate	29481	metabolite	xanthine	29433	metabolite	database
+guanosine	28767	metabolite	gmp	29184	metabolite	database
+gmp	29184	metabolite	5nucleotidase	78049	gene product	database
+guanosine	28767	metabolite	5nucleotidase	78049	gene product	database
+guanine	28422	metabolite	guaninedeaminase	78405	gene product	database
+xanthine	29433	metabolite	guaninedeaminase	78405	gene product	database
+oxaloacetate	28571	metabolite	citratesynthase	78601	gene product	database
+acetylcoa	7519	lipid	citratesynthase	78601	gene product	database
+citrate	28503	metabolite	citratesynthase	78601	gene product	database
+histidinolphosphateaminotransferase	79093	gene product	histidinolphosphatase	80024	gene product	database
+imidazoleglycerolphosphatedehydratase	80092	gene product	histidinolphosphateaminotransferase	79093	gene product	database
+lhistidinol	28435	metabolite	lhistidinolphosphate	28937	metabolite	database
+lhistidinal	44726	metabolite	lhistidinol	28435	metabolite	database
+phosphoribosylamp	29877	metabolite	15phosphodribosylatp	47451	metabolite	database
+lhistidine	28240	metabolite	lhistidinal	44726	metabolite	database
+55phosphodribosylaminoformimino15phosphoribosylimidazole4carboxamide	29825	metabolite	phosphoribosylamp	29877	metabolite	database
+n5phosphod1ribulosylformimino5amino15phosphodribosyl4imidazolecarboxamide	30216	metabolite	55phosphodribosylaminoformimino15phosphoribosylimidazole4carboxamide	29825	metabolite	database
+derythro1imidazol4ylglycerol3phosphate	29503	metabolite	n5phosphod1ribulosylformimino5amino15phosphodribosyl4imidazolecarboxamide	30216	metabolite	database
+3imidazol4yl2oxopropylphosphate	28553	metabolite	derythro1imidazol4ylglycerol3phosphate	29503	metabolite	database
+lhistidinolphosphate	28937	metabolite	3imidazol4yl2oxopropylphosphate	28553	metabolite	database
+15phosphodribosylatp	47451	metabolite	5phosphoalphadribose1diphosphate	29014	metabolite	database
+5phosphoalphadribose1diphosphate	29014	metabolite	atpphosphoribosyltransferase	78205	gene product	database
+15phosphodribosylatp	47451	metabolite	atpphosphoribosyltransferase	78205	gene product	database
+55phosphodribosylaminoformimino15phosphoribosylimidazole4carboxamide	29825	metabolite	phosphoribosylformimino5aminoimidazolecarboxamideribotideisomerase	80161	gene product	database
+n5phosphod1ribulosylformimino5amino15phosphodribosyl4imidazolecarboxamide	30216	metabolite	phosphoribosylformimino5aminoimidazolecarboxamideribotideisomerase	80161	gene product	database
+derythro1imidazol4ylglycerol3phosphate	29503	metabolite	imidazoleglycerolphosphatedehydratase	80092	gene product	database
+3imidazol4yl2oxopropylphosphate	28553	metabolite	imidazoleglycerolphosphatedehydratase	80092	gene product	database
+3imidazol4yl2oxopropylphosphate	28553	metabolite	histidinolphosphateaminotransferase	79093	gene product	database
+lhistidinolphosphate	28937	metabolite	histidinolphosphateaminotransferase	79093	gene product	database
+lhistidinolphosphate	28937	metabolite	histidinolphosphatase	80024	gene product	database
+lhistidinol	28435	metabolite	histidinolphosphatase	80024	gene product	database
+lhistidinol	28435	metabolite	histidinoldehydrogenase	78130	gene product	database
+lhistidinal	44726	metabolite	histidinoldehydrogenase	78130	gene product	database
+lhistidine	28240	metabolite	histidinoldehydrogenase	78130	gene product	database
+lglutamate	31076	metabolite	lglutamate5semialdehyde	29105	metabolite	database
+lglutamate5semialdehyde	29105	metabolite	1pyrroline5carboxylatedehydrogenase	78656	gene product	database
+lglutamate	31076	metabolite	1pyrroline5carboxylatedehydrogenase	78656	gene product	database
+6phospho3hexuloisomerase	35007	metabolite	6phosphofructokinase	78401	gene product	database
+3hexulose6phosphatesynthase	38799	metabolite	6phospho3hexuloisomerase	35007	metabolite	database
+darabinohex3ulose6phosphate	41410	metabolite	formaldehyde	28838	metabolite	database
+darabinohex3ulose6phosphate	41410	metabolite	dribulose5phosphate	29198	metabolite	database
+formaldehyde	28838	metabolite	dribulose5phosphate	29198	metabolite	database
+dfructose6phosphate	28220	metabolite	darabinohex3ulose6phosphate	41410	metabolite	database
+dribulose5phosphate	29198	metabolite	3hexulose6phosphatesynthase	38799	metabolite	database
+formaldehyde	28838	metabolite	3hexulose6phosphatesynthase	38799	metabolite	database
+darabinohex3ulose6phosphate	41410	metabolite	3hexulose6phosphatesynthase	38799	metabolite	database
+darabinohex3ulose6phosphate	41410	metabolite	6phospho3hexuloisomerase	35007	metabolite	database
+dfructose6phosphate	28220	metabolite	6phosphofructokinase	78401	gene product	database
+dfructose16bisphosphate	28883	metabolite	6phosphofructokinase	78401	gene product	database
+ribonucleosidediphosphatereductase	79631	gene product	nucleosidediphosphatekinase	78513	gene product	database
+dctp	28475	metabolite	dcdp	30884	metabolite	database
+dcdp	30884	metabolite	cdp	29107	metabolite	database
+dgtp	28601	metabolite	dgdp	30896	metabolite	database
+dadp	28379	metabolite	adp	28774	metabolite	database
+datp	28455	metabolite	dadp	28379	metabolite	database
+dgdp	30896	metabolite	gdp	29324	metabolite	database
+smalate	27962	metabolite	malatedehydrogenase	78608	gene product	database
+oxaloacetate	28571	metabolite	malatedehydrogenase	78608	gene product	database
+22r5z2carboxy4methylthiazol52hylideneethylphosphate	32672	metabolite	iminoglycine	40844	metabolite	database
+22r5z2carboxy4methylthiazol52hylideneethylphosphate	32672	metabolite	1deoxydxylulose5phosphate	28600	metabolite	database
+thiamindiphosphate	29816	metabolite	thiaminmonophosphate	28949	metabolite	database
+iminoglycine	40844	metabolite	1deoxydxylulose5phosphate	28600	metabolite	database
+iminoglycine	40844	metabolite	glycine	27851	metabolite	database
+thiaminmonophosphate	28949	metabolite	22carboxy4methylthiazol5ylethylphosphate	32672	metabolite	database
+4amino2methyl5phosphooxymethylpyrimidine	41349	metabolite	aminoimidazoleribotide	58226	metabolite	database
+3phosphoadenylylsulfate	29615	metabolite	adenylylsulfate	29430	metabolite	database
+sulfite	29194	metabolite	3phosphoadenylylsulfate	29615	metabolite	database
+adenylylsulfate	29430	metabolite	sulfate	28389	metabolite	database
+hydrogensulfide	28351	metabolite	sulfite	29194	metabolite	database
+sulfate	28389	metabolite	sulfateadenylyltransferase	78134	gene product	database
+adenylylsulfate	29430	metabolite	sulfateadenylyltransferase	78134	gene product	database
+histidineammonialyase	79068	gene product	urocanatehydratase	78496	gene product	database
+urocanatehydratase	78496	gene product	imidazolonepropionase	78585	gene product	database
+imidazolonepropionase	78585	gene product	formiminoglutamase	78584	gene product	database
+nformyllglutamate	29412	metabolite	nformiminolglutamate	33924	metabolite	database
+urocanate	35066	metabolite	lhistidine	28240	metabolite	database
+nformiminolglutamate	33924	metabolite	4imidazolone5propanoate	29988	metabolite	database
+lglutamate	31076	metabolite	nformiminolglutamate	33924	metabolite	database
+4imidazolone5propanoate	29988	metabolite	urocanate	35066	metabolite	database
+lglutamate	31076	metabolite	nformyllglutamate	29412	metabolite	database
+lhistidine	28240	metabolite	histidineammonialyase	79068	gene product	database
+urocanate	35066	metabolite	histidineammonialyase	79068	gene product	database
+urocanate	35066	metabolite	urocanatehydratase	78496	gene product	database
+4imidazolone5propanoate	29988	metabolite	urocanatehydratase	78496	gene product	database
+4imidazolone5propanoate	29988	metabolite	imidazolonepropionase	78585	gene product	database
+nformiminolglutamate	33924	metabolite	imidazolonepropionase	78585	gene product	database
+nformiminolglutamate	33924	metabolite	formiminoglutamase	78584	gene product	database
+lglutamate	31076	metabolite	formiminoglutamase	78584	gene product	database
+imp	29084	metabolite	amp	28274	metabolite	database
+xanthine	29433	metabolite	hypoxanthine	29201	metabolite	database
+adenosine	28492	metabolite	amp	28274	metabolite	database
+inosine	29351	metabolite	imp	29084	metabolite	database
+hypoxanthine	29201	metabolite	inosine	29351	metabolite	database
+inosine	29351	metabolite	adenosine	28492	metabolite	database
+imp	29084	metabolite	5nucleotidase	78049	gene product	database
+inosine	29351	metabolite	5nucleotidase	78049	gene product	database
+amp	28274	metabolite	5nucleotidase	78049	gene product	database
+adenosine	28492	metabolite	5nucleotidase	78049	gene product	database
+iminoaspartate	32088	metabolite	laspartate	31079	metabolite	database
+pyridine23dicarboxylate	28715	metabolite	iminoaspartate	32088	metabolite	database
+nicotinatedribonucleotide	28091	metabolite	pyridine23dicarboxylate	28715	metabolite	database
+nad	28148	metabolite	deaminonad	29827	metabolite	database
+deaminonad	29827	metabolite	nicotinatedribonucleotide	28091	metabolite	database
+laspartate	31079	metabolite	laspartateoxidase	78188	gene product	database
+iminoaspartate	32088	metabolite	laspartateoxidase	78188	gene product	database
+iminoaspartate	32088	metabolite	quinolinatesynthase	78294	gene product	database
+pyridine23dicarboxylate	28715	metabolite	quinolinatesynthase	78294	gene product	database
+nicotinatedribonucleotide	28091	metabolite	nicotinatenucleotideadenylyltransferase	79438	gene product	database
+deaminonad	29827	metabolite	nicotinatenucleotideadenylyltransferase	79438	gene product	database
+hydroxymethylbilanesynthase	48785	metabolite	uroporphyrinogeniiisynthase	80211	gene product	database
+precorrin2dehydrogenase	78999	gene product	sirohydrochlorinferrochelatase	78158	gene product	database
+porphobilinogensynthase	79166	gene product	hydroxymethylbilanesynthase	48785	metabolite	database
+siroheme	30746	metabolite	sirohydrochlorin	29645	metabolite	database
+sirohydrochlorin	29645	metabolite	precorrin2	32087	metabolite	database
+precorrin2	32087	metabolite	uroporphyrinogeniii	27860	metabolite	database
+s4amino5oxopentanoate	28087	metabolite	glutamyltrnareductase	79091	gene product	database
+5aminolevulinate	27948	metabolite	porphobilinogensynthase	79166	gene product	database
+porphobilinogen	29209	metabolite	porphobilinogensynthase	79166	gene product	database
+porphobilinogen	29209	metabolite	hydroxymethylbilanesynthase	48785	metabolite	database
+hydroxymethylbilane	28695	metabolite	hydroxymethylbilanesynthase	48785	metabolite	database
+hydroxymethylbilane	28695	metabolite	uroporphyrinogeniiisynthase	80211	gene product	database
+uroporphyrinogeniii	27860	metabolite	uroporphyrinogeniiisynthase	80211	gene product	database
+precorrin2	32087	metabolite	precorrin2dehydrogenase	78999	gene product	database
+sirohydrochlorin	29645	metabolite	precorrin2dehydrogenase	78999	gene product	database
+sirohydrochlorin	29645	metabolite	sirohydrochlorinferrochelatase	78158	gene product	database
+siroheme	30746	metabolite	sirohydrochlorinferrochelatase	78158	gene product	database
+lcysteine	27801	metabolite	oacetyllserine	29616	metabolite	database
+hydrogensulfide	28351	metabolite	oacetyllserine	29616	metabolite	database
+lcysteine	27801	metabolite	hydrogensulfide	28351	metabolite	database
+oacetyllserine	29616	metabolite	lserine	2404	lipid	database
+oacetyllserine	29616	metabolite	cysteinesynthase	78183	gene product	database
+hydrogensulfide	28351	metabolite	cysteinesynthase	78183	gene product	database
+lcysteine	27801	metabolite	cysteinesynthase	78183	gene product	database
+menaquinone	23125	lipid	menaquinol	29733	metabolite	database
+h2o	27816	metabolite	menaquinol	29733	metabolite	database
+h2o	27816	metabolite	menaquinone	23125	lipid	database
+glucuronateisomerase	78998	gene product	tagaturonatereductase	78941	gene product	database
+2dehydro3deoxygluconokinase	79408	gene product	2dehydro3deoxyphosphogluconatealdolase	79409	gene product	database
+dglyceraldehyde3phosphate	29033	metabolite	2dehydro3deoxy6phosphodgluconate	28204	metabolite	database
+dtagaturonate	29557	metabolite	dgalacturonate	34483	metabolite	database
+2dehydro3deoxydgluconate	28959	metabolite	daltronate	29195	metabolite	database
+pyruvate	27804	metabolite	2dehydro3deoxy6phosphodgluconate	28204	metabolite	database
+2dehydro3deoxy6phosphodgluconate	28204	metabolite	2dehydro3deoxydgluconate	28959	metabolite	database
+daltronate	29195	metabolite	dtagaturonate	29557	metabolite	database
+dgalacturonate	34483	metabolite	glucuronateisomerase	78998	gene product	database
+dtagaturonate	29557	metabolite	glucuronateisomerase	78998	gene product	database
+dtagaturonate	29557	metabolite	tagaturonatereductase	78941	gene product	database
+daltronate	29195	metabolite	tagaturonatereductase	78941	gene product	database
+2dehydro3deoxydgluconate	28959	metabolite	2dehydro3deoxygluconokinase	79408	gene product	database
+2dehydro3deoxy6phosphodgluconate	28204	metabolite	2dehydro3deoxygluconokinase	79408	gene product	database
+2dehydro3deoxy6phosphodgluconate	28204	metabolite	2dehydro3deoxyphosphogluconatealdolase	79409	gene product	database
+pyruvate	27804	metabolite	2dehydro3deoxyphosphogluconatealdolase	79409	gene product	database
+dglyceraldehyde3phosphate	29033	metabolite	2dehydro3deoxyphosphogluconatealdolase	79409	gene product	database
+guanylatekinase	78933	gene product	nucleosidediphosphatekinase	78513	gene product	database
+gdp	29324	metabolite	gmp	29184	metabolite	database
+gtp	28255	metabolite	gdp	29324	metabolite	database
+xanthosine5phosphate	28012	metabolite	imp	29084	metabolite	database
+gmp	29184	metabolite	xanthosine5phosphate	28012	metabolite	database
+imp	29084	metabolite	impdehydrogenase	78483	gene product	database
+xanthosine5phosphate	28012	metabolite	impdehydrogenase	78483	gene product	database
+gmp	29184	metabolite	guanylatekinase	78933	gene product	database
+gdp	29324	metabolite	guanylatekinase	78933	gene product	database
+gdp	29324	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+gtp	28255	metabolite	nucleosidediphosphatekinase	78513	gene product	database
+putrescine	29042	metabolite	agmatine	29245	metabolite	database
+spermidine	28678	metabolite	putrescine	29042	metabolite	database
+agmatine	29245	metabolite	larginine	28582	metabolite	database
+putrescine	29042	metabolite	sadenosylmethioninamine	27993	metabolite	database
+spermidine	28678	metabolite	sadenosylmethioninamine	27993	metabolite	database
+dtdplrhamnose	28101	metabolite	dtdp4dehydrobetalrhamnose	43733	metabolite	database
+dtdpglucose	28043	metabolite	dglucose1phosphate	28309	metabolite	database
+nacetyldiaminopimelatedeacetylase	79022	gene product	diaminopimelateepimerase	78897	gene product	database
+diaminopimelateepimerase	78897	gene product	diaminopimelatedecarboxylase	79136	gene product	database
+4hydroxytetrahydrodipicolinatesynthase	79593	gene product	4hydroxytetrahydrodipicolinatereductase	79353	gene product	database
+4hydroxytetrahydrodipicolinatereductase	79353	gene product	tetrahydrodipicolinatenacetyltransferase	79033	gene product	database
+aspartatesemialdehydedehydrogenase	78680	gene product	4hydroxytetrahydrodipicolinatesynthase	79593	gene product	database
+2345tetrahydrodipicolinate	34456	metabolite	2s4s4hydroxy2345tetrahydrodipicolinate	45665	metabolite	database
+llysine	29641	metabolite	meso26diaminoheptanedioate	31103	metabolite	database
+meso26diaminoheptanedioate	31103	metabolite	ll26diaminoheptanedioate	28273	metabolite	database
+nacetyll2amino6oxopimelate	29190	metabolite	2345tetrahydrodipicolinate	34456	metabolite	database
+ll26diaminoheptanedioate	28273	metabolite	n6acetylll26diaminoheptanedioate	29837	metabolite	database
+n6acetylll26diaminoheptanedioate	29837	metabolite	nacetyll2amino6oxopimelate	29190	metabolite	database
+2s4s4hydroxy2345tetrahydrodipicolinate	45665	metabolite	laspartate4semialdehyde	32861	metabolite	database
+laspartate4semialdehyde	32861	metabolite	4hydroxytetrahydrodipicolinatesynthase	79593	gene product	database
+2s4s4hydroxy2345tetrahydrodipicolinate	45665	metabolite	4hydroxytetrahydrodipicolinatesynthase	79593	gene product	database
+2s4s4hydroxy2345tetrahydrodipicolinate	45665	metabolite	4hydroxytetrahydrodipicolinatereductase	79353	gene product	database
+2345tetrahydrodipicolinate	34456	metabolite	4hydroxytetrahydrodipicolinatereductase	79353	gene product	database
+2345tetrahydrodipicolinate	34456	metabolite	tetrahydrodipicolinatenacetyltransferase	79033	gene product	database
+nacetyll2amino6oxopimelate	29190	metabolite	tetrahydrodipicolinatenacetyltransferase	79033	gene product	database
+n6acetylll26diaminoheptanedioate	29837	metabolite	nacetyldiaminopimelatedeacetylase	79022	gene product	database
+ll26diaminoheptanedioate	28273	metabolite	nacetyldiaminopimelatedeacetylase	79022	gene product	database
+ll26diaminoheptanedioate	28273	metabolite	diaminopimelateepimerase	78897	gene product	database
+meso26diaminoheptanedioate	31103	metabolite	diaminopimelateepimerase	78897	gene product	database
+meso26diaminoheptanedioate	31103	metabolite	diaminopimelatedecarboxylase	79136	gene product	database
+llysine	29641	metabolite	diaminopimelatedecarboxylase	79136	gene product	database
+phosphatidatecytidylyltransferase	78152	gene product	phosphatidylserinesynthase	79292	gene product	database
+cdpdiacylglycerol	29602	metabolite	phosphatidate	28494	metabolite	database
+phosphatidylethanolamine	28283	metabolite	phosphatidylserine	29826	metabolite	database
+phosphatidylserine	29826	metabolite	cdpdiacylglycerol	29602	metabolite	database
+phosphatidate	28494	metabolite	phosphatidatecytidylyltransferase	78152	gene product	database
+cdpdiacylglycerol	29602	metabolite	phosphatidatecytidylyltransferase	78152	gene product	database
+cdpdiacylglycerol	29602	metabolite	phosphatidylserinesynthase	79292	gene product	database
+phosphatidylserine	29826	metabolite	phosphatidylserinesynthase	79292	gene product	database
+precursorz	40510	metabolite	8s38cyclo78dihydroguanosine5triphosphate	55432	metabolite	database
+adenylatedmolybdopterin	43671	metabolite	molybdopterin	31696	metabolite	database
+molybdopterin	31696	metabolite	precursorz	40510	metabolite	database
+8s38cyclo78dihydroguanosine5triphosphate	55432	metabolite	gtp	28255	metabolite	database
+8s38cyclo78dihydroguanosine5triphosphate	55432	metabolite	cyclicpyranopterinmonophosphatesynthase	78762	gene product	database
+precursorz	40510	metabolite	cyclicpyranopterinmonophosphatesynthase	78762	gene product	database
+precursorz	40510	metabolite	molybdopterinsynthasecatalyticsubunit	78854	gene product	database
+molybdopterin	31696	metabolite	molybdopterinsynthasecatalyticsubunit	78854	gene product	database
+d3phosphoglyceratedehydrogenase	79178	gene product	phosphoserineaminotransferase	78647	gene product	database
+phosphoserineaminotransferase	78647	gene product	phosphoserinephosphatase	36137	metabolite	database
+3phosphonooxypyruvate	29704	metabolite	3phosphodglycerate	28972	metabolite	database
+ophospholserine	28128	metabolite	3phosphonooxypyruvate	29704	metabolite	database
+lserine	2404	lipid	ophospholserine	28128	metabolite	database
+3phosphodglycerate	28972	metabolite	d3phosphoglyceratedehydrogenase	79178	gene product	database
+3phosphonooxypyruvate	29704	metabolite	d3phosphoglyceratedehydrogenase	79178	gene product	database
+3phosphonooxypyruvate	29704	metabolite	phosphoserineaminotransferase	78647	gene product	database
+ophospholserine	28128	metabolite	phosphoserineaminotransferase	78647	gene product	database
+ophospholserine	28128	metabolite	phosphoserinephosphatase	36137	metabolite	database
+lserine	2404	lipid	phosphoserinephosphatase	36137	metabolite	database
+h2o	27816	metabolite	atp	27845	metabolite	database
+atp	27845	metabolite	orthophosphate	29872	metabolite	database
+h2o	27816	metabolite	adp	28774	metabolite	database
+h2o	27816	metabolite	orthophosphate	29872	metabolite	database
+orthophosphate	29872	metabolite	adp	28774	metabolite	database
+ldihydroanticapsin	52038	metabolite	epoxy4sh4hpp	52037	metabolite	database
+34r4hydroxycyclohexa15dien1yl2oxopropanoate	52034	metabolite	prephenate	31074	metabolite	database
+epoxy4sh4hpp	52037	metabolite	epoxy3eh2hpp	52036	metabolite	database
+lanticapsin	52008	metabolite	ldihydroanticapsin	52038	metabolite	database
+bacilysin	52009	metabolite	lanticapsin	52008	metabolite	database
+tetrahydrofolate	28000	metabolite	glycine	27851	metabolite	database
+ammonia	28350	metabolite	tetrahydrofolate	28000	metabolite	database
+510methylenetetrahydrofolate	33035	metabolite	tetrahydrofolate	28000	metabolite	database
+ammonia	28350	metabolite	glycine	27851	metabolite	database
+co2	28622	metabolite	glycine	27851	metabolite	database
+510methylenetetrahydrofolate	33035	metabolite	glycine	27851	metabolite	database
+510methylenetetrahydrofolate	33035	metabolite	ammonia	28350	metabolite	database
+4amino2methyl5phosphooxymethylpyrimidine	41349	metabolite	4amino5hydroxymethyl2methylpyrimidine	28873	metabolite	database
+4methyl52phosphooxyethylthiazole	41332	metabolite	52hydroxyethyl4methylthiazole	29598	metabolite	database
+thiaminmonophosphate	28949	metabolite	4methyl52phosphooxyethylthiazole	41332	metabolite	database

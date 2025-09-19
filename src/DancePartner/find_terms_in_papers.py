@@ -4,8 +4,12 @@ import nltk
 import re
 from pathlib import Path
 
-def find_terms_in_papers(paper_directory: str, terms: list[str], output_directory: str = None, 
-                         n_gram_max: int = 3, max_char_length: int = 250, padding: int = 10, 
+def find_terms_in_papers(papers: str, 
+                         terms: list[str], 
+                         output_directory: str = None, 
+                         n_gram_max: int = 3, 
+                         max_char_length: int = 250, 
+                         padding: int = 10, 
                          verbose: bool = False):   
     """
     This function searches through sentences of papers to extract biomolecule pairs present in each sentence.
@@ -13,8 +17,8 @@ def find_terms_in_papers(paper_directory: str, terms: list[str], output_director
 
     Parameters
     ----------
-    paper_directory
-        A directory path pointing to the list of papers to be parsed through.
+    papers
+        A directory to a folder with papers as .txt files, or a specific txt file. 
     
     terms
         List of terms to find in papers
@@ -40,49 +44,90 @@ def find_terms_in_papers(paper_directory: str, terms: list[str], output_director
     """
     
     # Modify term matches
-    terms = [re.sub("[^\s\d\w]|\n", '', term.lower()) for term in terms]
+    terms = [re.sub("[^\s\d\w]|\n", '', str(term).lower()) for term in terms]
 
+    # Hold all matches
     matches = []
-    for root, _, files in os.walk(paper_directory):
-        for file in files:
-            if file.endswith(".txt") is False:
-                continue
-            if verbose:
-                print("On file " + file)
-            file_path = os.path.join(root, file)
-            file_id = Path(file_path).stem
-            with open(file_path, "r") as f:
-                sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
-                for sentence_ind, sentence in enumerate(sentences):
-                    words = nltk.word_tokenize(sentence)
-                    joined_word_ngrams = [' '.join(x) for x in list(nltk.everygrams(words, 1, n_gram_max))]
-                    found_terms = list(set(joined_word_ngrams).intersection(terms))
-                    if len(found_terms) > 1:
-                        pairs = [(a,b) if a < b else (b,a) for idx, a in enumerate(found_terms) for b in found_terms[idx + 1:] if a != b]
-                        for pair in set(pairs): 
-                            try:
-                                index1 = re.search(rf"\b{pair[0]}\b", sentence).span()[0]
-                                index2 = re.search(rf"\b{pair[1]}\b", sentence).span()[0]
-                            except AttributeError:
-                                continue
-                            # Assign term based off of which occurs first in sentence
-                            if index1 < index2:
-                                term1 = pair[0]
-                                term2 = pair[1]
-                            else:
-                                term1 = pair[1]
-                                term2 = pair[0]
-                            # Create segment of sentence with terms if len(sentence) is too long
-                            if len(sentence) < max_char_length:
-                                segment = sentence
-                            else:
-                                first_index, second_index = min(index1, index2), max(index1, index2)
-                                segment = sentence[max(0, first_index-padding):
-                                                    min(len(sentence)-1, second_index + max(len(term1), len(term2)) +padding)]
-                                if len(segment) > max_char_length:
-                                    continue
 
-                            matches.append([file_id, term1, term2, '_'.join([file_id]), sentence_ind, len(segment), segment])
+    if ".txt" in papers:
+
+        with open(papers, "r", encoding = "utf8") as f:
+            sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
+            for sentence_ind, sentence in enumerate(sentences):
+                words = nltk.word_tokenize(sentence)
+                joined_word_ngrams = [' '.join(x) for x in list(nltk.everygrams(words, 1, n_gram_max))]
+                found_terms = list(set(joined_word_ngrams).intersection(terms))
+                if len(found_terms) > 1:
+                    pairs = [(a,b) if a < b else (b,a) for idx, a in enumerate(found_terms) for b in found_terms[idx + 1:] if a != b]
+                    for pair in set(pairs): 
+                        try:
+                            index1 = re.search(rf"\b{pair[0]}\b", sentence).span()[0]
+                            index2 = re.search(rf"\b{pair[1]}\b", sentence).span()[0]
+                        except AttributeError:
+                            continue
+                        # Assign term based off of which occurs first in sentence
+                        if index1 < index2:
+                            term1 = pair[0]
+                            term2 = pair[1]
+                        else:
+                            term1 = pair[1]
+                            term2 = pair[0]
+                        # Create segment of sentence with terms if len(sentence) is too long
+                        if len(sentence) < max_char_length:
+                            segment = sentence
+                        else:
+                            first_index, second_index = min(index1, index2), max(index1, index2)
+                            segment = sentence[max(0, first_index-padding):
+                                                min(len(sentence)-1, second_index + max(len(term1), len(term2)) +padding)]
+                            if len(segment) > max_char_length:
+                                continue
+
+                        file_id = Path(papers).stem
+
+                        matches.append([file_id, term1, term2, '_'.join([file_id]), sentence_ind, len(segment), segment])
+
+    else:
+
+        for root, _, files in os.walk(papers):
+            for file in files:
+                if file.endswith(".txt") is False:
+                    continue
+                if verbose:
+                    print("On file " + file)
+                file_path = os.path.join(root, file)
+                file_id = Path(file_path).stem
+                with open(file_path, "r", encoding = "utf8") as f:
+                    sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
+                    for sentence_ind, sentence in enumerate(sentences):
+                        words = nltk.word_tokenize(sentence)
+                        joined_word_ngrams = [' '.join(x) for x in list(nltk.everygrams(words, 1, n_gram_max))]
+                        found_terms = list(set(joined_word_ngrams).intersection(terms))
+                        if len(found_terms) > 1:
+                            pairs = [(a,b) if a < b else (b,a) for idx, a in enumerate(found_terms) for b in found_terms[idx + 1:] if a != b]
+                            for pair in set(pairs): 
+                                try:
+                                    index1 = re.search(rf"\b{pair[0]}\b", sentence).span()[0]
+                                    index2 = re.search(rf"\b{pair[1]}\b", sentence).span()[0]
+                                except AttributeError:
+                                    continue
+                                # Assign term based off of which occurs first in sentence
+                                if index1 < index2:
+                                    term1 = pair[0]
+                                    term2 = pair[1]
+                                else:
+                                    term1 = pair[1]
+                                    term2 = pair[0]
+                                # Create segment of sentence with terms if len(sentence) is too long
+                                if len(sentence) < max_char_length:
+                                    segment = sentence
+                                else:
+                                    first_index, second_index = min(index1, index2), max(index1, index2)
+                                    segment = sentence[max(0, first_index-padding):
+                                                        min(len(sentence)-1, second_index + max(len(term1), len(term2)) +padding)]
+                                    if len(segment) > max_char_length:
+                                        continue
+
+                                matches.append([file_id, term1, term2, '_'.join([file_id]), sentence_ind, len(segment), segment])
                 
     # Wrap up matches and write to a CSV file       
     column_names = ['paper_id','term_1','term_2','id','sentence_index', 'segment_length','segment']
