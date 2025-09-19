@@ -89,7 +89,7 @@ def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str
             # Grab .nxml file in each tarball
             if ".tar.gz" in file:
                 try:
-                    tar = tarfile.open(os.path.join(tarball_path, file))
+                    tar = tarfile.open(os.path.join(tarball_path, file), encoding = "utf8")
                     for member in tar.getmembers():
                         # Each tarball should have one .nxml file that contains the full article
                         if ".nxml" in member.name:
@@ -104,7 +104,7 @@ def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str
                                 x.decompose()
                             pmid = soup.find("article-id", attrs={"pub-id-type":"pmid"}).get_text()
                             file_name = os.path.join(write_path, str(pmid) + ".txt")
-                            with open(file_name, "w") as f:
+                            with open(file_name, "w", encoding = "utf8") as f:
                                 for p in soup.find_all("p", recurisve=False):
                                     f.write(p.get_text())
                             # success --> append id (Integer type) to found-list
@@ -150,7 +150,7 @@ def __pull_pubmed_pdfs(ids: list[str], output_directory: str):
             pdf = io.BytesIO(req.content)
             reader = pypdf.PdfReader(pdf)
             filename = os.path.join(write_path, str(pmid) + ".txt")
-            with open(filename, 'w') as f:
+            with open(filename, 'w', encoding = "utf8") as f:
                 for i in range(len(reader.pages)):
                     f.write(" ".join(reader.pages[i].extract_text().split("\n"))) 
             # success --> append id (Integer type) to found-list
@@ -212,7 +212,7 @@ def __pull_pubmed_abstracts(ids: str, output_directory: str, abstract_include_ti
         soup = BeautifulSoup(req.content, "html.parser")
         try:
             abstract = soup.find(id="eng-abstract").get_text().strip()
-            with open(os.path.join(write_path, str(pmid) + ".txt"), "w")as f:
+            with open(os.path.join(write_path, str(pmid) + ".txt"), "w", encoding = "utf8") as f:
                 if abstract_include_title:
                     f.write(soup.find("meta", {"name":"citation_title"})['content'])
                     f.write(". ")

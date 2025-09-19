@@ -1,5 +1,5 @@
 Output Summary for Pulling Papers
-Created: 2025-09-18 16:58:17.423128
+Created: 2025-09-19 08:53:30.656708
 Total Num. Articles: 9
 Total Num. Articles Found: 9
 Number of Full Text: 6

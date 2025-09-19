@@ -140,7 +140,7 @@ def pull_papers(output_directory: str,
 
     # Write summary file in the output_directory
     if include_summary_file:
-        with open(os.path.join(output_directory, "output_summary.txt"), "w") as f:
+        with open(os.path.join(output_directory, "output_summary.txt"), "w", encoding = "utf8") as f:
             f.write("Output Summary for Pulling Papers\n")
             f.write("Created: " + str(datetime.datetime.now()) + "\n")
             f.write("Total Num. Articles: " + str(total_papers) + "\n")

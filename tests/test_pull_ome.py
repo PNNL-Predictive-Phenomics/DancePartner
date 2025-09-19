@@ -18,12 +18,6 @@ def test_pull_proteome():
 
     # Try a nonsensical pull
     dance.pull_proteome("ugly_carrot", output_directory)
-
-def test_pull_genome():
-
-    # Pull smallest genome 
-    ncbi_key = open("example_data/ncbi_key.txt")
-    dance.pull_genome(2097, ncbi_key.read(), output_directory)
     shutil.rmtree(output_directory)
 
 

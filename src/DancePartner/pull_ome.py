@@ -119,7 +119,7 @@ def pull_genome_from_GTF(GTF_file: str,
     # Extract all the gene names 
 
     # Open the file
-    with open(GTF_file, "r") as file:
+    with open(GTF_file, "r", encoding = "utf8") as file:
         
         # Iterate through the file, searching for all gene names
         for line in file:

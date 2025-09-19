@@ -51,7 +51,7 @@ def find_terms_in_papers(papers: str,
 
     if ".txt" in papers:
 
-        with open(papers, "r") as f:
+        with open(papers, "r", encoding = "utf8") as f:
             sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
             for sentence_ind, sentence in enumerate(sentences):
                 words = nltk.word_tokenize(sentence)
@@ -96,7 +96,7 @@ def find_terms_in_papers(papers: str,
                     print("On file " + file)
                 file_path = os.path.join(root, file)
                 file_id = Path(file_path).stem
-                with open(file_path, "r") as f:
+                with open(file_path, "r", encoding = "utf8") as f:
                     sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
                     for sentence_ind, sentence in enumerate(sentences):
                         words = nltk.word_tokenize(sentence)

@@ -1,0 +1,825 @@
+Synonym1	ID1	Type1	Synonym2	ID2	Type2	Source
+Not needed	78013	gene product	Not needed	80375	gene product	database
+Not needed	78025	gene product	Not needed	79507	gene product	database
+Not needed	78032	gene product	Not needed	79076	gene product	database
+Not needed	78034	gene product	Not needed	80441	gene product	database
+Not needed	78040	gene product	Not needed	79158	gene product	database
+Not needed	78044	gene product	Not needed	79666	gene product	database
+Not needed	78047	gene product	Not needed	78227	gene product	database
+Not needed	78052	gene product	Not needed	80319	gene product	database
+Not needed	78077	gene product	Not needed	78455	gene product	database
+Not needed	78077	gene product	Not needed	81452	gene product	database
+Not needed	78077	gene product	Not needed	79695	gene product	database
+Not needed	78079	gene product	Not needed	78092	gene product	database
+Not needed	78086	gene product	Not needed	79100	gene product	database
+Not needed	78088	gene product	Not needed	79049	gene product	database
+Not needed	78088	gene product	Not needed	78664	gene product	database
+Not needed	78088	gene product	Not needed	79113	gene product	database
+Not needed	78090	gene product	Not needed	80577	gene product	database
+Not needed	78090	gene product	Not needed	84113	gene product	database
+Not needed	78090	gene product	Not needed	80313	gene product	database
+Not needed	78090	gene product	Not needed	81125	gene product	database
+Not needed	78090	gene product	Not needed	78096	gene product	database
+Not needed	78090	gene product	Not needed	84265	gene product	database
+Not needed	78090	gene product	Not needed	83800	gene product	database
+Not needed	78090	gene product	Not needed	83809	gene product	database
+Not needed	78090	gene product	Not needed	82760	gene product	database
+Not needed	78090	gene product	Not needed	80595	gene product	database
+Not needed	78090	gene product	Not needed	78420	gene product	database
+Not needed	78090	gene product	Not needed	78129	gene product	database
+Not needed	78090	gene product	Not needed	79474	gene product	database
+Not needed	78090	gene product	Not needed	80556	gene product	database
+Not needed	78090	gene product	Not needed	78383	gene product	database
+Not needed	78090	gene product	Not needed	81771	gene product	database
+Not needed	78090	gene product	Not needed	83112	gene product	database
+Not needed	78090	gene product	Not needed	83827	gene product	database
+Not needed	78090	gene product	Not needed	79894	gene product	database
+Not needed	78090	gene product	Not needed	78400	gene product	database
+Not needed	78090	gene product	Not needed	83546	gene product	database
+Not needed	78090	gene product	Not needed	79119	gene product	database
+Not needed	78090	gene product	Not needed	78590	gene product	database
+Not needed	78090	gene product	Not needed	79961	gene product	database
+Not needed	78090	gene product	Not needed	79347	gene product	database
+Not needed	78090	gene product	Not needed	79807	gene product	database
+Not needed	78090	gene product	Not needed	81042	gene product	database
+Not needed	78090	gene product	Not needed	79024	gene product	database
+Not needed	78090	gene product	Not needed	30926	metabolite	database
+Not needed	78090	gene product	Not needed	82097	gene product	database
+Not needed	78090	gene product	Not needed	80988	gene product	database
+Not needed	78090	gene product	Not needed	34298	metabolite	database
+Not needed	78090	gene product	Not needed	79574	gene product	database
+Not needed	78090	gene product	Not needed	78157	gene product	database
+Not needed	78090	gene product	Not needed	79280	gene product	database
+Not needed	78090	gene product	Not needed	79540	gene product	database
+Not needed	78090	gene product	Not needed	83795	gene product	database
+Not needed	78090	gene product	Not needed	80475	gene product	database
+Not needed	78091	gene product	Not needed	78543	gene product	database
+Not needed	78092	gene product	Not needed	78828	gene product	database
+Not needed	78094	gene product	Not needed	79684	gene product	database
+Not needed	78094	gene product	Not needed	79739	gene product	database
+Not needed	78095	gene product	Not needed	78475	gene product	database
+Not needed	78096	gene product	Not needed	81452	gene product	database
+Not needed	78103	gene product	Not needed	78358	gene product	database
+Not needed	78103	gene product	Not needed	78123	gene product	database
+Not needed	78103	gene product	Not needed	79129	gene product	database
+Not needed	78103	gene product	Not needed	79347	gene product	database
+Not needed	78103	gene product	Not needed	79348	gene product	database
+Not needed	78103	gene product	Not needed	78193	gene product	database
+Not needed	78104	gene product	Not needed	78120	gene product	database
+Not needed	78106	gene product	Not needed	79338	gene product	database
+Not needed	78114	gene product	Not needed	81129	gene product	database
+Not needed	78119	gene product	Not needed	81435	gene product	database
+Not needed	78119	gene product	Not needed	79334	gene product	database
+Not needed	78119	gene product	Not needed	83784	gene product	database
+Not needed	78119	gene product	Not needed	78931	gene product	database
+Not needed	78119	gene product	Not needed	79319	gene product	database
+Not needed	78120	gene product	Not needed	81780	gene product	database
+Not needed	78121	gene product	Not needed	78675	gene product	database
+Not needed	78123	gene product	Not needed	80593	gene product	database
+Not needed	78123	gene product	Not needed	82138	gene product	database
+Not needed	78123	gene product	Not needed	81145	gene product	database
+Not needed	78131	gene product	Not needed	79412	gene product	database
+Not needed	78132	gene product	Not needed	78933	gene product	database
+Not needed	78140	gene product	Not needed	85991	gene product	database
+Not needed	78150	gene product	Not needed	78065	gene product	database
+Not needed	78150	gene product	Not needed	79137	gene product	database
+Not needed	78151	gene product	Not needed	79350	gene product	database
+Not needed	78157	gene product	Not needed	78129	gene product	database
+Not needed	78157	gene product	Not needed	78512	gene product	database
+Not needed	78157	gene product	Not needed	86264	gene product	database
+Not needed	78157	gene product	Not needed	81452	gene product	database
+Not needed	78157	gene product	Not needed	83386	gene product	database
+Not needed	78157	gene product	Not needed	82095	gene product	database
+Not needed	78158	gene product	Not needed	79152	gene product	database
+Not needed	78166	gene product	Not needed	82244	gene product	database
+Not needed	78135	gene product	Not needed	78472	gene product	database
+Not needed	78172	gene product	Not needed	81548	gene product	database
+Not needed	78172	gene product	Not needed	81042	gene product	database
+Not needed	78183	gene product	Not needed	79433	gene product	database
+Not needed	78185	gene product	Not needed	78255	gene product	database
+Not needed	78192	gene product	Not needed	80385	gene product	database
+Not needed	78197	gene product	Not needed	79586	gene product	database
+Not needed	78223	gene product	Not needed	79666	gene product	database
+Not needed	78239	gene product	Not needed	78358	gene product	database
+Not needed	78241	gene product	Not needed	81562	gene product	database
+Not needed	78241	gene product	Not needed	78367	gene product	database
+Not needed	78243	gene product	Not needed	78356	gene product	database
+Not needed	78243	gene product	Not needed	78611	gene product	database
+Not needed	78243	gene product	Not needed	80197	gene product	database
+Not needed	78258	gene product	Not needed	78267	gene product	database
+Not needed	78264	gene product	Not needed	78368	gene product	database
+Not needed	78308	gene product	Not needed	79016	gene product	database
+Not needed	78309	gene product	Not needed	78129	gene product	database
+Not needed	78328	gene product	Not needed	78828	gene product	database
+Not needed	78328	gene product	Not needed	79196	gene product	database
+Not needed	78333	gene product	Not needed	78171	gene product	database
+Not needed	78333	gene product	Not needed	78400	gene product	database
+Not needed	78333	gene product	Not needed	78580	gene product	database
+Not needed	78336	gene product	Not needed	78479	gene product	database
+Not needed	78355	gene product	Not needed	78749	gene product	database
+Not needed	78355	gene product	Not needed	78629	gene product	database
+Not needed	78355	gene product	Not needed	78427	gene product	database
+Not needed	78355	gene product	Not needed	79506	gene product	database
+Not needed	78356	gene product	Not needed	78611	gene product	database
+Not needed	78358	gene product	Not needed	78420	gene product	database
+Not needed	78358	gene product	Not needed	83593	gene product	database
+Not needed	78358	gene product	Not needed	79540	gene product	database
+Not needed	78368	gene product	Not needed	78434	gene product	database
+Not needed	78376	gene product	Not needed	83024	gene product	database
+Not needed	78376	gene product	Not needed	80488	gene product	database
+Not needed	78376	gene product	Not needed	82037	gene product	database
+Not needed	78376	gene product	Not needed	79545	gene product	database
+Not needed	78376	gene product	Not needed	79651	gene product	database
+Not needed	78376	gene product	Not needed	78874	gene product	database
+Not needed	78376	gene product	Not needed	81370	gene product	database
+Not needed	78376	gene product	Not needed	78954	gene product	database
+Not needed	78382	gene product	Not needed	78953	gene product	database
+Not needed	78382	gene product	Not needed	78518	gene product	database
+Not needed	78383	gene product	Not needed	81452	gene product	database
+Not needed	78383	gene product	Not needed	81635	gene product	database
+Not needed	78383	gene product	Not needed	78129	gene product	database
+Not needed	78387	gene product	Not needed	79479	gene product	database
+Not needed	78388	gene product	Not needed	78919	gene product	database
+Not needed	78388	gene product	Not needed	79519	gene product	database
+Not needed	78388	gene product	Not needed	79225	gene product	database
+Not needed	78388	gene product	Not needed	79113	gene product	database
+Not needed	78390	gene product	Not needed	79376	gene product	database
+Not needed	78397	gene product	Not needed	79414	gene product	database
+Not needed	78400	gene product	Not needed	81220	gene product	database
+Not needed	78400	gene product	Not needed	78467	gene product	database
+Not needed	78400	gene product	Not needed	78724	gene product	database
+Not needed	78402	gene product	Not needed	79415	gene product	database
+Not needed	78406	gene product	Not needed	85465	gene product	database
+Not needed	78406	gene product	Not needed	79330	gene product	database
+Not needed	78406	gene product	Not needed	83843	gene product	database
+Not needed	78406	gene product	Not needed	86264	gene product	database
+Not needed	78406	gene product	Not needed	81281	gene product	database
+Not needed	78406	gene product	Not needed	82135	gene product	database
+Not needed	78406	gene product	Not needed	78874	gene product	database
+Not needed	78406	gene product	Not needed	79574	gene product	database
+Not needed	78406	gene product	Not needed	78413	gene product	database
+Not needed	78408	gene product	Not needed	79328	gene product	database
+Not needed	78408	gene product	Not needed	78874	gene product	database
+Not needed	78412	gene product	Not needed	78723	gene product	database
+Not needed	78418	gene product	Not needed	78919	gene product	database
+Not needed	78422	gene product	Not needed	78874	gene product	database
+Not needed	78425	gene product	Not needed	79392	gene product	database
+Not needed	78426	gene product	Not needed	78600	gene product	database
+Not needed	78427	gene product	Not needed	79390	gene product	database
+Not needed	78432	gene product	Not needed	78725	gene product	database
+Not needed	78435	gene product	Not needed	78643	gene product	database
+Not needed	78445	gene product	Not needed	79100	gene product	database
+Not needed	78445	gene product	Not needed	79862	gene product	database
+Not needed	78452	gene product	Not needed	41695	metabolite	database
+Not needed	78454	gene product	Not needed	79116	gene product	database
+Not needed	78454	gene product	Not needed	80343	gene product	database
+Not needed	78454	gene product	Not needed	81753	gene product	database
+Not needed	78454	gene product	Not needed	81051	gene product	database
+Not needed	78454	gene product	Not needed	81057	gene product	database
+Not needed	78454	gene product	Not needed	81814	gene product	database
+Not needed	78454	gene product	Not needed	79240	gene product	database
+Not needed	78457	gene product	Not needed	80467	gene product	database
+Not needed	78458	gene product	Not needed	79512	gene product	database
+Not needed	78463	gene product	Not needed	79231	gene product	database
+Not needed	78467	gene product	Not needed	83421	gene product	database
+Not needed	78467	gene product	Not needed	79613	gene product	database
+Not needed	78472	gene product	Not needed	80738	gene product	database
+Not needed	78474	gene product	Not needed	78671	gene product	database
+Not needed	78452	gene product	Not needed	80500	gene product	database
+Not needed	78452	gene product	Not needed	80143	gene product	database
+Not needed	78452	gene product	Not needed	80402	gene product	database
+Not needed	78452	gene product	Not needed	78800	gene product	database
+Not needed	78483	gene product	Not needed	78960	gene product	database
+Not needed	78483	gene product	Not needed	79495	gene product	database
+Not needed	78483	gene product	Not needed	79129	gene product	database
+Not needed	78491	gene product	Not needed	78760	gene product	database
+Not needed	78494	gene product	Not needed	79024	gene product	database
+Not needed	78504	gene product	Not needed	79027	gene product	database
+Not needed	78504	gene product	Not needed	79000	gene product	database
+Not needed	78504	gene product	Not needed	78800	gene product	database
+Not needed	78505	gene product	Not needed	79313	gene product	database
+Not needed	78510	gene product	Not needed	79691	gene product	database
+Not needed	78512	gene product	Not needed	79633	gene product	database
+Not needed	78512	gene product	Not needed	82825	gene product	database
+Not needed	78512	gene product	Not needed	78129	gene product	database
+Not needed	78512	gene product	Not needed	83546	gene product	database
+Not needed	78512	gene product	Not needed	79129	gene product	database
+Not needed	78512	gene product	Not needed	79347	gene product	database
+Not needed	78512	gene product	Not needed	80084	gene product	database
+Not needed	78512	gene product	Not needed	78213	gene product	database
+Not needed	78512	gene product	Not needed	79405	gene product	database
+Not needed	78512	gene product	Not needed	80475	gene product	database
+Not needed	78518	gene product	Not needed	79691	gene product	database
+Not needed	78530	gene product	Not needed	79319	gene product	database
+Not needed	78531	gene product	Not needed	80332	gene product	database
+Not needed	78534	gene product	Not needed	80323	gene product	database
+Not needed	78534	gene product	Not needed	78700	gene product	database
+Not needed	78534	gene product	Not needed	78631	gene product	database
+Not needed	78534	gene product	Not needed	79319	gene product	database
+Not needed	78536	gene product	Not needed	78558	gene product	database
+Not needed	78536	gene product	Not needed	78888	gene product	database
+Not needed	78544	gene product	Not needed	78953	gene product	database
+Not needed	78546	gene product	Not needed	78899	gene product	database
+Not needed	78546	gene product	Not needed	80323	gene product	database
+Not needed	78550	gene product	Not needed	79065	gene product	database
+Not needed	78558	gene product	Not needed	78888	gene product	database
+Not needed	78558	gene product	Not needed	78844	gene product	database
+Not needed	78562	gene product	Not needed	78675	gene product	database
+Not needed	78562	gene product	Not needed	78671	gene product	database
+Not needed	78562	gene product	Not needed	79056	gene product	database
+Not needed	78562	gene product	Not needed	79449	gene product	database
+Not needed	78571	gene product	Not needed	81495	gene product	database
+Not needed	76798	metabolite	Not needed	79704	gene product	database
+Not needed	76798	metabolite	Not needed	81390	gene product	database
+Not needed	76798	metabolite	Not needed	79931	gene product	database
+Not needed	76798	metabolite	Not needed	79451	gene product	database
+Not needed	78578	gene product	Not needed	79297	gene product	database
+Not needed	78582	gene product	Not needed	78757	gene product	database
+Not needed	78583	gene product	Not needed	83049	gene product	database
+Not needed	78590	gene product	Not needed	78129	gene product	database
+Not needed	78593	gene product	Not needed	78642	gene product	database
+Not needed	78595	gene product	Not needed	79243	gene product	database
+Not needed	78600	gene product	Not needed	82023	gene product	database
+Not needed	78600	gene product	Not needed	83843	gene product	database
+Not needed	78600	gene product	Not needed	80494	gene product	database
+Not needed	78601	gene product	Not needed	78715	gene product	database
+Not needed	78611	gene product	Not needed	80197	gene product	database
+Not needed	78615	gene product	Not needed	80500	gene product	database
+Not needed	78616	gene product	Not needed	78689	gene product	database
+Not needed	78619	gene product	Not needed	79382	gene product	database
+Not needed	78620	gene product	Not needed	79272	gene product	database
+Not needed	78629	gene product	Not needed	78749	gene product	database
+Not needed	78631	gene product	Not needed	79319	gene product	database
+Not needed	78631	gene product	Not needed	78636	gene product	database
+Not needed	78635	gene product	Not needed	78636	gene product	database
+Not needed	78635	gene product	Not needed	78534	gene product	database
+Not needed	78635	gene product	Not needed	78700	gene product	database
+Not needed	78635	gene product	Not needed	78631	gene product	database
+Not needed	78643	gene product	Not needed	79695	gene product	database
+Not needed	78643	gene product	Not needed	83604	gene product	database
+Not needed	78643	gene product	Not needed	79338	gene product	database
+Not needed	78653	gene product	Not needed	82095	gene product	database
+Not needed	78655	gene product	Not needed	82449	gene product	database
+Not needed	78655	gene product	Not needed	84533	gene product	database
+Not needed	78655	gene product	Not needed	81452	gene product	database
+Not needed	78655	gene product	Not needed	79265	gene product	database
+Not needed	78655	gene product	Not needed	79419	gene product	database
+Not needed	78309	gene product	Not needed	80475	gene product	database
+Not needed	78656	gene product	Not needed	79440	gene product	database
+Not needed	78660	gene product	Not needed	79478	gene product	database
+Not needed	78664	gene product	Not needed	78888	gene product	database
+Not needed	78664	gene product	Not needed	78874	gene product	database
+Not needed	78664	gene product	Not needed	79113	gene product	database
+Not needed	78671	gene product	Not needed	78675	gene product	database
+Not needed	78674	gene product	Not needed	81346	gene product	database
+Not needed	78686	gene product	Not needed	78705	gene product	database
+Not needed	78686	gene product	Not needed	78844	gene product	database
+Not needed	78696	gene product	Not needed	78907	gene product	database
+Not needed	78697	gene product	Not needed	78839	gene product	database
+Not needed	78700	gene product	Not needed	79319	gene product	database
+Not needed	78704	gene product	Not needed	85379	gene product	database
+Not needed	78705	gene product	Not needed	80766	gene product	database
+Not needed	78709	gene product	Not needed	81220	gene product	database
+Not needed	78709	gene product	Not needed	80360	gene product	database
+Not needed	78709	gene product	Not needed	79857	gene product	database
+Not needed	78710	gene product	Not needed	79100	gene product	database
+Not needed	78717	gene product	Not needed	78854	gene product	database
+Not needed	78722	gene product	Not needed	78723	gene product	database
+Not needed	78722	gene product	Not needed	79468	gene product	database
+Not needed	78724	gene product	Not needed	84910	gene product	database
+Not needed	78724	gene product	Not needed	78021	gene product	database
+Not needed	78726	gene product	Not needed	81390	gene product	database
+Not needed	78726	gene product	Not needed	79076	gene product	database
+Not needed	78726	gene product	Not needed	78733	gene product	database
+Not needed	78726	gene product	Not needed	79338	gene product	database
+Not needed	78726	gene product	Not needed	79340	gene product	database
+Not needed	32625	metabolite	Not needed	82202	gene product	database
+Not needed	78755	gene product	Not needed	79712	gene product	database
+Not needed	78755	gene product	Not needed	79666	gene product	database
+Not needed	78757	gene product	Not needed	78767	gene product	database
+Not needed	78763	gene product	Not needed	82682	gene product	database
+Not needed	78767	gene product	Not needed	79405	gene product	database
+Not needed	78771	gene product	Not needed	80217	gene product	database
+Not needed	78782	gene product	Not needed	79515	gene product	database
+Not needed	78782	gene product	Not needed	79016	gene product	database
+Not needed	78794	gene product	Not needed	78213	gene product	database
+Not needed	78807	gene product	Not needed	82092	gene product	database
+Not needed	78828	gene product	Not needed	80035	gene product	database
+Not needed	78839	gene product	Not needed	79029	gene product	database
+Not needed	78854	gene product	Not needed	79063	gene product	database
+Not needed	78859	gene product	Not needed	79146	gene product	database
+Not needed	78859	gene product	Not needed	79195	gene product	database
+Not needed	78860	gene product	Not needed	81129	gene product	database
+Not needed	78860	gene product	Not needed	79446	gene product	database
+Not needed	78866	gene product	Not needed	81048	gene product	database
+Not needed	78280	gene product	Not needed	80752	gene product	database
+Not needed	78874	gene product	Not needed	78960	gene product	database
+Not needed	78874	gene product	Not needed	79538	gene product	database
+Not needed	78874	gene product	Not needed	81659	gene product	database
+Not needed	78874	gene product	Not needed	78954	gene product	database
+Not needed	78874	gene product	Not needed	81780	gene product	database
+Not needed	78881	gene product	Not needed	79512	gene product	database
+Not needed	78881	gene product	Not needed	78990	gene product	database
+Not needed	78888	gene product	Not needed	82777	gene product	database
+Not needed	78888	gene product	Not needed	81843	gene product	database
+Not needed	78888	gene product	Not needed	78953	gene product	database
+Not needed	78888	gene product	Not needed	79049	gene product	database
+Not needed	78888	gene product	Not needed	80929	gene product	database
+Not needed	78888	gene product	Not needed	81338	gene product	database
+Not needed	78888	gene product	Not needed	78119	gene product	database
+Not needed	78896	gene product	Not needed	78980	gene product	database
+Not needed	78896	gene product	Not needed	78794	gene product	database
+Not needed	78896	gene product	Not needed	82244	gene product	database
+Not needed	78896	gene product	Not needed	82138	gene product	database
+Not needed	78896	gene product	Not needed	82760	gene product	database
+Not needed	78899	gene product	Not needed	80323	gene product	database
+Not needed	78899	gene product	Not needed	81434	gene product	database
+Not needed	78900	gene product	Not needed	81607	gene product	database
+Not needed	78900	gene product	Not needed	80913	gene product	database
+Not needed	78900	gene product	Not needed	80850	gene product	database
+Not needed	78900	gene product	Not needed	80552	gene product	database
+Not needed	78900	gene product	Not needed	79338	gene product	database
+Not needed	78907	gene product	Not needed	79216	gene product	database
+Not needed	78909	gene product	Not needed	79115	gene product	database
+Not needed	78919	gene product	Not needed	79519	gene product	database
+Not needed	78919	gene product	Not needed	79686	gene product	database
+Not needed	78919	gene product	Not needed	79225	gene product	database
+Not needed	78944	gene product	Not needed	79027	gene product	database
+Not needed	78952	gene product	Not needed	79479	gene product	database
+Not needed	78953	gene product	Not needed	79691	gene product	database
+Not needed	78963	gene product	Not needed	80252	gene product	database
+Not needed	78965	gene product	Not needed	79715	gene product	database
+Not needed	78976	gene product	Not needed	80170	gene product	database
+Not needed	78980	gene product	Not needed	79525	gene product	database
+Not needed	78980	gene product	Not needed	79451	gene product	database
+Not needed	78983	gene product	Not needed	84204	gene product	database
+Not needed	78984	gene product	Not needed	84204	gene product	database
+Not needed	78984	gene product	Not needed	78129	gene product	database
+Not needed	78990	gene product	Not needed	79538	gene product	database
+Not needed	78999	gene product	Not needed	83396	gene product	database
+Not needed	79000	gene product	Not needed	79027	gene product	database
+Not needed	79006	gene product	Not needed	79356	gene product	database
+Not needed	79018	gene product	Not needed	78131	gene product	database
+Not needed	79024	gene product	Not needed	80593	gene product	database
+Not needed	79024	gene product	Not needed	78538	gene product	database
+Not needed	79026	gene product	Not needed	79864	gene product	database
+Not needed	79030	gene product	Not needed	81873	gene product	database
+Not needed	79036	gene product	Not needed	79517	gene product	database
+Not needed	79049	gene product	Not needed	79113	gene product	database
+Not needed	79051	gene product	Not needed	79451	gene product	database
+Not needed	79051	gene product	Not needed	81346	gene product	database
+Not needed	79072	gene product	Not needed	79089	gene product	database
+Not needed	79072	gene product	Not needed	79273	gene product	database
+Not needed	79076	gene product	Not needed	79340	gene product	database
+Not needed	79077	gene product	Not needed	82138	gene product	database
+Not needed	79077	gene product	Not needed	81510	gene product	database
+Not needed	79089	gene product	Not needed	81780	gene product	database
+Not needed	79089	gene product	Not needed	79273	gene product	database
+Not needed	79089	gene product	Not needed	79327	gene product	database
+Not needed	79089	gene product	Not needed	82682	gene product	database
+Not needed	79095	gene product	Not needed	79166	gene product	database
+Not needed	79096	gene product	Not needed	79515	gene product	database
+Not needed	79100	gene product	Not needed	79862	gene product	database
+Not needed	79100	gene product	Not needed	81973	gene product	database
+Not needed	79100	gene product	Not needed	79987	gene product	database
+Not needed	79100	gene product	Not needed	79328	gene product	database
+Not needed	79103	gene product	Not needed	79419	gene product	database
+Not needed	79104	gene product	Not needed	79688	gene product	database
+Not needed	79107	gene product	Not needed	79487	gene product	database
+Not needed	79129	gene product	Not needed	81780	gene product	database
+Not needed	79129	gene product	Not needed	84824	gene product	database
+Not needed	79129	gene product	Not needed	84586	gene product	database
+Not needed	79129	gene product	Not needed	80291	gene product	database
+Not needed	79146	gene product	Not needed	79195	gene product	database
+Not needed	79146	gene product	Not needed	79469	gene product	database
+Not needed	79147	gene product	Not needed	82004	gene product	database
+Not needed	79147	gene product	Not needed	79409	gene product	database
+Not needed	79152	gene product	Not needed	79679	gene product	database
+Not needed	79158	gene product	Not needed	80044	gene product	database
+Not needed	79158	gene product	Not needed	80510	gene product	database
+Not needed	79166	gene product	Not needed	80195	gene product	database
+Not needed	79180	gene product	Not needed	79273	gene product	database
+Not needed	79194	gene product	Not needed	82011	gene product	database
+Not needed	79225	gene product	Not needed	79519	gene product	database
+Not needed	79273	gene product	Not needed	80186	gene product	database
+Not needed	79273	gene product	Not needed	79327	gene product	database
+Not needed	79273	gene product	Not needed	79438	gene product	database
+Not needed	79273	gene product	Not needed	80390	gene product	database
+Not needed	79273	gene product	Not needed	81780	gene product	database
+Not needed	78093	gene product	Not needed	79536	gene product	database
+Not needed	78093	gene product	Not needed	81220	gene product	database
+Not needed	79280	gene product	Not needed	81452	gene product	database
+Not needed	79283	gene product	Not needed	78196	gene product	database
+Not needed	79293	gene product	Not needed	81452	gene product	database
+Not needed	79306	gene product	Not needed	80494	gene product	database
+Not needed	79306	gene product	Not needed	78071	gene product	database
+Not needed	79327	gene product	Not needed	80390	gene product	database
+Not needed	79327	gene product	Not needed	81780	gene product	database
+Not needed	79328	gene product	Not needed	80475	gene product	database
+Not needed	79328	gene product	Not needed	80869	gene product	database
+Not needed	79336	gene product	Not needed	80333	gene product	database
+Not needed	79338	gene product	Not needed	85292	gene product	database
+Not needed	79338	gene product	Not needed	82244	gene product	database
+Not needed	79338	gene product	Not needed	81773	gene product	database
+Not needed	79338	gene product	Not needed	81566	gene product	database
+Not needed	79338	gene product	Not needed	86418	gene product	database
+Not needed	79340	gene product	Not needed	78267	gene product	database
+Not needed	79347	gene product	Not needed	79633	gene product	database
+Not needed	79347	gene product	Not needed	81859	gene product	database
+Not needed	79350	gene product	Not needed	81663	gene product	database
+Not needed	79350	gene product	Not needed	78213	gene product	database
+Not needed	79351	gene product	Not needed	79417	gene product	database
+Not needed	79351	gene product	Not needed	84815	gene product	database
+Not needed	79369	gene product	Not needed	81023	gene product	database
+Not needed	79370	gene product	Not needed	80317	gene product	database
+Not needed	79374	gene product	Not needed	83102	gene product	database
+Not needed	79376	gene product	Not needed	79443	gene product	database
+Not needed	79376	gene product	Not needed	79267	gene product	database
+Not needed	79378	gene product	Not needed	83522	gene product	database
+Not needed	79392	gene product	Not needed	79499	gene product	database
+Not needed	79394	gene product	Not needed	81462	gene product	database
+Not needed	79398	gene product	Not needed	79666	gene product	database
+Not needed	79404	gene product	Not needed	78709	gene product	database
+Not needed	79404	gene product	Not needed	79417	gene product	database
+Not needed	79409	gene product	Not needed	78764	gene product	database
+Not needed	79419	gene product	Not needed	83668	gene product	database
+Not needed	79419	gene product	Not needed	78129	gene product	database
+Not needed	79419	gene product	Not needed	82918	gene product	database
+Not needed	79440	gene product	Not needed	80097	gene product	database
+Not needed	79443	gene product	Not needed	79960	gene product	database
+Not needed	79443	gene product	Not needed	81399	gene product	database
+Not needed	79446	gene product	Not needed	81129	gene product	database
+Not needed	79448	gene product	Not needed	80720	gene product	database
+Not needed	79449	gene product	Not needed	79495	gene product	database
+Not needed	79451	gene product	Not needed	80441	gene product	database
+Not needed	79451	gene product	Not needed	79459	gene product	database
+Not needed	79459	gene product	Not needed	81108	gene product	database
+Not needed	79466	gene product	Not needed	80163	gene product	database
+Not needed	79467	gene product	Not needed	79575	gene product	database
+Not needed	79493	gene product	Not needed	79521	gene product	database
+Not needed	79495	gene product	Not needed	80228	gene product	database
+Not needed	79499	gene product	Not needed	79704	gene product	database
+Not needed	79502	gene product	Not needed	79868	gene product	database
+Not needed	79512	gene product	Not needed	84764	gene product	database
+Not needed	79512	gene product	Not needed	80526	gene product	database
+Not needed	79512	gene product	Not needed	80720	gene product	database
+Not needed	79512	gene product	Not needed	42340	metabolite	database
+Not needed	79512	gene product	Not needed	80055	gene product	database
+Not needed	79517	gene product	Not needed	78643	gene product	database
+Not needed	79525	gene product	Not needed	81635	gene product	database
+Not needed	79540	gene product	Not needed	80715	gene product	database
+Not needed	79540	gene product	Not needed	79559	gene product	database
+Not needed	79550	gene product	Not needed	80340	gene product	database
+Not needed	79556	gene product	Not needed	80631	gene product	database
+Not needed	79566	gene product	Not needed	82095	gene product	database
+Not needed	79574	gene product	Not needed	81635	gene product	database
+Not needed	79574	gene product	Not needed	83386	gene product	database
+Not needed	79581	gene product	Not needed	80044	gene product	database
+Not needed	79585	gene product	Not needed	80108	gene product	database
+Not needed	79621	gene product	Not needed	82976	gene product	database
+Not needed	79654	gene product	Not needed	78149	gene product	database
+Not needed	79654	gene product	Not needed	85540	gene product	database
+Not needed	79633	gene product	Not needed	81390	gene product	database
+Not needed	79633	gene product	Not needed	81125	gene product	database
+Not needed	79633	gene product	Not needed	85726	gene product	database
+Not needed	79633	gene product	Not needed	86264	gene product	database
+Not needed	79633	gene product	Not needed	80467	gene product	database
+Not needed	79633	gene product	Not needed	82772	gene product	database
+Not needed	79723	gene product	Not needed	80327	gene product	database
+Not needed	79723	gene product	Not needed	80333	gene product	database
+Not needed	49676	metabolite	Not needed	79812	gene product	database
+Not needed	79762	gene product	Not needed	80947	gene product	database
+Not needed	79762	gene product	Not needed	80948	gene product	database
+Not needed	79765	gene product	Not needed	81002	gene product	database
+Not needed	79807	gene product	Not needed	78129	gene product	database
+Not needed	79812	gene product	Not needed	82801	gene product	database
+Not needed	79843	gene product	Not needed	82974	gene product	database
+Not needed	79852	gene product	Not needed	78267	gene product	database
+Not needed	79852	gene product	Not needed	85773	gene product	database
+Not needed	79866	gene product	Not needed	81696	gene product	database
+Not needed	79868	gene product	Not needed	81881	gene product	database
+Not needed	79869	gene product	Not needed	82197	gene product	database
+Not needed	79871	gene product	Not needed	79872	gene product	database
+Not needed	79894	gene product	Not needed	83593	gene product	database
+Not needed	79898	gene product	Not needed	82598	gene product	database
+Not needed	79961	gene product	Not needed	82083	gene product	database
+Not needed	79973	gene product	Not needed	84510	gene product	database
+Not needed	79979	gene product	Not needed	83043	gene product	database
+Not needed	80095	gene product	Not needed	83386	gene product	database
+Not needed	80095	gene product	Not needed	78129	gene product	database
+Not needed	80101	gene product	Not needed	80860	gene product	database
+Not needed	80108	gene product	Not needed	83141	gene product	database
+Not needed	80127	gene product	Not needed	80738	gene product	database
+Not needed	80130	gene product	Not needed	81113	gene product	database
+Not needed	80167	gene product	Not needed	81460	gene product	database
+Not needed	80170	gene product	Not needed	82244	gene product	database
+Not needed	80170	gene product	Not needed	83192	gene product	database
+Not needed	80170	gene product	Not needed	84666	gene product	database
+Not needed	80170	gene product	Not needed	82427	gene product	database
+Not needed	80170	gene product	Not needed	83064	gene product	database
+Not needed	80170	gene product	Not needed	83827	gene product	database
+Not needed	80170	gene product	Not needed	82359	gene product	database
+Not needed	80170	gene product	Not needed	82105	gene product	database
+Not needed	80170	gene product	Not needed	83569	gene product	database
+Not needed	80177	gene product	Not needed	81060	gene product	database
+Not needed	80201	gene product	Not needed	79695	gene product	database
+Not needed	80204	gene product	Not needed	80466	gene product	database
+Not needed	80252	gene product	Not needed	83801	gene product	database
+Not needed	80262	gene product	Not needed	78935	gene product	database
+Not needed	80291	gene product	Not needed	80087	gene product	database
+Not needed	80294	gene product	Not needed	81448	gene product	database
+Not needed	80300	gene product	Not needed	81640	gene product	database
+Not needed	80313	gene product	Not needed	80841	gene product	database
+Not needed	80338	gene product	Not needed	81289	gene product	database
+Not needed	80358	gene product	Not needed	80552	gene product	database
+Not needed	80375	gene product	Not needed	82682	gene product	database
+Not needed	80402	gene product	Not needed	81891	gene product	database
+Not needed	80482	gene product	Not needed	79708	gene product	database
+Not needed	80482	gene product	Not needed	78129	gene product	database
+Not needed	80501	gene product	Not needed	82060	gene product	database
+Not needed	78071	gene product	Not needed	80494	gene product	database
+Not needed	79697	gene product	Not needed	84788	gene product	database
+Not needed	80635	gene product	Not needed	83515	gene product	database
+Not needed	80654	gene product	Not needed	80761	gene product	database
+Not needed	80715	gene product	Not needed	80087	gene product	database
+Not needed	80715	gene product	Not needed	81059	gene product	database
+Not needed	80716	gene product	Not needed	80799	gene product	database
+Not needed	80720	gene product	Not needed	80766	gene product	database
+Not needed	80735	gene product	Not needed	81883	gene product	database
+Not needed	80738	gene product	Not needed	84951	gene product	database
+Not needed	80752	gene product	Not needed	82875	gene product	database
+Not needed	80761	gene product	Not needed	78521	gene product	database
+Not needed	80761	gene product	Not needed	83396	gene product	database
+Not needed	80761	gene product	Not needed	79666	gene product	database
+Not needed	80766	gene product	Not needed	83058	gene product	database
+Not needed	80766	gene product	Not needed	82049	gene product	database
+Not needed	80783	gene product	Not needed	81059	gene product	database
+Not needed	80802	gene product	Not needed	82394	gene product	database
+Not needed	80834	gene product	Not needed	82095	gene product	database
+Not needed	80892	gene product	Not needed	81155	gene product	database
+Not needed	80903	gene product	Not needed	83600	gene product	database
+Not needed	80903	gene product	Not needed	80727	gene product	database
+Not needed	80923	gene product	Not needed	78129	gene product	database
+Not needed	80925	gene product	Not needed	83641	gene product	database
+Not needed	80927	gene product	Not needed	84586	gene product	database
+Not needed	80939	gene product	Not needed	80313	gene product	database
+Not needed	80953	gene product	Not needed	78068	gene product	database
+Not needed	80967	gene product	Not needed	82893	gene product	database
+Not needed	81059	gene product	Not needed	82272	gene product	database
+Not needed	81098	gene product	Not needed	81753	gene product	database
+Not needed	81103	gene product	Not needed	83671	gene product	database
+Not needed	81108	gene product	Not needed	81933	gene product	database
+Not needed	81108	gene product	Not needed	81975	gene product	database
+Not needed	81108	gene product	Not needed	79908	gene product	database
+Not needed	81125	gene product	Not needed	80488	gene product	database
+Not needed	81125	gene product	Not needed	81452	gene product	database
+Not needed	81125	gene product	Not needed	83475	gene product	database
+Not needed	81125	gene product	Not needed	78129	gene product	database
+Not needed	81125	gene product	Not needed	82095	gene product	database
+Not needed	81145	gene product	Not needed	79613	gene product	database
+Not needed	81156	gene product	Not needed	85676	gene product	database
+Not needed	81163	gene product	Not needed	85090	gene product	database
+Not needed	81163	gene product	Not needed	82131	gene product	database
+Not needed	81251	gene product	Not needed	81757	gene product	database
+Not needed	81326	gene product	Not needed	78213	gene product	database
+Not needed	81327	gene product	Not needed	78129	gene product	database
+Not needed	81346	gene product	Not needed	80552	gene product	database
+Not needed	81346	gene product	Not needed	83024	gene product	database
+Not needed	81346	gene product	Not needed	81814	gene product	database
+Not needed	81346	gene product	Not needed	84652	gene product	database
+Not needed	81346	gene product	Not needed	82256	gene product	database
+Not needed	81350	gene product	Not needed	82394	gene product	database
+Not needed	81452	gene product	Not needed	84685	gene product	database
+Not needed	81452	gene product	Not needed	83546	gene product	database
+Not needed	81452	gene product	Not needed	79653	gene product	database
+Not needed	81462	gene product	Not needed	78764	gene product	database
+Not needed	78129	gene product	Not needed	82244	gene product	database
+Not needed	78129	gene product	Not needed	80475	gene product	database
+Not needed	78129	gene product	Not needed	80469	gene product	database
+Not needed	78129	gene product	Not needed	78068	gene product	database
+Not needed	78129	gene product	Not needed	80608	gene product	database
+Not needed	78129	gene product	Not needed	83546	gene product	database
+Not needed	78129	gene product	Not needed	81586	gene product	database
+Not needed	81504	gene product	Not needed	83348	gene product	database
+Not needed	81634	gene product	Not needed	82651	gene product	database
+Not needed	81666	gene product	Not needed	82104	gene product	database
+Not needed	81690	gene product	Not needed	82095	gene product	database
+Not needed	81963	gene product	Not needed	81973	gene product	database
+Not needed	82000	gene product	Not needed	80323	gene product	database
+Not needed	82004	gene product	Not needed	80372	gene product	database
+Not needed	78065	gene product	Not needed	81903	gene product	database
+Not needed	82059	gene product	Not needed	82244	gene product	database
+Not needed	82059	gene product	Not needed	84899	gene product	database
+Not needed	82059	gene product	Not needed	83864	gene product	database
+Not needed	82083	gene product	Not needed	78131	gene product	database
+Not needed	82086	gene product	Not needed	82135	gene product	database
+Not needed	82117	gene product	Not needed	80713	gene product	database
+Not needed	81780	gene product	Not needed	81435	gene product	database
+Not needed	80313	gene product	Not needed	82658	gene product	database
+Not needed	82177	gene product	Not needed	82545	gene product	database
+Not needed	80475	gene product	Not needed	80488	gene product	database
+Not needed	82301	gene product	Not needed	80728	gene product	database
+Not needed	82387	gene product	Not needed	79412	gene product	database
+Not needed	82414	gene product	Not needed	83636	gene product	database
+Not needed	80738	gene product	Not needed	85761	gene product	database
+Not needed	82436	gene product	Not needed	86110	gene product	database
+Not needed	80715	gene product	Not needed	81435	gene product	database
+Not needed	82496	gene product	Not needed	83905	gene product	database
+Not needed	82682	gene product	Not needed	81859	gene product	database
+Not needed	82750	gene product	Not needed	81878	gene product	database
+Not needed	82839	gene product	Not needed	78213	gene product	database
+Not needed	79712	gene product	Not needed	81859	gene product	database
+Not needed	80552	gene product	Not needed	83043	gene product	database
+Not needed	82929	gene product	Not needed	78926	gene product	database
+Not needed	79280	gene product	Not needed	81903	gene product	database
+Not needed	82985	gene product	Not needed	83110	gene product	database
+Not needed	80766	gene product	Not needed	82244	gene product	database
+Not needed	82244	gene product	Not needed	83958	gene product	database
+Not needed	83117	gene product	Not needed	82760	gene product	database
+Not needed	83147	gene product	Not needed	81995	gene product	database
+Not needed	81883	gene product	Not needed	83393	gene product	database
+Not needed	83164	gene product	Not needed	85699	gene product	database
+Not needed	83164	gene product	Not needed	83012	gene product	database
+Not needed	83386	gene product	Not needed	80313	gene product	database
+Not needed	83386	gene product	Not needed	83546	gene product	database
+Not needed	81775	gene product	Not needed	78129	gene product	database
+Not needed	79712	gene product	Not needed	79666	gene product	database
+Not needed	81771	gene product	Not needed	78935	gene product	database
+Not needed	83512	gene product	Not needed	86425	gene product	database
+Not needed	78131	gene product	Not needed	78689	gene product	database
+Not needed	81871	gene product	Not needed	82095	gene product	database
+Not needed	83610	gene product	Not needed	82073	gene product	database
+Not needed	84260	gene product	Not needed	81903	gene product	database
+Not needed	84899	gene product	Not needed	82244	gene product	database
+Not needed	83518	gene product	Not needed	80313	gene product	database
+Not needed	79666	gene product	Not needed	82000	gene product	database
+Not needed	85357	gene product	Not needed	79659	gene product	database
+Not needed	82206	gene product	Not needed	80467	gene product	database
+Not needed	80556	gene product	Not needed	81859	gene product	database
+Not needed	83764	gene product	Not needed	81903	gene product	database
+Not needed	80552	gene product	Not needed	80488	gene product	database
+Not needed	85524	gene product	Not needed	82095	gene product	database
+Not needed	83080	gene product	Not needed	80467	gene product	database
+Not needed	83774	gene product	Not needed	81818	gene product	database
+Not needed	85611	gene product	Not needed	78935	gene product	database
+Not needed	79659	gene product	Not needed	81903	gene product	database
+Not needed	81435	gene product	Not needed	80313	gene product	database
+Not needed	85885	gene product	Not needed	81191	gene product	database
+Not needed	85991	gene product	Not needed	80467	gene product	database
+Not needed	83800	gene product	Not needed	78129	gene product	database
+Not needed	82000	gene product	Not needed	79613	gene product	database
+Not needed	80552	gene product	Not needed	81390	gene product	database
+Not needed	86335	gene product	Not needed	83396	gene product	database
+Not needed	82280	gene product	Not needed	81903	gene product	database
+Not needed	78007	gene product	Not needed	29917	metabolite	database
+Not needed	78031	gene product	Not needed	29917	metabolite	database
+Not needed	78058	gene product	Not needed	29917	metabolite	database
+Not needed	78060	gene product	Not needed	31034	metabolite	database
+Not needed	78061	gene product	Not needed	29917	metabolite	database
+Not needed	78063	gene product	Not needed	28425	metabolite	database
+Not needed	78074	gene product	Not needed	29917	metabolite	database
+Not needed	78075	gene product	Not needed	31032	metabolite	database
+Not needed	78077	gene product	Not needed	31005	metabolite	database
+Not needed	78077	gene product	Not needed	31021	metabolite	database
+Not needed	78082	gene product	Not needed	29917	metabolite	database
+Not needed	78083	gene product	Not needed	31007	metabolite	database
+Not needed	78087	gene product	Not needed	29917	metabolite	database
+Not needed	78107	gene product	Not needed	29917	metabolite	database
+Not needed	78109	gene product	Not needed	29917	metabolite	database
+Not needed	78109	gene product	Not needed	31007	metabolite	database
+Not needed	78116	gene product	Not needed	29917	metabolite	database
+Not needed	78145	gene product	Not needed	29917	metabolite	database
+Not needed	78156	gene product	Not needed	29917	metabolite	database
+Not needed	78156	gene product	Not needed	31007	metabolite	database
+Not needed	78159	gene product	Not needed	29917	metabolite	database
+Not needed	78164	gene product	Not needed	31032	metabolite	database
+Not needed	78168	gene product	Not needed	31034	metabolite	database
+Not needed	78172	gene product	Not needed	29917	metabolite	database
+Not needed	78172	gene product	Not needed	31007	metabolite	database
+Not needed	78218	gene product	Not needed	29917	metabolite	database
+Not needed	78221	gene product	Not needed	31032	metabolite	database
+Not needed	78222	gene product	Not needed	31007	metabolite	database
+Not needed	78222	gene product	Not needed	29917	metabolite	database
+Not needed	78226	gene product	Not needed	29903	metabolite	database
+Not needed	78230	gene product	Not needed	29917	metabolite	database
+Not needed	78230	gene product	Not needed	31007	metabolite	database
+Not needed	78231	gene product	Not needed	29917	metabolite	database
+Not needed	43570	metabolite	Not needed	31032	metabolite	database
+Not needed	78240	gene product	Not needed	29917	metabolite	database
+Not needed	78240	gene product	Not needed	31007	metabolite	database
+Not needed	78249	gene product	Not needed	29917	metabolite	database
+Not needed	78249	gene product	Not needed	31007	metabolite	database
+Not needed	78257	gene product	Not needed	31034	metabolite	database
+Not needed	78257	gene product	Not needed	29377	metabolite	database
+Not needed	78271	gene product	Not needed	29917	metabolite	database
+Not needed	78273	gene product	Not needed	31007	metabolite	database
+Not needed	78275	gene product	Not needed	31032	metabolite	database
+Not needed	78281	gene product	Not needed	29917	metabolite	database
+Not needed	78290	gene product	Not needed	29917	metabolite	database
+Not needed	78290	gene product	Not needed	31007	metabolite	database
+Not needed	78293	gene product	Not needed	28622	metabolite	database
+Not needed	78293	gene product	Not needed	31032	metabolite	database
+Not needed	78293	gene product	Not needed	31007	metabolite	database
+Not needed	78293	gene product	Not needed	31005	metabolite	database
+Not needed	78303	gene product	Not needed	31007	metabolite	database
+Not needed	78313	gene product	Not needed	29917	metabolite	database
+Not needed	78320	gene product	Not needed	29917	metabolite	database
+Not needed	78329	gene product	Not needed	31034	metabolite	database
+Not needed	78332	gene product	Not needed	29917	metabolite	database
+Not needed	78332	gene product	Not needed	31007	metabolite	database
+Not needed	78337	gene product	Not needed	31007	metabolite	database
+Not needed	78339	gene product	Not needed	29917	metabolite	database
+Not needed	78340	gene product	Not needed	31005	metabolite	database
+Not needed	78342	gene product	Not needed	29917	metabolite	database
+Not needed	78344	gene product	Not needed	31007	metabolite	database
+Not needed	78346	gene product	Not needed	28425	metabolite	database
+Not needed	78349	gene product	Not needed	29917	metabolite	database
+Not needed	78365	gene product	Not needed	29903	metabolite	database
+Not needed	78378	gene product	Not needed	27804	metabolite	database
+Not needed	78383	gene product	Not needed	29917	metabolite	database
+Not needed	78390	gene product	Not needed	29917	metabolite	database
+Not needed	78390	gene product	Not needed	31007	metabolite	database
+Not needed	78404	gene product	Not needed	29917	metabolite	database
+Not needed	78406	gene product	Not needed	29917	metabolite	database
+Not needed	78410	gene product	Not needed	31032	metabolite	database
+Not needed	78411	gene product	Not needed	31034	metabolite	database
+Not needed	78416	gene product	Not needed	31032	metabolite	database
+Not needed	78427	gene product	Not needed	29917	metabolite	database
+Not needed	78429	gene product	Not needed	31032	metabolite	database
+Not needed	78430	gene product	Not needed	29917	metabolite	database
+Not needed	78437	gene product	Not needed	31032	metabolite	database
+Not needed	78439	gene product	Not needed	31032	metabolite	database
+Not needed	78440	gene product	Not needed	31032	metabolite	database
+Not needed	78442	gene product	Not needed	29917	metabolite	database
+Not needed	78443	gene product	Not needed	29917	metabolite	database
+Not needed	78446	gene product	Not needed	31007	metabolite	database
+Not needed	78447	gene product	Not needed	28425	metabolite	database
+Not needed	78451	gene product	Not needed	29917	metabolite	database
+Not needed	78451	gene product	Not needed	31007	metabolite	database
+Not needed	78455	gene product	Not needed	29903	metabolite	database
+Not needed	78459	gene product	Not needed	29917	metabolite	database
+Not needed	78461	gene product	Not needed	29917	metabolite	database
+Not needed	78466	gene product	Not needed	31007	metabolite	database
+Not needed	78471	gene product	Not needed	31007	metabolite	database
+Not needed	78472	gene product	Not needed	29917	metabolite	database
+Not needed	78479	gene product	Not needed	29917	metabolite	database
+Not needed	78484	gene product	Not needed	28425	metabolite	database
+Not needed	78485	gene product	Not needed	28425	metabolite	database
+Not needed	78486	gene product	Not needed	28425	metabolite	database
+Not needed	78489	gene product	Not needed	29917	metabolite	database
+Not needed	78489	gene product	Not needed	31007	metabolite	database
+Not needed	78491	gene product	Not needed	29917	metabolite	database
+Not needed	78497	gene product	Not needed	29917	metabolite	database
+Not needed	78500	gene product	Not needed	31032	metabolite	database
+Not needed	78525	gene product	Not needed	29917	metabolite	database
+Not needed	78547	gene product	Not needed	29917	metabolite	database
+Not needed	78554	gene product	Not needed	31034	metabolite	database
+Not needed	78573	gene product	Not needed	29371	metabolite	database
+Not needed	78575	gene product	Not needed	29917	metabolite	database
+Not needed	78591	gene product	Not needed	29917	metabolite	database
+Not needed	78591	gene product	Not needed	31007	metabolite	database
+Not needed	78596	gene product	Not needed	31032	metabolite	database
+Not needed	78600	gene product	Not needed	29917	metabolite	database
+Not needed	78600	gene product	Not needed	31007	metabolite	database
+Not needed	78606	gene product	Not needed	31007	metabolite	database
+Not needed	78615	gene product	Not needed	29917	metabolite	database
+Not needed	78626	gene product	Not needed	31007	metabolite	database
+Not needed	78630	gene product	Not needed	29917	metabolite	database
+Not needed	78632	gene product	Not needed	31034	metabolite	database
+Not needed	78309	gene product	Not needed	29917	metabolite	database
+Not needed	78683	gene product	Not needed	29917	metabolite	database
+Not needed	78691	gene product	Not needed	29917	metabolite	database
+Not needed	78691	gene product	Not needed	31007	metabolite	database
+Not needed	78696	gene product	Not needed	31007	metabolite	database
+Not needed	78700	gene product	Not needed	29917	metabolite	database
+Not needed	78700	gene product	Not needed	31007	metabolite	database
+Not needed	78703	gene product	Not needed	29903	metabolite	database
+Not needed	78708	gene product	Not needed	31034	metabolite	database
+Not needed	78714	gene product	Not needed	29917	metabolite	database
+Not needed	78718	gene product	Not needed	32041	metabolite	database
+Not needed	78721	gene product	Not needed	29903	metabolite	database
+Not needed	31758	metabolite	Not needed	31032	metabolite	database
+Not needed	31758	metabolite	Not needed	31008	metabolite	database
+Not needed	78733	gene product	Not needed	31007	metabolite	database
+Not needed	78733	gene product	Not needed	29917	metabolite	database
+Not needed	78735	gene product	Not needed	29377	metabolite	database
+Not needed	78736	gene product	Not needed	31007	metabolite	database
+Not needed	78739	gene product	Not needed	29917	metabolite	database
+Not needed	32625	metabolite	Not needed	31005	metabolite	database
+Not needed	78745	gene product	Not needed	31034	metabolite	database
+Not needed	78746	gene product	Not needed	31005	metabolite	database
+Not needed	78769	gene product	Not needed	29917	metabolite	database
+Not needed	78772	gene product	Not needed	29917	metabolite	database
+Not needed	78773	gene product	Not needed	31032	metabolite	database
+Not needed	78789	gene product	Not needed	31032	metabolite	database
+Not needed	78801	gene product	Not needed	31032	metabolite	database
+Not needed	78802	gene product	Not needed	29917	metabolite	database
+Not needed	78812	gene product	Not needed	31032	metabolite	database
+Not needed	78829	gene product	Not needed	31007	metabolite	database
+Not needed	78830	gene product	Not needed	29917	metabolite	database
+Not needed	78836	gene product	Not needed	32041	metabolite	database
+Not needed	78847	gene product	Not needed	29917	metabolite	database
+Not needed	78854	gene product	Not needed	31006	metabolite	database
+Not needed	78854	gene product	Not needed	31032	metabolite	database
+Not needed	78864	gene product	Not needed	31005	metabolite	database
+Not needed	78864	gene product	Not needed	31021	metabolite	database

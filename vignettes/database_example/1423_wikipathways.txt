@@ -4,34 +4,19 @@ Synonym1	ID1	Type1	Synonym2	ID2	Type2	Source
 4amino4deoxychorismate	29758	metabolite	dihydrofolicacid	27998	metabolite	database
 folate	30051	metabolite	dihydrofolicacid	27998	metabolite	database
 chorismate	31063	metabolite	dihydrofolicacid	27998	metabolite	database
-63217	78025	gene product	dihydrofolicacid	27998	metabolite	database
-dihydrofolatereductase	78027	gene product	dihydrofolicacid	27998	metabolite	database
-26185	78129	gene product	dihydrofolicacid	27998	metabolite	database
+dihydrofolatereductase	79069	gene product	dihydrofolicacid	27998	metabolite	database
 4aminobenzoate	29523	metabolite	5678tetrahydrofolicacid	28000	metabolite	database
 4amino4deoxychorismate	29758	metabolite	5678tetrahydrofolicacid	28000	metabolite	database
 folate	30051	metabolite	5678tetrahydrofolicacid	28000	metabolite	database
 chorismate	31063	metabolite	5678tetrahydrofolicacid	28000	metabolite	database
-63217	78025	gene product	5678tetrahydrofolicacid	28000	metabolite	database
-dihydrofolatereductase	78027	gene product	5678tetrahydrofolicacid	28000	metabolite	database
-26185	78129	gene product	5678tetrahydrofolicacid	28000	metabolite	database
+dihydrofolatereductase	79069	gene product	5678tetrahydrofolicacid	28000	metabolite	database
 4amino4deoxychorismate	29758	metabolite	4aminobenzoate	29523	metabolite	database
 folate	30051	metabolite	4aminobenzoate	29523	metabolite	database
 chorismate	31063	metabolite	4aminobenzoate	29523	metabolite	database
-63217	78025	gene product	4aminobenzoate	29523	metabolite	database
-dihydrofolatereductase	78027	gene product	4aminobenzoate	29523	metabolite	database
-26185	78129	gene product	4aminobenzoate	29523	metabolite	database
+dihydrofolatereductase	79069	gene product	4aminobenzoate	29523	metabolite	database
 folate	30051	metabolite	4amino4deoxychorismate	29758	metabolite	database
 chorismate	31063	metabolite	4amino4deoxychorismate	29758	metabolite	database
-63217	78025	gene product	4amino4deoxychorismate	29758	metabolite	database
-dihydrofolatereductase	78027	gene product	4amino4deoxychorismate	29758	metabolite	database
-26185	78129	gene product	4amino4deoxychorismate	29758	metabolite	database
+dihydrofolatereductase	79069	gene product	4amino4deoxychorismate	29758	metabolite	database
 chorismate	31063	metabolite	folate	30051	metabolite	database
-63217	78025	gene product	folate	30051	metabolite	database
-dihydrofolatereductase	78027	gene product	folate	30051	metabolite	database
-26185	78129	gene product	folate	30051	metabolite	database
-63217	78025	gene product	chorismate	31063	metabolite	database
-dihydrofolatereductase	78027	gene product	chorismate	31063	metabolite	database
-26185	78129	gene product	chorismate	31063	metabolite	database
-dihydrofolatereductase	78027	gene product	63217	78025	gene product	database
-26185	78129	gene product	63217	78025	gene product	database
-26185	78129	gene product	dihydrofolatereductase	78027	gene product	database
+dihydrofolatereductase	79069	gene product	folate	30051	metabolite	database
+dihydrofolatereductase	79069	gene product	chorismate	31063	metabolite	database
