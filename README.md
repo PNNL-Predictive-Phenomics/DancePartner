@@ -10,7 +10,7 @@ See full Sphinx documentation [here](https://pnnl-predictive-phenomics.github.io
 
 ## Cite
 
-*Publication coming soon* Degnan et. al. 2025
+Degnan D.J., Strauch C.W., Obiri M.Y., VonKaenel E.D., Adrian D.W., and Bramer L.M. “DancePartner: Python Package to Mine Multiomics Relationship Networks from Literature and Databases.” Journal of Proteome Research, 2025. https://doi.org/10.1021/acs.jproteome.5c00520
 
 # How to Use
 
