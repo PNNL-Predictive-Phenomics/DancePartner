@@ -101,4 +101,4 @@ Here are some examples of more complicated queries if needed:
 
 ## Synonym Tables
 
-Because a specific gene or protein can have multiple synonyms and database identifiers, here we [to do]
+Because a specific gene or protein can have multiple synonyms and database identifiers, here we collapse synonyms and identifiers into groups of cross-referenced synonyms and identifiers. These new groups become DancePartnerIDs.
