@@ -1,0 +1,32 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dance-partner
+  title: DancePartner
+  description: DancePartner is a python package which creates multi-omics networks derived from literature and databases
+  annotations:
+    # Conditional host-specific annotations rendered to avoid empty-string values that fail catalog validation.
+    github.com/project-slug: PNNL-Predictive-Phenomics/DancePartner
+  links:
+    - title: DancePartner Repository
+      url: https://github.com/PNNL-Predictive-Phenomics/DancePartner
+    - title: DancePartner Publication
+      url: https://pubmed.ncbi.nlm.nih.gov/41186395/
+  tags:
+    - python
+    - python-library
+    - multi-omics
+    - biomolecule
+    - networks
+spec:
+  type: library
+  owner: user:default/david.degnan_pnnl.gov # David Degnan project contributor
+  visibility: private # to expose this item in the catalog to others at PNNL, change the visibility to 'public'
+  # system: 
+  lifecycle: production
+
+  # TODO: does dance-partner depend on another resource or component?
+  # dependsOn:
+
+  # TODO: does another resource depend on dance-partner? 
+  # dependencyOf:
