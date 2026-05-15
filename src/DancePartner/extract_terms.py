@@ -34,6 +34,7 @@ def extract_terms_scispacy(paper_directory: str,
                            additional_stop_words: list[str] = None,
                            min_length: int = 3, 
                            max_length: int = 100,
+                           lower: bool = True,
                            verbose: bool = False):
     '''
     Extract terms from papers
@@ -57,9 +58,14 @@ def extract_terms_scispacy(paper_directory: str,
     
     max_length
         The maximum number of characters allowed. Default is 100. 
+
+    lower
+        If True, convert extracted terms to lowercase before cleaning and
+        filtering. If False, preserve the original letter case. Default is True.
     
     verbose
-        Indicate whether a message should be printed as each file is processed. Default is "FALSE"
+        Indicate whether a message should be printed as each file is processed. Default is False
+
     
     Returns
     -------
@@ -117,7 +123,9 @@ def extract_terms_scispacy(paper_directory: str,
 
             # Clean terms 
             for term in terms:
-                term = re.sub("[^\s\d\w]|\n", '', term.lower().strip())
+                if lower:
+                    term = term.lower()
+                term = re.sub("[^\s\d\w]|\n", '', term.strip())
                 if len(term) >= min_length and len(term) <= max_length and term not in stop_words:
                     identified_terms.append(term)
 

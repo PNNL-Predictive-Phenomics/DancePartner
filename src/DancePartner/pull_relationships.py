@@ -2,7 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 from io import StringIO
 
-import pywikipathways as pwpw
+try:
+    import pywikipathways as pwpw
+except ModuleNotFoundError:
+    pwpw = None
 
 import os
 import io
@@ -249,111 +252,13 @@ def pull_uniprot(species_id: str,
 ########################
 ## METABOLIC NETWORKS ##
 ########################
-
-def pull_wikipathways(species_name: str, 
-                      species_id: str, 
-                      synonym_table: pd.DataFrame,
-                      output_directory: str = None, 
-                      remove_self_relationships: bool = True, 
-                      verbose: bool = False):
-    '''
-    Extract relationships from metabolic networks stored in WikiPathways
-
-    Parameters
-    ----------
-    species_name
-        The name for the species. Select species from here: https://www.wikipathways.org/browse/organisms.html. Use proper Genus species format
-    
-    species_id
-        The taxon ID for the organism of interest
-
-    synonym_table
-        A pandas DataFrame of the synonym table made with `make_synonym_table`
-
-    output_directory
-        Path specifying where to write the result.
-    
-    remove_self_relationships
-        True to remove any relationships to self, and False to maintain them. Default is True.
-    
-    verbose
-        Whether progress messages should be written or not. Default is False. 
-    
-    Returns
-    -------
-    A dataframe denoting relationships in 7 columns (Synonym1, ID1, Type1, Synonym1, ID2, Type2, Source)
-    '''
-
-    # Extract all pathways
-    pathways = pwpw.list_pathways(species_name)
-
-    # Make a list to hold all relationships
-    relationships = []
-
-    # Iterate through pathways 
-    for p_id in pathways["id"].tolist():
-
-        if verbose:
-            print("Extracting entities for: " + p_id)
-
-        # Build URL and read the JSON file through the API  
-        try:
-            url = "https://www.wikipathways.org/wikipathways-assets/pathways/" + p_id + "/" + p_id + ".json"
-            data = json.loads(str(__parse_url(url)))
-
-            # Hold entities 
-            wp_data = []
-
-            # Extract all entities 
-            for entry in data["entitiesById"]:
-                content = data["entitiesById"][entry]["type"]
-                if "DataNode" in content:
-                    wp_data.append(content)
-
-            # Synonyms need to be parsed and collapsed 
-            pre_nodes = pd.DataFrame(wp_data)[5].to_list()
-            terms = [x for x in pre_nodes if x is not None]
-
-            # Map all synonyms 
-            map_terms = map_synonyms(
-                term_list = terms,
-                synonym_table = synonym_table
-            )
-
-            # Pull node information. An edge will be drawn between every node. 
-            nodes = map_terms.rename({"DancePartnerID": "ID1", "Type": "Type1", "Synonym": "Synonym1"}, axis = 1)
-
-            # Extract upper triangle
-            ut = __upper_triangle_meshgrid(nodes["ID1"].astype(str)).rename({0:"ID1", 1:"ID2"}, axis = 1)
-            ut["ID1"] = ut["ID1"].astype(int)
-            ut["ID2"] = ut["ID2"].astype(int)
-
-            # Left join both columns 
-            relationship_table = pd.merge(ut[["ID1"]], nodes).reset_index(drop = True).join(
-                pd.merge(ut[["ID2"]], nodes.rename({"ID1":"ID2", "Type1":"Type2", "Synonym1":"Synonym2"}, axis = 1))
-            )
-            relationship_table["Source"] = "database"
-            relationships.append(relationship_table)
-
-        except:
-            print(p_id + " not found")
-            continue
-
-    # Remove duplicates
-    final_relationships = pd.concat(relationships).reset_index(drop = True)
-    final_relationships = remove_relationship_duplicates(final_relationships, remove_self_relationships)
-
-    if output_directory is not None:
-        final_relationships.to_csv(os.path.join(output_directory, str(species_id) + "_wikipathways.txt"), index=False, sep = "\t")
-        return None
-    else:
-        return final_relationships
     
 def pull_kegg(kegg_species_id: str, 
               synonym_table: pd.DataFrame,
               output_directory: str = None, 
               flatten_module: bool = False, 
               remove_self_relationships: bool = True, 
+              lower: bool = True,
               verbose: bool = False):
     '''
     Extract relationships from metabolic networks (modules) stored in KEGG
@@ -375,6 +280,10 @@ def pull_kegg(kegg_species_id: str,
     
     remove_self_relationships
         True to remove any relationships to self, and False to maintain them. Default is True.
+
+    lower
+        If True, convert KEGG-derived names to lowercase before cleaning and
+        matching. If False, preserve the original letter case. Default is True.
     
     verbose
         Whether progress messages should be written or not. Default is False. 
@@ -644,7 +553,7 @@ def pull_kegg(kegg_species_id: str,
                 all_IDs = list(set(all_IDs))
 
                 # MAP IDs to synonyms
-                syns = map_synonyms(all_IDs, synonym_table)
+                syns = map_synonyms(all_IDs, synonym_table, lower = lower)
 
                 # Construct table
                 module_table = []
@@ -661,8 +570,12 @@ def pull_kegg(kegg_species_id: str,
                 for rel in all_rels:
 
                     # Extract terms
-                    term1 = re.sub(r'[^a-zA-Z0-9]', '', rel.split(" & ")[0].strip().lower())
-                    term2 = re.sub(r'[^a-zA-Z0-9]', '', rel.split(" & ")[1].strip().lower())
+                    if lower:
+                        term1 = re.sub(r'[^a-zA-Z0-9]', '', rel.split(" & ")[0].strip().lower())
+                        term2 = re.sub(r'[^a-zA-Z0-9]', '', rel.split(" & ")[1].strip().lower())
+                    else:
+                        term1 = re.sub(r'[^a-zA-Z0-9]', '', rel.split(" & ")[0].strip())
+                        term2 = re.sub(r'[^a-zA-Z0-9]', '', rel.split(" & ")[1].strip())
 
                     # Make table
                     sub_table = pd.concat([syns[syns["Synonym"] == term1].rename({"Synonym":"Synonym1", "DancePartnerID":"ID1", "Type":"Type1"}, axis = 1).reset_index(drop = True), 

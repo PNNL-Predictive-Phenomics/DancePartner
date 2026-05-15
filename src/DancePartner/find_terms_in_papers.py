@@ -10,6 +10,7 @@ def find_terms_in_papers(papers: str,
                          n_gram_max: int = 3, 
                          max_char_length: int = 250, 
                          padding: int = 10, 
+                         lower: bool = True,
                          verbose: bool = False):   
     """
     This function searches through sentences of papers to extract biomolecule pairs present in each sentence.
@@ -35,8 +36,13 @@ def find_terms_in_papers(papers: str,
     padding
         The amount of padding (in characters) to surround the terms in a segment by at minimum.
     
+    lower
+        If True, convert the search terms and paper text to lowercase before
+        cleaning and matching. If False, preserve the original letter case.
+        Default is True.
+    
     verbose
-        If True, print status messages
+        If True, print status messages. Default is False.
     
     Returns
     -------
@@ -44,7 +50,10 @@ def find_terms_in_papers(papers: str,
     """
     
     # Modify term matches
-    terms = [re.sub("[^\s\d\w]|\n", '', str(term).lower()) for term in terms]
+    if lower:
+        terms = [re.sub("[^\s\d\w]|\n", '', str(term).lower()) for term in terms]
+    else:
+        terms = [re.sub("[^\s\d\w]|\n", '', str(term)) for term in terms]
 
     # Hold all matches
     matches = []
@@ -52,7 +61,10 @@ def find_terms_in_papers(papers: str,
     if ".txt" in papers:
 
         with open(papers, "r", encoding = "utf8") as f:
-            sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
+            if lower:
+                sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
+            else:
+                sentences = [re.sub("[^\s\d\w]|\n", '', x) for x in nltk.sent_tokenize(f.read())]
             for sentence_ind, sentence in enumerate(sentences):
                 words = nltk.word_tokenize(sentence)
                 joined_word_ngrams = [' '.join(x) for x in list(nltk.everygrams(words, 1, n_gram_max))]
@@ -97,7 +109,10 @@ def find_terms_in_papers(papers: str,
                 file_path = os.path.join(root, file)
                 file_id = Path(file_path).stem
                 with open(file_path, "r", encoding = "utf8") as f:
-                    sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
+                    if lower:
+                        sentences = [re.sub("[^\s\d\w]|\n", '', x.lower()) for x in nltk.sent_tokenize(f.read())]
+                    else:
+                        sentences = [re.sub("[^\s\d\w]|\n", '', x) for x in nltk.sent_tokenize(f.read())]
                     for sentence_ind, sentence in enumerate(sentences):
                         words = nltk.word_tokenize(sentence)
                         joined_word_ngrams = [' '.join(x) for x in list(nltk.everygrams(words, 1, n_gram_max))]

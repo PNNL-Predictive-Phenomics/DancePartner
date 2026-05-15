@@ -2,13 +2,60 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import tarfile
-import metapub
 import pypdf
 import io
 import urllib3
+import importlib
 
 
-def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str):
+def __get_ncbi_params(pubmed_api_key: str = None, **params):
+    if pubmed_api_key is not None:
+        params["api_key"] = pubmed_api_key
+    return params
+
+
+def __get_metapub_module():
+    return importlib.import_module("metapub")
+
+
+def __fetch_pubmed_record(pmid: str, pubmed_api_key: str = None):
+    response = requests.get(
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
+        params = __get_ncbi_params(pubmed_api_key, db = "pubmed", id = pmid, retmode = "xml"),
+        timeout = 30,
+    )
+    response.raise_for_status()
+    return BeautifulSoup(response.content, "xml")
+
+
+def __extract_article_identifier(soup: BeautifulSoup, identifier_type: str):
+    for tag in soup.find_all(lambda entry: entry.name is not None and entry.name.lower() in {"articleid", "article-id"}):
+        attrs = {str(key).lower(): str(value) for key, value in tag.attrs.items()}
+        if attrs.get("idtype") == identifier_type or attrs.get("pub-id-type") == identifier_type:
+            return tag.get_text().strip()
+    return None
+
+
+def __extract_article_title(soup: BeautifulSoup):
+    for tag_name in ["ArticleTitle", "article-title"]:
+        tag = soup.find(tag_name)
+        if tag is not None:
+            return tag.get_text(" ", strip = True)
+    return None
+
+
+def __extract_article_abstract(soup: BeautifulSoup):
+    abstract_nodes = []
+    for tag_name in ["AbstractText", "abstracttext"]:
+        abstract_nodes.extend(soup.find_all(tag_name))
+
+    abstract_parts = [node.get_text(" ", strip = True) for node in abstract_nodes if node.get_text(strip = True)]
+    if len(abstract_parts) == 0:
+        return None
+    return " ".join(abstract_parts)
+
+
+def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str, pubmed_api_key: str = None):
     """
     Function that pulls paper abstracts from PubMed. Writes them to a directory.
 
@@ -23,6 +70,9 @@ def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str
     tarball_path
         An optional path of where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous function 
         run may have saved articles to, which can reduce run time.
+
+    pubmed_api_key
+        An optional NCBI API key for PubMed E-utilities requests.
 
     Returns
     -------
@@ -55,33 +105,40 @@ def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str
     # First find tarballs and download them into an internal directory # Delete them?
     for id in ids:
         pmid = str(int(float(id)))
-        # Find if the PubMed Article has a corresponding PubMed Central ID and page
-        req = requests.get("https://pubmed.ncbi.nlm.nih.gov/" + str(pmid) + "/")
-        soup = BeautifulSoup(req.content, 'html.parser')
-        pmc_url = soup.find_all("a", class_="id-link", attrs={"data-ga-action":"PMCID"})
-        if len(pmc_url) > 0:
-            try:
-                # Use that PubMedCentral ID to find where the article is stored on FTP
-                pmcid = pmc_url[0].get_text().strip()
-                if pmcid in pmc_list:
-                    # tarball has already been downloaded to the `tarball_path`. Don't re-download. Break from loop to next pmid.
-                    continue
-                link = "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=" + pmcid
-                tgz_url = "https://" + BeautifulSoup(requests.get(link).content, 'html.parser').find("link", attrs={"format":"tgz"}).get("href")[6:]
-                response = requests.get(tgz_url, stream=True)
-                # Download the tarball from the FTP location
-                if response.status_code == 200:
-                    filename = os.path.join(tarball_path, pmcid + ".tar.gz")
-                    with open(filename, 'wb') as f:
-                        f.write(response.raw.read())
-                else:
-                    notfound_count += 1
-            except AttributeError:
+        try:
+            soup = __fetch_pubmed_record(pmid, pubmed_api_key)
+            pmcid = __extract_article_identifier(soup, "pmc")
+            if pmcid is None:
+                continue
+            if pmcid in pmc_list:
+                continue
+
+            response = requests.get(
+                "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi",
+                params = __get_ncbi_params(pubmed_api_key, id = pmcid),
+                timeout = 30,
+            )
+            tgz_link = BeautifulSoup(response.content, 'html.parser').find("link", attrs={"format":"tgz"})
+            if tgz_link is None:
                 notfound_count += 1
-            except TimeoutError:
+                continue
+
+            tgz_url = "https://" + tgz_link.get("href")[6:]
+            response = requests.get(tgz_url, stream=True, timeout = 60)
+            if response.status_code == 200:
+                filename = os.path.join(tarball_path, pmcid + ".tar.gz")
+                with open(filename, 'wb') as f:
+                    f.write(response.raw.read())
+            else:
                 notfound_count += 1
-            except urllib3.exceptions.ProtocolError:
-                notfound_count += 1
+        except AttributeError:
+            notfound_count += 1
+        except TimeoutError:
+            notfound_count += 1
+        except requests.exceptions.RequestException:
+            notfound_count += 1
+        except urllib3.exceptions.ProtocolError:
+            notfound_count += 1
 
     # Now grab the text from the tarballs
     for _, _, files in os.walk(tarball_path):
@@ -118,7 +175,7 @@ def __pull_pubmed_clean(ids: list[str], output_directory: str, tarball_path: str
     
     return(found_ids)
 
-def __pull_pubmed_pdfs(ids: list[str], output_directory: str):
+def __pull_pubmed_pdfs(ids: list[str], output_directory: str, pubmed_api_key: str = None):
     """
     Function that pulls PDF papers from PubMed. Writes them to a directory.
 
@@ -129,6 +186,10 @@ def __pull_pubmed_pdfs(ids: list[str], output_directory: str):
     
     output_directory
         Path specifying where to write the papers to.
+
+    pubmed_api_key
+        An optional NCBI API key. When provided, it is forwarded to metapub via
+        the NCBI_API_KEY environment variable.
     
     Returns
     -------
@@ -141,45 +202,55 @@ def __pull_pubmed_pdfs(ids: list[str], output_directory: str):
         os.mkdir(write_path, mode = 0o777)
     found_ids = []
 
-    # Iterate through list and try to scan the pdf and save to a folder
-    for id in ids:
-        pmid = str(int(float(id)))
-        try:
-            src = metapub.FindIt(str(pmid))
-            req = requests.get(src.url)
-            pdf = io.BytesIO(req.content)
-            reader = pypdf.PdfReader(pdf)
-            filename = os.path.join(write_path, str(pmid) + ".txt")
-            with open(filename, 'w', encoding = "utf8") as f:
-                for i in range(len(reader.pages)):
-                    f.write(" ".join(reader.pages[i].extract_text().split("\n"))) 
-            # success --> append id (Integer type) to found-list
-            found_ids.append(pmid)
+    original_api_key = os.environ.get("NCBI_API_KEY")
+    if pubmed_api_key is not None:
+        os.environ["NCBI_API_KEY"] = pubmed_api_key
 
-        except requests.exceptions.MissingSchema:
-            #print("Invalid URL for article {}".format(pmid))
-            notfound_count += 1
-        except pypdf._utils.PdfStreamError:
-            #print("PDF Stream Error with article {}".format(pmid))
-            notfound_count += 1
-        except pypdf.generic._data_structures.PdfReadError:
-            #print("PDF Read Error with article {}".format(pmid))
-            notfound_count += 1
-        except metapub.exceptions.InvalidPMID:
-            #print("PubMed invalid article error for article {}".format(pmid))
-            notfound_count += 1
-        except AttributeError:
-            #print("Attribute Error with article {}".format(pmid))
-            notfound_count += 1
-        except TypeError:
-            #print("Type Error with article {}".format(pmid))
-            notfound_count += 1
-        except UnicodeEncodeError:
-            #print("Encoding Error with article {}".format(pmid))
-            notfound_count += 1
+    try:
+        metapub = __get_metapub_module()
+
+        # Iterate through list and try to scan the pdf and save to a folder
+        for id in ids:
+            pmid = str(int(float(id)))
+            try:
+                src = metapub.FindIt(str(pmid))
+                req = requests.get(src.url, timeout = 60)
+                pdf = io.BytesIO(req.content)
+                reader = pypdf.PdfReader(pdf)
+                filename = os.path.join(write_path, str(pmid) + ".txt")
+                with open(filename, 'w', encoding = "utf8") as f:
+                    for i in range(len(reader.pages)):
+                        f.write(" ".join(reader.pages[i].extract_text().split("\n"))) 
+                # success --> append id (Integer type) to found-list
+                found_ids.append(pmid)
+
+            except requests.exceptions.MissingSchema:
+                notfound_count += 1
+            except pypdf._utils.PdfStreamError:
+                notfound_count += 1
+            except pypdf.generic._data_structures.PdfReadError:
+                notfound_count += 1
+            except metapub.exceptions.InvalidPMID:
+                notfound_count += 1
+            except metapub.exceptions.MetaPubError:
+                notfound_count += 1
+            except AttributeError:
+                notfound_count += 1
+            except TypeError:
+                notfound_count += 1
+            except UnicodeEncodeError:
+                notfound_count += 1
+            except requests.exceptions.RequestException:
+                notfound_count += 1
+    finally:
+        if pubmed_api_key is not None:
+            if original_api_key is None:
+                del os.environ["NCBI_API_KEY"]
+            else:
+                os.environ["NCBI_API_KEY"] = original_api_key
     return(found_ids)
 
-def __pull_pubmed_abstracts(ids: str, output_directory: str, abstract_include_title: bool = True):
+def __pull_pubmed_abstracts(ids: str, output_directory: str, abstract_include_title: bool = True, pubmed_api_key: str = None):
     """
     Function that pulls paper abstracts from PubMed. Writes them to a directory.
     
@@ -194,6 +265,9 @@ def __pull_pubmed_abstracts(ids: str, output_directory: str, abstract_include_ti
     
     abstract_include_title
         Whether to include the paper's title as the first sentence of the text.
+
+    pubmed_api_key
+        An optional NCBI API key for PubMed E-utilities requests.
     
     Returns:
         List of IDs that were found. A subset of the `ids` argument.
@@ -207,29 +281,28 @@ def __pull_pubmed_abstracts(ids: str, output_directory: str, abstract_include_ti
 
     for id in ids:
         pmid = str(int(float(id)))
-        url = "https://pubmed.ncbi.nlm.nih.gov/" + str(pmid) + "/"
-        req = requests.get(url)
-        soup = BeautifulSoup(req.content, "html.parser")
         try:
-            abstract = soup.find(id="eng-abstract").get_text().strip()
+            soup = __fetch_pubmed_record(pmid, pubmed_api_key)
+            abstract = __extract_article_abstract(soup)
+            title = __extract_article_title(soup)
+            if abstract is None:
+                notfound_count += 1
+                continue
             with open(os.path.join(write_path, str(pmid) + ".txt"), "w", encoding = "utf8") as f:
-                if abstract_include_title:
-                    f.write(soup.find("meta", {"name":"citation_title"})['content'])
+                if abstract_include_title and title is not None:
+                    f.write(title)
                     f.write(". ")
                 f.write(abstract)
             # success --> append id (Integer type) to found-list
             found_ids.append(pmid)
         except AttributeError:
-            try:
-                #print("{} for article {}".format(soup.find(class_="empty-abstract").get_text(), pmid))
-                notfound_count += 1
-            except AttributeError:
-                #print("Error with article {}".format(pmid))
-                notfound_count += 1
+            notfound_count += 1
+        except requests.exceptions.RequestException:
+            notfound_count += 1
         
     return(found_ids)
 
-def __pull_pubmed(ids: list[str], output_directory: str, type: str, tarball_path: str):
+def __pull_pubmed(ids: list[str], output_directory: str, type: str, tarball_path: str, pubmed_api_key: str = None):
     """
     Function to pull papers from PubMed.
 
@@ -248,6 +321,9 @@ def __pull_pubmed(ids: list[str], output_directory: str, type: str, tarball_path
         An optional path of where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous function run may have saved 
         articles to, which can reduce run time.
 
+    pubmed_api_key
+        An optional NCBI API key for PubMed E-utilities requests.
+
     Returns
     -------
         List of IDs that were found. A subset of the `ids` argument.
@@ -255,18 +331,18 @@ def __pull_pubmed(ids: list[str], output_directory: str, type: str, tarball_path
 
     # If pulling full text, first pass through clean text and then pdfs 
     if type == "full text":
-        found_ids_clean = __pull_pubmed_clean(ids, output_directory, tarball_path)
+        found_ids_clean = __pull_pubmed_clean(ids, output_directory, tarball_path, pubmed_api_key = pubmed_api_key)
         remaining_ids = [the_id for the_id in ids if the_id not in found_ids_clean]
-        found_ids_pdf = __pull_pubmed_pdfs(remaining_ids, output_directory)
+        found_ids_pdf = __pull_pubmed_pdfs(remaining_ids, output_directory, pubmed_api_key = pubmed_api_key)
         found_ids_clean.extend(found_ids_pdf)
         return({"full": found_ids_clean, "abstract": []})
     elif type == "abstract":
-        return({"full": [], "abstract": __pull_pubmed_abstracts(ids, output_directory)})
+        return({"full": [], "abstract": __pull_pubmed_abstracts(ids, output_directory, pubmed_api_key = pubmed_api_key)})
     elif type == "both":
-        found_ids_clean = __pull_pubmed_clean(ids, output_directory, tarball_path)
+        found_ids_clean = __pull_pubmed_clean(ids, output_directory, tarball_path, pubmed_api_key = pubmed_api_key)
         remaining_ids = [the_id for the_id in ids if the_id not in found_ids_clean]
-        found_ids_pdf = __pull_pubmed_pdfs(remaining_ids, output_directory)
+        found_ids_pdf = __pull_pubmed_pdfs(remaining_ids, output_directory, pubmed_api_key = pubmed_api_key)
         remaining_ids = [the_id for the_id in remaining_ids if the_id not in found_ids_pdf]
-        found_ids_abstract = __pull_pubmed_abstracts(remaining_ids, output_directory)
+        found_ids_abstract = __pull_pubmed_abstracts(remaining_ids, output_directory, pubmed_api_key = pubmed_api_key)
         found_ids_clean.extend(found_ids_pdf)
         return({"full": found_ids_clean, "abstract": found_ids_abstract})
