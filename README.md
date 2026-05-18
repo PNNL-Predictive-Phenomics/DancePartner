@@ -83,13 +83,13 @@ Several functions require support files found in the omes folder. It is required
 
 ## Complex Query Example
 
-Here are some examples of more complicated queries if needed:
+Here is an example of a complex query where all papers with proteomics and metabolomics information regarding E. coli are pulled, specifically from the years 2000-2025.
 
-**PubMed:** `(e coli proteomics) AND (e coli metabolism) AND (("2000/01/01"[Date - Publication]: "2024/02/23"[Date - Publication]))`
+**PubMed:** `(e coli proteomics) AND (e coli metabolism) AND ("2000/01/01"[Date - Publication]:"2025/12/31"[Date - Publication])`
 
-**Scopus:** `TITLE-ABS-KEY ( e AND coli AND proteomics AND e AND coli AND metabolism ) AND PUBYEAR > 20000101 AND PUBYEAR < 20240224)`
+**Scopus:** `( TITLE-ABS-KEY ( e coli proteomics ) AND TITLE-ABS-KEY ( e coli metabolomics ) ) AND PUBYEAR > 1999 AND PUBYEAR < 2026`
 
-**OSTI:** `q=e coli proteomics AND e coli metabolism&publication_date_start=1/1/2000&publication_date_end=2/3/2024`
+**OSTI:** `"e coli proteomics" AND "e coli metabolism" AND publication_date:[2000-01-01 TO 2025-12-31]`
 
 ## Synonym Tables
 
