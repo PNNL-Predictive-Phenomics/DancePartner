@@ -2,11 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from io import StringIO
 
-try:
-    import pywikipathways as pwpw
-except ModuleNotFoundError:
-    pwpw = None
-
 import os
 import io
 import re

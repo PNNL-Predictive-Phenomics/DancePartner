@@ -207,7 +207,9 @@ def __pull_pubmed_pdfs(ids: list[str], output_directory: str, pubmed_api_key: st
         os.environ["NCBI_API_KEY"] = pubmed_api_key
 
     try:
-        metapub = __get_metapub_module()
+        
+        # Separate this importing to avoid importing metapub (which is slow to import) when not needed, and also to ensure that the NCBI_API_KEY environment variable is set before importing metapub, since metapub reads this environment variable at import time to set up its API key for E-utilities requests
+        metapub = __get_metapub_module() 
 
         # Iterate through list and try to scan the pdf and save to a folder
         for id in ids:

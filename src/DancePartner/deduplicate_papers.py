@@ -18,6 +18,24 @@ def _read_csv_or_txt(file_path: str):
         return(pd.read_csv(file_path))
     elif ".txt" in file_path:
         return(pd.read_table(file_path))
+
+def _read_table_input(table_input):
+    '''
+    Normalize a paper table input passed either as a file path or a pandas DataFrame.
+
+    Parameters
+    ---------
+    table_input
+        Either a file path or a pandas DataFrame.
+
+    Returns
+    -------
+        A pandas DataFrame
+    '''
+    if isinstance(table_input, pd.DataFrame):
+        return table_input.copy()
+
+    return _read_csv_or_txt(table_input)
     
 def _text_clean(string: str, lower: bool = True):
     '''
@@ -79,20 +97,20 @@ def _table_merge(pubmed_info: pd.DataFrame, scopus_info: pd.DataFrame, osti_info
 
     return(merged)
 
-def deduplicate_papers(pubmed_path: str = None, scopus_path: str = None, osti_path: str = None, lower: bool = True):
+def deduplicate_papers(pubmed_path = None, scopus_path = None, osti_path = None, lower: bool = True):
     '''
     Deduplicate papers across databases. 
     
     Parameters
     ----------
     pubmed_path
-        The path to the PubMed export of paper information. To obtain, enter the query, hit search, hit save, select "All results" and "csv".
+        The path to the PubMed export of paper information, or a pandas DataFrame with the same columns. To obtain the export, enter the query, hit search, hit save, select "All results" and "csv".
     
     scopus_path
-        The path to the Scopus export of paper information. To obtain, enter the query, hit search, hit export, select "CSV" and keep all defaults checked.
+        The path to the Scopus export of paper information, or a pandas DataFrame with the same columns. To obtain the export, enter the query, hit search, hit export, select "CSV" and keep all defaults checked.
     
     osti_path
-        The path to the OSTI export of paper information. To obtain, enter the query, hit search, and save results as a "CSV"
+        The path to the OSTI export of paper information, or a pandas DataFrame with the same columns. To obtain the export, enter the query, hit search, and save results as a "CSV"
 
     lower
         If True, convert titles to lowercase before cleaning and matching.
@@ -106,15 +124,15 @@ def deduplicate_papers(pubmed_path: str = None, scopus_path: str = None, osti_pa
     # If provided, pull essential information from each text file and clean paper titles.
     pubmed, scopus, osti = None, None, None
     if pubmed_path is not None:
-        pubmed = _read_csv_or_txt(pubmed_path)
+        pubmed = _read_table_input(pubmed_path)
         pubmed = pubmed[["PMID", "Title", "DOI"]].rename({"PMID":"pubmed"}, axis = 1).sort_values(by = "DOI")
         pubmed["Title"] = [_text_clean(x, lower = lower) for x in pubmed["Title"]]
     if scopus_path is not None:
-        scopus = _read_csv_or_txt(scopus_path)
+        scopus = _read_table_input(scopus_path)
         scopus = scopus[["Title", "DOI", "EID"]].rename({"EID":"scopus"}, axis = 1).sort_values(by = "DOI")
         scopus["Title"] = [_text_clean(x, lower = lower) for x in scopus["Title"]]
     if osti_path is not None:
-        osti = _read_csv_or_txt(osti_path)
+        osti = _read_table_input(osti_path)
         osti = osti[["TITLE", "DOI", "OSTI_IDENTIFIER"]].rename({"TITLE":"Title", "OSTI_IDENTIFIER":"osti"}, axis = 1).sort_values(by = "DOI")
         osti["Title"] = [_text_clean(x, lower = lower) for x in osti["Title"]]
 
@@ -224,7 +242,7 @@ def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = Non
 
     # Create the table of papers 
     paper_table = pd.concat([
-        _table_merge(doi_pull(pubmed, "pubmed"), doi_pull(scopus, "scopus"), doi_pull(osti, "osti")),
+        _table_merge((pubmed, "pubmed"), doi_pull(scopus, "scopus"), doi_pull(osti, "osti")),
         _table_merge(title_pull(pubmed, "pubmed", lower = lower), title_pull(scopus, "scopus", lower = lower), title_pull(osti, "osti", lower = lower))
     ]).reset_index(drop = True)[["Title", "DOI", "pubmed", "scopus", "osti"]]
 
