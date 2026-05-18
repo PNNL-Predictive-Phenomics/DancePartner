@@ -13,6 +13,7 @@ def pull_papers(output_directory: str,
                 type: str = "both", 
                 include_summary_file: bool = True, 
                 tarball_path: str = None, 
+                pubmed_api_key: str = None,
                 scopus_api_key: str = None):
     """ 
     Given a list of IDs referencing a literature database, pull available text, prioritizing full text whenever available, then titles and abstracts. 
@@ -45,6 +46,10 @@ def pull_papers(output_directory: str,
         An optional string for the path where to write the (large) tarball files to. Can also be used to specify a tarball path where a previous    
         function run may have saved articles to, which can reduce run time.
 
+    pubmed_api_key
+        An optional NCBI API key for PubMed E-utilities requests. Providing this can
+        improve throughput and reduce rate-limit issues when pulling from PubMed.
+
     scopus_api_key 
         A string API key for Scopus-Elselvier. Only needed when pulling papers from Scopus. See https://dev.elsevier.com/.
 
@@ -66,7 +71,7 @@ def pull_papers(output_directory: str,
     if pubmed_ids is not None:
         pubmed_ids = [str(x) for x in pubmed_ids]
         total_papers = len(pubmed_ids)
-        counts_dictionary = __pull_pubmed(ids = pubmed_ids, output_directory = output_directory, type = type, tarball_path = tarball_path)
+        counts_dictionary = __pull_pubmed(ids = pubmed_ids, output_directory = output_directory, type = type, tarball_path = tarball_path, pubmed_api_key = pubmed_api_key)
     if scopus_ids is not None:
         total_papers = len(scopus_ids)
         counts_dictionary = __pull_scopus(ids = scopus_ids, output_directory = output_directory, type = type, scopus_api_key = scopus_api_key)
@@ -91,7 +96,7 @@ def pull_papers(output_directory: str,
 
             # Determine if full text pubmed is an option. If so, try to pull full text. If not, move on.
             if pubmed != "nan":
-                single_counts = __pull_pubmed(ids = [pubmed], output_directory = output_directory, type = "full", tarball_path = tarball_path)
+                single_counts = __pull_pubmed(ids = [pubmed], output_directory = output_directory, type = "full", tarball_path = tarball_path, pubmed_api_key = pubmed_api_key)
                 if single_counts is not None:
                     counts_dictionary["full"].extend(single_counts["full"])
                     continue
@@ -112,7 +117,7 @@ def pull_papers(output_directory: str,
 
             # Determine if abstract from pubmed is an option. If not, move on.
             if pubmed != "nan":
-                single_counts = __pull_pubmed(ids = [pubmed], output_directory = output_directory, type = "abstract", tarball_path = tarball_path)
+                single_counts = __pull_pubmed(ids = [pubmed], output_directory = output_directory, type = "abstract", tarball_path = tarball_path, pubmed_api_key = pubmed_api_key)
                 if single_counts is not None:
                     counts_dictionary["abstract"].extend(single_counts["abstract"])
                     continue

@@ -18,8 +18,26 @@ def _read_csv_or_txt(file_path: str):
         return(pd.read_csv(file_path))
     elif ".txt" in file_path:
         return(pd.read_table(file_path))
+
+def _read_table_input(table_input):
+    '''
+    Normalize a paper table input passed either as a file path or a pandas DataFrame.
+
+    Parameters
+    ---------
+    table_input
+        Either a file path or a pandas DataFrame.
+
+    Returns
+    -------
+        A pandas DataFrame
+    '''
+    if isinstance(table_input, pd.DataFrame):
+        return table_input.copy()
+
+    return _read_csv_or_txt(table_input)
     
-def _text_clean(string: str):
+def _text_clean(string: str, lower: bool = True):
     '''
     This function cleans up the text of the input string, removing nonalphanumerics.
     This is essential to proper collapsing papers based on title. 
@@ -28,13 +46,18 @@ def _text_clean(string: str):
     ---------
     string
         The input string to clean
+    lower
+        If True, convert all text to lowercase before processing. Default is True.
     
     Return
     ------
         The string with non-alphanumerics removed (with the exception of spaces)
 
     '''
-    return(''.join(char for char in string.lower() if char.isalnum() or char == " "))
+    if lower:
+        return(''.join(char for char in string.lower() if char.isalnum() or char == " "))
+    else:
+        return(''.join(char for char in string if char.isalnum() or char == " "))
 
 
 def _table_merge(pubmed_info: pd.DataFrame, scopus_info: pd.DataFrame, osti_info: pd.DataFrame):
@@ -74,20 +97,24 @@ def _table_merge(pubmed_info: pd.DataFrame, scopus_info: pd.DataFrame, osti_info
 
     return(merged)
 
-def deduplicate_papers(pubmed_path: str = None, scopus_path: str = None, osti_path: str = None):
+def deduplicate_papers(pubmed_path = None, scopus_path = None, osti_path = None, lower: bool = True):
     '''
     Deduplicate papers across databases. 
     
     Parameters
     ----------
     pubmed_path
-        The path to the PubMed export of paper information. To obtain, enter the query, hit search, hit save, select "All results" and "csv".
+        The path to the PubMed export of paper information, or a pandas DataFrame with the same columns. To obtain the export, enter the query, hit search, hit save, select "All results" and "csv".
     
     scopus_path
-        The path to the Scopus export of paper information. To obtain, enter the query, hit search, hit export, select "CSV" and keep all defaults checked.
+        The path to the Scopus export of paper information, or a pandas DataFrame with the same columns. To obtain the export, enter the query, hit search, hit export, select "CSV" and keep all defaults checked.
     
     osti_path
-        The path to the OSTI export of paper information. To obtain, enter the query, hit search, and save results as a "CSV"
+        The path to the OSTI export of paper information, or a pandas DataFrame with the same columns. To obtain the export, enter the query, hit search, and save results as a "CSV"
+
+    lower
+        If True, convert titles to lowercase before cleaning and matching.
+        If False, preserve the original letter case. Default is True.
     
     Returns
     -------
@@ -97,22 +124,22 @@ def deduplicate_papers(pubmed_path: str = None, scopus_path: str = None, osti_pa
     # If provided, pull essential information from each text file and clean paper titles.
     pubmed, scopus, osti = None, None, None
     if pubmed_path is not None:
-        pubmed = _read_csv_or_txt(pubmed_path)
+        pubmed = _read_table_input(pubmed_path)
         pubmed = pubmed[["PMID", "Title", "DOI"]].rename({"PMID":"pubmed"}, axis = 1).sort_values(by = "DOI")
-        pubmed["Title"] = [_text_clean(x) for x in pubmed["Title"]]
+        pubmed["Title"] = [_text_clean(x, lower = lower) for x in pubmed["Title"]]
     if scopus_path is not None:
-        scopus = _read_csv_or_txt(scopus_path)
+        scopus = _read_table_input(scopus_path)
         scopus = scopus[["Title", "DOI", "EID"]].rename({"EID":"scopus"}, axis = 1).sort_values(by = "DOI")
-        scopus["Title"] = [_text_clean(x) for x in scopus["Title"]]
+        scopus["Title"] = [_text_clean(x, lower = lower) for x in scopus["Title"]]
     if osti_path is not None:
-        osti = _read_csv_or_txt(osti_path)
+        osti = _read_table_input(osti_path)
         osti = osti[["TITLE", "DOI", "OSTI_IDENTIFIER"]].rename({"TITLE":"Title", "OSTI_IDENTIFIER":"osti"}, axis = 1).sort_values(by = "DOI")
-        osti["Title"] = [_text_clean(x) for x in osti["Title"]]
+        osti["Title"] = [_text_clean(x, lower = lower) for x in osti["Title"]]
 
     # Merge tables 
     return _table_merge(pubmed, scopus, osti).reset_index(drop = True)[["Title", "DOI", "pubmed", "scopus", "osti"]]
 
-def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = None, osti_path: str = None):
+def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = None, osti_path: str = None, lower: bool = True):
     '''
     We recommend using the "generic" depulicate papers, as this special function is for an internal tool
     called "LitPortal." This function takes up to 3 tables from LitPortal, removes duplicate publications, and gives
@@ -129,6 +156,10 @@ def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = Non
     
     osti_path
         The path to the LitPortal file exported from an OSTI search. Optional.  
+
+    lower
+        If True, convert titles to lowercase before cleaning and matching.
+        If False, preserve the original letter case. Default is True.
     
     Returns
     -------
@@ -180,7 +211,7 @@ def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = Non
                 })
             )
 
-    def title_pull(summary_table: pd.DataFrame, table_name: str):
+    def title_pull(summary_table: pd.DataFrame, table_name: str, lower: bool = True):
         '''
         This function pulls titles for papers from the LitPortal table for whenever a DOI is not available. 
 
@@ -192,6 +223,9 @@ def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = Non
         table_name
             The desired name of the table in the column
 
+        lower
+            If True, convert all text to lowercase before processing. Default is True. 
+
         Returns
         -------
             A pandas DaataFrame with paper titles
@@ -202,14 +236,14 @@ def litportal_deduplicate_papers(pubmed_path: str = None, scopus_path: str = Non
             return(
                 pd.DataFrame({
                     table_name: [str(x) for x in summary_table["OriginId"][summary_table["DOI"].isna()]],
-                    "Title": [_text_clean(x) for x in summary_table["Title"][summary_table["DOI"].isna()]]
+                    "Title": [_text_clean(x, lower = lower) for x in summary_table["Title"][summary_table["DOI"].isna()]]
                 })
             )
 
     # Create the table of papers 
     paper_table = pd.concat([
-        _table_merge(doi_pull(pubmed, "pubmed"), doi_pull(scopus, "scopus"), doi_pull(osti, "osti")),
-        _table_merge(title_pull(pubmed, "pubmed"), title_pull(scopus, "scopus"), title_pull(osti, "osti"))
+        _table_merge((pubmed, "pubmed"), doi_pull(scopus, "scopus"), doi_pull(osti, "osti")),
+        _table_merge(title_pull(pubmed, "pubmed", lower = lower), title_pull(scopus, "scopus", lower = lower), title_pull(osti, "osti", lower = lower))
     ]).reset_index(drop = True)[["Title", "DOI", "pubmed", "scopus", "osti"]]
 
     # Return the paper table

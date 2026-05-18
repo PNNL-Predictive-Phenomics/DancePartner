@@ -1,18 +1,14 @@
 DancePartnerID	Synonym	Type
-28546	lvaline	metabolite
-28586	nadph	metabolite
-29496	ribose5phosphate	metabolite
-29564	tyrosine	metabolite
+21461	tca	lipid
+27804	pyruvate	metabolite
+27845	atp	metabolite
+29085	pro	metabolite
 29644	pep	metabolite
-32256	iptg	metabolite
-34997	prolyl	metabolite
-38143	counter	metabolite
-79326	pi3kage1	gene product
-80767	actin	gene product
-81174	sigma	gene product
-86657	egl9	gene product
-86742	hif1	gene product
-93102	bcat1	gene product
-93483	vhl1	gene product
-124878	daf2	gene product
-126407	pck1	gene product
+30779	phosphor	metabolite
+31647	glucose	metabolite
+47771	ppp	metabolite
+86663	egl9	gene product
+86748	hif1	gene product
+100157	pck3	gene product
+118133	rhy1	gene product
+126410	pck1	gene product

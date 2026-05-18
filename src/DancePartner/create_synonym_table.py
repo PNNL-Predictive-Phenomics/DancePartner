@@ -5,7 +5,8 @@ import networkx as nx
 
 def __get_ome_df(ome_path: str, 
                  delim: str = ",", 
-                 ome_type: str = None):
+                 ome_type: str = None,
+                 lower: bool = True):
     '''
     A support function to pull an ome files, and parse the file to be a pandas dataframe 
 
@@ -19,6 +20,9 @@ def __get_ome_df(ome_path: str,
 
     ome_type
         An optional identifier for the ome type
+
+    lower
+        If True, convert all text to lowercase before processing.
 
     Return
     ------
@@ -34,7 +38,10 @@ def __get_ome_df(ome_path: str,
     for row in range(len(ome)):
         
         terms = str(ome["Synonyms"][row]).split("; ")
-        terms = [re.sub(r'[^a-zA-Z0-9]', '', term.strip().lower()) for term in terms]
+        if lower:
+            terms = [re.sub(r'[^a-zA-Z0-9]', '', term.strip().lower()) for term in terms]
+        else:
+            terms = [re.sub(r'[^a-zA-Z0-9]', '', term.strip()) for term in terms]
 
         if not isinstance(terms, list):
             terms = list(terms)
@@ -72,7 +79,8 @@ def make_synonym_table(omes_folder: str,
                        genome_filename: str = None, 
                        min_length: int = 3,
                        drop_numerics: bool = True,
-                       output_directory: str = None):
+                       output_directory: str = None,
+                       lower: bool = True):
     '''
     Generate a complete synonym table with the DancePartner Supergroup ID, a synonym, an ID, and the type.
     The omes folder must have LipidMaps_Lipdome.csv, CHEBI_Metabolome.txt, and stop_words_english.txt
@@ -94,10 +102,14 @@ def make_synonym_table(omes_folder: str,
         Minimum number of characters in a term. Default is 3.  
 
     drop_numerics
-        Drop all synonym terms that are numerics
-    
+        If True, drop synonym terms that are numeric. Default is True.
+
     output_directory
-        A path to a directory for where to write results to.
+        A path to a directory where results will be written. Optional.
+
+    lower
+        If True, convert synonym text to lowercase before cleaning and matching.
+        If False, preserve the original letter case. Default is True.
     
     Returns
     -------
@@ -108,22 +120,22 @@ def make_synonym_table(omes_folder: str,
     ## Read and gather files---------------------------------------------------------------------------------------------
 
     # Parse lipidome
-    lipidome = __get_ome_df(os.path.join(omes_folder, "LipidMaps_Lipidome.csv"), ome_type = "lipid")
+    lipidome = __get_ome_df(os.path.join(omes_folder, "LipidMaps_Lipidome.csv"), ome_type = "lipid", lower = lower)
 
     # Parse metabolome
-    metabolome = __get_ome_df(os.path.join(omes_folder, "CHEBI_Metabolome.txt"), "\t", ome_type = "metabolite")
+    metabolome = __get_ome_df(os.path.join(omes_folder, "CHEBI_Metabolome.txt"), "\t", ome_type = "metabolite", lower = lower)
 
     # Start the universal ome
     ome = pd.concat([lipidome, metabolome])
 
     # Add the proteome 
     if proteome_filename is not None:
-        proteome = __get_ome_df(os.path.join(omes_folder, proteome_filename), "\t", "gene product")
+        proteome = __get_ome_df(os.path.join(omes_folder, proteome_filename), "\t", "gene product", lower = lower)
         ome = pd.concat([ome, proteome])
 
     # Add the genome, if applicable
     if genome_filename is not None:
-        genome = __get_ome_df(os.path.join(omes_folder, genome_filename), "\t", "gene product")
+        genome = __get_ome_df(os.path.join(omes_folder, genome_filename), "\t", "gene product", lower = lower)
         ome = pd.concat([ome, genome])
 
     # Read the stop words file
@@ -195,9 +207,10 @@ def make_synonym_table(omes_folder: str,
 
 
 def map_synonyms(term_list: list[str], 
-                 synonym_table: str,
+                 synonym_table: pd.DataFrame,
                  add_missing: bool = False, 
-                 output_directory: bool = None):
+                 lower: bool = True,
+                 output_directory: str = None):
     '''
     Map synonyms to IDs
 
@@ -210,10 +223,14 @@ def map_synonyms(term_list: list[str],
         A synonym table as created in make_synonym_table
         
     add_missing
-        If True, add terms that weren't mapped to synonyms. Optional.
+        If True, add terms that were not mapped to synonyms. Default is False.
+
+    lower
+        If True, convert input terms to lowercase before cleaning and matching.
+        If False, preserve the original letter case. Default is True.
     
     output_directory
-        A path to a directory for where to write results to.
+        A path to a directory where results will be written. Optional.
     
     Returns
     -------
@@ -221,7 +238,10 @@ def map_synonyms(term_list: list[str],
     '''
 
     # Format terms
-    term_list = [re.sub(r'[^a-zA-Z0-9]', '', term.strip().lower()) for term in term_list]
+    if lower:
+        term_list = [re.sub(r'[^a-zA-Z0-9]', '', term.strip().lower()) for term in term_list]
+    else:
+        term_list = [re.sub(r'[^a-zA-Z0-9]', '', term.strip()) for term in term_list]
 
     # Remove the ID column
     synonym_table = synonym_table[["DancePartnerID", "Synonym", "Type"]]

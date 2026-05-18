@@ -16,6 +16,8 @@ from transformers.modeling_outputs import SequenceClassifierOutput
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, classification_report, precision_recall_fscore_support
 
+from .label_relationship import __label_relationship
+
 def __make_bert_ready(df: pd.DataFrame, segment_col_name: str):
     """
     Function to prepare a dataframe to be inputted into the BERT model
@@ -264,6 +266,9 @@ def run_bert(input_path: str, model_path: str, segment_col_name: str, output_dir
     probs = nn.functional.softmax(torch.from_numpy(trainer_out.predictions), dim = -1)
     test[["True Negative", "True Positive"]] = pd.DataFrame(probs)
     test = test.drop("Guess", axis = 1)
+
+    # Detect labels
+    test = __label_relationship(test)
 
     if output_directory is not None:
         test.to_csv(os.path.join(output_directory, "bert_results.txt"), sep = '\t', index = False, header = True)

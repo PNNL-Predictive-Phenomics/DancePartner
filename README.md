@@ -36,6 +36,8 @@ This package contains a `vignettes/` folder with various example vignettes that 
 
 * To learn how to extract relationships from databases, see [How to Pull from Databases](./vignettes/how_to_pull_from_databases.ipynb)
 
+* To learn how to build and customize networks, see [How to Build a Network](./vignettes/how_to_build_a_network.ipynb)
+
 # Notes 
 
 ## Pull the BERT Model
@@ -62,16 +64,6 @@ Download the `en_ner_bionlp13cg_md` model from [here](https://allenai.github.io/
 ## Relationships 
 
 *DancePartner* finds relationships but does not characterize them (e.g. a metabolic relationship, an interaction event, etc.).
-
-## Test Code 
-
-To run tests, make sure to create the `scopus_key.txt` [file](https://dev.elsevier.com/) and `ncbi_key.txt` [file](https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/). Install the coverage package and then follow the instructions on each test file. If coverage doesn't run properly after install, deactivate the
-DancePartner virtual environment and reactivate it.
-
-```
->>> pip install pytest
->>> pip install coverage
-```
 
 ## Additional Stop Words
 
