@@ -2,16 +2,13 @@ DancePartnerID	Synonym	Type
 21461	tca	lipid
 27804	pyruvate	metabolite
 27845	atp	metabolite
-28244	glycerol3phosphate	metabolite
-28586	nadph	metabolite
-28850	glutathione	metabolite
 29085	pro	metabolite
 29644	pep	metabolite
 30779	phosphor	metabolite
-31068	glycolate	metabolite
 31647	glucose	metabolite
-35027	salt	metabolite
 47771	ppp	metabolite
 86663	egl9	gene product
 86748	hif1	gene product
+100157	pck3	gene product
 118133	rhy1	gene product
+126410	pck1	gene product
